@@ -289,6 +289,7 @@ for _, row in consolidated.iterrows():
     label     = row['Field Label']
     versions  = row['All Versions']
     n_vers    = row['N Versions Found']
+    files     = row['Files']
 
     pooled = pool_series(versions)
     if len(pooled) == 0:
@@ -300,6 +301,7 @@ for _, row in consolidated.iterrows():
 
     base_info = {
         'Base Variable': base,
+        'File':          files,
         'Role':          role,
         'Impl. Level':   impl,
         'Field Label':   str(label)[:80],
@@ -413,8 +415,8 @@ style_dict_sheet(wb['All Variables'],  role_col=3, impl_col=4, found_col=5, miss
 # Consolidated: Role=5, Impl=6, Found=9, Missing=12
 style_dict_sheet(wb['Consolidated'],   role_col=5, impl_col=6, found_col=9, missing_col=12)
 # Stats sheets: Avg Missing % is col 7
-style_stats_sheet(wb['Numerical Stats'],   missing_col_idx=7)
-style_stats_sheet(wb['Categorical Stats'], missing_col_idx=7)
+style_stats_sheet(wb['Numerical Stats'],   missing_col_idx=8)
+style_stats_sheet(wb['Categorical Stats'], missing_col_idx=8)
 wb.save(EXCEL_PATH)
 
 print(f'\nDone. Sheets in {EXCEL_PATH}:')
