@@ -45,7 +45,10 @@ def load_dataset(name: str) -> pd.DataFrame:
 datasets = {
     name: load_dataset(name)
     for name in os.listdir(DATA_DIR)
-    if name not in EXCLUDE_FORMS          # drop excluded forms entirely
+    if name not in EXCLUDE_FORMS                    # drop excluded forms entirely
+    and not name.startswith('.')                    # skip hidden files
+    and not os.path.splitext(name)[1] in            # skip files with known extensions
+        {'.ipynb', '.csv', '.xlsx', '.py', '.txt'}
 }
 print(f'Loaded {len(datasets)} datasets (excluded: {sorted(EXCLUDE_FORMS)})')
 for name, df in sorted(datasets.items()):
@@ -238,6 +241,43 @@ consolidated = pd.concat([versioned_agg, non_versioned_agg], ignore_index=True)
 print(f'Consolidated: {len(consolidated)} base variables')
 
 
+# ── Days-since-dx helpers (defined here; used before and after rename) ─────────
+_clin_raw = load_dataset('Clinical')
+_dx_col   = [c for c in _clin_raw.columns if 'date of diagnosis' in c.lower()][0]
+dx_lookup = pd.to_datetime(
+    _clin_raw[['Project key', _dx_col]].dropna()
+    .drop_duplicates('Project key')
+    .set_index('Project key')[_dx_col],
+    errors='coerce'
+)   # Series: Project key → diagnosis date
+
+DATE_PATTERNS = [
+    'questionnaire completed', 'questionnaire rempli',
+    'tests completed',         'tests complétés',
+    'assessment completed',    'évaluation remplie',
+    'date of moca administration',
+    'neuropsycholgical test date',
+    'date of study visit',
+]
+
+def _find_completion_date_col(df: pd.DataFrame):
+    """First column matching a date-header pattern AND containing YYYY-MM-DD values."""
+    for pat in DATE_PATTERNS:
+        for col in df.columns:
+            if pat in col.lower():
+                sample = df[col].dropna().head(5)
+                if sample.apply(lambda v: bool(re.match(r'\d{4}-\d{2}', str(v)))).any():
+                    return col
+    return None
+
+# Capture completion-date column names BEFORE renaming ──────────────────────────
+completion_date_cols: dict[str, str] = {}    # {ds_name: raw_col_name}
+for ds_name, df in datasets.items():
+    col = _find_completion_date_col(df)
+    if col is not None:
+        completion_date_cols[ds_name] = col
+
+
 # ── Rename dataset columns → dictionary variable names ────────────────────────
 # Build per-file rename maps from the matched cross_ref rows.
 # If two variables matched the same column, first match wins (stable iteration order).
@@ -259,6 +299,28 @@ for fname, rmap in rename_maps.items():
 
 renamed_total = sum(len(r) for r in rename_maps.values())
 print(f'Renamed {renamed_total} columns across {len(rename_maps)} datasets')
+
+
+# ── Insert 'Days since dx' after renaming ─────────────────────────────────────
+# Formula: [form completion date] – [Clinical dx date]  (integer days)
+added = 0
+for ds_name, raw_col in completion_date_cols.items():
+    df = datasets[ds_name]
+    if 'Project key' not in df.columns:
+        continue
+    # raw_col may have been renamed; look up the new name
+    renamed_col = rename_maps.get(ds_name, {}).get(raw_col, raw_col)
+    if renamed_col not in df.columns:
+        continue
+    completion = pd.to_datetime(df[renamed_col], errors='coerce')
+    dx         = df['Project key'].map(dx_lookup)
+    days       = (completion - dx).dt.days
+    anchor     = 'Event Name' if 'Event Name' in df.columns else 'Project key'
+    df.insert(df.columns.get_loc(anchor) + 1, 'Days since dx', days)
+    datasets[ds_name] = df
+    added += 1
+
+print(f'Added "Days since dx" to {added} datasets')
 
 
 # ── Build stats by pooling all versions per base variable ─────────────────────
