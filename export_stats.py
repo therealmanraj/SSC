@@ -24,15 +24,32 @@ DICT_PATH  = os.path.join(ROOT, 'Help Files', '2. COPN_DataDictionary_2025-09-24
 EXCEL_PATH = os.path.join(ROOT, 'cross_reference.xlsx')
 
 
+# ── Forms to drop entirely ────────────────────────────────────────────────────
+EXCLUDE_FORMS = {'Apathy Evaluation Self', 'Apathy Evaluation Informant', 'FrSBe'}
+
+# Columns that are always present and carry no substantive data
+ADMIN_COLS = {'Project key', 'Event Name', 'Complete?'}
+
+
 # ── Load datasets ─────────────────────────────────────────────────────────────
 def load_dataset(name: str) -> pd.DataFrame:
     df = pd.read_csv(os.path.join(DATA_DIR, name))
     if df.columns[0].startswith('Unnamed'):
         df = df.iloc[:, 1:]
+    # Drop rows where every non-admin column is null (skeleton rows)
+    data_cols = [c for c in df.columns if c not in ADMIN_COLS]
+    if data_cols:
+        df = df[df[data_cols].notna().any(axis=1)].reset_index(drop=True)
     return df
 
-datasets = {name: load_dataset(name) for name in os.listdir(DATA_DIR)}
-print(f'Loaded {len(datasets)} datasets')
+datasets = {
+    name: load_dataset(name)
+    for name in os.listdir(DATA_DIR)
+    if name not in EXCLUDE_FORMS          # drop excluded forms entirely
+}
+print(f'Loaded {len(datasets)} datasets (excluded: {sorted(EXCLUDE_FORMS)})')
+for name, df in sorted(datasets.items()):
+    print(f'  {name:40s}  {len(df):4d} rows')
 
 
 # ── Load data dictionary ──────────────────────────────────────────────────────
@@ -221,15 +238,43 @@ consolidated = pd.concat([versioned_agg, non_versioned_agg], ignore_index=True)
 print(f'Consolidated: {len(consolidated)} base variables')
 
 
+# ── Rename dataset columns → dictionary variable names ────────────────────────
+# Build per-file rename maps from the matched cross_ref rows.
+# If two variables matched the same column, first match wins (stable iteration order).
+rename_maps: dict[str, dict[str, str]] = {}   # {fname: {original_col: var_name}}
+for _, row in cross_ref.iterrows():
+    if row['Found in Data'] != 'Yes' or not row['_matched_col']:
+        continue
+    fname = row['_matched_file']
+    col   = row['_matched_col']
+    var   = row['Variable Name']
+    rename_maps.setdefault(fname, {})
+    if col not in rename_maps[fname]:          # first match wins
+        rename_maps[fname][col] = var
+
+conflicts = 0
+for fname, rmap in rename_maps.items():
+    datasets[fname] = datasets[fname].rename(columns=rmap)
+    conflicts += sum(1 for oc, vn in rmap.items() if oc == vn)  # no-op renames
+
+renamed_total = sum(len(r) for r in rename_maps.values())
+print(f'Renamed {renamed_total} columns across {len(rename_maps)} datasets')
+
+
 # ── Build stats by pooling all versions per base variable ─────────────────────
 print('Computing stats from pooled versions...')
 
-# Map version name → (file, col) from cross_ref
-version_to_data: dict[str, tuple[str, str]] = {
-    row['Variable Name']: (row['_matched_file'], row['_matched_col'])
-    for _, row in cross_ref.iterrows()
-    if row['Found in Data'] == 'Yes' and row['_matched_col']
-}
+# Map version name → (file, renamed_col).
+# After renaming, the column in the dataset IS the variable name.
+version_to_data: dict[str, tuple[str, str]] = {}
+for _, row in cross_ref.iterrows():
+    if row['Found in Data'] != 'Yes' or not row['_matched_col']:
+        continue
+    fname        = row['_matched_file']
+    var          = row['Variable Name']
+    original_col = row['_matched_col']
+    renamed_col  = rename_maps.get(fname, {}).get(original_col, original_col)
+    version_to_data[var] = (fname, renamed_col)
 
 def pool_series(all_versions_str: str) -> pd.Series:
     """Concatenate data from all matched versions of a base variable."""
@@ -329,13 +374,24 @@ print(f'  Categorical Stats: {len(cat_df):,} rows')
 table = cross_ref.drop(columns=['base_name', 'is_versioned', '_matched_file', '_matched_col'])
 
 
-# ── Write all 4 sheets in one pass ───────────────────────────────────────────
+# ── Sheet name helper (Excel max = 31 chars, no special chars) ────────────────
+def safe_sheet_name(name: str) -> str:
+    clean = re.sub(r'[\\/*?\[\]:]', '', name)
+    return clean[:31]
+
+
+# ── Write all sheets in one pass ─────────────────────────────────────────────
 print(f'Writing {EXCEL_PATH}...')
 with pd.ExcelWriter(EXCEL_PATH, engine='openpyxl') as writer:
-    table.to_excel(writer,       sheet_name='All Variables',    index=False)
-    consolidated.to_excel(writer,sheet_name='Consolidated',     index=False)
-    num_df.to_excel(writer,      sheet_name='Numerical Stats',  index=False)
-    cat_df.to_excel(writer,      sheet_name='Categorical Stats',index=False)
+    # Reference sheets
+    table.to_excel(writer,        sheet_name='All Variables',    index=False)
+    consolidated.to_excel(writer, sheet_name='Consolidated',     index=False)
+    num_df.to_excel(writer,       sheet_name='Numerical Stats',  index=False)
+    cat_df.to_excel(writer,       sheet_name='Categorical Stats',index=False)
+    # One sheet per cleaned dataset (skeleton rows removed, columns renamed)
+    for ds_name, df in sorted(datasets.items()):
+        df.to_excel(writer, sheet_name=safe_sheet_name(ds_name), index=False)
+    print(f'  Added {len(datasets)} dataset sheets')
 
 
 # ── Formatting ────────────────────────────────────────────────────────────────
@@ -409,14 +465,30 @@ def style_stats_sheet(ws, missing_col_idx: int):
             pass
     autowidth(ws)
 
+def style_data_sheet(ws):
+    """Freeze header, style header row, alternate row shading, auto-width."""
+    for cell in ws[1]:
+        cell.fill = HDR_FILL
+        cell.font = HDR_FONT
+        cell.alignment = Alignment(horizontal='left', vertical='center', wrap_text=False)
+    ws.freeze_panes = 'A2'
+    for i, row in enumerate(ws.iter_rows(min_row=2), start=1):
+        rf = EVEN_FILL if i % 2 == 0 else ODD_FILL
+        for cell in row:
+            cell.fill = rf
+    autowidth(ws)
+
 wb = openpyxl.load_workbook(EXCEL_PATH)
 # All Variables: Role=3, Impl=4, Found=5, Missing=8
 style_dict_sheet(wb['All Variables'],  role_col=3, impl_col=4, found_col=5, missing_col=8)
 # Consolidated: Role=5, Impl=6, Found=9, Missing=12
 style_dict_sheet(wb['Consolidated'],   role_col=5, impl_col=6, found_col=9, missing_col=12)
-# Stats sheets: Avg Missing % is col 7
+# Stats sheets: Avg Missing % is col 8
 style_stats_sheet(wb['Numerical Stats'],   missing_col_idx=8)
 style_stats_sheet(wb['Categorical Stats'], missing_col_idx=8)
+# Dataset sheets
+for ds_name in sorted(datasets.keys()):
+    style_data_sheet(wb[safe_sheet_name(ds_name)])
 wb.save(EXCEL_PATH)
 
 print(f'\nDone. Sheets in {EXCEL_PATH}:')
