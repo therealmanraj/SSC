@@ -374,6 +374,157 @@ print(f'  Categorical Stats: {len(cat_df):,} rows')
 table = cross_ref.drop(columns=['base_name', 'is_versioned', '_matched_file', '_matched_col'])
 
 
+# ═══════════════════════════════════════════════════════════════════════════════
+# DIAGNOSIS CONSISTENCY FLAGS
+# Fields checked:
+#   [Enrollment]  Enrolment Group
+#   [Clinical]    Determined diagnosis  (0=PD,1=PSP,2=MSA,3=CBS,4=DLB,6=ET,7=RBD)
+#   [Clinical]    Was the patient diagnosed with Parkinson's disease? (Yes/No/Uncertain)
+#   [Clinical]    1a. If No/Uncertain, is the diagnosis... (alternative dx)
+#   [Clinical]    If other, please specify (free-text)
+# ═══════════════════════════════════════════════════════════════════════════════
+print('Building diagnosis flags...')
+
+# Load raw (pre-rename) versions so column-name lookups are reliable
+_enroll = load_dataset('Enrollement')
+_clin   = load_dataset('Clinical')
+
+ENROL_COL = [c for c in _enroll.columns if 'nrolment' in c and 'roup' in c][0]
+DIAG_COL  = [c for c in _clin.columns   if 'Determined diagnosis' in c][0]
+PD_COL    = [c for c in _clin.columns   if 'Was the patient diagnosed' in c][0]
+ALT_COL   = [c for c in _clin.columns   if c.strip().startswith("1a.")][0]
+SPEC_COL  = [c for c in _clin.columns   if 'please specify' in c.lower()
+                                          and 'Veuillez' in c
+                                          and 'autre' in c.lower()
+                                          and '2' not in c[-5:]  ][0]
+
+# Numeric code → short diagnosis label
+DIAG_LABEL = {0:'PD', 1:'PSP', 2:'MSA', 3:'CBS', 4:'DLB', 6:'ET', 7:'RBD'}
+
+# 1a text → expected Determined diagnosis code
+ALT_TO_CODE = {
+    'Progressive Supranuclear Palsy (PSP)': 1,
+    'Multiple System Atrophy (MSA)':        2,
+    'Corticobasal Syndrome (CBS)':          3,
+    'Dementia with Lewy Bodies (DLB)':      4,
+    'Essential Tremor (ET)':                6,
+    'REM Sleep Behaviour Disorder (RBD)':   7,
+}
+
+def _short_enrol(val):
+    if pd.isna(val): return None
+    s = str(val).split('/')[0].strip()
+    if 'PD' in s or "Parkinson's Disease" in s: return 'PD'
+    if 'AP' in s or 'Atypical' in s:            return 'AP'
+    if 'Healthy' in s:                          return 'HC'
+    return s
+
+def _short_pd(val):
+    if pd.isna(val): return None
+    return str(val).split('/')[0].strip()   # Yes / No / Uncertain
+
+def _alt_code(val):
+    """Extract expected Determined code from 1a free-text value."""
+    if pd.isna(val): return None
+    for key, code in ALT_TO_CODE.items():
+        if key.split(' (')[0] in str(val):
+            return code
+    return None  # Not Determined / Other
+
+# Build one merged row per participant
+_e = _enroll[['Project key', ENROL_COL]].copy()
+_e['enrol_group'] = _e[ENROL_COL].apply(_short_enrol)
+
+_c = _clin[['Project key', DIAG_COL, PD_COL, ALT_COL, SPEC_COL]].copy()
+_c['det_code']  = pd.to_numeric(_c[DIAG_COL], errors='coerce')
+_c['det_label'] = _c['det_code'].map(DIAG_LABEL)
+_c['pd_yn']     = _c[PD_COL].apply(_short_pd)
+_c['alt_code']  = _c[ALT_COL].apply(_alt_code)
+_c['alt_text']  = _c[ALT_COL].str.split('/').str[0].str.replace(r'^\.*\s*', '', regex=True).str.strip()
+_c['spec_text'] = _c[SPEC_COL]
+
+merged = _e.merge(_c, on='Project key', how='outer')
+
+flag_rows = []
+for _, r in merged.iterrows():
+    pid        = r['Project key']
+    enrol      = r['enrol_group']
+    det_code   = r['det_code']
+    det_label  = r['det_label']
+    pd_yn      = r['pd_yn']
+    alt_code   = r['alt_code']
+    alt_text   = r['alt_text']
+    spec_text  = r['spec_text']
+
+    flags_for_row = []
+
+    # ── Flag A: Enrolment Group vs Determined Diagnosis ───────────────────────
+    if enrol == 'PD' and pd.notna(det_code) and det_code != 0:
+        flags_for_row.append(
+            f'Enrolled as PD but Determined diagnosis = {det_label} ({int(det_code)})'
+        )
+    if enrol == 'AP' and pd.notna(det_code) and det_code == 0:
+        flags_for_row.append(
+            'Enrolled as AP but Determined diagnosis = PD (0)'
+        )
+
+    # ── Flag B: Was diagnosed with PD? vs Determined Diagnosis ───────────────
+    if pd_yn == 'Yes' and pd.notna(det_code) and det_code != 0:
+        flags_for_row.append(
+            f'Was diagnosed = Yes but Determined diagnosis = {det_label} ({int(det_code)})'
+        )
+    if pd_yn in ('No', 'Uncertain') and pd.notna(det_code) and det_code == 0:
+        flags_for_row.append(
+            f'Was diagnosed = {pd_yn} but Determined diagnosis = PD (0)'
+        )
+
+    # ── Flag C: Enrolment Group vs Was diagnosed with PD? ────────────────────
+    if enrol == 'PD' and pd_yn in ('No', 'Uncertain'):
+        flags_for_row.append(
+            f'Enrolled as PD but "Was diagnosed with PD?" = {pd_yn}'
+        )
+    if enrol == 'AP' and pd_yn == 'Yes':
+        flags_for_row.append(
+            'Enrolled as AP but "Was diagnosed with PD?" = Yes'
+        )
+
+    # ── Flag D: 1a alternative diagnosis vs Determined Diagnosis ─────────────
+    if alt_code is not None and pd.notna(det_code) and alt_code != det_code:
+        flags_for_row.append(
+            f'1a alternative dx ({alt_text}) expects code {alt_code} '
+            f'but Determined = {det_label} ({int(det_code)})'
+        )
+    # 1a is filled but Determined is NaN
+    if pd.notna(r[ALT_COL]) and pd.isna(det_code):
+        flags_for_row.append(
+            f'1a filled ({alt_text}) but Determined diagnosis is missing'
+        )
+    # Determined is non-PD but 1a is empty (and Was_PD is No/Uncertain)
+    if pd.notna(det_code) and det_code != 0 and pd.isna(r[ALT_COL]) and pd_yn in ('No','Uncertain'):
+        flags_for_row.append(
+            f'Determined = {det_label} ({int(det_code)}) but 1a is missing'
+        )
+
+    if flags_for_row:
+        flag_rows.append({
+            'Project key':         pid,
+            'Enrolment Group':     r[ENROL_COL] if pd.notna(r[ENROL_COL]) else '',
+            'Determined Dx (code)':int(det_code) if pd.notna(det_code) else '',
+            'Determined Dx':       det_label or '',
+            'Was Dx with PD?':     pd_yn or '',
+            '1a Alternative Dx':   alt_text if pd.notna(r[ALT_COL]) else '',
+            'Other (specify)':     str(spec_text) if pd.notna(spec_text) else '',
+            'N Flags':             len(flags_for_row),
+            'Flags':               ' | '.join(flags_for_row),
+        })
+
+diag_flags_df = pd.DataFrame(flag_rows).sort_values(
+    ['N Flags', 'Project key'], ascending=[False, True]
+)
+_n_total = merged['Project key'].nunique()
+print(f'  Flagged participants: {len(diag_flags_df):,} ({len(diag_flags_df)/_n_total*100:.1f}%)')
+
+
 # ── Sheet name helper (Excel max = 31 chars, no special chars) ────────────────
 def safe_sheet_name(name: str) -> str:
     clean = re.sub(r'[\\/*?\[\]:]', '', name)
@@ -384,10 +535,11 @@ def safe_sheet_name(name: str) -> str:
 print(f'Writing {EXCEL_PATH}...')
 with pd.ExcelWriter(EXCEL_PATH, engine='openpyxl') as writer:
     # Reference sheets
-    table.to_excel(writer,        sheet_name='All Variables',    index=False)
-    consolidated.to_excel(writer, sheet_name='Consolidated',     index=False)
-    num_df.to_excel(writer,       sheet_name='Numerical Stats',  index=False)
-    cat_df.to_excel(writer,       sheet_name='Categorical Stats',index=False)
+    table.to_excel(writer,           sheet_name='All Variables',    index=False)
+    consolidated.to_excel(writer,    sheet_name='Consolidated',     index=False)
+    num_df.to_excel(writer,          sheet_name='Numerical Stats',  index=False)
+    cat_df.to_excel(writer,          sheet_name='Categorical Stats',index=False)
+    diag_flags_df.to_excel(writer,   sheet_name='Diagnosis Flags',  index=False)
     # One sheet per cleaned dataset (skeleton rows removed, columns renamed)
     for ds_name, df in sorted(datasets.items()):
         df.to_excel(writer, sheet_name=safe_sheet_name(ds_name), index=False)
@@ -478,6 +630,28 @@ def style_data_sheet(ws):
             cell.fill = rf
     autowidth(ws)
 
+FLAG_RED    = PatternFill('solid', fgColor='FFC7CE')
+FLAG_ORANGE = PatternFill('solid', fgColor='FFEB9C')
+
+def style_flags_sheet(ws):
+    """Header + alternate rows; highlight rows with multiple flags in red."""
+    for cell in ws[1]:
+        cell.fill = HDR_FILL
+        cell.font = HDR_FONT
+        cell.alignment = Alignment(horizontal='left', vertical='center', wrap_text=False)
+    ws.freeze_panes = 'A2'
+    # N Flags is column 8 (index 7)
+    n_flags_col = 8
+    for i, row in enumerate(ws.iter_rows(min_row=2), start=1):
+        try:
+            n = int(row[n_flags_col - 1].value or 0)
+        except (ValueError, TypeError):
+            n = 0
+        rf = FLAG_RED if n > 1 else (FLAG_ORANGE if n == 1 else (EVEN_FILL if i % 2 == 0 else ODD_FILL))
+        for cell in row:
+            cell.fill = rf
+    autowidth(ws)
+
 wb = openpyxl.load_workbook(EXCEL_PATH)
 # All Variables: Role=3, Impl=4, Found=5, Missing=8
 style_dict_sheet(wb['All Variables'],  role_col=3, impl_col=4, found_col=5, missing_col=8)
@@ -486,6 +660,8 @@ style_dict_sheet(wb['Consolidated'],   role_col=5, impl_col=6, found_col=9, miss
 # Stats sheets: Avg Missing % is col 8
 style_stats_sheet(wb['Numerical Stats'],   missing_col_idx=8)
 style_stats_sheet(wb['Categorical Stats'], missing_col_idx=8)
+# Diagnosis flags sheet
+style_flags_sheet(wb['Diagnosis Flags'])
 # Dataset sheets
 for ds_name in sorted(datasets.keys()):
     style_data_sheet(wb[safe_sheet_name(ds_name)])
