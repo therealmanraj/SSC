@@ -593,15 +593,79 @@ def safe_sheet_name(name: str) -> str:
     return clean[:31]
 
 
+# ── Completeness Matrix ────────────────────────────────────────────────────────
+print('Building completeness matrix...')
+
+ADMIN_FOR_COMPLETENESS = {'Project key', 'Event Name', 'Complete?', 'Days since dx'}
+
+# Per-participant, per-form % missing
+comp_records = []
+for ds_name, df in sorted(datasets.items()):
+    data_cols = [c for c in df.columns if c not in ADMIN_FOR_COMPLETENESS]
+    if not data_cols or 'Project key' not in df.columns:
+        continue
+    n_data = len(data_cols)
+    for _, row in df.iterrows():
+        pid = row['Project key']
+        n_missing = int(row[data_cols].isna().sum())
+        pct_missing = round(100 * n_missing / n_data, 1)
+        comp_records.append({'Project key': pid, 'Form': ds_name, 'Pct Missing': pct_missing})
+
+comp_long = pd.DataFrame(comp_records)
+
+# Pivot: participants × forms (average if multiple visits per form)
+comp_matrix = comp_long.pivot_table(
+    index='Project key', columns='Form', values='Pct Missing', aggfunc='mean'
+).reset_index()
+comp_matrix.columns.name = None
+
+# Round averaged values
+form_cols_matrix = [c for c in comp_matrix.columns if c != 'Project key']
+comp_matrix[form_cols_matrix] = comp_matrix[form_cols_matrix].round(1)
+
+# Attach Enrolment Group label
+enrol_lookup = _e.drop_duplicates('Project key').set_index('Project key')['enrol_group']
+comp_matrix.insert(1, 'Enrolment Group', comp_matrix['Project key'].map(enrol_lookup))
+
+# Sort: group, then participant
+comp_matrix = comp_matrix.sort_values(
+    ['Enrolment Group', 'Project key'], na_position='last'
+).reset_index(drop=True)
+
+print(f'  Completeness Matrix: {len(comp_matrix):,} participants × {len(form_cols_matrix)} forms')
+
+
+# ── Completeness by Diagnosis Summary ─────────────────────────────────────────
+summary_rows = []
+groups = comp_matrix.groupby('Enrolment Group', dropna=False)
+for group_label, group_df in groups:
+    label = group_label if pd.notna(group_label) else 'Unknown / Missing'
+    for form in form_cols_matrix:
+        vals = group_df[form].dropna()
+        if len(vals) == 0:
+            continue
+        summary_rows.append({
+            'Enrolment Group': label,
+            'Form':            form,
+            'N Entries':       int(len(vals)),
+            'Avg % Missing':   round(float(vals.mean()), 1),
+        })
+
+comp_by_diag = pd.DataFrame(summary_rows)
+print(f'  Completeness by Diagnosis: {len(comp_by_diag):,} rows')
+
+
 # ── Write all sheets in one pass ─────────────────────────────────────────────
 print(f'Writing {EXCEL_PATH}...')
 with pd.ExcelWriter(EXCEL_PATH, engine='openpyxl') as writer:
     # Reference sheets
-    table.to_excel(writer,           sheet_name='All Variables',    index=False)
-    consolidated.to_excel(writer,    sheet_name='Consolidated',     index=False)
-    num_df.to_excel(writer,          sheet_name='Numerical Stats',  index=False)
-    cat_df.to_excel(writer,          sheet_name='Categorical Stats',index=False)
-    diag_flags_df.to_excel(writer,   sheet_name='Diagnosis Flags',  index=False)
+    table.to_excel(writer,           sheet_name='All Variables',         index=False)
+    consolidated.to_excel(writer,    sheet_name='Consolidated',          index=False)
+    num_df.to_excel(writer,          sheet_name='Numerical Stats',       index=False)
+    cat_df.to_excel(writer,          sheet_name='Categorical Stats',     index=False)
+    diag_flags_df.to_excel(writer,   sheet_name='Diagnosis Flags',       index=False)
+    comp_matrix.to_excel(writer,     sheet_name='Completeness Matrix',   index=False)
+    comp_by_diag.to_excel(writer,    sheet_name='Completeness by Dx',    index=False)
     # One sheet per cleaned dataset (skeleton rows removed, columns renamed)
     for ds_name, df in sorted(datasets.items()):
         df.to_excel(writer, sheet_name=safe_sheet_name(ds_name), index=False)
@@ -714,6 +778,41 @@ def style_flags_sheet(ws):
             cell.fill = rf
     autowidth(ws)
 
+def style_completeness_matrix(ws):
+    """Header row + heatmap coloring: green=low missing, red=high missing."""
+    for cell in ws[1]:
+        cell.fill = HDR_FILL
+        cell.font = HDR_FONT
+        cell.alignment = Alignment(horizontal='left', vertical='center', wrap_text=False)
+    ws.freeze_panes = 'C2'   # freeze Project key + Enrolment Group
+    for row in ws.iter_rows(min_row=2):
+        for cell in row:
+            if cell.value is None or cell.column <= 2:
+                continue
+            try:
+                cell.fill = miss_fill(float(cell.value))
+            except (ValueError, TypeError):
+                pass
+    autowidth(ws)
+
+def style_completeness_summary(ws):
+    """Header + zebra rows; Avg % Missing column gets heatmap."""
+    for cell in ws[1]:
+        cell.fill = HDR_FILL
+        cell.font = HDR_FONT
+        cell.alignment = Alignment(horizontal='left', vertical='center', wrap_text=False)
+    ws.freeze_panes = 'A2'
+    # Avg % Missing is column 4
+    for i, row in enumerate(ws.iter_rows(min_row=2), start=1):
+        rf = EVEN_FILL if i % 2 == 0 else ODD_FILL
+        for cell in row:
+            cell.fill = rf
+        try:
+            row[3].fill = miss_fill(float(row[3].value or 0))
+        except (ValueError, TypeError):
+            pass
+    autowidth(ws)
+
 wb = openpyxl.load_workbook(EXCEL_PATH)
 # All Variables: Role=3, Impl=4, Found=5, Missing=8
 style_dict_sheet(wb['All Variables'],  role_col=3, impl_col=4, found_col=5, missing_col=8)
@@ -724,6 +823,9 @@ style_stats_sheet(wb['Numerical Stats'],   missing_col_idx=8)
 style_stats_sheet(wb['Categorical Stats'], missing_col_idx=8)
 # Diagnosis flags sheet
 style_flags_sheet(wb['Diagnosis Flags'])
+# Completeness sheets
+style_completeness_matrix(wb['Completeness Matrix'])
+style_completeness_summary(wb['Completeness by Dx'])
 # Dataset sheets
 for ds_name in sorted(datasets.keys()):
     style_data_sheet(wb[safe_sheet_name(ds_name)])
