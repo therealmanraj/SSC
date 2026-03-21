@@ -191,6 +191,20 @@ def get_base_name(var):
 cross_ref['base_name']    = cross_ref['Variable Name'].apply(get_base_name)
 cross_ref['is_versioned'] = cross_ref['base_name'] != cross_ref['Variable Name']
 
+# ── Ungroup numeric-suffix versions that are genuinely different variables ─────
+# If all versions of a base name live in the same file AND have different field
+# labels, they represent distinct timepoints/contexts — keep them separate.
+for base, g in cross_ref[cross_ref['is_versioned']].groupby('base_name'):
+    # Explicit _vN/_v0N suffixes are always true versions — leave grouped
+    if g['Variable Name'].str.match(r'^.+_(v\d+|v0\d+)$').all():
+        continue
+    # Numeric suffix (_2, _3, …): ungroup if same file but different labels
+    if g['File'].nunique() == 1:
+        n_distinct_labels = g['Field Label'].dropna().apply(normalize_col).nunique()
+        if n_distinct_labels > 1:
+            cross_ref.loc[g.index, 'base_name']    = cross_ref.loc[g.index, 'Variable Name']
+            cross_ref.loc[g.index, 'is_versioned'] = False
+
 def aggregate_group(base, g):
     found_mask   = g['Found in Data'] == 'Yes'
     missing_vals = g.loc[found_mask, '% Missing'].dropna()
@@ -300,6 +314,25 @@ for fname, rmap in rename_maps.items():
 renamed_total = sum(len(r) for r in rename_maps.values())
 print(f'Renamed {renamed_total} columns across {len(rename_maps)} datasets')
 
+# ── Second pass: rename versioned variable names → base variable names ─────────
+# Only rename a column if its base name would be unique within that dataset
+# (avoids duplicate column names when multiple versions exist in the same file).
+base_renamed_total = 0
+for fname, df in datasets.items():
+    base_map: dict[str, str] = {}
+    base_targets: dict[str, int] = {}
+    for col in df.columns:
+        base = get_base_name(col)
+        base_targets[base] = base_targets.get(base, 0) + 1
+    for col in df.columns:
+        base = get_base_name(col)
+        if base != col and base_targets[base] == 1:
+            base_map[col] = base
+    if base_map:
+        datasets[fname] = df.rename(columns=base_map)
+        base_renamed_total += len(base_map)
+print(f'Base-variable pass: renamed {base_renamed_total} columns across {len(datasets)} datasets')
+
 
 # ── Insert 'Days since dx' after renaming ─────────────────────────────────────
 # Formula: [form completion date] – [Clinical dx date]  (integer days)
@@ -336,6 +369,10 @@ for _, row in cross_ref.iterrows():
     var          = row['Variable Name']
     original_col = row['_matched_col']
     renamed_col  = rename_maps.get(fname, {}).get(original_col, original_col)
+    # If the base-variable pass renamed this column further, use the new name
+    base_col = get_base_name(renamed_col)
+    if base_col != renamed_col and fname in datasets and base_col in datasets[fname].columns:
+        renamed_col = base_col
     version_to_data[var] = (fname, renamed_col)
 
 def pool_series(all_versions_str: str) -> pd.Series:
@@ -433,7 +470,8 @@ print(f'  Categorical Stats: {len(cat_df):,} rows')
 
 
 # ── Export table for All Variables (drop internal columns) ────────────────────
-table = cross_ref.drop(columns=['base_name', 'is_versioned', '_matched_file', '_matched_col'])
+table = cross_ref.drop(columns=['is_versioned', '_matched_file', '_matched_col'])
+table.insert(1, 'Base Variable', table.pop('base_name'))
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
