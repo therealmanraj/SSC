@@ -38,9 +38,9 @@ import openpyxl
 from openpyxl.styles import PatternFill, Font, Alignment
 from openpyxl.utils import get_column_letter
 
-ROOT     = os.path.dirname(os.path.abspath(__file__))
-SRC_PATH = os.path.join(ROOT, 'New Data to do', 'PD_Diagnosis.xlsx')
-OUT_PATH = os.path.join(ROOT, 'pd_diagnosis.xlsx')
+ROOT     = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+SRC_PATH = os.path.join(ROOT, 'pending', 'PD_Diagnosis.xlsx')
+OUT_PATH = os.path.join(ROOT, 'output', 'pd_diagnosis.xlsx')
 
 # ── Load data ──────────────────────────────────────────────────────────────────
 data = pd.read_excel(SRC_PATH, sheet_name='Data')

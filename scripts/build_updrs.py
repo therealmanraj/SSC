@@ -20,9 +20,9 @@ import openpyxl
 from openpyxl.styles import PatternFill, Font, Alignment
 from openpyxl.utils import get_column_letter
 
-ROOT     = os.path.dirname(os.path.abspath(__file__))
+ROOT     = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(ROOT, 'data')
-OUT_PATH = os.path.join(ROOT, 'updrs_analysis.xlsx')
+OUT_PATH = os.path.join(ROOT, 'output', 'updrs_analysis.xlsx')
 
 ADMIN_COLS = {'Project key', 'Event Name', 'Complete?', 'Source Form'}
 

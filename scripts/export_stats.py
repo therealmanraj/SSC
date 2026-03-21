@@ -18,10 +18,10 @@ from openpyxl.styles import PatternFill, Font, Alignment
 from openpyxl.utils import get_column_letter
 
 # ── Paths ─────────────────────────────────────────────────────────────────────
-ROOT       = os.path.dirname(os.path.abspath(__file__))
+ROOT       = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR   = os.path.join(ROOT, 'data')
-DICT_PATH  = os.path.join(ROOT, 'Help Files', '2. COPN_DataDictionary_2025-09-24_annotated.xlsx')
-EXCEL_PATH = os.path.join(ROOT, 'cross_reference.xlsx')
+DICT_PATH  = os.path.join(ROOT, 'reference', '2. COPN_DataDictionary_2025-09-24_annotated.xlsx')
+EXCEL_PATH = os.path.join(ROOT, 'output', 'cross_reference.xlsx')
 
 
 # ── Forms to drop entirely ────────────────────────────────────────────────────

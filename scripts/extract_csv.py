@@ -7,8 +7,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-password = os.getenv("PASSWORD")
-encrypted_file = 'SSC - Full report - UPDATED.xlsx'
+ROOT           = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+password       = os.getenv("PASSWORD")
+encrypted_file = os.path.join(ROOT, 'source', 'SSC - Full report - UPDATED.xlsx')
 decrypted_file = io.BytesIO()
 
 with open(encrypted_file, 'rb') as f:
@@ -23,4 +24,4 @@ sheets = pd.read_excel(decrypted_file, sheet_name=None)
 for name, df in sheets.items():
     print(f"--- {name} ---")
     print(df.head())
-    df.to_csv(f'data/{name}')
+    df.to_csv(os.path.join(ROOT, 'data', name))
