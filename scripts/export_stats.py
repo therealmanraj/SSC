@@ -545,7 +545,8 @@ _c['spec_text'] = _c[SPEC_COL]
 
 merged = _e.merge(_c, on='Project key', how='outer')
 
-flag_rows = []
+flag_rows   = []
+review_rows = []   # all participants — flagged or not
 for _, r in merged.iterrows():
     pid        = r['Project key']
     enrol      = r['enrol_group']
@@ -605,24 +606,53 @@ for _, r in merged.iterrows():
             f'Determined = {det_label} ({int(det_code)}) but 1a is missing'
         )
 
+    # ── Build not-flagged reason ──────────────────────────────────────────────
+    if not flags_for_row:
+        if pd.isna(enrol) and pd.isna(det_code):
+            not_flagged = 'No enrollment or clinical data'
+        elif pd.isna(enrol):
+            not_flagged = 'No enrollment record — cannot check against clinical'
+        elif pd.isna(det_code):
+            not_flagged = f'{enrol} enrolled but no Determined Dx in clinical data'
+        elif enrol == 'PD' and det_code == 0:
+            not_flagged = 'PD enrolled, Determined = PD (0): consistent'
+        elif enrol == 'AP' and det_code != 0:
+            not_flagged = f'AP enrolled, Determined = {det_label} ({int(det_code)}): consistent'
+        elif enrol == 'HC':
+            not_flagged = 'HC enrolled: diagnosis flags not applicable'
+        else:
+            not_flagged = 'No inconsistencies detected'
+    else:
+        not_flagged = ''
+
+    base_row = {
+        'Project key':          pid,
+        'Enrolment Group':      r[ENROL_COL] if pd.notna(r[ENROL_COL]) else '',
+        'Determined Dx (code)': int(det_code) if pd.notna(det_code) else '',
+        'Determined Dx':        det_label or '',
+        'Was Dx with PD?':      pd_yn or '',
+        '1a Alternative Dx':    alt_text if pd.notna(r[ALT_COL]) else '',
+        'Other (specify)':      str(spec_text) if pd.notna(spec_text) else '',
+        'Status':               'Flagged' if flags_for_row else 'OK',
+        'N Flags':              len(flags_for_row),
+        'Flags':                ' | '.join(flags_for_row),
+        'Not Flagged Reason':   not_flagged,
+    }
+    review_rows.append(base_row)
+
     if flags_for_row:
-        flag_rows.append({
-            'Project key':         pid,
-            'Enrolment Group':     r[ENROL_COL] if pd.notna(r[ENROL_COL]) else '',
-            'Determined Dx (code)':int(det_code) if pd.notna(det_code) else '',
-            'Determined Dx':       det_label or '',
-            'Was Dx with PD?':     pd_yn or '',
-            '1a Alternative Dx':   alt_text if pd.notna(r[ALT_COL]) else '',
-            'Other (specify)':     str(spec_text) if pd.notna(spec_text) else '',
-            'N Flags':             len(flags_for_row),
-            'Flags':               ' | '.join(flags_for_row),
-        })
+        flag_rows.append({k: v for k, v in base_row.items()
+                          if k not in ('Status', 'Not Flagged Reason')})
 
 diag_flags_df = pd.DataFrame(flag_rows).sort_values(
     ['N Flags', 'Project key'], ascending=[False, True]
 )
+diag_review_df = pd.DataFrame(review_rows).sort_values(
+    ['N Flags', 'Project key'], ascending=[False, True]
+)
 _n_total = merged['Project key'].nunique()
 print(f'  Flagged participants: {len(diag_flags_df):,} ({len(diag_flags_df)/_n_total*100:.1f}%)')
+print(f'  Diagnosis Review total: {len(diag_review_df):,} participants')
 
 
 # ── Sheet name helper (Excel max = 31 chars, no special chars) ────────────────
@@ -673,6 +703,50 @@ comp_matrix = comp_matrix.sort_values(
 print(f'  Completeness Matrix: {len(comp_matrix):,} participants × {len(form_cols_matrix)} forms')
 
 
+# ── Enrollment Coverage ────────────────────────────────────────────────────────
+# For every project key in Enrollment: which forms do they appear in (have data)?
+# Participants missing from a form may simply not have data there.
+print('Building enrollment coverage...')
+
+# Keys present in each form (after skeleton-row removal)
+_form_keys: dict[str, set] = {
+    ds: set(df['Project key'].dropna().unique())
+    for ds, df in datasets.items()
+    if 'Project key' in df.columns and ds != 'Enrollement'
+}
+_coverage_forms = sorted(_form_keys.keys())
+
+# Full enrollment list with group label (_e has enrol_group added by _short_enrol)
+_enroll_all = _e[['Project key', ENROL_COL, 'enrol_group']].drop_duplicates('Project key')
+
+coverage_rows = []
+for _, er in _enroll_all.iterrows():
+    pid   = er['Project key']
+    group = er['enrol_group'] or ''
+    row: dict = {
+        'Project key':    pid,
+        'Enrolment Group': er[ENROL_COL] if pd.notna(er[ENROL_COL]) else '',
+        'Enrolment Status': group,
+    }
+    n_present = n_missing = 0
+    for form in _coverage_forms:
+        present = pid in _form_keys[form]
+        row[form] = 'Yes' if present else 'No'
+        if present: n_present += 1
+        else:       n_missing += 1
+    row['N Forms Present'] = n_present
+    row['N Forms Missing'] = n_missing
+    coverage_rows.append(row)
+
+coverage_df = (
+    pd.DataFrame(coverage_rows)
+    .sort_values(['Enrolment Status', 'N Forms Missing', 'Project key'],
+                 ascending=[True, False, True])
+    .reset_index(drop=True)
+)
+print(f'  Enrollment Coverage: {len(coverage_df):,} participants × {len(_coverage_forms)} forms')
+
+
 # ── Completeness by Diagnosis Summary ─────────────────────────────────────────
 summary_rows = []
 groups = comp_matrix.groupby('Enrolment Group', dropna=False)
@@ -702,8 +776,10 @@ with pd.ExcelWriter(EXCEL_PATH, engine='openpyxl') as writer:
     num_df.to_excel(writer,          sheet_name='Numerical Stats',       index=False)
     cat_df.to_excel(writer,          sheet_name='Categorical Stats',     index=False)
     diag_flags_df.to_excel(writer,   sheet_name='Diagnosis Flags',       index=False)
+    diag_review_df.to_excel(writer,  sheet_name='Diagnosis Review',      index=False)
     comp_matrix.to_excel(writer,     sheet_name='Completeness Matrix',   index=False)
     comp_by_diag.to_excel(writer,    sheet_name='Completeness by Dx',    index=False)
+    coverage_df.to_excel(writer,     sheet_name='Enrollment Coverage',   index=False)
     # One sheet per cleaned dataset (skeleton rows removed, columns renamed)
     for ds_name, df in sorted(datasets.items()):
         df.to_excel(writer, sheet_name=safe_sheet_name(ds_name), index=False)
@@ -861,9 +937,60 @@ style_stats_sheet(wb['Numerical Stats'],   missing_col_idx=8)
 style_stats_sheet(wb['Categorical Stats'], missing_col_idx=8)
 # Diagnosis flags sheet
 style_flags_sheet(wb['Diagnosis Flags'])
+
+def style_review_sheet(ws):
+    """Flagged rows red/orange at top; OK rows green; header dark."""
+    OK_FILL = PatternFill('solid', fgColor='C6EFCE')
+    for cell in ws[1]:
+        cell.fill = HDR_FILL
+        cell.font = HDR_FONT
+        cell.alignment = Alignment(horizontal='left', vertical='center', wrap_text=False)
+    ws.freeze_panes = 'A2'
+    status_col = next(
+        (i + 1 for i, cell in enumerate(ws[1]) if cell.value == 'Status'), None
+    )
+    n_flags_col = next(
+        (i + 1 for i, cell in enumerate(ws[1]) if cell.value == 'N Flags'), None
+    )
+    for row in ws.iter_rows(min_row=2):
+        status = row[status_col - 1].value if status_col else ''
+        try:
+            n = int(row[n_flags_col - 1].value or 0) if n_flags_col else 0
+        except (ValueError, TypeError):
+            n = 0
+        if status == 'Flagged':
+            rf = FLAG_RED if n > 1 else FLAG_ORANGE
+        else:
+            rf = OK_FILL
+        for cell in row:
+            cell.fill = rf
+    autowidth(ws)
+
+style_review_sheet(wb['Diagnosis Review'])
 # Completeness sheets
 style_completeness_matrix(wb['Completeness Matrix'])
 style_completeness_summary(wb['Completeness by Dx'])
+
+def style_coverage_sheet(ws):
+    """Header dark; Yes = green, No = red; freeze first 3 cols."""
+    YES_FILL = PatternFill('solid', fgColor='C6EFCE')
+    NO_FILL  = PatternFill('solid', fgColor='FFC7CE')
+    for cell in ws[1]:
+        cell.fill = HDR_FILL
+        cell.font = HDR_FONT
+        cell.alignment = Alignment(horizontal='left', vertical='center', wrap_text=False)
+    ws.freeze_panes = 'D2'   # freeze Project key + 2 group cols
+    for row in ws.iter_rows(min_row=2):
+        for cell in row:
+            if cell.value == 'Yes':
+                cell.fill = YES_FILL
+            elif cell.value == 'No':
+                cell.fill = NO_FILL
+            else:
+                cell.fill = EVEN_FILL
+    autowidth(ws)
+
+style_coverage_sheet(wb['Enrollment Coverage'])
 # Dataset sheets
 for ds_name in sorted(datasets.keys()):
     style_data_sheet(wb[safe_sheet_name(ds_name)])
