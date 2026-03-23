@@ -489,7 +489,9 @@ print('Building diagnosis flags...')
 _enroll = load_dataset('Enrollement')
 _clin   = load_dataset('Clinical')
 
-ENROL_COL = [c for c in _enroll.columns if 'nrolment' in c and 'roup' in c][0]
+ENROL_COL    = [c for c in _enroll.columns if 'nrolment' in c and 'roup' in c][0]
+STATUS_COL   = [c for c in _enroll.columns if 'Study Status' in c][0]
+WITHDRAW_COL = [c for c in _enroll.columns if 'Date of withdrawal' in c][0]
 DIAG_COL  = [c for c in _clin.columns   if 'Determined diagnosis' in c][0]
 PD_COL    = [c for c in _clin.columns   if 'Was the patient diagnosed' in c][0]
 ALT_COL   = [c for c in _clin.columns   if c.strip().startswith("1a.")][0]
@@ -532,8 +534,9 @@ def _alt_code(val):
     return None  # Not Determined / Other
 
 # Build one merged row per participant
-_e = _enroll[['Project key', ENROL_COL]].copy()
+_e = _enroll[['Project key', ENROL_COL, STATUS_COL, WITHDRAW_COL]].copy()
 _e['enrol_group'] = _e[ENROL_COL].apply(_short_enrol)
+_e['is_withdrawn'] = _e[STATUS_COL].str.contains('Withdraw', na=False)
 
 _c = _clin[['Project key', DIAG_COL, PD_COL, ALT_COL, SPEC_COL]].copy()
 _c['det_code']  = pd.to_numeric(_c[DIAG_COL], errors='coerce')
@@ -628,6 +631,8 @@ for _, r in merged.iterrows():
     base_row = {
         'Project key':          pid,
         'Enrolment Group':      r[ENROL_COL] if pd.notna(r[ENROL_COL]) else '',
+        'Study Status':         r[STATUS_COL] if pd.notna(r.get(STATUS_COL)) else '',
+        'Withdrawal Date':      str(r[WITHDRAW_COL])[:10] if pd.notna(r.get(WITHDRAW_COL)) else '',
         'Determined Dx (code)': int(det_code) if pd.notna(det_code) else '',
         'Determined Dx':        det_label or '',
         'Was Dx with PD?':      pd_yn or '',
@@ -747,6 +752,37 @@ coverage_df = (
 print(f'  Enrollment Coverage: {len(coverage_df):,} participants × {len(_coverage_forms)} forms')
 
 
+# ── Withdrawn Summary ─────────────────────────────────────────────────────────
+# All withdrawn participants with per-form data coverage for manager review.
+print('Building withdrawn summary...')
+
+withdrawn_rows = []
+for _, er in _e[_e['is_withdrawn']].drop_duplicates('Project key').iterrows():
+    pid   = er['Project key']
+    row: dict = {
+        'Project key':    pid,
+        'Enrolment Group': er[ENROL_COL] if pd.notna(er[ENROL_COL]) else '',
+        'Study Status':   er[STATUS_COL] if pd.notna(er[STATUS_COL]) else '',
+        'Withdrawal Date': str(er[WITHDRAW_COL])[:10] if pd.notna(er[WITHDRAW_COL]) else '',
+    }
+    n_with_data = 0
+    for form, fkeys in sorted(_form_keys.items()):
+        has_data = pid in fkeys
+        row[form] = 'Yes' if has_data else 'No'
+        if has_data:
+            n_with_data += 1
+    row['N Forms With Data'] = n_with_data
+    row['N Forms Missing']   = len(_form_keys) - n_with_data
+    withdrawn_rows.append(row)
+
+withdrawn_df = (
+    pd.DataFrame(withdrawn_rows)
+    .sort_values(['N Forms Missing', 'Project key'], ascending=[False, True])
+    .reset_index(drop=True)
+)
+print(f'  Withdrawn Summary: {len(withdrawn_df):,} participants × {len(_form_keys)} forms')
+
+
 # ── Completeness by Diagnosis Summary ─────────────────────────────────────────
 summary_rows = []
 groups = comp_matrix.groupby('Enrolment Group', dropna=False)
@@ -780,6 +816,7 @@ with pd.ExcelWriter(EXCEL_PATH, engine='openpyxl') as writer:
     comp_matrix.to_excel(writer,     sheet_name='Completeness Matrix',   index=False)
     comp_by_diag.to_excel(writer,    sheet_name='Completeness by Dx',    index=False)
     coverage_df.to_excel(writer,     sheet_name='Enrollment Coverage',   index=False)
+    withdrawn_df.to_excel(writer,    sheet_name='Withdrawn Summary',     index=False)
     # One sheet per cleaned dataset (skeleton rows removed, columns renamed)
     for ds_name, df in sorted(datasets.items()):
         df.to_excel(writer, sheet_name=safe_sheet_name(ds_name), index=False)
@@ -991,6 +1028,7 @@ def style_coverage_sheet(ws):
     autowidth(ws)
 
 style_coverage_sheet(wb['Enrollment Coverage'])
+style_coverage_sheet(wb['Withdrawn Summary'])
 # Dataset sheets
 for ds_name in sorted(datasets.keys()):
     style_data_sheet(wb[safe_sheet_name(ds_name)])
