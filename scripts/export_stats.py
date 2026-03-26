@@ -492,6 +492,8 @@ _clin   = load_dataset('Clinical')
 ENROL_COL    = [c for c in _enroll.columns if 'nrolment' in c and 'roup' in c][0]
 STATUS_COL   = [c for c in _enroll.columns if 'Study Status' in c][0]
 WITHDRAW_COL = [c for c in _enroll.columns if 'Date of withdrawal' in c][0]
+SITE_COL     = [c for c in _enroll.columns if c.strip() == 'Site:'][0]
+REGISTRY_COL = [c for c in _enroll.columns if 'Registry Status' in c][0]
 DIAG_COL  = [c for c in _clin.columns   if 'Determined diagnosis' in c][0]
 PD_COL    = [c for c in _clin.columns   if 'Was the patient diagnosed' in c][0]
 ALT_COL   = [c for c in _clin.columns   if c.strip().startswith("1a.")][0]
@@ -534,7 +536,7 @@ def _alt_code(val):
     return None  # Not Determined / Other
 
 # Build one merged row per participant
-_e = _enroll[['Project key', ENROL_COL, STATUS_COL, WITHDRAW_COL]].copy()
+_e = _enroll[['Project key', ENROL_COL, STATUS_COL, WITHDRAW_COL, SITE_COL, REGISTRY_COL]].copy()
 _e['enrol_group'] = _e[ENROL_COL].apply(_short_enrol)
 _e['is_withdrawn'] = _e[STATUS_COL].str.contains('Withdraw', na=False)
 
@@ -803,6 +805,44 @@ comp_by_diag = pd.DataFrame(summary_rows)
 print(f'  Completeness by Diagnosis: {len(comp_by_diag):,} rows')
 
 
+# ── Enrollment Metrics ─────────────────────────────────────────────────────────
+# One row per unique (Site, Enrolment Group, Study Status, Registry Status)
+# combination, showing participant counts.
+print('Building enrollment metrics...')
+
+_em = _e.drop_duplicates('Project key')[[
+    'Project key', SITE_COL, ENROL_COL, STATUS_COL, REGISTRY_COL
+]].copy()
+_em.columns = ['Project key', 'Site', 'Enrolment Group', 'Study Status', 'Registry Status']
+for col in ['Site', 'Enrolment Group', 'Study Status', 'Registry Status']:
+    _em[col] = _em[col].fillna('Unknown / Missing')
+
+enroll_metrics_df = (
+    _em.groupby(['Site', 'Enrolment Group', 'Study Status', 'Registry Status'], dropna=False)
+    .size()
+    .reset_index(name='N Participants')
+    .sort_values(['Site', 'Enrolment Group', 'Study Status', 'Registry Status'])
+    .reset_index(drop=True)
+)
+
+# Append a totals row per site
+site_totals = (
+    enroll_metrics_df.groupby('Site')['N Participants'].sum()
+    .reset_index()
+    .assign(**{'Enrolment Group': 'TOTAL', 'Study Status': '', 'Registry Status': ''})
+)[['Site', 'Enrolment Group', 'Study Status', 'Registry Status', 'N Participants']]
+
+grand_total = pd.DataFrame([{
+    'Site': 'GRAND TOTAL', 'Enrolment Group': '', 'Study Status': '',
+    'Registry Status': '', 'N Participants': _em['Project key'].nunique()
+}])
+
+enroll_metrics_df = pd.concat(
+    [enroll_metrics_df, site_totals, grand_total], ignore_index=True
+)
+print(f'  Enrollment Metrics: {len(enroll_metrics_df):,} rows')
+
+
 # ── Write all sheets in one pass ─────────────────────────────────────────────
 print(f'Writing {EXCEL_PATH}...')
 with pd.ExcelWriter(EXCEL_PATH, engine='openpyxl') as writer:
@@ -817,6 +857,7 @@ with pd.ExcelWriter(EXCEL_PATH, engine='openpyxl') as writer:
     comp_by_diag.to_excel(writer,    sheet_name='Completeness by Dx',    index=False)
     coverage_df.to_excel(writer,     sheet_name='Enrollment Coverage',   index=False)
     withdrawn_df.to_excel(writer,    sheet_name='Withdrawn Summary',     index=False)
+    enroll_metrics_df.to_excel(writer, sheet_name='Enrollment Metrics', index=False)
     # One sheet per cleaned dataset (skeleton rows removed, columns renamed)
     for ds_name, df in sorted(datasets.items()):
         df.to_excel(writer, sheet_name=safe_sheet_name(ds_name), index=False)
@@ -1029,6 +1070,29 @@ def style_coverage_sheet(ws):
 
 style_coverage_sheet(wb['Enrollment Coverage'])
 style_coverage_sheet(wb['Withdrawn Summary'])
+
+def style_metrics_sheet(ws):
+    TOTAL_FILL  = PatternFill('solid', fgColor='FFF2CC')   # yellow for site totals
+    GRAND_FILL  = PatternFill('solid', fgColor='D9E1F2')   # blue for grand total
+    for cell in ws[1]:
+        cell.fill = HDR_FILL
+        cell.font = HDR_FONT
+        cell.alignment = Alignment(horizontal='left', vertical='center')
+    ws.freeze_panes = 'A2'
+    for i, row in enumerate(ws.iter_rows(min_row=2), start=1):
+        first = row[0].value or ''
+        second = row[1].value or ''
+        if str(first) == 'GRAND TOTAL':
+            fill = GRAND_FILL
+        elif str(second) == 'TOTAL':
+            fill = TOTAL_FILL
+        else:
+            fill = EVEN_FILL if i % 2 == 0 else ODD_FILL
+        for cell in row:
+            cell.fill = fill
+    autowidth(ws)
+
+style_metrics_sheet(wb['Enrollment Metrics'])
 # Dataset sheets
 for ds_name in sorted(datasets.keys()):
     style_data_sheet(wb[safe_sheet_name(ds_name)])
