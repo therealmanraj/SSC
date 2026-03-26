@@ -843,6 +843,50 @@ enroll_metrics_df = pd.concat(
 print(f'  Enrollment Metrics: {len(enroll_metrics_df):,} rows')
 
 
+# ── MoCA Combined ─────────────────────────────────────────────────────────────
+# Stack MoCA / MoCA-1 / MoCA-2 (identical columns, same form administered at
+# different timepoints). Sort chronologically by date per participant and assign
+# Assessment # (1 = earliest, 2 = second, 3 = third).
+print('Building MoCA Combined...')
+
+_MOCA_SOURCES = ['MoCA', 'MoCA-1', 'MoCA-2']
+_ADMIN_MOCA   = {'Project key', 'Event Name', 'Complete?'}
+
+_moca_parts = []
+for _src in _MOCA_SOURCES:
+    if _src not in datasets:
+        continue
+    _df = datasets[_src].copy()
+    _data_cols = [c for c in _df.columns if c not in _ADMIN_MOCA]
+    _df = _df[_df[_data_cols].notna().any(axis=1)].copy()
+    _df.insert(1, 'Source Form', _src)
+    _moca_parts.append(_df)
+
+moca_combined = pd.concat(_moca_parts, ignore_index=True)
+
+# Date column (standardised name after rename pass)
+_moca_date_col = next(
+    (c for c in moca_combined.columns if 'date' in c.lower() and 'moca' in c.lower()),
+    None
+)
+if _moca_date_col:
+    moca_combined[_moca_date_col] = pd.to_datetime(
+        moca_combined[_moca_date_col], errors='coerce'
+    )
+    moca_combined = moca_combined.sort_values(
+        ['Project key', _moca_date_col], na_position='last'
+    ).reset_index(drop=True)
+    moca_combined.insert(
+        2, 'Assessment #',
+        moca_combined.groupby('Project key').cumcount() + 1
+    )
+else:
+    moca_combined = moca_combined.sort_values('Project key').reset_index(drop=True)
+
+print(f'  MoCA Combined: {len(moca_combined):,} rows '
+      f'({moca_combined["Project key"].nunique():,} unique participants)')
+
+
 # ── Write all sheets in one pass ─────────────────────────────────────────────
 print(f'Writing {EXCEL_PATH}...')
 with pd.ExcelWriter(EXCEL_PATH, engine='openpyxl') as writer:
@@ -858,6 +902,7 @@ with pd.ExcelWriter(EXCEL_PATH, engine='openpyxl') as writer:
     coverage_df.to_excel(writer,     sheet_name='Enrollment Coverage',   index=False)
     withdrawn_df.to_excel(writer,    sheet_name='Withdrawn Summary',     index=False)
     enroll_metrics_df.to_excel(writer, sheet_name='Enrollment Metrics', index=False)
+    moca_combined.to_excel(writer,   sheet_name='MoCA Combined',         index=False)
     # One sheet per cleaned dataset (skeleton rows removed, columns renamed)
     for ds_name, df in sorted(datasets.items()):
         df.to_excel(writer, sheet_name=safe_sheet_name(ds_name), index=False)
@@ -1093,6 +1138,29 @@ def style_metrics_sheet(ws):
     autowidth(ws)
 
 style_metrics_sheet(wb['Enrollment Metrics'])
+
+def style_moca_combined(ws):
+    SOURCE_FILLS = {
+        'MoCA':   PatternFill('solid', fgColor='DDEEFF'),   # light blue
+        'MoCA-1': PatternFill('solid', fgColor='DFF0D8'),   # light green
+        'MoCA-2': PatternFill('solid', fgColor='FFF2CC'),   # light yellow
+    }
+    for cell in ws[1]:
+        cell.fill = HDR_FILL
+        cell.font = HDR_FONT
+        cell.alignment = Alignment(horizontal='left', vertical='center')
+    ws.freeze_panes = 'B2'
+    src_col_idx = next(
+        (i for i, cell in enumerate(ws[1], start=1) if cell.value == 'Source Form'), None
+    )
+    for row in ws.iter_rows(min_row=2):
+        src = row[src_col_idx - 1].value if src_col_idx else None
+        fill = SOURCE_FILLS.get(src, ODD_FILL)
+        for cell in row:
+            cell.fill = fill
+    autowidth(ws)
+
+style_moca_combined(wb['MoCA Combined'])
 # Dataset sheets
 for ds_name in sorted(datasets.keys()):
     style_data_sheet(wb[safe_sheet_name(ds_name)])
