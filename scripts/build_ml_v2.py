@@ -59,6 +59,9 @@ os.makedirs(PLOT_DIR, exist_ok=True)
 
 DIAG_LABEL     = {0:'PD', 1:'PSP', 2:'MSA', 3:'CBS', 4:'DLB', 6:'ET', 7:'RBD', 10:'HC'}
 AP_CODES       = {1, 2, 3, 4, 6, 7}
+# ET (6) excluded from Task B — it is a tremor disorder, not parkinsonism,
+# and its features overlap enough with PD to add noise to the PD vs AP boundary.
+AP_CODES_NO_ET = {1, 2, 3, 4, 7}
 
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
@@ -96,6 +99,8 @@ enroll = load('Enrollement')
 clin   = load('Clinical')
 moca   = load('MoCA')
 updrs  = load('MDS-UPDRS')
+updrs3 = load('UPDRS 1.2 part 3')
+med    = load('Medication')
 scopa  = load('SCOPA')
 demo   = load('Demographic')
 neuro  = load('Neuropsychological')
@@ -269,6 +274,94 @@ for feat_name, col in neuro_map.items():
         feats[feat_name] = feats['Project key'].map(
             neuro_one.set_index('Project key')[col].apply(pd.to_numeric, errors='coerce')
         )
+
+# ── 7. UPDRS 1.2 Part 3 subscores (tremor, rigidity, asymmetry) ──────────────
+# These are the most clinically relevant features for PD vs AP differentiation:
+#   Tremor/Rigidity ratio — PD is tremor-dominant; PSP/MSA are rigidity/axial dominant
+#   Laterality Index      — PD classically asymmetric; AP subtypes more symmetric
+updrs3_one = updrs3.drop_duplicates('Project key').copy()
+updrs3_map = {
+    'u3_tremor_total':       first_col(updrs3_one, 'tremor total'),
+    'u3_rigidity_total':     first_col(updrs3_one, 'rigidity total'),
+    'u3_tremor_rigid_ratio': first_col(updrs3_one, 'ratio tremor'),
+    'u3_right_score':        first_col(updrs3_one, 'right part score'),
+    'u3_left_score':         first_col(updrs3_one, 'left part score'),
+    'u3_laterality_index':   first_col(updrs3_one, 'laterality index'),
+}
+for feat_name, col in updrs3_map.items():
+    if col:
+        feats[feat_name] = feats['Project key'].map(
+            updrs3_one.set_index('Project key')[col].apply(pd.to_numeric, errors='coerce')
+        )
+
+# Asymmetry score: absolute difference / sum — 0=symmetric, 1=fully asymmetric
+_r = feats['Project key'].map(
+    updrs3_one.set_index('Project key').get(updrs3_map['u3_right_score'],
+    pd.Series(dtype=float)).apply(pd.to_numeric, errors='coerce')
+) if updrs3_map['u3_right_score'] else pd.Series(np.nan, index=feats.index)
+_l = feats['Project key'].map(
+    updrs3_one.set_index('Project key').get(updrs3_map['u3_left_score'],
+    pd.Series(dtype=float)).apply(pd.to_numeric, errors='coerce')
+) if updrs3_map['u3_left_score'] else pd.Series(np.nan, index=feats.index)
+_sum = _r + _l
+feats['u3_asymmetry'] = np.where(_sum > 0, (_r - _l).abs() / _sum, np.nan)
+
+# ── 8. MDS-UPDRS Part III: PIGD vs Tremor-Dominant subscores ─────────────────
+# PIGD items: 3.10 (gait), 3.11 (freezing), 3.12 (postural stability),
+#             3.13 (posture), 3.14 (global spontaneity)
+# Tremor items: 3.15 (postural), 3.16 (kinetic), 3.17 (rest), 3.18 (constancy)
+updrs_one = updrs.drop_duplicates('Project key').copy()
+_pigd_cols   = [c for c in updrs_one.columns if
+                any(f'3_{n} ' in c or f'3_{n}\n' in c or c.strip().endswith(f'3_{n}')
+                    or f'Updrs_3_{n}' in c for n in ('10','11','12','13','14'))]
+_tremor_cols = [c for c in updrs_one.columns if
+                any(f'Updrs_3_{n}' in c for n in ('15','16','17','18'))]
+
+if _pigd_cols:
+    feats['updrs_pigd'] = feats['Project key'].map(
+        updrs_one.set_index('Project key')[_pigd_cols]
+        .apply(pd.to_numeric, errors='coerce').mean(axis=1)
+    )
+if _tremor_cols:
+    feats['updrs_tremor_items'] = feats['Project key'].map(
+        updrs_one.set_index('Project key')[_tremor_cols]
+        .apply(pd.to_numeric, errors='coerce').mean(axis=1)
+    )
+if _pigd_cols and _tremor_cols:
+    # TD score: tremor mean / (tremor mean + PIGD mean) — 1=pure tremor, 0=pure PIGD
+    _t = feats['updrs_tremor_items'].fillna(0)
+    _p = feats['updrs_pigd'].fillna(0)
+    feats['updrs_td_score'] = np.where((_t + _p) > 0, _t / (_t + _p), np.nan)
+
+# ── 9. Medication — levodopa response (key PD vs AP differentiator) ───────────
+# PD classically responds well to levodopa; AP subtypes generally do not.
+med_one      = med.drop_duplicates('Project key').copy()
+levo_resp_col = first_col(med_one, 'significant reduction')
+levo_cur_col  = first_col(med_one, 'Select all current')
+levo_dose_cols = [c for c in med_one.columns
+                  if 'levodopa dosage' in c.lower() or 'lévodopa' in c.lower()]
+
+if levo_resp_col:
+    feats['levo_response'] = feats['Project key'].map(
+        med_one.set_index('Project key')[levo_resp_col].apply(
+            lambda v: 1.0 if 'yes' in str(v).lower() or 'oui' in str(v).lower()
+            else (0.0 if 'no/' in str(v).lower() or 'non/' in str(v).lower()
+                  else (0.5 if 'uncertain' in str(v).lower() else np.nan))
+        )
+    )
+
+if levo_cur_col:
+    feats['on_levodopa'] = feats['Project key'].map(
+        med_one.set_index('Project key')[levo_cur_col].apply(
+            lambda v: 1 if 'levodopa' in str(v).lower() else (0 if pd.notna(v) else np.nan)
+        )
+    )
+
+if levo_dose_cols:
+    _dose = med_one.set_index('Project key')[levo_dose_cols].apply(
+        pd.to_numeric, errors='coerce'
+    ).sum(axis=1, min_count=1)
+    feats['total_levo_dose'] = feats['Project key'].map(_dose)
 
 # Final feature list — drop any column with zero coverage (useless for modelling)
 FEAT_COLS = [
@@ -454,13 +547,14 @@ run_task('Task A — PD vs HC', df_a, 'label', FEAT_COLS, cw='balanced')
 # ═══════════════════════════════════════════════════════════════════════════════
 # TASK B — PD vs AP
 # ═══════════════════════════════════════════════════════════════════════════════
-df_b = df[df['label'].isin(['PD']) | df['det_code'].isin(AP_CODES)].copy()
+# ET (code 6) excluded — not a parkinsonism, adds noise to PD vs AP boundary
+df_b = df[df['det_code'].isin({0} | AP_CODES_NO_ET)].copy()
 df_b['task_label'] = df_b['det_code'].apply(
-    lambda c: 'PD' if c == 0 else ('AP' if c in AP_CODES else np.nan)
+    lambda c: 'PD' if c == 0 else ('AP' if c in AP_CODES_NO_ET else np.nan)
 )
 n_pd = (df_b['task_label'] == 'PD').sum()
 n_ap = (df_b['task_label'] == 'AP').sum()
-run_task('Task B — PD vs AP', df_b, 'task_label', FEAT_COLS,
+run_task('Task B — PD vs AP (ET excluded)', df_b, 'task_label', FEAT_COLS,
          cw='balanced', xgb_scale_pos=round(n_pd / max(n_ap, 1)))
 
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -482,6 +576,18 @@ df_d['task_label'] = df_d['det_code'].apply(
 )
 run_task('Task D — AP subtype (exploratory)', df_d, 'task_label', FEAT_COLS,
          n_splits=3, cw='balanced', multiclass=True)
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# TASK E — HC vs Everything Else (PD + AP combined)
+# ═══════════════════════════════════════════════════════════════════════════════
+df_e = df[df['label'].notna()].copy()
+df_e['task_label'] = df_e['det_code'].apply(
+    lambda c: 'HC' if c == 10 else ('Non-HC' if pd.notna(c) else np.nan)
+)
+n_hc      = (df_e['task_label'] == 'HC').sum()
+n_non_hc  = (df_e['task_label'] == 'Non-HC').sum()
+run_task('Task E — HC vs Non-HC (PD+AP)', df_e, 'task_label', FEAT_COLS,
+         cw='balanced', xgb_scale_pos=round(n_non_hc / max(n_hc, 1)))
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -513,7 +619,8 @@ notes = pd.DataFrame([
     ['Task A', 'PD vs HC',           'Binary',     f'{(df_a["label"]=="PD").sum()} PD / {(df_a["label"]=="HC").sum()} HC',  'class_weight=balanced'],
     ['Task B', 'PD vs AP',           'Binary',     f'{n_pd} PD / {n_ap} AP',                                                 'class_weight=balanced + XGB scale_pos_weight'],
     ['Task C', 'PD vs HC vs AP',     '3-class',    'PD / HC / AP combined',                                                  'class_weight=balanced'],
-    ['Task D', 'AP subtype',         'Multiclass', 'PSP / MSA / DLB+other  — EXPLORATORY, N~100',                           '3-fold CV only, do not overinterpret'],
+    ['Task D', 'AP subtype',         'Multiclass', 'PSP / MSA / DLB+other  — EXPLORATORY, N~100',  '3-fold CV only, do not overinterpret'],
+    ['Task E', 'HC vs Non-HC',       'Binary',     f'{n_hc} HC / {n_non_hc} Non-HC (PD+AP)',         'class_weight=balanced + XGB scale_pos_weight'],
 ], columns=['Task', 'Description', 'Type', 'Classes/N', 'Notes'])
 
 out_path = os.path.join(OUT_DIR, 'ml_results_v2.xlsx')
@@ -535,6 +642,7 @@ TASK_FILLS = {
     'Task B': PatternFill('solid', fgColor='FFF2CC'),
     'Task C': PatternFill('solid', fgColor='D9E1F2'),
     'Task D': PatternFill('solid', fgColor='FCE4D6'),
+    'Task E': PatternFill('solid', fgColor='E2EFDA'),
 }
 GROUP_FILLS = {
     'Clinical':          PatternFill('solid', fgColor='DFF0D8'),
