@@ -492,6 +492,7 @@ _clin   = load_dataset('Clinical')
 ENROL_COL    = [c for c in _enroll.columns if 'nrolment' in c and 'roup' in c][0]
 STATUS_COL   = [c for c in _enroll.columns if 'Study Status' in c][0]
 WITHDRAW_COL = [c for c in _enroll.columns if 'Date of withdrawal' in c][0]
+COMPLETE_COL = [c for c in _enroll.columns if 'Complete' in c][0]
 SITE_COL     = [c for c in _enroll.columns if c.strip() == 'Site:'][0]
 REGISTRY_COL = [c for c in _enroll.columns if 'Registry Status' in c][0]
 DIAG_COL  = [c for c in _clin.columns   if 'Determined diagnosis' in c][0]
@@ -536,9 +537,19 @@ def _alt_code(val):
     return None  # Not Determined / Other
 
 # Build one merged row per participant
-_e = _enroll[['Project key', ENROL_COL, STATUS_COL, WITHDRAW_COL, SITE_COL, REGISTRY_COL]].copy()
+_e = _enroll[['Project key', ENROL_COL, STATUS_COL, WITHDRAW_COL, SITE_COL, REGISTRY_COL, COMPLETE_COL]].copy()
 _e['enrol_group'] = _e[ENROL_COL].apply(_short_enrol)
 _e['is_withdrawn'] = _e[STATUS_COL].str.contains('Withdraw', na=False)
+
+# 251 HC project keys: Enrolled + Complete + Healthy Control group
+# Used to assign Determined Dx = 10 in the Clinical (Labelled) sheet.
+HC_KEYS: set = set(
+    _e[
+        _e[STATUS_COL].str.contains('Enrolled', na=False) &
+        (_e[COMPLETE_COL] == 'Complete') &
+        (_e[ENROL_COL].str.contains('Healthy', na=False))
+    ]['Project key']
+)
 
 _c = _clin[['Project key', DIAG_COL, PD_COL, ALT_COL, SPEC_COL]].copy()
 _c['det_code']  = pd.to_numeric(_c[DIAG_COL], errors='coerce')
@@ -887,6 +898,79 @@ print(f'  MoCA Combined: {len(moca_combined):,} rows '
       f'({moca_combined["Project key"].nunique():,} unique participants)')
 
 
+# ── Clinical (Labelled) ────────────────────────────────────────────────────────
+# Adds Healthy Control as Determined Dx = 10.
+# Source: 251 participants who are Enrolled + Complete + HC in Enrollment.
+# Their Determined Dx column is empty in Clinical (HCs have no PD diagnosis).
+# Label map: 0=PD 1=PSP 2=MSA 3=CBS 4=DLB 6=ET 7=RBD 10=HC
+print('Building Clinical (Labelled)...')
+
+DIAG_LABEL_EXT = {**DIAG_LABEL, 10: 'HC'}
+
+# Start from the raw Clinical CSV (before skeleton-row removal) so all 251 HC
+# participants are included even if their rows had no other clinical data.
+_clin_raw_all = pd.read_csv(os.path.join(DATA_DIR, 'Clinical'))
+if _clin_raw_all.columns[0].startswith('Unnamed'):
+    _clin_raw_all = _clin_raw_all.iloc[:, 1:]
+_clin_labelled = _clin_raw_all.copy()
+
+# Apply the same column rename map used for datasets['Clinical']
+_clin_rmap = rename_maps.get('Clinical', {})
+_clin_labelled = _clin_labelled.rename(columns=_clin_rmap)
+
+# Apply base-variable rename (same second pass as datasets)
+_clin_base_rmap = {
+    col: get_base_name(col)
+    for col in _clin_labelled.columns
+    if get_base_name(col) != col
+}
+# Only rename if no conflict (same rule as the main pass)
+_clin_base_targets = {}
+for col in _clin_labelled.columns:
+    b = get_base_name(col)
+    _clin_base_targets[b] = _clin_base_targets.get(b, 0) + 1
+_clin_labelled = _clin_labelled.rename(columns={
+    col: b for col, b in _clin_base_rmap.items()
+    if _clin_base_targets[b] == 1
+})
+
+# Locate Determined Dx column (post-rename)
+_diag_renamed = next(
+    (c for c in _clin_labelled.columns if 'determined' in c.lower()), None
+)
+
+if _diag_renamed:
+    # Assign HC = 10 for the 251 enrolled+complete HC project keys
+    _clin_labelled[_diag_renamed] = _clin_labelled.apply(
+        lambda r: 10
+        if (r['Project key'] in HC_KEYS and pd.isna(r[_diag_renamed]))
+        else r[_diag_renamed],
+        axis=1,
+    )
+    _diag_idx = _clin_labelled.columns.get_loc(_diag_renamed)
+    _clin_labelled.insert(
+        _diag_idx + 1,
+        'Determined Dx (label)',
+        pd.to_numeric(_clin_labelled[_diag_renamed], errors='coerce').map(DIAG_LABEL_EXT),
+    )
+    # Remove rows that are still fully skeleton (non-HC, no data at all)
+    _admin_clin = {'Project key', 'Event Name', 'Complete?', 'Determined Dx (label)'}
+    _data_clin  = [c for c in _clin_labelled.columns if c not in _admin_clin]
+    _clin_labelled = _clin_labelled[
+        (_clin_labelled['Project key'].isin(HC_KEYS)) |
+        (_clin_labelled[_data_clin].notna().any(axis=1))
+    ].reset_index(drop=True)
+
+    _hc_labelled = (_clin_labelled[_diag_renamed] == 10).sum()
+    print(f'  HC rows labelled 10: {_hc_labelled}  |  '
+          f'Total rows: {len(_clin_labelled)}  |  '
+          f'Remaining empty dx: {_clin_labelled[_diag_renamed].isna().sum()}')
+else:
+    print('  WARNING: could not locate Determined Dx column — sheet written unlabelled')
+
+clin_labelled_df = _clin_labelled
+
+
 # ── Write all sheets in one pass ─────────────────────────────────────────────
 print(f'Writing {EXCEL_PATH}...')
 with pd.ExcelWriter(EXCEL_PATH, engine='openpyxl') as writer:
@@ -903,6 +987,7 @@ with pd.ExcelWriter(EXCEL_PATH, engine='openpyxl') as writer:
     withdrawn_df.to_excel(writer,    sheet_name='Withdrawn Summary',     index=False)
     enroll_metrics_df.to_excel(writer, sheet_name='Enrollment Metrics', index=False)
     moca_combined.to_excel(writer,   sheet_name='MoCA Combined',         index=False)
+    clin_labelled_df.to_excel(writer, sheet_name='Clinical (Labelled)',  index=False)
     # One sheet per cleaned dataset (skeleton rows removed, columns renamed)
     for ds_name, df in sorted(datasets.items()):
         df.to_excel(writer, sheet_name=safe_sheet_name(ds_name), index=False)
@@ -1161,6 +1246,38 @@ def style_moca_combined(ws):
     autowidth(ws)
 
 style_moca_combined(wb['MoCA Combined'])
+
+def style_clin_labelled(ws):
+    HC_FILL  = PatternFill('solid', fgColor='D9E1F2')   # blue  — HC (10)
+    PD_FILL  = PatternFill('solid', fgColor='DFF0D8')   # green — PD (0)
+    AP_FILL  = PatternFill('solid', fgColor='FFF2CC')   # yellow — AP subtypes
+    AP_CODES = {1, 2, 3, 4, 6, 7}
+    for cell in ws[1]:
+        cell.fill = HDR_FILL
+        cell.font = HDR_FONT
+        cell.alignment = Alignment(horizontal='left', vertical='center')
+    ws.freeze_panes = 'A2'
+    # Find the label column index
+    label_idx = next(
+        (i for i, cell in enumerate(ws[1], start=1) if cell.value == 'Determined Dx (label)'),
+        None
+    )
+    for row in ws.iter_rows(min_row=2):
+        label_val = row[label_idx - 1].value if label_idx else None
+        if label_val == 'HC':
+            fill = HC_FILL
+        elif label_val == 'PD':
+            fill = PD_FILL
+        elif label_val in {DIAG_LABEL_EXT.get(k) for k in AP_CODES}:
+            fill = AP_FILL
+        else:
+            fill = None
+        if fill:
+            for cell in row:
+                cell.fill = fill
+    autowidth(ws)
+
+style_clin_labelled(wb['Clinical (Labelled)'])
 # Dataset sheets
 for ds_name in sorted(datasets.keys()):
     style_data_sheet(wb[safe_sheet_name(ds_name)])
