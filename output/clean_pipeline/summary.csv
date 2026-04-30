@@ -1,0 +1,61 @@
+group,form,ids,note
+full_enrolled,enrollment,2286,
+full_enrolled,Apathy Evaluation Informant,0,complete
+full_enrolled,Apathy Evaluation Self,0,complete
+full_enrolled,Apathy Scale,186,complete
+full_enrolled,BAI,63,complete
+full_enrolled,BDII,467,complete
+full_enrolled,Clinical,1778,complete
+full_enrolled,Demographic,2005,complete
+full_enrolled,EHI,478,complete
+full_enrolled,Epidemiological,2286,no_completion_col
+full_enrolled,Fatigue Severity Scale,185,complete
+full_enrolled,FrSBe,0,complete
+full_enrolled,MBIC,441,complete
+full_enrolled,MBIC (CaPRI),367,complete
+full_enrolled,MDS-UPDRS,1625,complete
+full_enrolled,MDS-UPDRS-1,22,complete
+full_enrolled,Medication,1782,complete
+full_enrolled,MoCA,1825,complete
+full_enrolled,MoCA-1,35,complete
+full_enrolled,MoCA-2,1,complete
+full_enrolled,Neuropsychological,385,complete
+full_enrolled,Neuropsychological (CaPRI),135,complete
+full_enrolled,Neuropsychological V02,35,complete
+full_enrolled,PDQ 39,462,complete
+full_enrolled,PDQ 8,190,complete
+full_enrolled,Parkinson Severity Scale,189,complete
+full_enrolled,SCOPA,188,complete
+full_enrolled,Schwab & England,185,complete
+full_enrolled,Timed Up Go,190,complete
+full_enrolled,UPDRS 1.2 part 3,160,complete
+enrolled_and_partial,enrollment,2896,
+enrolled_and_partial,Apathy Evaluation Informant,0,complete
+enrolled_and_partial,Apathy Evaluation Self,0,complete
+enrolled_and_partial,Apathy Scale,186,complete
+enrolled_and_partial,BAI,63,complete
+enrolled_and_partial,BDII,467,complete
+enrolled_and_partial,Clinical,1949,complete
+enrolled_and_partial,Demographic,2173,complete
+enrolled_and_partial,EHI,478,complete
+enrolled_and_partial,Epidemiological,2896,no_completion_col
+enrolled_and_partial,Fatigue Severity Scale,185,complete
+enrolled_and_partial,FrSBe,0,complete
+enrolled_and_partial,MBIC,441,complete
+enrolled_and_partial,MBIC (CaPRI),367,complete
+enrolled_and_partial,MDS-UPDRS,1679,complete
+enrolled_and_partial,MDS-UPDRS-1,27,complete
+enrolled_and_partial,Medication,1945,complete
+enrolled_and_partial,MoCA,1946,complete
+enrolled_and_partial,MoCA-1,50,complete
+enrolled_and_partial,MoCA-2,1,complete
+enrolled_and_partial,Neuropsychological,466,complete
+enrolled_and_partial,Neuropsychological (CaPRI),135,complete
+enrolled_and_partial,Neuropsychological V02,36,complete
+enrolled_and_partial,PDQ 39,535,complete
+enrolled_and_partial,PDQ 8,190,complete
+enrolled_and_partial,Parkinson Severity Scale,189,complete
+enrolled_and_partial,SCOPA,188,complete
+enrolled_and_partial,Schwab & England,185,complete
+enrolled_and_partial,Timed Up Go,204,complete
+enrolled_and_partial,UPDRS 1.2 part 3,183,complete
