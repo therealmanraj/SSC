@@ -1,191 +1,191 @@
-Unnamed: 0,Project key,Event Name,Questionnaire completed:     Questionnaire rempli:,How is the test completed?     Comment le test est-il complété?,Le patient a-t-il/elle fait le test:,Temps (secondes),Temps (secondes)2,Temps (secondes)3,"Si fluctuations motrices pendant le test, le patient se considère-t-il/elle:",Complete?
-668,SSC0669,Baseline (Arm 1: C-OPN),2023-05-05,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,13.19,,,OFF,Complete
-671,SSC0672,Baseline (Arm 1: C-OPN),2022-03-11,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,09:39:00,,,ON,Complete
-971,SSC0972,Baseline (Arm 1: C-OPN),2021-07-07,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"9,7",,,ON,Complete
-980,SSC0981,Baseline (Arm 1: C-OPN),2021-05-21,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"6,8",,,ON,Complete
-982,SSC0983,Baseline (Arm 1: C-OPN),2021-07-30,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"6,8",,,ON,Complete
-991,SSC0992,Baseline (Arm 1: C-OPN),2021-06-04,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,6.1,,,ON,Complete
-993,SSC0994,Baseline (Arm 1: C-OPN),2021-02-19,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,8.6,,,ON,Complete
-998,SSC0999,Baseline (Arm 1: C-OPN),2021-09-03,In-person during a study visit/En personne lors d'une visite d'étude,Utilisation d'une aide à la marche,,,"15,8",ON,Complete
-999,SSC1000,Baseline (Arm 1: C-OPN),,,Sans pousser - sans aide,"6,7",,,ON,Complete
-1000,SSC1001,Baseline (Arm 1: C-OPN),2021-07-23,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"7,6",,,ON,Complete
-1001,SSC1002,Baseline (Arm 1: C-OPN),2021-06-16,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,8.1,,,ON,Complete
-1002,SSC1003,Baseline (Arm 1: C-OPN),2021-06-11,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"18,4",,,ON,Complete
-1003,SSC1004,Baseline (Arm 1: C-OPN),2021-06-11,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"9,1",,,ON,Complete
-1004,SSC1005,Baseline (Arm 1: C-OPN),,,Sans pousser - sans aide,"8,0",,,ON,Complete
-1005,SSC1006,Baseline (Arm 1: C-OPN),,,Sans pousser - sans aide,"10,9",,,ON,Complete
-1008,SSC1009,Baseline (Arm 1: C-OPN),2021-06-04,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"8,8",,,ON,Complete
-1011,SSC1012,Baseline (Arm 1: C-OPN),2022-06-08,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,8.98,,,,Complete
-1014,SSC1015,Baseline (Arm 1: C-OPN),2021-05-03,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,13.5,,,ON,Complete
-1015,SSC1016,Baseline (Arm 1: C-OPN),2021-06-25,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"7,4",,,ON,Complete
-1016,SSC1017,Baseline (Arm 1: C-OPN),2021-06-25,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"7,9",,,ON,Complete
-1017,SSC1018,Baseline (Arm 1: C-OPN),2021-06-25,In-person during a study visit/En personne lors d'une visite d'étude,Utilisation d'une aide à la marche,,,"14,6",OFF,Complete
-1019,SSC1020,Baseline (Arm 1: C-OPN),,,Sans pousser - sans aide,"7,7",,,OFF,Complete
-1020,SSC1021,Baseline (Arm 1: C-OPN),2021-07-02,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"8,2",,,ON,Complete
-1021,SSC1022,Baseline (Arm 1: C-OPN),2021-07-02,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"10,5",,,OFF,Complete
-1023,SSC1024,Baseline (Arm 1: C-OPN),2021-07-02,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"12,4",,,Entre deux,Complete
-1024,SSC1025,Baseline (Arm 1: C-OPN),2021-07-02,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"11,1",,,ON,Complete
-1027,SSC1028,Baseline (Arm 1: C-OPN),2021-02-05,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,12.3,,,ON,Complete
-1029,SSC1030,Baseline (Arm 1: C-OPN),,,Sans pousser - sans aide,"6,9",,,ON,Complete
-1030,SSC1031,Baseline (Arm 1: C-OPN),2021-07-09,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"9,4",,,ON,Complete
-1031,SSC1032,Baseline (Arm 1: C-OPN),2021-07-09,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,6.8,,,ON,Complete
-1032,SSC1033,Baseline (Arm 1: C-OPN),2021-07-16,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"9,4",,,ON,Complete
-1033,SSC1034,Baseline (Arm 1: C-OPN),2021-07-09,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"8,1",,,ON,Complete
-1035,SSC1036,Baseline (Arm 1: C-OPN),2021-08-25,In-person during a study visit/En personne lors d'une visite d'étude,Utilisation d'une aide à la marche,,,"19,2",Entre deux,Complete
-1037,SSC1038,Baseline (Arm 1: C-OPN),,,Sans pousser - sans aide,"7,9",,,ON,Complete
-1039,SSC1040,Baseline (Arm 1: C-OPN),2021-07-21,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"6,5",,,ON,Complete
-1040,SSC1041,Baseline (Arm 1: C-OPN),2021-07-23,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"8,1",,,ON,Complete
-1041,SSC1042,Baseline (Arm 1: C-OPN),2021-08-20,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,8.3,,,Entre deux,Complete
-1055,SSC1056,Baseline (Arm 1: C-OPN),2021-09-22,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"10,1",,,ON,Complete
-1056,SSC1057,Baseline (Arm 1: C-OPN),2021-07-30,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"11,4",,,ON,Complete
-1057,SSC1058,Baseline (Arm 1: C-OPN),2021-07-30,In-person during a study visit/En personne lors d'une visite d'étude,Utilisation d'une aide à la marche,,,"10,7",ON,Complete
-1061,SSC1062,Baseline (Arm 1: C-OPN),2021-09-03,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"6,3",,,ON,Complete
-1062,SSC1063,Baseline (Arm 1: C-OPN),2021-10-01,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"15,7",,,ON,Complete
-1063,SSC1064,Baseline (Arm 1: C-OPN),2021-02-26,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"12,6",,,ON,Complete
-1068,SSC1069,Baseline (Arm 1: C-OPN),2021-03-19,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,19.5,,,OFF,Complete
-1071,SSC1072,Baseline (Arm 1: C-OPN),,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"7,5",,,ON,Complete
-1076,SSC1077,Baseline (Arm 1: C-OPN),2021-04-23,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,9.5,,,,Complete
-1082,SSC1083,Baseline (Arm 1: C-OPN),2021-08-20,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10.7,,,Entre deux,Complete
-1083,SSC1084,Baseline (Arm 1: C-OPN),2021-05-07,In-person during a study visit/En personne lors d'une visite d'étude,Utilisation d'une aide à la marche,,,"14,0",ON,Complete
-1085,SSC1086,Baseline (Arm 1: C-OPN),2021-08-27,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,8.1,,,ON,Complete
-1086,SSC1087,Baseline (Arm 1: C-OPN),2021-09-29,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,9.3,,,ON,Complete
-1087,SSC1088,Baseline (Arm 1: C-OPN),2021-02-12,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10,,,ON,Complete
-1089,SSC1090,Baseline (Arm 1: C-OPN),2021-08-27,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,8.4,,,ON,Complete
-1090,SSC1091,Baseline (Arm 1: C-OPN),2021-08-27,In-person during a study visit/En personne lors d'une visite d'étude,Utilisation d'une aide à la marche,,,"17,1",ON,Complete
-1091,SSC1092,Baseline (Arm 1: C-OPN),2021-09-03,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"10,3",,,Entre deux,Complete
-1092,SSC1093,Baseline (Arm 1: C-OPN),2021-09-03,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,11.2,,,ON,Complete
-1095,SSC1096,Baseline (Arm 1: C-OPN),2021-03-19,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,7.1,,,ON,Complete
-1096,SSC1097,Baseline (Arm 1: C-OPN),2021-05-07,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"11,7",,,ON,Complete
-1097,SSC1098,Baseline (Arm 1: C-OPN),2021-03-12,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10.5,,,Entre deux,Complete
-1098,SSC1099,Baseline (Arm 1: C-OPN),2021-09-24,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,8.7,,,ON,Complete
-1099,SSC1100,Baseline (Arm 1: C-OPN),2021-10-01,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,6,,,ON,Complete
-1102,SSC1103,Baseline (Arm 1: C-OPN),2021-09-29,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,8.1,,,ON,Complete
-1105,SSC1106,Baseline (Arm 1: C-OPN),2021-10-01,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"8,4",,,ON,Complete
-1106,SSC1107,Baseline (Arm 1: C-OPN),2021-10-01,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"8,2",,,ON,Complete
-1107,SSC1108,Baseline (Arm 1: C-OPN),2021-10-01,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,9.8,,,ON,Complete
-1109,SSC1110,Baseline (Arm 1: C-OPN),2021-02-05,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,7.7,,,ON,Complete
-1110,SSC1111,Baseline (Arm 1: C-OPN),2021-10-08,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,7,,,ON,Complete
-1112,SSC1113,Baseline (Arm 1: C-OPN),2021-04-09,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,9.3,,,ON,Complete
-1132,SSC1133,Baseline (Arm 1: C-OPN),2021-02-19,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,12.2,,,Entre deux,Complete
-1135,SSC1136,Baseline (Arm 1: C-OPN),,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"8,2",,,,Complete
-1164,SSC1165,Baseline (Arm 1: C-OPN),2022-04-29,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,12:05:00,,,ON,Complete
-1167,SSC1168,Baseline (Arm 1: C-OPN),2025-05-30,In-person during a study visit/En personne lors d'une visite d'étude,Repoussant la chaise,,12.57,,OFF,Complete
-1171,SSC1172,Baseline (Arm 1: C-OPN),2021-04-16,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,8,,,ON,Complete
-1173,SSC1174,Baseline (Arm 1: C-OPN),2022-08-26,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,9.58,,,,Complete
-1174,SSC1175,Baseline (Arm 1: C-OPN),2022-03-18,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10.34,,,ON,Complete
-1176,SSC1177,Baseline (Arm 1: C-OPN),2022-02-23,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,08:55:00,,,ON,Complete
-1177,SSC1178,Baseline (Arm 1: C-OPN),2022-03-09,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,12:10:00,,,ON,Complete
-1178,SSC1179,Baseline (Arm 1: C-OPN),2022-03-18,In-person during a study visit/En personne lors d'une visite d'étude,Repoussant la chaise,,9.1,,,Complete
-1183,SSC1184,Baseline (Arm 1: C-OPN),2022-02-22,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,08:09:00,,,,Complete
-1185,SSC1186,Baseline (Arm 1: C-OPN),2022-02-23,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,08:15:00,,,ON,Complete
-1187,SSC1188,Baseline (Arm 1: C-OPN),2022-02-18,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,0.3506944444444444,,,ON,Complete
-1188,SSC1189,Baseline (Arm 1: C-OPN),2023-09-27,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,12.98,,,,Complete
-1203,SSC1204,Baseline (Arm 1: C-OPN),2024-05-24,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,13.33,,,ON,Complete
-1204,SSC1205,Baseline (Arm 1: C-OPN),2022-03-16,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,08:12:00,,,,Complete
-1205,SSC1206,Baseline (Arm 1: C-OPN),2024-05-24,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10.05,,,ON,Complete
-1212,SSC1213,Baseline (Arm 1: C-OPN),2022-06-01,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,8.67,,,,Complete
-1217,SSC1218,Baseline (Arm 1: C-OPN),2023-04-27,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,12.2,,,ON,Complete
-1223,SSC1224,Baseline (Arm 1: C-OPN),,,Sans pousser - sans aide,"5,8",,,ON,Complete
-1241,SSC1242,Baseline (Arm 1: C-OPN),2022-09-09,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,0.39375,,,OFF,Complete
-1244,SSC1245,Baseline (Arm 1: C-OPN),2023-02-24,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,11:45:00,,,,Complete
-1246,SSC1247,Baseline (Arm 1: C-OPN),2022-09-16,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10:32:00,,,ON,Complete
-1262,SSC1263,Baseline (Arm 1: C-OPN),2024-05-30,In-person during a study visit/En personne lors d'une visite d'étude,Repoussant la chaise,,15.57,,OFF,Complete
-1268,SSC1269,Baseline (Arm 1: C-OPN),2022-11-04,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,11:25:00,,,ON,Complete
-1270,SSC1271,Baseline (Arm 1: C-OPN),2023-01-27,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,14.22,,,ON,Complete
-1274,SSC1275,Baseline (Arm 1: C-OPN),2023-03-23,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,12.1,,,,Complete
-1276,SSC1277,Baseline (Arm 1: C-OPN),2023-01-25,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,11:02:00,,,ON,Complete
-1279,SSC1280,Baseline (Arm 1: C-OPN),2023-02-08,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"9,57",,,ON,Complete
-1282,SSC1283,Baseline (Arm 1: C-OPN),2023-02-08,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"9,57",,,,Complete
-1283,SSC1284,Baseline (Arm 1: C-OPN),2023-01-25,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10:11:00,,,ON,Complete
-1297,SSC1298,Baseline (Arm 1: C-OPN),2023-08-11,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10.14,,,,Complete
-1299,SSC1300,Baseline (Arm 1: C-OPN),2023-02-10,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10.57,,,ON,Complete
-1301,SSC1302,Baseline (Arm 1: C-OPN),2023-08-18,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10.49,,,ON,Complete
-1313,SSC1314,Baseline (Arm 1: C-OPN),2023-04-21,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,11.15,,,,Complete
-1325,SSC1326,Baseline (Arm 1: C-OPN),2023-10-13,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10.92,,,ON,Complete
-1328,SSC1329,Baseline (Arm 1: C-OPN),2023-08-02,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,13:49:00,,,,Complete
-1335,SSC1336,Baseline (Arm 1: C-OPN),2023-05-26,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,12:12:00,,,OFF,Complete
-1337,SSC1338,Baseline (Arm 1: C-OPN),2023-10-13,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,11.25,,,ON,Complete
-1338,SSC1339,Baseline (Arm 1: C-OPN),2023-11-14,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,13:36:00,,,ON,Complete
-1339,SSC1340,Baseline (Arm 1: C-OPN),2023-09-06,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,8.69,,,,Complete
-1342,SSC1343,Baseline (Arm 1: C-OPN),2023-11-03,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,22.05,,,,Complete
-1347,SSC1348,Baseline (Arm 1: C-OPN),2023-08-09,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,14.06,,,,Complete
-1350,SSC1351,Baseline (Arm 1: C-OPN),2023-06-09,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,13:07:00,,,ON,Complete
-1356,SSC1357,Baseline (Arm 1: C-OPN),2023-10-07,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,16.48,,,OFF,Complete
-1357,SSC1358,Baseline (Arm 1: C-OPN),2023-09-08,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10.74,,,ON,Complete
-1360,SSC1361,Baseline (Arm 1: C-OPN),2023-09-26,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,9.99,,,ON,Complete
-1395,SSC1396,Baseline (Arm 1: C-OPN),2023-08-11,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,12.13,,,,Complete
-1401,SSC1402,Baseline (Arm 1: C-OPN),2023-11-02,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,15.81,,,,Complete
-1402,SSC1403,Baseline (Arm 1: C-OPN),2023-08-28,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,15.39,,,,Complete
-1410,SSC1411,Baseline (Arm 1: C-OPN),2023-08-25,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,8.7,,,ON,Complete
-1421,SSC1422,Baseline (Arm 1: C-OPN),2023-11-14,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,13.89,,,ON,Complete
-1431,SSC1432,Baseline (Arm 1: C-OPN),2023-10-13,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,13.77,,,,Complete
-1439,SSC1440,Baseline (Arm 1: C-OPN),2023-11-08,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,15.94,,,OFF,Complete
-1447,SSC1448,Baseline (Arm 1: C-OPN),2023-11-08,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,8.27,,,ON,Complete
-1448,SSC1449,Baseline (Arm 1: C-OPN),2023-11-29,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,11.01,,,,Complete
-1449,SSC1450,Baseline (Arm 1: C-OPN),2024-02-09,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10.6,,,OFF,Complete
-1455,SSC1456,Baseline (Arm 1: C-OPN),2024-02-09,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,19.45,,,OFF,Complete
-1461,SSC1462,Baseline (Arm 1: C-OPN),2023-11-21,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,8.85,,,,Complete
-1464,SSC1465,Baseline (Arm 1: C-OPN),2023-10-27,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,11.51,,,,Complete
-1465,SSC1466,Baseline (Arm 1: C-OPN),2023-10-16,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10.21,,,ON,Complete
-1467,SSC1468,Baseline (Arm 1: C-OPN),2023-11-22,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,12.14,,,ON,Complete
-1471,SSC1472,Baseline (Arm 1: C-OPN),2023-11-21,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10.57,,,ON,Complete
-1472,SSC1473,Baseline (Arm 1: C-OPN),2024-03-15,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,9.6,,,OFF,Complete
-1477,SSC1478,Baseline (Arm 1: C-OPN),2024-02-23,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,16.45,,,ON,Complete
-1494,SSC1495,Baseline (Arm 1: C-OPN),2024-03-15,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,7.43,,,,Complete
-1495,SSC1496,Baseline (Arm 1: C-OPN),2023-11-22,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,9.58,,,ON,Complete
-1497,SSC1498,Baseline (Arm 1: C-OPN),2024-02-16,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,8.55,,,ON,Complete
-1500,SSC1501,Baseline (Arm 1: C-OPN),2023-11-30,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,14.22,,,ON,Complete
-1504,SSC1505,Baseline (Arm 1: C-OPN),2024-02-09,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10.23,,,,Complete
-1506,SSC1507,Baseline (Arm 1: C-OPN),2024-03-01,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,11.07,,,ON,Complete
-1513,SSC1514,Baseline (Arm 1: C-OPN),2024-02-23,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,8.33,,,ON,Complete
-1519,SSC1520,Baseline (Arm 1: C-OPN),2024-03-22,In-person during a study visit/En personne lors d'une visite d'étude,Repoussant la chaise,,15.57,,ON,Complete
-1521,SSC1522,Baseline (Arm 1: C-OPN),2024-02-26,Online/En ligne,Sans pousser - sans aide,12.82,,,OFF,Complete
-1522,SSC1523,Baseline (Arm 1: C-OPN),2024-03-01,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,11.45,,,ON,Complete
-1523,SSC1524,Baseline (Arm 1: C-OPN),2024-05-31,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,7.97,,,ON,Complete
-1524,SSC1525,Baseline (Arm 1: C-OPN),2024-03-15,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10.19,,,OFF,Complete
-1527,SSC1528,Baseline (Arm 1: C-OPN),2024-03-11,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,11.94,,,ON,Complete
-1528,SSC1529,Baseline (Arm 1: C-OPN),2024-07-18,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,11.74,,,ON,Complete
-1531,SSC1532,Baseline (Arm 1: C-OPN),2024-03-22,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,8.44,,,ON,Complete
-1533,SSC1534,Baseline (Arm 1: C-OPN),2024-05-17,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,11.87,,,ON,Complete
-1535,SSC1536,Baseline (Arm 1: C-OPN),2024-04-19,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,9.77,,,Entre deux,Complete
-1537,SSC1538,Baseline (Arm 1: C-OPN),2024-04-26,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,11.34,,,ON,Complete
-1539,SSC1540,Baseline (Arm 1: C-OPN),2024-04-26,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10.92,,,OFF,Complete
-1540,SSC1541,Baseline (Arm 1: C-OPN),2024-05-03,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,11.4,,,ON,Complete
-1543,SSC1544,Baseline (Arm 1: C-OPN),2024-05-10,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,13.96,,,,Complete
-1549,SSC1550,Baseline (Arm 1: C-OPN),2024-06-07,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10.13,,,,Complete
-1552,SSC1553,Baseline (Arm 1: C-OPN),2024-06-11,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,11.02,,,ON,Complete
-1553,SSC1554,Baseline (Arm 1: C-OPN),2024-06-19,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,11.07,,,ON,Complete
-1554,SSC1555,Baseline (Arm 1: C-OPN),2024-05-23,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,12.41,,,OFF,Complete
-1555,SSC1556,Baseline (Arm 1: C-OPN),2024-05-21,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10.98,,,,Complete
-1557,SSC1558,Baseline (Arm 1: C-OPN),2024-08-09,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,18.52,,,OFF,Complete
-1558,SSC1559,Baseline (Arm 1: C-OPN),2024-05-23,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,8.07,,,ON,Complete
-1562,SSC1563,Baseline (Arm 1: C-OPN),2025-05-02,Over the phone/Par téléphone,Sans pousser - sans aide,8.55,,,ON,Complete
-1564,SSC1565,Baseline (Arm 1: C-OPN),2024-06-26,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,6.56,,,ON,Complete
-1566,SSC1567,Baseline (Arm 1: C-OPN),2024-08-22,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,11.15,,,ON,Complete
-1575,SSC1576,Baseline (Arm 1: C-OPN),2024-08-28,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10.79,,,ON,Complete
-1580,SSC1581,Baseline (Arm 1: C-OPN),2024-09-27,In-person during a study visit/En personne lors d'une visite d'étude,Repoussant la chaise,,13.87,,OFF,Complete
-1584,SSC1585,Baseline (Arm 1: C-OPN),2024-11-15,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,7.18,,,OFF,Complete
-1595,SSC1596,Baseline (Arm 1: C-OPN),2025-02-14,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,12.11,,,ON,Complete
-1598,SSC1599,Baseline (Arm 1: C-OPN),2025-02-14,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,9.1,,,,Complete
-1600,SSC1601,Baseline (Arm 1: C-OPN),2025-05-30,Over the phone/Par téléphone,Sans pousser - sans aide,12.3,,,OFF,Complete
-1602,SSC1603,Baseline (Arm 1: C-OPN),2025-05-16,Over the phone/Par téléphone,Sans pousser - sans aide,6.31,,,,Complete
-1606,SSC1607,Baseline (Arm 1: C-OPN),2025-05-16,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,14.38,,,,Complete
-1607,SSC1608,Baseline (Arm 1: C-OPN),2025-05-23,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,9.35,,,ON,Complete
-1615,SSC1616,Baseline (Arm 1: C-OPN),2025-06-27,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,9.9,,,ON,Complete
-1629,SSC1630,Baseline (Arm 1: C-OPN),2025-08-08,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,11.48,,,ON,Complete
-1905,SSC1906,Baseline (Arm 1: C-OPN),2025-01-17,In-person during a study visit/En personne lors d'une visite d'étude,Repoussant la chaise,,17.17,,OFF,Complete
-2125,SSC2126,Baseline (Arm 1: C-OPN),2021-04-16,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"10,9",,,Entre deux,Complete
-2154,SSC2155,Baseline (Arm 1: C-OPN),,,Sans pousser - sans aide,"9,2",,,ON,Complete
-2181,SSC2182,Baseline (Arm 1: C-OPN),2022-06-15,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,9.1,,,Entre deux,Complete
-2216,SSC2217,Baseline (Arm 1: C-OPN),2021-02-12,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,8.8,,,ON,Complete
-2239,SSC2240,Baseline (Arm 1: C-OPN),2021-02-12,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,9.6,,,ON,Complete
-2420,SSC2421,Baseline (Arm 1: C-OPN),,,Sans pousser - sans aide,10.9,,,Entre deux,Complete
-2436,SSC2437,Baseline (Arm 1: C-OPN),,,Sans pousser - sans aide,"12,7",,,OFF,Complete
-2468,SSC2469,Baseline (Arm 1: C-OPN),2022-05-25,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,9.27,,,ON,Complete
-2479,SSC2480,Baseline (Arm 1: C-OPN),2020-12-11,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"9,0",,,,Complete
-2490,SSC2491,Baseline (Arm 1: C-OPN),,,Sans pousser - sans aide,"10,3",,,ON,Complete
-2494,SSC2495,Baseline (Arm 1: C-OPN),2022-04-27,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10.1,,,ON,Complete
-2497,SSC2498,Baseline (Arm 1: C-OPN),2021-02-19,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,8.8,,,ON,Complete
-3118,SSC3119,Baseline (Arm 1: C-OPN),2023-08-31,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,9.56,,,ON,Complete
-3130,SSC3131,Baseline (Arm 1: C-OPN),2023-04-25,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10.82,,,ON,Complete
-3137,SSC3138,Baseline (Arm 1: C-OPN),,,Sans pousser - sans aide,"9,9",,,ON,Complete
+Project key,Event Name,Questionnaire completed:     Questionnaire rempli:,How is the test completed?     Comment le test est-il complété?,Le patient a-t-il/elle fait le test:,Temps (secondes),Temps (secondes)2,Temps (secondes)3,"Si fluctuations motrices pendant le test, le patient se considère-t-il/elle:",Complete?
+SSC0669,Baseline (Arm 1: C-OPN),2023-05-05,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,13.19,,,OFF,Complete
+SSC0672,Baseline (Arm 1: C-OPN),2022-03-11,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,09:39:00,,,ON,Complete
+SSC0972,Baseline (Arm 1: C-OPN),2021-07-07,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"9,7",,,ON,Complete
+SSC0981,Baseline (Arm 1: C-OPN),2021-05-21,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"6,8",,,ON,Complete
+SSC0983,Baseline (Arm 1: C-OPN),2021-07-30,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"6,8",,,ON,Complete
+SSC0992,Baseline (Arm 1: C-OPN),2021-06-04,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,6.1,,,ON,Complete
+SSC0994,Baseline (Arm 1: C-OPN),2021-02-19,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,8.6,,,ON,Complete
+SSC0999,Baseline (Arm 1: C-OPN),2021-09-03,In-person during a study visit/En personne lors d'une visite d'étude,Utilisation d'une aide à la marche,,,"15,8",ON,Complete
+SSC1000,Baseline (Arm 1: C-OPN),,,Sans pousser - sans aide,"6,7",,,ON,Complete
+SSC1001,Baseline (Arm 1: C-OPN),2021-07-23,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"7,6",,,ON,Complete
+SSC1002,Baseline (Arm 1: C-OPN),2021-06-16,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,8.1,,,ON,Complete
+SSC1003,Baseline (Arm 1: C-OPN),2021-06-11,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"18,4",,,ON,Complete
+SSC1004,Baseline (Arm 1: C-OPN),2021-06-11,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"9,1",,,ON,Complete
+SSC1005,Baseline (Arm 1: C-OPN),,,Sans pousser - sans aide,"8,0",,,ON,Complete
+SSC1006,Baseline (Arm 1: C-OPN),,,Sans pousser - sans aide,"10,9",,,ON,Complete
+SSC1009,Baseline (Arm 1: C-OPN),2021-06-04,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"8,8",,,ON,Complete
+SSC1012,Baseline (Arm 1: C-OPN),2022-06-08,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,8.98,,,,Complete
+SSC1015,Baseline (Arm 1: C-OPN),2021-05-03,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,13.5,,,ON,Complete
+SSC1016,Baseline (Arm 1: C-OPN),2021-06-25,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"7,4",,,ON,Complete
+SSC1017,Baseline (Arm 1: C-OPN),2021-06-25,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"7,9",,,ON,Complete
+SSC1018,Baseline (Arm 1: C-OPN),2021-06-25,In-person during a study visit/En personne lors d'une visite d'étude,Utilisation d'une aide à la marche,,,"14,6",OFF,Complete
+SSC1020,Baseline (Arm 1: C-OPN),,,Sans pousser - sans aide,"7,7",,,OFF,Complete
+SSC1021,Baseline (Arm 1: C-OPN),2021-07-02,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"8,2",,,ON,Complete
+SSC1022,Baseline (Arm 1: C-OPN),2021-07-02,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"10,5",,,OFF,Complete
+SSC1024,Baseline (Arm 1: C-OPN),2021-07-02,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"12,4",,,Entre deux,Complete
+SSC1025,Baseline (Arm 1: C-OPN),2021-07-02,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"11,1",,,ON,Complete
+SSC1028,Baseline (Arm 1: C-OPN),2021-02-05,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,12.3,,,ON,Complete
+SSC1030,Baseline (Arm 1: C-OPN),,,Sans pousser - sans aide,"6,9",,,ON,Complete
+SSC1031,Baseline (Arm 1: C-OPN),2021-07-09,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"9,4",,,ON,Complete
+SSC1032,Baseline (Arm 1: C-OPN),2021-07-09,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,6.8,,,ON,Complete
+SSC1033,Baseline (Arm 1: C-OPN),2021-07-16,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"9,4",,,ON,Complete
+SSC1034,Baseline (Arm 1: C-OPN),2021-07-09,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"8,1",,,ON,Complete
+SSC1036,Baseline (Arm 1: C-OPN),2021-08-25,In-person during a study visit/En personne lors d'une visite d'étude,Utilisation d'une aide à la marche,,,"19,2",Entre deux,Complete
+SSC1038,Baseline (Arm 1: C-OPN),,,Sans pousser - sans aide,"7,9",,,ON,Complete
+SSC1040,Baseline (Arm 1: C-OPN),2021-07-21,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"6,5",,,ON,Complete
+SSC1041,Baseline (Arm 1: C-OPN),2021-07-23,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"8,1",,,ON,Complete
+SSC1042,Baseline (Arm 1: C-OPN),2021-08-20,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,8.3,,,Entre deux,Complete
+SSC1056,Baseline (Arm 1: C-OPN),2021-09-22,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"10,1",,,ON,Complete
+SSC1057,Baseline (Arm 1: C-OPN),2021-07-30,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"11,4",,,ON,Complete
+SSC1058,Baseline (Arm 1: C-OPN),2021-07-30,In-person during a study visit/En personne lors d'une visite d'étude,Utilisation d'une aide à la marche,,,"10,7",ON,Complete
+SSC1062,Baseline (Arm 1: C-OPN),2021-09-03,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"6,3",,,ON,Complete
+SSC1063,Baseline (Arm 1: C-OPN),2021-10-01,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"15,7",,,ON,Complete
+SSC1064,Baseline (Arm 1: C-OPN),2021-02-26,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"12,6",,,ON,Complete
+SSC1069,Baseline (Arm 1: C-OPN),2021-03-19,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,19.5,,,OFF,Complete
+SSC1072,Baseline (Arm 1: C-OPN),,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"7,5",,,ON,Complete
+SSC1077,Baseline (Arm 1: C-OPN),2021-04-23,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,9.5,,,,Complete
+SSC1083,Baseline (Arm 1: C-OPN),2021-08-20,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10.7,,,Entre deux,Complete
+SSC1084,Baseline (Arm 1: C-OPN),2021-05-07,In-person during a study visit/En personne lors d'une visite d'étude,Utilisation d'une aide à la marche,,,"14,0",ON,Complete
+SSC1086,Baseline (Arm 1: C-OPN),2021-08-27,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,8.1,,,ON,Complete
+SSC1087,Baseline (Arm 1: C-OPN),2021-09-29,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,9.3,,,ON,Complete
+SSC1088,Baseline (Arm 1: C-OPN),2021-02-12,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10,,,ON,Complete
+SSC1090,Baseline (Arm 1: C-OPN),2021-08-27,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,8.4,,,ON,Complete
+SSC1091,Baseline (Arm 1: C-OPN),2021-08-27,In-person during a study visit/En personne lors d'une visite d'étude,Utilisation d'une aide à la marche,,,"17,1",ON,Complete
+SSC1092,Baseline (Arm 1: C-OPN),2021-09-03,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"10,3",,,Entre deux,Complete
+SSC1093,Baseline (Arm 1: C-OPN),2021-09-03,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,11.2,,,ON,Complete
+SSC1096,Baseline (Arm 1: C-OPN),2021-03-19,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,7.1,,,ON,Complete
+SSC1097,Baseline (Arm 1: C-OPN),2021-05-07,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"11,7",,,ON,Complete
+SSC1098,Baseline (Arm 1: C-OPN),2021-03-12,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10.5,,,Entre deux,Complete
+SSC1099,Baseline (Arm 1: C-OPN),2021-09-24,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,8.7,,,ON,Complete
+SSC1100,Baseline (Arm 1: C-OPN),2021-10-01,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,6,,,ON,Complete
+SSC1103,Baseline (Arm 1: C-OPN),2021-09-29,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,8.1,,,ON,Complete
+SSC1106,Baseline (Arm 1: C-OPN),2021-10-01,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"8,4",,,ON,Complete
+SSC1107,Baseline (Arm 1: C-OPN),2021-10-01,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"8,2",,,ON,Complete
+SSC1108,Baseline (Arm 1: C-OPN),2021-10-01,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,9.8,,,ON,Complete
+SSC1110,Baseline (Arm 1: C-OPN),2021-02-05,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,7.7,,,ON,Complete
+SSC1111,Baseline (Arm 1: C-OPN),2021-10-08,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,7,,,ON,Complete
+SSC1113,Baseline (Arm 1: C-OPN),2021-04-09,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,9.3,,,ON,Complete
+SSC1133,Baseline (Arm 1: C-OPN),2021-02-19,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,12.2,,,Entre deux,Complete
+SSC1136,Baseline (Arm 1: C-OPN),,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"8,2",,,,Complete
+SSC1165,Baseline (Arm 1: C-OPN),2022-04-29,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,12:05:00,,,ON,Complete
+SSC1168,Baseline (Arm 1: C-OPN),2025-05-30,In-person during a study visit/En personne lors d'une visite d'étude,Repoussant la chaise,,12.57,,OFF,Complete
+SSC1172,Baseline (Arm 1: C-OPN),2021-04-16,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,8,,,ON,Complete
+SSC1174,Baseline (Arm 1: C-OPN),2022-08-26,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,9.58,,,,Complete
+SSC1175,Baseline (Arm 1: C-OPN),2022-03-18,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10.34,,,ON,Complete
+SSC1177,Baseline (Arm 1: C-OPN),2022-02-23,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,08:55:00,,,ON,Complete
+SSC1178,Baseline (Arm 1: C-OPN),2022-03-09,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,12:10:00,,,ON,Complete
+SSC1179,Baseline (Arm 1: C-OPN),2022-03-18,In-person during a study visit/En personne lors d'une visite d'étude,Repoussant la chaise,,9.1,,,Complete
+SSC1184,Baseline (Arm 1: C-OPN),2022-02-22,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,08:09:00,,,,Complete
+SSC1186,Baseline (Arm 1: C-OPN),2022-02-23,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,08:15:00,,,ON,Complete
+SSC1188,Baseline (Arm 1: C-OPN),2022-02-18,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,0.3506944444444444,,,ON,Complete
+SSC1189,Baseline (Arm 1: C-OPN),2023-09-27,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,12.98,,,,Complete
+SSC1204,Baseline (Arm 1: C-OPN),2024-05-24,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,13.33,,,ON,Complete
+SSC1205,Baseline (Arm 1: C-OPN),2022-03-16,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,08:12:00,,,,Complete
+SSC1206,Baseline (Arm 1: C-OPN),2024-05-24,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10.05,,,ON,Complete
+SSC1213,Baseline (Arm 1: C-OPN),2022-06-01,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,8.67,,,,Complete
+SSC1218,Baseline (Arm 1: C-OPN),2023-04-27,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,12.2,,,ON,Complete
+SSC1224,Baseline (Arm 1: C-OPN),,,Sans pousser - sans aide,"5,8",,,ON,Complete
+SSC1242,Baseline (Arm 1: C-OPN),2022-09-09,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,0.39375,,,OFF,Complete
+SSC1245,Baseline (Arm 1: C-OPN),2023-02-24,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,11:45:00,,,,Complete
+SSC1247,Baseline (Arm 1: C-OPN),2022-09-16,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10:32:00,,,ON,Complete
+SSC1263,Baseline (Arm 1: C-OPN),2024-05-30,In-person during a study visit/En personne lors d'une visite d'étude,Repoussant la chaise,,15.57,,OFF,Complete
+SSC1269,Baseline (Arm 1: C-OPN),2022-11-04,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,11:25:00,,,ON,Complete
+SSC1271,Baseline (Arm 1: C-OPN),2023-01-27,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,14.22,,,ON,Complete
+SSC1275,Baseline (Arm 1: C-OPN),2023-03-23,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,12.1,,,,Complete
+SSC1277,Baseline (Arm 1: C-OPN),2023-01-25,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,11:02:00,,,ON,Complete
+SSC1280,Baseline (Arm 1: C-OPN),2023-02-08,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"9,57",,,ON,Complete
+SSC1283,Baseline (Arm 1: C-OPN),2023-02-08,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"9,57",,,,Complete
+SSC1284,Baseline (Arm 1: C-OPN),2023-01-25,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10:11:00,,,ON,Complete
+SSC1298,Baseline (Arm 1: C-OPN),2023-08-11,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10.14,,,,Complete
+SSC1300,Baseline (Arm 1: C-OPN),2023-02-10,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10.57,,,ON,Complete
+SSC1302,Baseline (Arm 1: C-OPN),2023-08-18,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10.49,,,ON,Complete
+SSC1314,Baseline (Arm 1: C-OPN),2023-04-21,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,11.15,,,,Complete
+SSC1326,Baseline (Arm 1: C-OPN),2023-10-13,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10.92,,,ON,Complete
+SSC1329,Baseline (Arm 1: C-OPN),2023-08-02,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,13:49:00,,,,Complete
+SSC1336,Baseline (Arm 1: C-OPN),2023-05-26,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,12:12:00,,,OFF,Complete
+SSC1338,Baseline (Arm 1: C-OPN),2023-10-13,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,11.25,,,ON,Complete
+SSC1339,Baseline (Arm 1: C-OPN),2023-11-14,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,13:36:00,,,ON,Complete
+SSC1340,Baseline (Arm 1: C-OPN),2023-09-06,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,8.69,,,,Complete
+SSC1343,Baseline (Arm 1: C-OPN),2023-11-03,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,22.05,,,,Complete
+SSC1348,Baseline (Arm 1: C-OPN),2023-08-09,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,14.06,,,,Complete
+SSC1351,Baseline (Arm 1: C-OPN),2023-06-09,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,13:07:00,,,ON,Complete
+SSC1357,Baseline (Arm 1: C-OPN),2023-10-07,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,16.48,,,OFF,Complete
+SSC1358,Baseline (Arm 1: C-OPN),2023-09-08,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10.74,,,ON,Complete
+SSC1361,Baseline (Arm 1: C-OPN),2023-09-26,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,9.99,,,ON,Complete
+SSC1396,Baseline (Arm 1: C-OPN),2023-08-11,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,12.13,,,,Complete
+SSC1402,Baseline (Arm 1: C-OPN),2023-11-02,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,15.81,,,,Complete
+SSC1403,Baseline (Arm 1: C-OPN),2023-08-28,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,15.39,,,,Complete
+SSC1411,Baseline (Arm 1: C-OPN),2023-08-25,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,8.7,,,ON,Complete
+SSC1422,Baseline (Arm 1: C-OPN),2023-11-14,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,13.89,,,ON,Complete
+SSC1432,Baseline (Arm 1: C-OPN),2023-10-13,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,13.77,,,,Complete
+SSC1440,Baseline (Arm 1: C-OPN),2023-11-08,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,15.94,,,OFF,Complete
+SSC1448,Baseline (Arm 1: C-OPN),2023-11-08,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,8.27,,,ON,Complete
+SSC1449,Baseline (Arm 1: C-OPN),2023-11-29,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,11.01,,,,Complete
+SSC1450,Baseline (Arm 1: C-OPN),2024-02-09,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10.6,,,OFF,Complete
+SSC1456,Baseline (Arm 1: C-OPN),2024-02-09,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,19.45,,,OFF,Complete
+SSC1462,Baseline (Arm 1: C-OPN),2023-11-21,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,8.85,,,,Complete
+SSC1465,Baseline (Arm 1: C-OPN),2023-10-27,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,11.51,,,,Complete
+SSC1466,Baseline (Arm 1: C-OPN),2023-10-16,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10.21,,,ON,Complete
+SSC1468,Baseline (Arm 1: C-OPN),2023-11-22,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,12.14,,,ON,Complete
+SSC1472,Baseline (Arm 1: C-OPN),2023-11-21,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10.57,,,ON,Complete
+SSC1473,Baseline (Arm 1: C-OPN),2024-03-15,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,9.6,,,OFF,Complete
+SSC1478,Baseline (Arm 1: C-OPN),2024-02-23,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,16.45,,,ON,Complete
+SSC1495,Baseline (Arm 1: C-OPN),2024-03-15,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,7.43,,,,Complete
+SSC1496,Baseline (Arm 1: C-OPN),2023-11-22,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,9.58,,,ON,Complete
+SSC1498,Baseline (Arm 1: C-OPN),2024-02-16,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,8.55,,,ON,Complete
+SSC1501,Baseline (Arm 1: C-OPN),2023-11-30,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,14.22,,,ON,Complete
+SSC1505,Baseline (Arm 1: C-OPN),2024-02-09,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10.23,,,,Complete
+SSC1507,Baseline (Arm 1: C-OPN),2024-03-01,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,11.07,,,ON,Complete
+SSC1514,Baseline (Arm 1: C-OPN),2024-02-23,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,8.33,,,ON,Complete
+SSC1520,Baseline (Arm 1: C-OPN),2024-03-22,In-person during a study visit/En personne lors d'une visite d'étude,Repoussant la chaise,,15.57,,ON,Complete
+SSC1522,Baseline (Arm 1: C-OPN),2024-02-26,Online/En ligne,Sans pousser - sans aide,12.82,,,OFF,Complete
+SSC1523,Baseline (Arm 1: C-OPN),2024-03-01,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,11.45,,,ON,Complete
+SSC1524,Baseline (Arm 1: C-OPN),2024-05-31,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,7.97,,,ON,Complete
+SSC1525,Baseline (Arm 1: C-OPN),2024-03-15,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10.19,,,OFF,Complete
+SSC1528,Baseline (Arm 1: C-OPN),2024-03-11,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,11.94,,,ON,Complete
+SSC1529,Baseline (Arm 1: C-OPN),2024-07-18,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,11.74,,,ON,Complete
+SSC1532,Baseline (Arm 1: C-OPN),2024-03-22,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,8.44,,,ON,Complete
+SSC1534,Baseline (Arm 1: C-OPN),2024-05-17,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,11.87,,,ON,Complete
+SSC1536,Baseline (Arm 1: C-OPN),2024-04-19,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,9.77,,,Entre deux,Complete
+SSC1538,Baseline (Arm 1: C-OPN),2024-04-26,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,11.34,,,ON,Complete
+SSC1540,Baseline (Arm 1: C-OPN),2024-04-26,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10.92,,,OFF,Complete
+SSC1541,Baseline (Arm 1: C-OPN),2024-05-03,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,11.4,,,ON,Complete
+SSC1544,Baseline (Arm 1: C-OPN),2024-05-10,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,13.96,,,,Complete
+SSC1550,Baseline (Arm 1: C-OPN),2024-06-07,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10.13,,,,Complete
+SSC1553,Baseline (Arm 1: C-OPN),2024-06-11,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,11.02,,,ON,Complete
+SSC1554,Baseline (Arm 1: C-OPN),2024-06-19,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,11.07,,,ON,Complete
+SSC1555,Baseline (Arm 1: C-OPN),2024-05-23,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,12.41,,,OFF,Complete
+SSC1556,Baseline (Arm 1: C-OPN),2024-05-21,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10.98,,,,Complete
+SSC1558,Baseline (Arm 1: C-OPN),2024-08-09,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,18.52,,,OFF,Complete
+SSC1559,Baseline (Arm 1: C-OPN),2024-05-23,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,8.07,,,ON,Complete
+SSC1563,Baseline (Arm 1: C-OPN),2025-05-02,Over the phone/Par téléphone,Sans pousser - sans aide,8.55,,,ON,Complete
+SSC1565,Baseline (Arm 1: C-OPN),2024-06-26,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,6.56,,,ON,Complete
+SSC1567,Baseline (Arm 1: C-OPN),2024-08-22,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,11.15,,,ON,Complete
+SSC1576,Baseline (Arm 1: C-OPN),2024-08-28,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10.79,,,ON,Complete
+SSC1581,Baseline (Arm 1: C-OPN),2024-09-27,In-person during a study visit/En personne lors d'une visite d'étude,Repoussant la chaise,,13.87,,OFF,Complete
+SSC1585,Baseline (Arm 1: C-OPN),2024-11-15,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,7.18,,,OFF,Complete
+SSC1596,Baseline (Arm 1: C-OPN),2025-02-14,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,12.11,,,ON,Complete
+SSC1599,Baseline (Arm 1: C-OPN),2025-02-14,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,9.1,,,,Complete
+SSC1601,Baseline (Arm 1: C-OPN),2025-05-30,Over the phone/Par téléphone,Sans pousser - sans aide,12.3,,,OFF,Complete
+SSC1603,Baseline (Arm 1: C-OPN),2025-05-16,Over the phone/Par téléphone,Sans pousser - sans aide,6.31,,,,Complete
+SSC1607,Baseline (Arm 1: C-OPN),2025-05-16,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,14.38,,,,Complete
+SSC1608,Baseline (Arm 1: C-OPN),2025-05-23,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,9.35,,,ON,Complete
+SSC1616,Baseline (Arm 1: C-OPN),2025-06-27,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,9.9,,,ON,Complete
+SSC1630,Baseline (Arm 1: C-OPN),2025-08-08,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,11.48,,,ON,Complete
+SSC1906,Baseline (Arm 1: C-OPN),2025-01-17,In-person during a study visit/En personne lors d'une visite d'étude,Repoussant la chaise,,17.17,,OFF,Complete
+SSC2126,Baseline (Arm 1: C-OPN),2021-04-16,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"10,9",,,Entre deux,Complete
+SSC2155,Baseline (Arm 1: C-OPN),,,Sans pousser - sans aide,"9,2",,,ON,Complete
+SSC2182,Baseline (Arm 1: C-OPN),2022-06-15,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,9.1,,,Entre deux,Complete
+SSC2217,Baseline (Arm 1: C-OPN),2021-02-12,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,8.8,,,ON,Complete
+SSC2240,Baseline (Arm 1: C-OPN),2021-02-12,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,9.6,,,ON,Complete
+SSC2421,Baseline (Arm 1: C-OPN),,,Sans pousser - sans aide,10.9,,,Entre deux,Complete
+SSC2437,Baseline (Arm 1: C-OPN),,,Sans pousser - sans aide,"12,7",,,OFF,Complete
+SSC2469,Baseline (Arm 1: C-OPN),2022-05-25,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,9.27,,,ON,Complete
+SSC2480,Baseline (Arm 1: C-OPN),2020-12-11,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"9,0",,,,Complete
+SSC2491,Baseline (Arm 1: C-OPN),,,Sans pousser - sans aide,"10,3",,,ON,Complete
+SSC2495,Baseline (Arm 1: C-OPN),2022-04-27,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10.1,,,ON,Complete
+SSC2498,Baseline (Arm 1: C-OPN),2021-02-19,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,8.8,,,ON,Complete
+SSC3119,Baseline (Arm 1: C-OPN),2023-08-31,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,9.56,,,ON,Complete
+SSC3131,Baseline (Arm 1: C-OPN),2023-04-25,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10.82,,,ON,Complete
+SSC3138,Baseline (Arm 1: C-OPN),,,Sans pousser - sans aide,"9,9",,,ON,Complete

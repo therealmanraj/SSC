@@ -33,7 +33,9 @@ def safe_filename(name: str) -> str:
 
 
 def load_form(fname: str) -> pd.DataFrame:
-    return pd.read_csv(os.path.join(DATA_DIR, fname))
+    df = pd.read_csv(os.path.join(DATA_DIR, fname))
+    df = df.drop(columns=[c for c in df.columns if c.startswith("Unnamed:")], errors="ignore")
+    return df
 
 
 def build_group(group_name: str, enrolled_ids: set, group_dir: str) -> list[dict]:
