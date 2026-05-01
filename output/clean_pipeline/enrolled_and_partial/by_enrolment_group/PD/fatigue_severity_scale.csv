@@ -1,0 +1,183 @@
+Project key,Event Name,Questionnaire completed:     Questionnaire rempli:,How is the questionnaire completed?     Comment le questionnaire est-il rempli?,"1. My motivation is lower when I am fatigued. (Disagree=1, Agree=7)","2. Exercise brings on my fatigue. (Disagree=1, Agree=7)","3. I am easily fatigued. (Disagree=1, Agree=7)","4. Fatigue interferes with my physical functioning. (Disagree=1, Agree=7)","5. Fatigue causes frequent problems for me. (Disagree=1, Agree=7)","6. My fatigue prevents sustained physical functioning. (Disagree=1, Agree=7)","7. Fatigue interferes with carrying out certain duties and responsibilities. (Disagree=1, Agree=7)","8. Fatigue is among my three most disabling symptoms. (Disagree=1, Agree=7)","9. Fatigue interferes with my work, family, or social life. (Disagree=1, Agree=7)",Total of all questions,Divided by 9,Complete?
+SSC2846,Baseline (Arm 1: C-OPN),2020-10-21,,7.0,1.0,2.0,7.0,4.0,2.0,3.0,1.0,3.0,30.0,3.3333333333333335,Complete
+SSC2847,Baseline (Arm 1: C-OPN),2020-11-02,,4.0,5.0,5.0,5.0,5.0,5.0,5.0,5.0,5.0,44.0,4.888888888888889,Complete
+SSC2848,Baseline (Arm 1: C-OPN),2020-11-05,,3.0,1.0,3.0,3.0,2.0,3.0,2.0,2.0,2.0,21.0,2.3333333333333335,Complete
+SSC2849,Baseline (Arm 1: C-OPN),2021-02-02,,4.0,1.0,2.0,2.0,2.0,1.0,1.0,1.0,1.0,15.0,1.6666666666666667,Complete
+SSC2850,Baseline (Arm 1: C-OPN),2020-10-29,,7.0,6.0,6.0,7.0,6.0,6.0,5.0,7.0,6.0,56.0,6.222222222222222,Complete
+SSC2851,Baseline (Arm 1: C-OPN),2020-10-30,,4.0,2.0,6.0,3.0,3.0,3.0,3.0,6.0,3.0,33.0,3.6666666666666665,Complete
+SSC2852,Baseline (Arm 1: C-OPN),2020-10-28,,6.0,2.0,3.0,2.0,1.0,1.0,1.0,1.0,1.0,18.0,2.0,Complete
+SSC2853,Baseline (Arm 1: C-OPN),2021-07-03,Online/En ligne,6.0,1.0,2.0,2.0,3.0,3.0,1.0,1.0,3.0,22.0,2.4444444444444446,Complete
+SSC2854,Baseline (Arm 1: C-OPN),2020-11-13,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,9.0,1.0,Complete
+SSC2855,Baseline (Arm 1: C-OPN),2020-11-13,,7.0,6.0,5.0,6.0,4.0,4.0,4.0,3.0,3.0,42.0,4.666666666666667,Complete
+SSC2856,Baseline (Arm 1: C-OPN),2020-12-08,,2.0,7.0,3.0,6.0,2.0,2.0,1.0,3.0,1.0,27.0,3.0,Complete
+SSC2857,Baseline (Arm 1: C-OPN),2020-11-20,,5.0,5.0,1.0,1.0,1.0,1.0,1.0,1.0,2.0,18.0,2.0,Complete
+SSC2858,Baseline (Arm 1: C-OPN),2020-11-20,,6.0,1.0,2.0,3.0,5.0,5.0,5.0,2.0,6.0,35.0,3.888888888888889,Complete
+SSC2859,Baseline (Arm 1: C-OPN),2021-02-19,In-person during a study visit/En personne lors d'une visite d'étude,7.0,1.0,5.0,2.0,1.0,5.0,4.0,7.0,1.0,33.0,3.6666666666666665,Complete
+SSC2860,Baseline (Arm 1: C-OPN),2020-12-09,,4.0,2.0,3.0,4.0,4.0,6.0,5.0,4.0,4.0,36.0,4.0,Complete
+SSC2861,Baseline (Arm 1: C-OPN),2021-01-15,,5.0,7.0,2.0,5.0,1.0,2.0,2.0,1.0,2.0,27.0,3.0,Complete
+SSC2863,Baseline (Arm 1: C-OPN),2021-01-20,,7.0,7.0,7.0,7.0,4.0,4.0,4.0,4.0,4.0,48.0,5.333333333333333,Complete
+SSC2864,Baseline (Arm 1: C-OPN),2021-01-25,,5.0,2.0,1.0,2.0,2.0,2.0,2.0,1.0,1.0,18.0,2.0,Complete
+SSC2865,Baseline (Arm 1: C-OPN),2021-01-27,,6.0,6.0,5.0,3.0,2.0,2.0,3.0,4.0,3.0,34.0,3.7777777777777777,Complete
+SSC2866,Baseline (Arm 1: C-OPN),2021-01-17,,5.0,2.0,2.0,4.0,3.0,1.0,2.0,2.0,2.0,23.0,2.5555555555555554,Complete
+SSC2867,Baseline (Arm 1: C-OPN),2021-02-02,,5.0,3.0,2.0,7.0,2.0,2.0,2.0,7.0,2.0,32.0,3.5555555555555554,Complete
+SSC2868,Baseline (Arm 1: C-OPN),2021-05-10,Online/En ligne,5.0,4.0,6.0,6.0,2.0,6.0,5.0,1.0,2.0,37.0,4.111111111111111,Complete
+SSC2869,Baseline (Arm 1: C-OPN),2021-02-22,Online/En ligne,6.0,1.0,6.0,7.0,6.0,4.0,6.0,7.0,6.0,49.0,5.444444444444445,Complete
+SSC2870,Baseline (Arm 1: C-OPN),2021-08-18,Online/En ligne,7.0,4.0,4.0,2.0,4.0,6.0,5.0,4.0,4.0,40.0,4.444444444444445,Complete
+SSC2871,Baseline (Arm 1: C-OPN),2021-02-26,Online/En ligne,7.0,6.0,7.0,6.0,5.0,7.0,5.0,7.0,6.0,56.0,6.222222222222222,Complete
+SSC2872,Baseline (Arm 1: C-OPN),2021-03-03,Online/En ligne,7.0,2.0,4.0,5.0,2.0,1.0,1.0,1.0,1.0,24.0,2.6666666666666665,Complete
+SSC2873,Baseline (Arm 1: C-OPN),2021-03-02,Online/En ligne,5.0,4.0,6.0,3.0,2.0,1.0,4.0,1.0,1.0,27.0,3.0,Complete
+SSC2874,Baseline (Arm 1: C-OPN),2021-02-19,In-person during a study visit/En personne lors d'une visite d'étude,7.0,1.0,5.0,1.0,1.0,1.0,1.0,3.0,2.0,22.0,2.4444444444444446,Complete
+SSC2875,Baseline (Arm 1: C-OPN),2021-03-17,Online/En ligne,7.0,6.0,6.0,6.0,6.0,4.0,4.0,7.0,6.0,52.0,5.777777777777778,Complete
+SSC2876,Baseline (Arm 1: C-OPN),2021-03-16,Online/En ligne,7.0,3.0,5.0,6.0,5.0,3.0,5.0,5.0,4.0,43.0,4.777777777777778,Complete
+SSC2877,Baseline (Arm 1: C-OPN),2021-03-15,Online/En ligne,7.0,3.0,1.0,2.0,2.0,2.0,2.0,2.0,2.0,23.0,2.5555555555555554,Complete
+SSC2878,Baseline (Arm 1: C-OPN),2021-04-26,Online/En ligne,6.0,5.0,2.0,3.0,2.0,2.0,2.0,3.0,2.0,27.0,3.0,Complete
+SSC2879,Baseline (Arm 1: C-OPN),2021-05-17,Online/En ligne,5.0,5.0,5.0,4.0,4.0,5.0,4.0,5.0,5.0,42.0,4.666666666666667,Complete
+SSC2880,Baseline (Arm 1: C-OPN),2021-04-27,Online/En ligne,6.0,3.0,3.0,6.0,6.0,5.0,6.0,7.0,6.0,48.0,5.333333333333333,Complete
+SSC2881,Baseline (Arm 1: C-OPN),2021-08-11,Online/En ligne,6.0,5.0,6.0,5.0,4.0,2.0,5.0,5.0,5.0,43.0,4.777777777777778,Complete
+SSC2884,Baseline (Arm 1: C-OPN),2021-05-20,Online/En ligne,3.0,2.0,1.0,2.0,1.0,1.0,1.0,1.0,1.0,13.0,1.4444444444444444,Complete
+SSC2885,Baseline (Arm 1: C-OPN),2021-08-30,Online/En ligne,6.0,6.0,6.0,2.0,1.0,1.0,1.0,2.0,2.0,27.0,3.0,Complete
+SSC2886,Baseline (Arm 1: C-OPN),2021-05-28,Online/En ligne,5.0,2.0,4.0,5.0,2.0,3.0,3.0,3.0,4.0,31.0,3.4444444444444446,Complete
+SSC2887,Baseline (Arm 1: C-OPN),2021-06-06,Online/En ligne,1.0,2.0,2.0,1.0,1.0,1.0,2.0,1.0,1.0,12.0,1.3333333333333333,Complete
+SSC2888,Baseline (Arm 1: C-OPN),2021-06-08,Online/En ligne,6.0,5.0,5.0,6.0,5.0,5.0,4.0,3.0,4.0,43.0,4.777777777777778,Complete
+SSC2889,Baseline (Arm 1: C-OPN),2021-06-09,Online/En ligne,5.0,5.0,4.0,6.0,4.0,4.0,5.0,4.0,4.0,41.0,4.555555555555555,Complete
+SSC2890,Baseline (Arm 1: C-OPN),2021-06-02,Online/En ligne,2.0,1.0,3.0,1.0,1.0,1.0,1.0,1.0,1.0,12.0,1.3333333333333333,Complete
+SSC2891,Baseline (Arm 1: C-OPN),2021-07-02,Online/En ligne,5.0,1.0,4.0,5.0,3.0,5.0,5.0,5.0,6.0,39.0,4.333333333333333,Complete
+SSC2892,Baseline (Arm 1: C-OPN),2021-06-16,Online/En ligne,4.0,4.0,4.0,4.0,2.0,3.0,4.0,4.0,4.0,33.0,3.6666666666666665,Complete
+SSC2893,Baseline (Arm 1: C-OPN),2021-06-24,Online/En ligne,5.0,5.0,6.0,5.0,5.0,2.0,3.0,5.0,3.0,39.0,4.333333333333333,Complete
+SSC2894,Baseline (Arm 1: C-OPN),2021-07-26,Online/En ligne,6.0,1.0,1.0,6.0,7.0,4.0,5.0,7.0,5.0,42.0,4.666666666666667,Complete
+SSC2896,Baseline (Arm 1: C-OPN),2021-06-22,Online/En ligne,7.0,1.0,5.0,6.0,6.0,5.0,6.0,3.0,5.0,44.0,4.888888888888889,Complete
+SSC2897,Baseline (Arm 1: C-OPN),2021-10-10,Online/En ligne,4.0,2.0,2.0,2.0,3.0,2.0,2.0,3.0,3.0,23.0,2.5555555555555554,Complete
+SSC2898,Baseline (Arm 1: C-OPN),2021-07-26,Online/En ligne,6.0,5.0,3.0,3.0,3.0,1.0,6.0,6.0,2.0,35.0,3.888888888888889,Complete
+SSC2899,Baseline (Arm 1: C-OPN),2021-07-12,Online/En ligne,6.0,2.0,4.0,4.0,5.0,5.0,5.0,5.0,5.0,41.0,4.555555555555555,Complete
+SSC2900,Baseline (Arm 1: C-OPN),2021-07-27,Online/En ligne,6.0,1.0,6.0,6.0,2.0,3.0,2.0,6.0,2.0,34.0,3.7777777777777777,Complete
+SSC2901,Baseline (Arm 1: C-OPN),2021-08-19,Online/En ligne,3.0,3.0,5.0,5.0,2.0,2.0,5.0,2.0,2.0,29.0,3.2222222222222223,Complete
+SSC2903,Baseline (Arm 1: C-OPN),2021-07-29,Online/En ligne,1.0,4.0,5.0,5.0,4.0,4.0,5.0,5.0,5.0,38.0,4.222222222222222,Complete
+SSC2904,Baseline (Arm 1: C-OPN),2021-08-19,Online/En ligne,6.0,3.0,4.0,4.0,2.0,3.0,2.0,6.0,2.0,32.0,3.5555555555555554,Complete
+SSC2905,Baseline (Arm 1: C-OPN),2021-08-20,Online/En ligne,6.0,2.0,3.0,4.0,3.0,4.0,4.0,5.0,6.0,37.0,4.111111111111111,Complete
+SSC2907,Baseline (Arm 1: C-OPN),2021-08-19,Online/En ligne,3.0,3.0,1.0,3.0,1.0,2.0,2.0,2.0,1.0,18.0,2.0,Complete
+SSC2908,Baseline (Arm 1: C-OPN),2021-08-30,Online/En ligne,5.0,4.0,4.0,5.0,3.0,2.0,2.0,3.0,4.0,32.0,3.5555555555555554,Complete
+SSC2909,Baseline (Arm 1: C-OPN),2021-10-20,Online/En ligne,7.0,5.0,5.0,5.0,5.0,5.0,2.0,6.0,6.0,46.0,5.111111111111111,Complete
+SSC2912,Baseline (Arm 1: C-OPN),2021-10-10,Online/En ligne,2.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,10.0,1.1111111111111112,Complete
+SSC2913,Baseline (Arm 1: C-OPN),2021-10-16,Online/En ligne,5.0,4.0,6.0,4.0,4.0,5.0,5.0,2.0,3.0,38.0,4.222222222222222,Complete
+SSC2914,Baseline (Arm 1: C-OPN),2021-10-14,Online/En ligne,7.0,2.0,7.0,6.0,7.0,7.0,7.0,7.0,7.0,57.0,6.333333333333333,Complete
+SSC2915,Baseline (Arm 1: C-OPN),2021-10-18,In-person during a study visit/En personne lors d'une visite d'étude,1.0,7.0,1.0,5.0,1.0,1.0,1.0,1.0,1.0,19.0,2.111111111111111,Complete
+SSC2916,Baseline (Arm 1: C-OPN),2021-10-25,Online/En ligne,7.0,1.0,4.0,4.0,1.0,1.0,2.0,1.0,2.0,23.0,2.5555555555555554,Complete
+SSC2917,Baseline (Arm 1: C-OPN),2021-10-26,Online/En ligne,1.0,,2.0,1.0,1.0,1.0,1.0,1.0,1.0,,,Complete
+SSC2918,Baseline (Arm 1: C-OPN),2021-11-13,Online/En ligne,6.0,7.0,4.0,5.0,1.0,3.0,3.0,3.0,3.0,35.0,3.888888888888889,Complete
+SSC2919,Baseline (Arm 1: C-OPN),2021-11-03,Online/En ligne,6.0,3.0,5.0,3.0,3.0,3.0,2.0,6.0,4.0,35.0,3.888888888888889,Complete
+SSC2920,Baseline (Arm 1: C-OPN),2021-11-08,Online/En ligne,3.0,5.0,6.0,5.0,3.0,6.0,6.0,5.0,3.0,42.0,4.666666666666667,Complete
+SSC2921,Baseline (Arm 1: C-OPN),2021-11-19,Online/En ligne,7.0,1.0,5.0,6.0,6.0,4.0,4.0,6.0,5.0,44.0,4.888888888888889,Complete
+SSC2922,Baseline (Arm 1: C-OPN),2021-11-15,Online/En ligne,7.0,4.0,5.0,5.0,4.0,4.0,4.0,5.0,5.0,43.0,4.777777777777778,Complete
+SSC2923,Baseline (Arm 1: C-OPN),2021-11-29,Online/En ligne,1.0,1.0,7.0,7.0,7.0,7.0,4.0,7.0,7.0,48.0,5.333333333333333,Complete
+SSC2925,Baseline (Arm 1: C-OPN),2021-12-01,Online/En ligne,6.0,6.0,3.0,2.0,5.0,3.0,4.0,2.0,3.0,34.0,3.7777777777777777,Complete
+SSC2926,Baseline (Arm 1: C-OPN),2021-12-06,Online/En ligne,6.0,7.0,7.0,5.0,2.0,6.0,6.0,3.0,7.0,49.0,5.444444444444445,Complete
+SSC2927,Baseline (Arm 1: C-OPN),2022-01-12,Online/En ligne,6.0,2.0,2.0,6.0,2.0,2.0,2.0,2.0,2.0,26.0,2.888888888888889,Complete
+SSC2928,Baseline (Arm 1: C-OPN),2022-01-21,Online/En ligne,5.0,2.0,3.0,5.0,2.0,3.0,2.0,2.0,3.0,27.0,3.0,Complete
+SSC2929,Baseline (Arm 1: C-OPN),2022-02-07,Online/En ligne,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,9.0,1.0,Complete
+SSC2931,Baseline (Arm 1: C-OPN),2022-02-03,Online/En ligne,2.0,1.0,2.0,3.0,1.0,1.0,1.0,1.0,1.0,13.0,1.4444444444444444,Complete
+SSC2932,Baseline (Arm 1: C-OPN),2022-02-08,Online/En ligne,5.0,3.0,1.0,2.0,1.0,2.0,1.0,1.0,2.0,18.0,2.0,Complete
+SSC2934,Baseline (Arm 1: C-OPN),2022-03-11,Online/En ligne,5.0,4.0,3.0,2.0,2.0,2.0,2.0,4.0,4.0,28.0,3.111111111111111,Complete
+SSC2935,Baseline (Arm 1: C-OPN),2022-02-15,Online/En ligne,7.0,4.0,3.0,4.0,2.0,2.0,2.0,2.0,2.0,28.0,3.111111111111111,Complete
+SSC2937,Baseline (Arm 1: C-OPN),2022-02-25,Online/En ligne,5.0,2.0,2.0,2.0,1.0,2.0,3.0,3.0,3.0,23.0,2.5555555555555554,Complete
+SSC2938,Baseline (Arm 1: C-OPN),2022-10-25,Online/En ligne,7.0,4.0,3.0,4.0,3.0,4.0,2.0,3.0,2.0,32.0,3.5555555555555554,Complete
+SSC2940,Baseline (Arm 1: C-OPN),2022-03-18,Online/En ligne,5.0,6.0,5.0,4.0,3.0,3.0,4.0,5.0,4.0,39.0,4.333333333333333,Complete
+SSC2941,Baseline (Arm 1: C-OPN),2022-03-21,Online/En ligne,7.0,2.0,5.0,4.0,3.0,3.0,4.0,4.0,3.0,35.0,3.888888888888889,Complete
+SSC2944,Baseline (Arm 1: C-OPN),2022-04-04,Online/En ligne,3.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,19.0,2.111111111111111,Complete
+SSC2945,Baseline (Arm 1: C-OPN),2022-04-11,Online/En ligne,3.0,2.0,1.0,2.0,1.0,2.0,1.0,1.0,1.0,14.0,1.5555555555555556,Complete
+SSC2946,Baseline (Arm 1: C-OPN),2022-04-27,Online/En ligne,7.0,3.0,5.0,5.0,3.0,4.0,4.0,4.0,4.0,39.0,4.333333333333333,Complete
+SSC2947,Baseline (Arm 1: C-OPN),2022-04-22,Online/En ligne,6.0,2.0,5.0,7.0,5.0,6.0,7.0,6.0,7.0,51.0,5.666666666666667,Complete
+SSC2948,Baseline (Arm 1: C-OPN),2022-05-03,Online/En ligne,4.0,2.0,2.0,2.0,1.0,1.0,1.0,1.0,1.0,15.0,1.6666666666666667,Complete
+SSC2949,Baseline (Arm 1: C-OPN),2022-04-28,Online/En ligne,6.0,6.0,5.0,5.0,2.0,4.0,4.0,2.0,5.0,39.0,4.333333333333333,Complete
+SSC2950,Baseline (Arm 1: C-OPN),2022-05-04,Online/En ligne,2.0,6.0,4.0,5.0,5.0,7.0,6.0,6.0,5.0,46.0,5.111111111111111,Complete
+SSC2951,Baseline (Arm 1: C-OPN),2022-05-11,Online/En ligne,6.0,4.0,3.0,4.0,3.0,2.0,1.0,2.0,1.0,26.0,2.888888888888889,Complete
+SSC2952,Baseline (Arm 1: C-OPN),2022-05-24,Online/En ligne,2.0,2.0,1.0,2.0,1.0,1.0,1.0,1.0,1.0,12.0,1.3333333333333333,Complete
+SSC2954,Baseline (Arm 1: C-OPN),2022-05-18,Online/En ligne,5.0,1.0,5.0,3.0,1.0,1.0,3.0,1.0,1.0,21.0,2.3333333333333335,Complete
+SSC2955,Baseline (Arm 1: C-OPN),2022-05-31,Online/En ligne,5.0,5.0,5.0,5.0,2.0,6.0,6.0,6.0,6.0,46.0,5.111111111111111,Complete
+SSC2957,Baseline (Arm 1: C-OPN),2022-07-11,Online/En ligne,4.0,5.0,4.0,2.0,1.0,2.0,2.0,3.0,1.0,24.0,2.6666666666666665,Complete
+SSC2958,Baseline (Arm 1: C-OPN),2022-07-18,Online/En ligne,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,9.0,1.0,Complete
+SSC2959,Baseline (Arm 1: C-OPN),2022-07-02,Online/En ligne,7.0,4.0,7.0,6.0,4.0,1.0,1.0,7.0,5.0,42.0,4.666666666666667,Complete
+SSC2963,Baseline (Arm 1: C-OPN),2022-09-25,Online/En ligne,7.0,5.0,5.0,5.0,1.0,5.0,3.0,4.0,3.0,38.0,4.222222222222222,Complete
+SSC2972,Baseline (Arm 1: C-OPN),2022-10-01,Online/En ligne,5.0,4.0,4.0,4.0,2.0,3.0,3.0,4.0,3.0,32.0,3.5555555555555554,Complete
+SSC2973,Baseline (Arm 1: C-OPN),2022-08-11,Online/En ligne,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,9.0,1.0,Complete
+SSC2975,Baseline (Arm 1: C-OPN),2022-08-24,Online/En ligne,5.0,2.0,2.0,2.0,1.0,2.0,2.0,2.0,2.0,20.0,2.2222222222222223,Complete
+SSC2976,Baseline (Arm 1: C-OPN),2022-08-24,Online/En ligne,6.0,5.0,3.0,6.0,3.0,2.0,2.0,3.0,3.0,33.0,3.6666666666666665,Complete
+SSC2977,Baseline (Arm 1: C-OPN),2022-12-11,Online/En ligne,7.0,3.0,7.0,7.0,7.0,7.0,7.0,4.0,7.0,56.0,6.222222222222222,Complete
+SSC2981,Baseline (Arm 1: C-OPN),2022-09-01,Online/En ligne,,,2.0,3.0,2.0,1.0,1.0,2.0,1.0,,,Complete
+SSC2982,Baseline (Arm 1: C-OPN),2022-10-15,Online/En ligne,6.0,2.0,7.0,7.0,6.0,5.0,6.0,7.0,7.0,53.0,5.888888888888889,Complete
+SSC2983,Baseline (Arm 1: C-OPN),2022-09-15,Online/En ligne,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,9.0,1.0,Complete
+SSC2984,Baseline (Arm 1: C-OPN),2022-09-22,Online/En ligne,5.0,4.0,4.0,4.0,3.0,2.0,2.0,5.0,4.0,33.0,3.6666666666666665,Complete
+SSC2985,Baseline (Arm 1: C-OPN),2022-10-01,Online/En ligne,7.0,2.0,2.0,4.0,4.0,4.0,4.0,4.0,4.0,35.0,3.888888888888889,Complete
+SSC2988,Baseline (Arm 1: C-OPN),2022-10-03,Online/En ligne,7.0,1.0,3.0,4.0,3.0,2.0,3.0,2.0,2.0,27.0,3.0,Complete
+SSC2989,Baseline (Arm 1: C-OPN),2022-09-30,Online/En ligne,7.0,1.0,4.0,6.0,6.0,7.0,5.0,7.0,6.0,49.0,5.444444444444445,Complete
+SSC2992,Baseline (Arm 1: C-OPN),2022-10-18,Online/En ligne,6.0,1.0,3.0,2.0,1.0,1.0,2.0,2.0,2.0,20.0,2.2222222222222223,Complete
+SSC2993,Baseline (Arm 1: C-OPN),2022-10-19,Online/En ligne,7.0,5.0,7.0,5.0,5.0,6.0,3.0,5.0,5.0,48.0,5.333333333333333,Complete
+SSC2995,Baseline (Arm 1: C-OPN),2022-11-11,Online/En ligne,4.0,1.0,1.0,3.0,1.0,1.0,1.0,1.0,1.0,14.0,1.5555555555555556,Complete
+SSC2997,Baseline (Arm 1: C-OPN),2022-11-18,Online/En ligne,2.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,10.0,1.1111111111111112,Complete
+SSC2998,Baseline (Arm 1: C-OPN),2022-11-08,Online/En ligne,7.0,1.0,4.0,4.0,3.0,4.0,4.0,5.0,4.0,36.0,4.0,Complete
+SSC3000,Baseline (Arm 1: C-OPN),2022-11-23,Online/En ligne,7.0,5.0,6.0,6.0,5.0,6.0,6.0,4.0,4.0,49.0,5.444444444444445,Complete
+SSC3001,Baseline (Arm 1: C-OPN),2022-11-24,Online/En ligne,6.0,5.0,4.0,3.0,4.0,5.0,4.0,3.0,4.0,38.0,4.222222222222222,Complete
+SSC3002,Baseline (Arm 1: C-OPN),2022-12-01,Online/En ligne,7.0,1.0,4.0,2.0,1.0,1.0,3.0,1.0,3.0,23.0,2.5555555555555554,Complete
+SSC3004,Baseline (Arm 1: C-OPN),2022-12-10,Online/En ligne,7.0,5.0,6.0,4.0,6.0,5.0,5.0,7.0,5.0,50.0,5.555555555555555,Complete
+SSC3005,Baseline (Arm 1: C-OPN),2023-01-13,Online/En ligne,4.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,1.0,18.0,2.0,Complete
+SSC3006,Baseline (Arm 1: C-OPN),2023-01-04,Online/En ligne,4.0,3.0,1.0,3.0,1.0,1.0,1.0,1.0,1.0,16.0,1.7777777777777777,Complete
+SSC3007,Baseline (Arm 1: C-OPN),2023-01-12,Online/En ligne,4.0,4.0,4.0,4.0,4.0,4.0,4.0,3.0,3.0,34.0,3.7777777777777777,Complete
+SSC3010,Baseline (Arm 1: C-OPN),2023-01-25,Online/En ligne,6.0,1.0,5.0,6.0,5.0,4.0,2.0,7.0,3.0,39.0,4.333333333333333,Complete
+SSC3011,Baseline (Arm 1: C-OPN),2023-05-04,Online/En ligne,5.0,2.0,3.0,6.0,5.0,4.0,4.0,6.0,5.0,40.0,4.444444444444445,Complete
+SSC3012,Baseline (Arm 1: C-OPN),2023-02-06,Online/En ligne,2.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,10.0,1.1111111111111112,Complete
+SSC3013,Baseline (Arm 1: C-OPN),2023-02-27,Online/En ligne,4.0,2.0,4.0,5.0,2.0,3.0,3.0,1.0,2.0,26.0,2.888888888888889,Complete
+SSC3015,Baseline (Arm 1: C-OPN),2023-02-09,Online/En ligne,5.0,2.0,4.0,3.0,4.0,3.0,4.0,2.0,4.0,31.0,3.4444444444444446,Complete
+SSC3016,Baseline (Arm 1: C-OPN),2023-03-02,Online/En ligne,6.0,4.0,6.0,5.0,3.0,5.0,5.0,5.0,5.0,44.0,4.888888888888889,Complete
+SSC3018,Baseline (Arm 1: C-OPN),2023-02-25,Online/En ligne,3.0,2.0,2.0,2.0,1.0,2.0,4.0,1.0,3.0,20.0,2.2222222222222223,Complete
+SSC3019,Baseline (Arm 1: C-OPN),2023-03-08,Online/En ligne,6.0,3.0,4.0,2.0,2.0,2.0,2.0,1.0,1.0,23.0,2.5555555555555554,Complete
+SSC3021,Baseline (Arm 1: C-OPN),2023-03-30,Online/En ligne,5.0,6.0,4.0,3.0,3.0,2.0,1.0,7.0,4.0,35.0,3.888888888888889,Complete
+SSC3022,Baseline (Arm 1: C-OPN),2023-04-06,Online/En ligne,7.0,1.0,6.0,6.0,6.0,2.0,4.0,6.0,5.0,43.0,4.777777777777778,Complete
+SSC3024,Baseline (Arm 1: C-OPN),2023-04-14,Online/En ligne,5.0,2.0,4.0,4.0,3.0,3.0,4.0,3.0,4.0,32.0,3.5555555555555554,Complete
+SSC3025,Baseline (Arm 1: C-OPN),2023-05-14,Online/En ligne,7.0,4.0,7.0,7.0,7.0,7.0,7.0,7.0,,,,Complete
+SSC3026,Baseline (Arm 1: C-OPN),2023-04-24,Online/En ligne,3.0,1.0,5.0,,,4.0,4.0,3.0,3.0,,,Complete
+SSC3027,Baseline (Arm 1: C-OPN),2023-05-21,Online/En ligne,5.0,3.0,2.0,4.0,2.0,1.0,2.0,2.0,2.0,23.0,2.5555555555555554,Complete
+SSC3028,Baseline (Arm 1: C-OPN),2023-05-12,Online/En ligne,7.0,,6.0,4.0,5.0,5.0,6.0,4.0,6.0,,,Complete
+SSC3029,Baseline (Arm 1: C-OPN),2023-05-18,Online/En ligne,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,9.0,1.0,Complete
+SSC3030,Baseline (Arm 1: C-OPN),2023-05-31,Online/En ligne,6.0,2.0,6.0,6.0,,6.0,5.0,6.0,6.0,,,Complete
+SSC3032,Baseline (Arm 1: C-OPN),2023-06-12,Online/En ligne,5.0,4.0,4.0,3.0,3.0,3.0,2.0,3.0,3.0,30.0,3.3333333333333335,Complete
+SSC3033,Baseline (Arm 1: C-OPN),2023-06-22,Online/En ligne,6.0,2.0,3.0,2.0,1.0,1.0,1.0,2.0,1.0,19.0,2.111111111111111,Complete
+SSC3034,Baseline (Arm 1: C-OPN),2023-06-26,Online/En ligne,7.0,4.0,3.0,4.0,2.0,4.0,4.0,1.0,3.0,32.0,3.5555555555555554,Complete
+SSC3035,Baseline (Arm 1: C-OPN),2023-06-20,Online/En ligne,5.0,1.0,1.0,3.0,2.0,3.0,3.0,1.0,2.0,21.0,2.3333333333333335,Complete
+SSC3036,Baseline (Arm 1: C-OPN),2023-06-24,Online/En ligne,7.0,3.0,4.0,6.0,5.0,3.0,1.0,3.0,3.0,35.0,3.888888888888889,Complete
+SSC3038,Baseline (Arm 1: C-OPN),2023-07-12,Online/En ligne,4.0,1.0,2.0,2.0,1.0,1.0,1.0,2.0,1.0,15.0,1.6666666666666667,Complete
+SSC3046,Baseline (Arm 1: C-OPN),2023-08-24,Online/En ligne,1.0,2.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,10.0,1.1111111111111112,Complete
+SSC3048,Baseline (Arm 1: C-OPN),2023-09-28,Online/En ligne,4.0,2.0,2.0,3.0,2.0,2.0,3.0,2.0,2.0,22.0,2.4444444444444446,Complete
+SSC3049,Baseline (Arm 1: C-OPN),2023-11-15,Online/En ligne,4.0,2.0,5.0,4.0,2.0,3.0,3.0,7.0,2.0,32.0,3.5555555555555554,Complete
+SSC3050,Baseline (Arm 1: C-OPN),2023-09-11,Online/En ligne,6.0,2.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,50.0,5.555555555555555,Complete
+SSC3053,Baseline (Arm 1: C-OPN),2023-09-22,Online/En ligne,7.0,4.0,4.0,5.0,2.0,6.0,6.0,7.0,3.0,44.0,4.888888888888889,Complete
+SSC3059,Baseline (Arm 1: C-OPN),2023-11-08,Online/En ligne,7.0,7.0,6.0,6.0,6.0,6.0,6.0,7.0,7.0,58.0,6.444444444444445,Complete
+SSC3060,Baseline (Arm 1: C-OPN),2023-11-15,Online/En ligne,6.0,4.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,52.0,5.777777777777778,Complete
+SSC3063,Baseline (Arm 1: C-OPN),2023-11-23,Online/En ligne,7.0,2.0,5.0,5.0,1.0,7.0,4.0,5.0,5.0,41.0,4.555555555555555,Complete
+SSC3064,Baseline (Arm 1: C-OPN),2023-11-24,Online/En ligne,6.0,1.0,6.0,6.0,7.0,7.0,7.0,1.0,1.0,42.0,4.666666666666667,Complete
+SSC3065,Baseline (Arm 1: C-OPN),2023-11-27,Online/En ligne,2.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,10.0,1.1111111111111112,Complete
+SSC3066,Baseline (Arm 1: C-OPN),2023-12-06,Online/En ligne,4.0,4.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,15.0,1.6666666666666667,Complete
+SSC3069,Baseline (Arm 1: C-OPN),2023-12-20,Online/En ligne,7.0,1.0,2.0,5.0,4.0,3.0,6.0,5.0,2.0,35.0,3.888888888888889,Complete
+SSC3070,Baseline (Arm 1: C-OPN),2024-01-09,Online/En ligne,7.0,4.0,6.0,3.0,2.0,2.0,2.0,7.0,4.0,37.0,4.111111111111111,Complete
+SSC3071,Baseline (Arm 1: C-OPN),2024-01-10,Online/En ligne,7.0,7.0,4.0,6.0,2.0,1.0,4.0,7.0,2.0,40.0,4.444444444444445,Complete
+SSC3072,Baseline (Arm 1: C-OPN),2024-01-29,Online/En ligne,4.0,2.0,3.0,4.0,3.0,4.0,3.0,3.0,3.0,29.0,3.2222222222222223,Complete
+SSC3073,Baseline (Arm 1: C-OPN),2024-01-30,Online/En ligne,7.0,4.0,4.0,4.0,6.0,2.0,5.0,5.0,7.0,44.0,4.888888888888889,Complete
+SSC3075,Baseline (Arm 1: C-OPN),2024-02-01,Online/En ligne,5.0,3.0,3.0,3.0,2.0,3.0,3.0,3.0,4.0,29.0,3.2222222222222223,Complete
+SSC3077,Baseline (Arm 1: C-OPN),2024-02-15,Online/En ligne,4.0,2.0,3.0,4.0,3.0,2.0,3.0,3.0,2.0,26.0,2.888888888888889,Complete
+SSC3078,Baseline (Arm 1: C-OPN),2024-03-01,Online/En ligne,6.0,2.0,1.0,1.0,1.0,1.0,2.0,3.0,2.0,19.0,2.111111111111111,Complete
+SSC3081,Baseline (Arm 1: C-OPN),2024-02-29,Online/En ligne,3.0,3.0,2.0,2.0,1.0,1.0,1.0,2.0,1.0,16.0,1.7777777777777777,Complete
+SSC3083,Baseline (Arm 1: C-OPN),2024-03-12,Online/En ligne,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,9.0,1.0,Complete
+SSC3084,Baseline (Arm 1: C-OPN),2024-03-20,Online/En ligne,7.0,7.0,7.0,7.0,7.0,7.0,7.0,7.0,7.0,63.0,7.0,Complete
+SSC3085,Baseline (Arm 1: C-OPN),2024-03-27,Online/En ligne,1.0,4.0,3.0,2.0,4.0,4.0,2.0,3.0,4.0,27.0,3.0,Complete
+SSC3086,Baseline (Arm 1: C-OPN),2024-03-20,Online/En ligne,5.0,4.0,5.0,5.0,5.0,4.0,7.0,7.0,7.0,49.0,5.444444444444445,Complete
+SSC3088,Baseline (Arm 1: C-OPN),2024-04-03,Online/En ligne,2.0,1.0,4.0,3.0,,5.0,5.0,7.0,7.0,,,Complete
+SSC3090,Baseline (Arm 1: C-OPN),2024-04-11,Online/En ligne,7.0,4.0,6.0,6.0,4.0,5.0,3.0,7.0,3.0,45.0,5.0,Complete
+SSC3092,Baseline (Arm 1: C-OPN),2024-04-17,Online/En ligne,7.0,2.0,2.0,2.0,1.0,2.0,1.0,1.0,1.0,19.0,2.111111111111111,Complete
+SSC3093,Baseline (Arm 1: C-OPN),2024-04-19,Online/En ligne,1.0,3.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,18.0,2.0,Complete
+SSC3094,Baseline (Arm 1: C-OPN),2024-05-01,Online/En ligne,3.0,2.0,6.0,3.0,4.0,2.0,4.0,2.0,4.0,30.0,3.3333333333333335,Complete
+SSC3098,Baseline (Arm 1: C-OPN),2024-05-17,Online/En ligne,4.0,1.0,2.0,5.0,2.0,2.0,3.0,5.0,2.0,26.0,2.888888888888889,Complete
+SSC3104,Baseline (Arm 1: C-OPN),2024-06-09,Online/En ligne,4.0,3.0,2.0,5.0,3.0,3.0,1.0,3.0,3.0,27.0,3.0,Complete
+SSC3109,Baseline (Arm 1: C-OPN),2025-08-20,Online/En ligne,7.0,5.0,6.0,7.0,4.0,4.0,5.0,7.0,7.0,52.0,5.777777777777778,Complete
+SSC3110,Baseline (Arm 1: C-OPN),2025-11-04,In-person during a study visit/En personne lors d'une visite d'étude,6.0,2.0,5.0,7.0,3.0,5.0,2.0,7.0,5.0,42.0,4.666666666666667,Complete
+SSC3111,Baseline (Arm 1: C-OPN),2025-11-14,Online/En ligne,5.0,2.0,2.0,4.0,3.0,3.0,4.0,3.0,2.0,28.0,3.111111111111111,Complete
+SSC3112,Baseline (Arm 1: C-OPN),2025-11-19,Online/En ligne,5.0,5.0,5.0,5.0,4.0,4.0,5.0,5.0,5.0,43.0,4.777777777777778,Complete
+SSC3117,Baseline (Arm 1: C-OPN),2026-01-22,Online/En ligne,5.0,5.0,4.0,2.0,2.0,1.0,1.0,1.0,3.0,24.0,2.6666666666666665,Complete
+SSC3118,Baseline (Arm 1: C-OPN),2026-01-23,Online/En ligne,7.0,1.0,6.0,7.0,7.0,3.0,4.0,6.0,7.0,48.0,5.333333333333333,Complete

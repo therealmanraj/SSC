@@ -1,0 +1,9 @@
+Project key,Event Name,Questionnaire completed:     Questionnaire rempli:,How is the test completed?     Comment le test est-il complété?,Le patient a-t-il/elle fait le test:,Temps (secondes),Temps (secondes)2,Temps (secondes)3,"Si fluctuations motrices pendant le test, le patient se considère-t-il/elle:",Complete?
+SSC1024,Baseline (Arm 1: C-OPN),2021-07-02,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,"12,4",,,Entre deux,Complete
+SSC1087,Baseline (Arm 1: C-OPN),2021-09-29,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,9.3,,,ON,Complete
+SSC1093,Baseline (Arm 1: C-OPN),2021-09-03,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,11.2,,,ON,Complete
+SSC1263,Baseline (Arm 1: C-OPN),2024-05-30,In-person during a study visit/En personne lors d'une visite d'étude,Repoussant la chaise,,15.57,,OFF,Complete
+SSC1432,Baseline (Arm 1: C-OPN),2023-10-13,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,13.77,,,,Complete
+SSC1550,Baseline (Arm 1: C-OPN),2024-06-07,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10.13,,,,Complete
+SSC1556,Baseline (Arm 1: C-OPN),2024-05-21,In-person during a study visit/En personne lors d'une visite d'étude,Sans pousser - sans aide,10.98,,,,Complete
+SSC1601,Baseline (Arm 1: C-OPN),2025-05-30,Over the phone/Par téléphone,Sans pousser - sans aide,12.3,,,OFF,Complete

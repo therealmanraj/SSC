@@ -1,4 +1,4 @@
-group,form,ids,note
+label,form,ids,note
 full_enrolled,enrollment,2286,
 full_enrolled,Apathy Evaluation Informant,0,complete
 full_enrolled,Apathy Evaluation Self,0,complete
@@ -29,6 +29,306 @@ full_enrolled,SCOPA,188,complete
 full_enrolled,Schwab & England,185,complete
 full_enrolled,Timed Up Go,190,complete
 full_enrolled,UPDRS 1.2 part 3,160,complete
+full_enrolled/by_enrolment_group/PD,enrollment,1890,
+full_enrolled/by_enrolment_group/PD,Apathy Evaluation Informant,0,complete
+full_enrolled/by_enrolment_group/PD,Apathy Evaluation Self,0,complete
+full_enrolled/by_enrolment_group/PD,Apathy Scale,183,complete
+full_enrolled/by_enrolment_group/PD,BAI,47,complete
+full_enrolled/by_enrolment_group/PD,BDII,423,complete
+full_enrolled/by_enrolment_group/PD,Clinical,1661,complete
+full_enrolled/by_enrolment_group/PD,Demographic,1700,complete
+full_enrolled/by_enrolment_group/PD,EHI,396,complete
+full_enrolled/by_enrolment_group/PD,Epidemiological,1890,no_completion_col
+full_enrolled/by_enrolment_group/PD,Fatigue Severity Scale,182,complete
+full_enrolled/by_enrolment_group/PD,FrSBe,0,complete
+full_enrolled/by_enrolment_group/PD,MBIC,425,complete
+full_enrolled/by_enrolment_group/PD,MBIC (CaPRI),303,complete
+full_enrolled/by_enrolment_group/PD,MDS-UPDRS,1480,complete
+full_enrolled/by_enrolment_group/PD,MDS-UPDRS-1,22,complete
+full_enrolled/by_enrolment_group/PD,Medication,1638,complete
+full_enrolled/by_enrolment_group/PD,MoCA,1533,complete
+full_enrolled/by_enrolment_group/PD,MoCA-1,25,complete
+full_enrolled/by_enrolment_group/PD,MoCA-2,1,complete
+full_enrolled/by_enrolment_group/PD,Neuropsychological,272,complete
+full_enrolled/by_enrolment_group/PD,Neuropsychological (CaPRI),121,complete
+full_enrolled/by_enrolment_group/PD,Neuropsychological V02,34,complete
+full_enrolled/by_enrolment_group/PD,PDQ 39,429,complete
+full_enrolled/by_enrolment_group/PD,PDQ 8,187,complete
+full_enrolled/by_enrolment_group/PD,Parkinson Severity Scale,186,complete
+full_enrolled/by_enrolment_group/PD,SCOPA,185,complete
+full_enrolled/by_enrolment_group/PD,Schwab & England,182,complete
+full_enrolled/by_enrolment_group/PD,Timed Up Go,182,complete
+full_enrolled/by_enrolment_group/PD,UPDRS 1.2 part 3,159,complete
+full_enrolled/by_enrolment_group/AP,enrollment,109,
+full_enrolled/by_enrolment_group/AP,Apathy Evaluation Informant,0,complete
+full_enrolled/by_enrolment_group/AP,Apathy Evaluation Self,0,complete
+full_enrolled/by_enrolment_group/AP,Apathy Scale,2,complete
+full_enrolled/by_enrolment_group/AP,BAI,2,complete
+full_enrolled/by_enrolment_group/AP,BDII,7,complete
+full_enrolled/by_enrolment_group/AP,Clinical,86,complete
+full_enrolled/by_enrolment_group/AP,Demographic,93,complete
+full_enrolled/by_enrolment_group/AP,EHI,26,complete
+full_enrolled/by_enrolment_group/AP,Epidemiological,109,no_completion_col
+full_enrolled/by_enrolment_group/AP,Fatigue Severity Scale,2,complete
+full_enrolled/by_enrolment_group/AP,FrSBe,0,complete
+full_enrolled/by_enrolment_group/AP,MBIC,12,complete
+full_enrolled/by_enrolment_group/AP,MBIC (CaPRI),23,complete
+full_enrolled/by_enrolment_group/AP,MDS-UPDRS,60,complete
+full_enrolled/by_enrolment_group/AP,MDS-UPDRS-1,0,complete
+full_enrolled/by_enrolment_group/AP,Medication,82,complete
+full_enrolled/by_enrolment_group/AP,MoCA,72,complete
+full_enrolled/by_enrolment_group/AP,MoCA-1,1,complete
+full_enrolled/by_enrolment_group/AP,MoCA-2,0,complete
+full_enrolled/by_enrolment_group/AP,Neuropsychological,23,complete
+full_enrolled/by_enrolment_group/AP,Neuropsychological (CaPRI),1,complete
+full_enrolled/by_enrolment_group/AP,Neuropsychological V02,1,complete
+full_enrolled/by_enrolment_group/AP,PDQ 39,26,complete
+full_enrolled/by_enrolment_group/AP,PDQ 8,2,complete
+full_enrolled/by_enrolment_group/AP,Parkinson Severity Scale,2,complete
+full_enrolled/by_enrolment_group/AP,SCOPA,2,complete
+full_enrolled/by_enrolment_group/AP,Schwab & England,2,complete
+full_enrolled/by_enrolment_group/AP,Timed Up Go,8,complete
+full_enrolled/by_enrolment_group/AP,UPDRS 1.2 part 3,1,complete
+full_enrolled/by_enrolment_group/HC,enrollment,279,
+full_enrolled/by_enrolment_group/HC,Apathy Evaluation Informant,0,complete
+full_enrolled/by_enrolment_group/HC,Apathy Evaluation Self,0,complete
+full_enrolled/by_enrolment_group/HC,Apathy Scale,1,complete
+full_enrolled/by_enrolment_group/HC,BAI,14,complete
+full_enrolled/by_enrolment_group/HC,BDII,37,complete
+full_enrolled/by_enrolment_group/HC,Clinical,31,complete
+full_enrolled/by_enrolment_group/HC,Demographic,209,complete
+full_enrolled/by_enrolment_group/HC,EHI,56,complete
+full_enrolled/by_enrolment_group/HC,Epidemiological,279,no_completion_col
+full_enrolled/by_enrolment_group/HC,Fatigue Severity Scale,1,complete
+full_enrolled/by_enrolment_group/HC,FrSBe,0,complete
+full_enrolled/by_enrolment_group/HC,MBIC,2,complete
+full_enrolled/by_enrolment_group/HC,MBIC (CaPRI),41,complete
+full_enrolled/by_enrolment_group/HC,MDS-UPDRS,84,complete
+full_enrolled/by_enrolment_group/HC,MDS-UPDRS-1,0,complete
+full_enrolled/by_enrolment_group/HC,Medication,62,complete
+full_enrolled/by_enrolment_group/HC,MoCA,219,complete
+full_enrolled/by_enrolment_group/HC,MoCA-1,9,complete
+full_enrolled/by_enrolment_group/HC,MoCA-2,0,complete
+full_enrolled/by_enrolment_group/HC,Neuropsychological,90,complete
+full_enrolled/by_enrolment_group/HC,Neuropsychological (CaPRI),13,complete
+full_enrolled/by_enrolment_group/HC,Neuropsychological V02,0,complete
+full_enrolled/by_enrolment_group/HC,PDQ 39,7,complete
+full_enrolled/by_enrolment_group/HC,PDQ 8,1,complete
+full_enrolled/by_enrolment_group/HC,Parkinson Severity Scale,1,complete
+full_enrolled/by_enrolment_group/HC,SCOPA,1,complete
+full_enrolled/by_enrolment_group/HC,Schwab & England,1,complete
+full_enrolled/by_enrolment_group/HC,Timed Up Go,0,complete
+full_enrolled/by_enrolment_group/HC,UPDRS 1.2 part 3,0,complete
+full_enrolled/by_determined_dx/0_PD,enrollment,1681,
+full_enrolled/by_determined_dx/0_PD,Apathy Evaluation Informant,0,complete
+full_enrolled/by_determined_dx/0_PD,Apathy Evaluation Self,0,complete
+full_enrolled/by_determined_dx/0_PD,Apathy Scale,182,complete
+full_enrolled/by_determined_dx/0_PD,BAI,47,complete
+full_enrolled/by_determined_dx/0_PD,BDII,423,complete
+full_enrolled/by_determined_dx/0_PD,Clinical,1651,complete
+full_enrolled/by_determined_dx/0_PD,Demographic,1592,complete
+full_enrolled/by_determined_dx/0_PD,EHI,396,complete
+full_enrolled/by_determined_dx/0_PD,Epidemiological,1681,no_completion_col
+full_enrolled/by_determined_dx/0_PD,Fatigue Severity Scale,181,complete
+full_enrolled/by_determined_dx/0_PD,FrSBe,0,complete
+full_enrolled/by_determined_dx/0_PD,MBIC,406,complete
+full_enrolled/by_determined_dx/0_PD,MBIC (CaPRI),303,complete
+full_enrolled/by_determined_dx/0_PD,MDS-UPDRS,1438,complete
+full_enrolled/by_determined_dx/0_PD,MDS-UPDRS-1,21,complete
+full_enrolled/by_determined_dx/0_PD,Medication,1613,complete
+full_enrolled/by_determined_dx/0_PD,MoCA,1484,complete
+full_enrolled/by_determined_dx/0_PD,MoCA-1,22,complete
+full_enrolled/by_determined_dx/0_PD,MoCA-2,1,complete
+full_enrolled/by_determined_dx/0_PD,Neuropsychological,254,complete
+full_enrolled/by_determined_dx/0_PD,Neuropsychological (CaPRI),121,complete
+full_enrolled/by_determined_dx/0_PD,Neuropsychological V02,34,complete
+full_enrolled/by_determined_dx/0_PD,PDQ 39,400,complete
+full_enrolled/by_determined_dx/0_PD,PDQ 8,186,complete
+full_enrolled/by_determined_dx/0_PD,Parkinson Severity Scale,185,complete
+full_enrolled/by_determined_dx/0_PD,SCOPA,184,complete
+full_enrolled/by_determined_dx/0_PD,Schwab & England,181,complete
+full_enrolled/by_determined_dx/0_PD,Timed Up Go,172,complete
+full_enrolled/by_determined_dx/0_PD,UPDRS 1.2 part 3,158,complete
+full_enrolled/by_determined_dx/1_PSP,enrollment,27,
+full_enrolled/by_determined_dx/1_PSP,Apathy Evaluation Informant,0,complete
+full_enrolled/by_determined_dx/1_PSP,Apathy Evaluation Self,0,complete
+full_enrolled/by_determined_dx/1_PSP,Apathy Scale,2,complete
+full_enrolled/by_determined_dx/1_PSP,BAI,0,complete
+full_enrolled/by_determined_dx/1_PSP,BDII,2,complete
+full_enrolled/by_determined_dx/1_PSP,Clinical,25,complete
+full_enrolled/by_determined_dx/1_PSP,Demographic,24,complete
+full_enrolled/by_determined_dx/1_PSP,EHI,6,complete
+full_enrolled/by_determined_dx/1_PSP,Epidemiological,27,no_completion_col
+full_enrolled/by_determined_dx/1_PSP,Fatigue Severity Scale,2,complete
+full_enrolled/by_determined_dx/1_PSP,FrSBe,0,complete
+full_enrolled/by_determined_dx/1_PSP,MBIC,3,complete
+full_enrolled/by_determined_dx/1_PSP,MBIC (CaPRI),5,complete
+full_enrolled/by_determined_dx/1_PSP,MDS-UPDRS,21,complete
+full_enrolled/by_determined_dx/1_PSP,MDS-UPDRS-1,0,complete
+full_enrolled/by_determined_dx/1_PSP,Medication,25,complete
+full_enrolled/by_determined_dx/1_PSP,MoCA,23,complete
+full_enrolled/by_determined_dx/1_PSP,MoCA-1,1,complete
+full_enrolled/by_determined_dx/1_PSP,MoCA-2,0,complete
+full_enrolled/by_determined_dx/1_PSP,Neuropsychological,7,complete
+full_enrolled/by_determined_dx/1_PSP,Neuropsychological (CaPRI),0,complete
+full_enrolled/by_determined_dx/1_PSP,Neuropsychological V02,1,complete
+full_enrolled/by_determined_dx/1_PSP,PDQ 39,7,complete
+full_enrolled/by_determined_dx/1_PSP,PDQ 8,2,complete
+full_enrolled/by_determined_dx/1_PSP,Parkinson Severity Scale,2,complete
+full_enrolled/by_determined_dx/1_PSP,SCOPA,2,complete
+full_enrolled/by_determined_dx/1_PSP,Schwab & England,2,complete
+full_enrolled/by_determined_dx/1_PSP,Timed Up Go,2,complete
+full_enrolled/by_determined_dx/1_PSP,UPDRS 1.2 part 3,0,complete
+full_enrolled/by_determined_dx/2_MSA,enrollment,18,
+full_enrolled/by_determined_dx/2_MSA,Apathy Evaluation Informant,0,complete
+full_enrolled/by_determined_dx/2_MSA,Apathy Evaluation Self,0,complete
+full_enrolled/by_determined_dx/2_MSA,Apathy Scale,0,complete
+full_enrolled/by_determined_dx/2_MSA,BAI,1,complete
+full_enrolled/by_determined_dx/2_MSA,BDII,2,complete
+full_enrolled/by_determined_dx/2_MSA,Clinical,16,complete
+full_enrolled/by_determined_dx/2_MSA,Demographic,17,complete
+full_enrolled/by_determined_dx/2_MSA,EHI,4,complete
+full_enrolled/by_determined_dx/2_MSA,Epidemiological,18,no_completion_col
+full_enrolled/by_determined_dx/2_MSA,Fatigue Severity Scale,0,complete
+full_enrolled/by_determined_dx/2_MSA,FrSBe,0,complete
+full_enrolled/by_determined_dx/2_MSA,MBIC,3,complete
+full_enrolled/by_determined_dx/2_MSA,MBIC (CaPRI),4,complete
+full_enrolled/by_determined_dx/2_MSA,MDS-UPDRS,9,complete
+full_enrolled/by_determined_dx/2_MSA,MDS-UPDRS-1,0,complete
+full_enrolled/by_determined_dx/2_MSA,Medication,16,complete
+full_enrolled/by_determined_dx/2_MSA,MoCA,9,complete
+full_enrolled/by_determined_dx/2_MSA,MoCA-1,0,complete
+full_enrolled/by_determined_dx/2_MSA,MoCA-2,0,complete
+full_enrolled/by_determined_dx/2_MSA,Neuropsychological,3,complete
+full_enrolled/by_determined_dx/2_MSA,Neuropsychological (CaPRI),1,complete
+full_enrolled/by_determined_dx/2_MSA,Neuropsychological V02,0,complete
+full_enrolled/by_determined_dx/2_MSA,PDQ 39,4,complete
+full_enrolled/by_determined_dx/2_MSA,PDQ 8,0,complete
+full_enrolled/by_determined_dx/2_MSA,Parkinson Severity Scale,0,complete
+full_enrolled/by_determined_dx/2_MSA,SCOPA,0,complete
+full_enrolled/by_determined_dx/2_MSA,Schwab & England,0,complete
+full_enrolled/by_determined_dx/2_MSA,Timed Up Go,1,complete
+full_enrolled/by_determined_dx/2_MSA,UPDRS 1.2 part 3,1,complete
+full_enrolled/by_determined_dx/3_CBS,enrollment,3,
+full_enrolled/by_determined_dx/3_CBS,Apathy Evaluation Informant,0,complete
+full_enrolled/by_determined_dx/3_CBS,Apathy Evaluation Self,0,complete
+full_enrolled/by_determined_dx/3_CBS,Apathy Scale,0,complete
+full_enrolled/by_determined_dx/3_CBS,BAI,0,complete
+full_enrolled/by_determined_dx/3_CBS,BDII,0,complete
+full_enrolled/by_determined_dx/3_CBS,Clinical,3,complete
+full_enrolled/by_determined_dx/3_CBS,Demographic,3,complete
+full_enrolled/by_determined_dx/3_CBS,EHI,2,complete
+full_enrolled/by_determined_dx/3_CBS,Epidemiological,3,no_completion_col
+full_enrolled/by_determined_dx/3_CBS,Fatigue Severity Scale,0,complete
+full_enrolled/by_determined_dx/3_CBS,FrSBe,0,complete
+full_enrolled/by_determined_dx/3_CBS,MBIC,0,complete
+full_enrolled/by_determined_dx/3_CBS,MBIC (CaPRI),2,complete
+full_enrolled/by_determined_dx/3_CBS,MDS-UPDRS,1,complete
+full_enrolled/by_determined_dx/3_CBS,MDS-UPDRS-1,0,complete
+full_enrolled/by_determined_dx/3_CBS,Medication,3,complete
+full_enrolled/by_determined_dx/3_CBS,MoCA,1,complete
+full_enrolled/by_determined_dx/3_CBS,MoCA-1,0,complete
+full_enrolled/by_determined_dx/3_CBS,MoCA-2,0,complete
+full_enrolled/by_determined_dx/3_CBS,Neuropsychological,0,complete
+full_enrolled/by_determined_dx/3_CBS,Neuropsychological (CaPRI),0,complete
+full_enrolled/by_determined_dx/3_CBS,Neuropsychological V02,0,complete
+full_enrolled/by_determined_dx/3_CBS,PDQ 39,0,complete
+full_enrolled/by_determined_dx/3_CBS,PDQ 8,0,complete
+full_enrolled/by_determined_dx/3_CBS,Parkinson Severity Scale,0,complete
+full_enrolled/by_determined_dx/3_CBS,SCOPA,0,complete
+full_enrolled/by_determined_dx/3_CBS,Schwab & England,0,complete
+full_enrolled/by_determined_dx/3_CBS,Timed Up Go,0,complete
+full_enrolled/by_determined_dx/3_CBS,UPDRS 1.2 part 3,0,complete
+full_enrolled/by_determined_dx/4_DLB,enrollment,9,
+full_enrolled/by_determined_dx/4_DLB,Apathy Evaluation Informant,0,complete
+full_enrolled/by_determined_dx/4_DLB,Apathy Evaluation Self,0,complete
+full_enrolled/by_determined_dx/4_DLB,Apathy Scale,0,complete
+full_enrolled/by_determined_dx/4_DLB,BAI,0,complete
+full_enrolled/by_determined_dx/4_DLB,BDII,0,complete
+full_enrolled/by_determined_dx/4_DLB,Clinical,9,complete
+full_enrolled/by_determined_dx/4_DLB,Demographic,9,complete
+full_enrolled/by_determined_dx/4_DLB,EHI,2,complete
+full_enrolled/by_determined_dx/4_DLB,Epidemiological,9,no_completion_col
+full_enrolled/by_determined_dx/4_DLB,Fatigue Severity Scale,0,complete
+full_enrolled/by_determined_dx/4_DLB,FrSBe,0,complete
+full_enrolled/by_determined_dx/4_DLB,MBIC,0,complete
+full_enrolled/by_determined_dx/4_DLB,MBIC (CaPRI),1,complete
+full_enrolled/by_determined_dx/4_DLB,MDS-UPDRS,8,complete
+full_enrolled/by_determined_dx/4_DLB,MDS-UPDRS-1,0,complete
+full_enrolled/by_determined_dx/4_DLB,Medication,9,complete
+full_enrolled/by_determined_dx/4_DLB,MoCA,8,complete
+full_enrolled/by_determined_dx/4_DLB,MoCA-1,0,complete
+full_enrolled/by_determined_dx/4_DLB,MoCA-2,0,complete
+full_enrolled/by_determined_dx/4_DLB,Neuropsychological,2,complete
+full_enrolled/by_determined_dx/4_DLB,Neuropsychological (CaPRI),0,complete
+full_enrolled/by_determined_dx/4_DLB,Neuropsychological V02,0,complete
+full_enrolled/by_determined_dx/4_DLB,PDQ 39,7,complete
+full_enrolled/by_determined_dx/4_DLB,PDQ 8,0,complete
+full_enrolled/by_determined_dx/4_DLB,Parkinson Severity Scale,0,complete
+full_enrolled/by_determined_dx/4_DLB,SCOPA,0,complete
+full_enrolled/by_determined_dx/4_DLB,Schwab & England,0,complete
+full_enrolled/by_determined_dx/4_DLB,Timed Up Go,0,complete
+full_enrolled/by_determined_dx/4_DLB,UPDRS 1.2 part 3,0,complete
+full_enrolled/by_determined_dx/6_ET,enrollment,9,
+full_enrolled/by_determined_dx/6_ET,Apathy Evaluation Informant,0,complete
+full_enrolled/by_determined_dx/6_ET,Apathy Evaluation Self,0,complete
+full_enrolled/by_determined_dx/6_ET,Apathy Scale,0,complete
+full_enrolled/by_determined_dx/6_ET,BAI,0,complete
+full_enrolled/by_determined_dx/6_ET,BDII,0,complete
+full_enrolled/by_determined_dx/6_ET,Clinical,8,complete
+full_enrolled/by_determined_dx/6_ET,Demographic,7,complete
+full_enrolled/by_determined_dx/6_ET,EHI,0,complete
+full_enrolled/by_determined_dx/6_ET,Epidemiological,9,no_completion_col
+full_enrolled/by_determined_dx/6_ET,Fatigue Severity Scale,0,complete
+full_enrolled/by_determined_dx/6_ET,FrSBe,0,complete
+full_enrolled/by_determined_dx/6_ET,MBIC,1,complete
+full_enrolled/by_determined_dx/6_ET,MBIC (CaPRI),0,complete
+full_enrolled/by_determined_dx/6_ET,MDS-UPDRS,1,complete
+full_enrolled/by_determined_dx/6_ET,MDS-UPDRS-1,0,complete
+full_enrolled/by_determined_dx/6_ET,Medication,7,complete
+full_enrolled/by_determined_dx/6_ET,MoCA,6,complete
+full_enrolled/by_determined_dx/6_ET,MoCA-1,0,complete
+full_enrolled/by_determined_dx/6_ET,MoCA-2,0,complete
+full_enrolled/by_determined_dx/6_ET,Neuropsychological,6,complete
+full_enrolled/by_determined_dx/6_ET,Neuropsychological (CaPRI),0,complete
+full_enrolled/by_determined_dx/6_ET,Neuropsychological V02,0,complete
+full_enrolled/by_determined_dx/6_ET,PDQ 39,5,complete
+full_enrolled/by_determined_dx/6_ET,PDQ 8,0,complete
+full_enrolled/by_determined_dx/6_ET,Parkinson Severity Scale,0,complete
+full_enrolled/by_determined_dx/6_ET,SCOPA,0,complete
+full_enrolled/by_determined_dx/6_ET,Schwab & England,0,complete
+full_enrolled/by_determined_dx/6_ET,Timed Up Go,1,complete
+full_enrolled/by_determined_dx/6_ET,UPDRS 1.2 part 3,0,complete
+full_enrolled/by_determined_dx/7_RBD,enrollment,17,
+full_enrolled/by_determined_dx/7_RBD,Apathy Evaluation Informant,0,complete
+full_enrolled/by_determined_dx/7_RBD,Apathy Evaluation Self,0,complete
+full_enrolled/by_determined_dx/7_RBD,Apathy Scale,0,complete
+full_enrolled/by_determined_dx/7_RBD,BAI,0,complete
+full_enrolled/by_determined_dx/7_RBD,BDII,0,complete
+full_enrolled/by_determined_dx/7_RBD,Clinical,5,complete
+full_enrolled/by_determined_dx/7_RBD,Demographic,8,complete
+full_enrolled/by_determined_dx/7_RBD,EHI,0,complete
+full_enrolled/by_determined_dx/7_RBD,Epidemiological,17,no_completion_col
+full_enrolled/by_determined_dx/7_RBD,Fatigue Severity Scale,0,complete
+full_enrolled/by_determined_dx/7_RBD,FrSBe,0,complete
+full_enrolled/by_determined_dx/7_RBD,MBIC,0,complete
+full_enrolled/by_determined_dx/7_RBD,MBIC (CaPRI),0,complete
+full_enrolled/by_determined_dx/7_RBD,MDS-UPDRS,6,complete
+full_enrolled/by_determined_dx/7_RBD,MDS-UPDRS-1,0,complete
+full_enrolled/by_determined_dx/7_RBD,Medication,4,complete
+full_enrolled/by_determined_dx/7_RBD,MoCA,6,complete
+full_enrolled/by_determined_dx/7_RBD,MoCA-1,0,complete
+full_enrolled/by_determined_dx/7_RBD,MoCA-2,0,complete
+full_enrolled/by_determined_dx/7_RBD,Neuropsychological,2,complete
+full_enrolled/by_determined_dx/7_RBD,Neuropsychological (CaPRI),0,complete
+full_enrolled/by_determined_dx/7_RBD,Neuropsychological V02,0,complete
+full_enrolled/by_determined_dx/7_RBD,PDQ 39,1,complete
+full_enrolled/by_determined_dx/7_RBD,PDQ 8,0,complete
+full_enrolled/by_determined_dx/7_RBD,Parkinson Severity Scale,0,complete
+full_enrolled/by_determined_dx/7_RBD,SCOPA,0,complete
+full_enrolled/by_determined_dx/7_RBD,Schwab & England,0,complete
+full_enrolled/by_determined_dx/7_RBD,Timed Up Go,3,complete
+full_enrolled/by_determined_dx/7_RBD,UPDRS 1.2 part 3,0,complete
 enrolled_and_partial,enrollment,2896,
 enrolled_and_partial,Apathy Evaluation Informant,0,complete
 enrolled_and_partial,Apathy Evaluation Self,0,complete
@@ -59,3 +359,303 @@ enrolled_and_partial,SCOPA,188,complete
 enrolled_and_partial,Schwab & England,185,complete
 enrolled_and_partial,Timed Up Go,204,complete
 enrolled_and_partial,UPDRS 1.2 part 3,183,complete
+enrolled_and_partial/by_enrolment_group/PD,enrollment,2382,
+enrolled_and_partial/by_enrolment_group/PD,Apathy Evaluation Informant,0,complete
+enrolled_and_partial/by_enrolment_group/PD,Apathy Evaluation Self,0,complete
+enrolled_and_partial/by_enrolment_group/PD,Apathy Scale,183,complete
+enrolled_and_partial/by_enrolment_group/PD,BAI,47,complete
+enrolled_and_partial/by_enrolment_group/PD,BDII,423,complete
+enrolled_and_partial/by_enrolment_group/PD,Clinical,1828,complete
+enrolled_and_partial/by_enrolment_group/PD,Demographic,1862,complete
+enrolled_and_partial/by_enrolment_group/PD,EHI,396,complete
+enrolled_and_partial/by_enrolment_group/PD,Epidemiological,2382,no_completion_col
+enrolled_and_partial/by_enrolment_group/PD,Fatigue Severity Scale,182,complete
+enrolled_and_partial/by_enrolment_group/PD,FrSBe,0,complete
+enrolled_and_partial/by_enrolment_group/PD,MBIC,425,complete
+enrolled_and_partial/by_enrolment_group/PD,MBIC (CaPRI),303,complete
+enrolled_and_partial/by_enrolment_group/PD,MDS-UPDRS,1534,complete
+enrolled_and_partial/by_enrolment_group/PD,MDS-UPDRS-1,27,complete
+enrolled_and_partial/by_enrolment_group/PD,Medication,1796,complete
+enrolled_and_partial/by_enrolment_group/PD,MoCA,1643,complete
+enrolled_and_partial/by_enrolment_group/PD,MoCA-1,40,complete
+enrolled_and_partial/by_enrolment_group/PD,MoCA-2,1,complete
+enrolled_and_partial/by_enrolment_group/PD,Neuropsychological,344,complete
+enrolled_and_partial/by_enrolment_group/PD,Neuropsychological (CaPRI),121,complete
+enrolled_and_partial/by_enrolment_group/PD,Neuropsychological V02,35,complete
+enrolled_and_partial/by_enrolment_group/PD,PDQ 39,502,complete
+enrolled_and_partial/by_enrolment_group/PD,PDQ 8,187,complete
+enrolled_and_partial/by_enrolment_group/PD,Parkinson Severity Scale,186,complete
+enrolled_and_partial/by_enrolment_group/PD,SCOPA,185,complete
+enrolled_and_partial/by_enrolment_group/PD,Schwab & England,182,complete
+enrolled_and_partial/by_enrolment_group/PD,Timed Up Go,196,complete
+enrolled_and_partial/by_enrolment_group/PD,UPDRS 1.2 part 3,182,complete
+enrolled_and_partial/by_enrolment_group/AP,enrollment,132,
+enrolled_and_partial/by_enrolment_group/AP,Apathy Evaluation Informant,0,complete
+enrolled_and_partial/by_enrolment_group/AP,Apathy Evaluation Self,0,complete
+enrolled_and_partial/by_enrolment_group/AP,Apathy Scale,2,complete
+enrolled_and_partial/by_enrolment_group/AP,BAI,2,complete
+enrolled_and_partial/by_enrolment_group/AP,BDII,7,complete
+enrolled_and_partial/by_enrolment_group/AP,Clinical,89,complete
+enrolled_and_partial/by_enrolment_group/AP,Demographic,97,complete
+enrolled_and_partial/by_enrolment_group/AP,EHI,26,complete
+enrolled_and_partial/by_enrolment_group/AP,Epidemiological,132,no_completion_col
+enrolled_and_partial/by_enrolment_group/AP,Fatigue Severity Scale,2,complete
+enrolled_and_partial/by_enrolment_group/AP,FrSBe,0,complete
+enrolled_and_partial/by_enrolment_group/AP,MBIC,12,complete
+enrolled_and_partial/by_enrolment_group/AP,MBIC (CaPRI),23,complete
+enrolled_and_partial/by_enrolment_group/AP,MDS-UPDRS,60,complete
+enrolled_and_partial/by_enrolment_group/AP,MDS-UPDRS-1,0,complete
+enrolled_and_partial/by_enrolment_group/AP,Medication,85,complete
+enrolled_and_partial/by_enrolment_group/AP,MoCA,72,complete
+enrolled_and_partial/by_enrolment_group/AP,MoCA-1,1,complete
+enrolled_and_partial/by_enrolment_group/AP,MoCA-2,0,complete
+enrolled_and_partial/by_enrolment_group/AP,Neuropsychological,24,complete
+enrolled_and_partial/by_enrolment_group/AP,Neuropsychological (CaPRI),1,complete
+enrolled_and_partial/by_enrolment_group/AP,Neuropsychological V02,1,complete
+enrolled_and_partial/by_enrolment_group/AP,PDQ 39,26,complete
+enrolled_and_partial/by_enrolment_group/AP,PDQ 8,2,complete
+enrolled_and_partial/by_enrolment_group/AP,Parkinson Severity Scale,2,complete
+enrolled_and_partial/by_enrolment_group/AP,SCOPA,2,complete
+enrolled_and_partial/by_enrolment_group/AP,Schwab & England,2,complete
+enrolled_and_partial/by_enrolment_group/AP,Timed Up Go,8,complete
+enrolled_and_partial/by_enrolment_group/AP,UPDRS 1.2 part 3,1,complete
+enrolled_and_partial/by_enrolment_group/HC,enrollment,359,
+enrolled_and_partial/by_enrolment_group/HC,Apathy Evaluation Informant,0,complete
+enrolled_and_partial/by_enrolment_group/HC,Apathy Evaluation Self,0,complete
+enrolled_and_partial/by_enrolment_group/HC,Apathy Scale,1,complete
+enrolled_and_partial/by_enrolment_group/HC,BAI,14,complete
+enrolled_and_partial/by_enrolment_group/HC,BDII,37,complete
+enrolled_and_partial/by_enrolment_group/HC,Clinical,32,complete
+enrolled_and_partial/by_enrolment_group/HC,Demographic,211,complete
+enrolled_and_partial/by_enrolment_group/HC,EHI,56,complete
+enrolled_and_partial/by_enrolment_group/HC,Epidemiological,359,no_completion_col
+enrolled_and_partial/by_enrolment_group/HC,Fatigue Severity Scale,1,complete
+enrolled_and_partial/by_enrolment_group/HC,FrSBe,0,complete
+enrolled_and_partial/by_enrolment_group/HC,MBIC,2,complete
+enrolled_and_partial/by_enrolment_group/HC,MBIC (CaPRI),41,complete
+enrolled_and_partial/by_enrolment_group/HC,MDS-UPDRS,84,complete
+enrolled_and_partial/by_enrolment_group/HC,MDS-UPDRS-1,0,complete
+enrolled_and_partial/by_enrolment_group/HC,Medication,64,complete
+enrolled_and_partial/by_enrolment_group/HC,MoCA,228,complete
+enrolled_and_partial/by_enrolment_group/HC,MoCA-1,9,complete
+enrolled_and_partial/by_enrolment_group/HC,MoCA-2,0,complete
+enrolled_and_partial/by_enrolment_group/HC,Neuropsychological,97,complete
+enrolled_and_partial/by_enrolment_group/HC,Neuropsychological (CaPRI),13,complete
+enrolled_and_partial/by_enrolment_group/HC,Neuropsychological V02,0,complete
+enrolled_and_partial/by_enrolment_group/HC,PDQ 39,7,complete
+enrolled_and_partial/by_enrolment_group/HC,PDQ 8,1,complete
+enrolled_and_partial/by_enrolment_group/HC,Parkinson Severity Scale,1,complete
+enrolled_and_partial/by_enrolment_group/HC,SCOPA,1,complete
+enrolled_and_partial/by_enrolment_group/HC,Schwab & England,1,complete
+enrolled_and_partial/by_enrolment_group/HC,Timed Up Go,0,complete
+enrolled_and_partial/by_enrolment_group/HC,UPDRS 1.2 part 3,0,complete
+enrolled_and_partial/by_determined_dx/0_PD,enrollment,1879,
+enrolled_and_partial/by_determined_dx/0_PD,Apathy Evaluation Informant,0,complete
+enrolled_and_partial/by_determined_dx/0_PD,Apathy Evaluation Self,0,complete
+enrolled_and_partial/by_determined_dx/0_PD,Apathy Scale,182,complete
+enrolled_and_partial/by_determined_dx/0_PD,BAI,47,complete
+enrolled_and_partial/by_determined_dx/0_PD,BDII,423,complete
+enrolled_and_partial/by_determined_dx/0_PD,Clinical,1806,complete
+enrolled_and_partial/by_determined_dx/0_PD,Demographic,1738,complete
+enrolled_and_partial/by_determined_dx/0_PD,EHI,396,complete
+enrolled_and_partial/by_determined_dx/0_PD,Epidemiological,1879,no_completion_col
+enrolled_and_partial/by_determined_dx/0_PD,Fatigue Severity Scale,181,complete
+enrolled_and_partial/by_determined_dx/0_PD,FrSBe,0,complete
+enrolled_and_partial/by_determined_dx/0_PD,MBIC,406,complete
+enrolled_and_partial/by_determined_dx/0_PD,MBIC (CaPRI),303,complete
+enrolled_and_partial/by_determined_dx/0_PD,MDS-UPDRS,1483,complete
+enrolled_and_partial/by_determined_dx/0_PD,MDS-UPDRS-1,25,complete
+enrolled_and_partial/by_determined_dx/0_PD,Medication,1760,complete
+enrolled_and_partial/by_determined_dx/0_PD,MoCA,1548,complete
+enrolled_and_partial/by_determined_dx/0_PD,MoCA-1,33,complete
+enrolled_and_partial/by_determined_dx/0_PD,MoCA-2,1,complete
+enrolled_and_partial/by_determined_dx/0_PD,Neuropsychological,301,complete
+enrolled_and_partial/by_determined_dx/0_PD,Neuropsychological (CaPRI),121,complete
+enrolled_and_partial/by_determined_dx/0_PD,Neuropsychological V02,35,complete
+enrolled_and_partial/by_determined_dx/0_PD,PDQ 39,464,complete
+enrolled_and_partial/by_determined_dx/0_PD,PDQ 8,186,complete
+enrolled_and_partial/by_determined_dx/0_PD,Parkinson Severity Scale,185,complete
+enrolled_and_partial/by_determined_dx/0_PD,SCOPA,184,complete
+enrolled_and_partial/by_determined_dx/0_PD,Schwab & England,181,complete
+enrolled_and_partial/by_determined_dx/0_PD,Timed Up Go,184,complete
+enrolled_and_partial/by_determined_dx/0_PD,UPDRS 1.2 part 3,177,complete
+enrolled_and_partial/by_determined_dx/1_PSP,enrollment,30,
+enrolled_and_partial/by_determined_dx/1_PSP,Apathy Evaluation Informant,0,complete
+enrolled_and_partial/by_determined_dx/1_PSP,Apathy Evaluation Self,0,complete
+enrolled_and_partial/by_determined_dx/1_PSP,Apathy Scale,2,complete
+enrolled_and_partial/by_determined_dx/1_PSP,BAI,0,complete
+enrolled_and_partial/by_determined_dx/1_PSP,BDII,2,complete
+enrolled_and_partial/by_determined_dx/1_PSP,Clinical,27,complete
+enrolled_and_partial/by_determined_dx/1_PSP,Demographic,26,complete
+enrolled_and_partial/by_determined_dx/1_PSP,EHI,6,complete
+enrolled_and_partial/by_determined_dx/1_PSP,Epidemiological,30,no_completion_col
+enrolled_and_partial/by_determined_dx/1_PSP,Fatigue Severity Scale,2,complete
+enrolled_and_partial/by_determined_dx/1_PSP,FrSBe,0,complete
+enrolled_and_partial/by_determined_dx/1_PSP,MBIC,3,complete
+enrolled_and_partial/by_determined_dx/1_PSP,MBIC (CaPRI),5,complete
+enrolled_and_partial/by_determined_dx/1_PSP,MDS-UPDRS,21,complete
+enrolled_and_partial/by_determined_dx/1_PSP,MDS-UPDRS-1,0,complete
+enrolled_and_partial/by_determined_dx/1_PSP,Medication,27,complete
+enrolled_and_partial/by_determined_dx/1_PSP,MoCA,24,complete
+enrolled_and_partial/by_determined_dx/1_PSP,MoCA-1,1,complete
+enrolled_and_partial/by_determined_dx/1_PSP,MoCA-2,0,complete
+enrolled_and_partial/by_determined_dx/1_PSP,Neuropsychological,8,complete
+enrolled_and_partial/by_determined_dx/1_PSP,Neuropsychological (CaPRI),0,complete
+enrolled_and_partial/by_determined_dx/1_PSP,Neuropsychological V02,1,complete
+enrolled_and_partial/by_determined_dx/1_PSP,PDQ 39,7,complete
+enrolled_and_partial/by_determined_dx/1_PSP,PDQ 8,2,complete
+enrolled_and_partial/by_determined_dx/1_PSP,Parkinson Severity Scale,2,complete
+enrolled_and_partial/by_determined_dx/1_PSP,SCOPA,2,complete
+enrolled_and_partial/by_determined_dx/1_PSP,Schwab & England,2,complete
+enrolled_and_partial/by_determined_dx/1_PSP,Timed Up Go,2,complete
+enrolled_and_partial/by_determined_dx/1_PSP,UPDRS 1.2 part 3,0,complete
+enrolled_and_partial/by_determined_dx/2_MSA,enrollment,21,
+enrolled_and_partial/by_determined_dx/2_MSA,Apathy Evaluation Informant,0,complete
+enrolled_and_partial/by_determined_dx/2_MSA,Apathy Evaluation Self,0,complete
+enrolled_and_partial/by_determined_dx/2_MSA,Apathy Scale,0,complete
+enrolled_and_partial/by_determined_dx/2_MSA,BAI,1,complete
+enrolled_and_partial/by_determined_dx/2_MSA,BDII,2,complete
+enrolled_and_partial/by_determined_dx/2_MSA,Clinical,18,complete
+enrolled_and_partial/by_determined_dx/2_MSA,Demographic,19,complete
+enrolled_and_partial/by_determined_dx/2_MSA,EHI,4,complete
+enrolled_and_partial/by_determined_dx/2_MSA,Epidemiological,21,no_completion_col
+enrolled_and_partial/by_determined_dx/2_MSA,Fatigue Severity Scale,0,complete
+enrolled_and_partial/by_determined_dx/2_MSA,FrSBe,0,complete
+enrolled_and_partial/by_determined_dx/2_MSA,MBIC,3,complete
+enrolled_and_partial/by_determined_dx/2_MSA,MBIC (CaPRI),4,complete
+enrolled_and_partial/by_determined_dx/2_MSA,MDS-UPDRS,10,complete
+enrolled_and_partial/by_determined_dx/2_MSA,MDS-UPDRS-1,0,complete
+enrolled_and_partial/by_determined_dx/2_MSA,Medication,18,complete
+enrolled_and_partial/by_determined_dx/2_MSA,MoCA,10,complete
+enrolled_and_partial/by_determined_dx/2_MSA,MoCA-1,1,complete
+enrolled_and_partial/by_determined_dx/2_MSA,MoCA-2,0,complete
+enrolled_and_partial/by_determined_dx/2_MSA,Neuropsychological,4,complete
+enrolled_and_partial/by_determined_dx/2_MSA,Neuropsychological (CaPRI),1,complete
+enrolled_and_partial/by_determined_dx/2_MSA,Neuropsychological V02,0,complete
+enrolled_and_partial/by_determined_dx/2_MSA,PDQ 39,4,complete
+enrolled_and_partial/by_determined_dx/2_MSA,PDQ 8,0,complete
+enrolled_and_partial/by_determined_dx/2_MSA,Parkinson Severity Scale,0,complete
+enrolled_and_partial/by_determined_dx/2_MSA,SCOPA,0,complete
+enrolled_and_partial/by_determined_dx/2_MSA,Schwab & England,0,complete
+enrolled_and_partial/by_determined_dx/2_MSA,Timed Up Go,1,complete
+enrolled_and_partial/by_determined_dx/2_MSA,UPDRS 1.2 part 3,1,complete
+enrolled_and_partial/by_determined_dx/3_CBS,enrollment,3,
+enrolled_and_partial/by_determined_dx/3_CBS,Apathy Evaluation Informant,0,complete
+enrolled_and_partial/by_determined_dx/3_CBS,Apathy Evaluation Self,0,complete
+enrolled_and_partial/by_determined_dx/3_CBS,Apathy Scale,0,complete
+enrolled_and_partial/by_determined_dx/3_CBS,BAI,0,complete
+enrolled_and_partial/by_determined_dx/3_CBS,BDII,0,complete
+enrolled_and_partial/by_determined_dx/3_CBS,Clinical,3,complete
+enrolled_and_partial/by_determined_dx/3_CBS,Demographic,3,complete
+enrolled_and_partial/by_determined_dx/3_CBS,EHI,2,complete
+enrolled_and_partial/by_determined_dx/3_CBS,Epidemiological,3,no_completion_col
+enrolled_and_partial/by_determined_dx/3_CBS,Fatigue Severity Scale,0,complete
+enrolled_and_partial/by_determined_dx/3_CBS,FrSBe,0,complete
+enrolled_and_partial/by_determined_dx/3_CBS,MBIC,0,complete
+enrolled_and_partial/by_determined_dx/3_CBS,MBIC (CaPRI),2,complete
+enrolled_and_partial/by_determined_dx/3_CBS,MDS-UPDRS,1,complete
+enrolled_and_partial/by_determined_dx/3_CBS,MDS-UPDRS-1,0,complete
+enrolled_and_partial/by_determined_dx/3_CBS,Medication,3,complete
+enrolled_and_partial/by_determined_dx/3_CBS,MoCA,1,complete
+enrolled_and_partial/by_determined_dx/3_CBS,MoCA-1,0,complete
+enrolled_and_partial/by_determined_dx/3_CBS,MoCA-2,0,complete
+enrolled_and_partial/by_determined_dx/3_CBS,Neuropsychological,0,complete
+enrolled_and_partial/by_determined_dx/3_CBS,Neuropsychological (CaPRI),0,complete
+enrolled_and_partial/by_determined_dx/3_CBS,Neuropsychological V02,0,complete
+enrolled_and_partial/by_determined_dx/3_CBS,PDQ 39,0,complete
+enrolled_and_partial/by_determined_dx/3_CBS,PDQ 8,0,complete
+enrolled_and_partial/by_determined_dx/3_CBS,Parkinson Severity Scale,0,complete
+enrolled_and_partial/by_determined_dx/3_CBS,SCOPA,0,complete
+enrolled_and_partial/by_determined_dx/3_CBS,Schwab & England,0,complete
+enrolled_and_partial/by_determined_dx/3_CBS,Timed Up Go,0,complete
+enrolled_and_partial/by_determined_dx/3_CBS,UPDRS 1.2 part 3,0,complete
+enrolled_and_partial/by_determined_dx/4_DLB,enrollment,9,
+enrolled_and_partial/by_determined_dx/4_DLB,Apathy Evaluation Informant,0,complete
+enrolled_and_partial/by_determined_dx/4_DLB,Apathy Evaluation Self,0,complete
+enrolled_and_partial/by_determined_dx/4_DLB,Apathy Scale,0,complete
+enrolled_and_partial/by_determined_dx/4_DLB,BAI,0,complete
+enrolled_and_partial/by_determined_dx/4_DLB,BDII,0,complete
+enrolled_and_partial/by_determined_dx/4_DLB,Clinical,9,complete
+enrolled_and_partial/by_determined_dx/4_DLB,Demographic,9,complete
+enrolled_and_partial/by_determined_dx/4_DLB,EHI,2,complete
+enrolled_and_partial/by_determined_dx/4_DLB,Epidemiological,9,no_completion_col
+enrolled_and_partial/by_determined_dx/4_DLB,Fatigue Severity Scale,0,complete
+enrolled_and_partial/by_determined_dx/4_DLB,FrSBe,0,complete
+enrolled_and_partial/by_determined_dx/4_DLB,MBIC,0,complete
+enrolled_and_partial/by_determined_dx/4_DLB,MBIC (CaPRI),1,complete
+enrolled_and_partial/by_determined_dx/4_DLB,MDS-UPDRS,8,complete
+enrolled_and_partial/by_determined_dx/4_DLB,MDS-UPDRS-1,0,complete
+enrolled_and_partial/by_determined_dx/4_DLB,Medication,9,complete
+enrolled_and_partial/by_determined_dx/4_DLB,MoCA,8,complete
+enrolled_and_partial/by_determined_dx/4_DLB,MoCA-1,0,complete
+enrolled_and_partial/by_determined_dx/4_DLB,MoCA-2,0,complete
+enrolled_and_partial/by_determined_dx/4_DLB,Neuropsychological,2,complete
+enrolled_and_partial/by_determined_dx/4_DLB,Neuropsychological (CaPRI),0,complete
+enrolled_and_partial/by_determined_dx/4_DLB,Neuropsychological V02,0,complete
+enrolled_and_partial/by_determined_dx/4_DLB,PDQ 39,7,complete
+enrolled_and_partial/by_determined_dx/4_DLB,PDQ 8,0,complete
+enrolled_and_partial/by_determined_dx/4_DLB,Parkinson Severity Scale,0,complete
+enrolled_and_partial/by_determined_dx/4_DLB,SCOPA,0,complete
+enrolled_and_partial/by_determined_dx/4_DLB,Schwab & England,0,complete
+enrolled_and_partial/by_determined_dx/4_DLB,Timed Up Go,0,complete
+enrolled_and_partial/by_determined_dx/4_DLB,UPDRS 1.2 part 3,0,complete
+enrolled_and_partial/by_determined_dx/6_ET,enrollment,15,
+enrolled_and_partial/by_determined_dx/6_ET,Apathy Evaluation Informant,0,complete
+enrolled_and_partial/by_determined_dx/6_ET,Apathy Evaluation Self,0,complete
+enrolled_and_partial/by_determined_dx/6_ET,Apathy Scale,0,complete
+enrolled_and_partial/by_determined_dx/6_ET,BAI,0,complete
+enrolled_and_partial/by_determined_dx/6_ET,BDII,0,complete
+enrolled_and_partial/by_determined_dx/6_ET,Clinical,9,complete
+enrolled_and_partial/by_determined_dx/6_ET,Demographic,8,complete
+enrolled_and_partial/by_determined_dx/6_ET,EHI,0,complete
+enrolled_and_partial/by_determined_dx/6_ET,Epidemiological,15,no_completion_col
+enrolled_and_partial/by_determined_dx/6_ET,Fatigue Severity Scale,0,complete
+enrolled_and_partial/by_determined_dx/6_ET,FrSBe,0,complete
+enrolled_and_partial/by_determined_dx/6_ET,MBIC,1,complete
+enrolled_and_partial/by_determined_dx/6_ET,MBIC (CaPRI),0,complete
+enrolled_and_partial/by_determined_dx/6_ET,MDS-UPDRS,2,complete
+enrolled_and_partial/by_determined_dx/6_ET,MDS-UPDRS-1,0,complete
+enrolled_and_partial/by_determined_dx/6_ET,Medication,8,complete
+enrolled_and_partial/by_determined_dx/6_ET,MoCA,7,complete
+enrolled_and_partial/by_determined_dx/6_ET,MoCA-1,0,complete
+enrolled_and_partial/by_determined_dx/6_ET,MoCA-2,0,complete
+enrolled_and_partial/by_determined_dx/6_ET,Neuropsychological,7,complete
+enrolled_and_partial/by_determined_dx/6_ET,Neuropsychological (CaPRI),0,complete
+enrolled_and_partial/by_determined_dx/6_ET,Neuropsychological V02,0,complete
+enrolled_and_partial/by_determined_dx/6_ET,PDQ 39,6,complete
+enrolled_and_partial/by_determined_dx/6_ET,PDQ 8,0,complete
+enrolled_and_partial/by_determined_dx/6_ET,Parkinson Severity Scale,0,complete
+enrolled_and_partial/by_determined_dx/6_ET,SCOPA,0,complete
+enrolled_and_partial/by_determined_dx/6_ET,Schwab & England,0,complete
+enrolled_and_partial/by_determined_dx/6_ET,Timed Up Go,1,complete
+enrolled_and_partial/by_determined_dx/6_ET,UPDRS 1.2 part 3,1,complete
+enrolled_and_partial/by_determined_dx/7_RBD,enrollment,20,
+enrolled_and_partial/by_determined_dx/7_RBD,Apathy Evaluation Informant,0,complete
+enrolled_and_partial/by_determined_dx/7_RBD,Apathy Evaluation Self,0,complete
+enrolled_and_partial/by_determined_dx/7_RBD,Apathy Scale,0,complete
+enrolled_and_partial/by_determined_dx/7_RBD,BAI,0,complete
+enrolled_and_partial/by_determined_dx/7_RBD,BDII,0,complete
+enrolled_and_partial/by_determined_dx/7_RBD,Clinical,5,complete
+enrolled_and_partial/by_determined_dx/7_RBD,Demographic,8,complete
+enrolled_and_partial/by_determined_dx/7_RBD,EHI,0,complete
+enrolled_and_partial/by_determined_dx/7_RBD,Epidemiological,20,no_completion_col
+enrolled_and_partial/by_determined_dx/7_RBD,Fatigue Severity Scale,0,complete
+enrolled_and_partial/by_determined_dx/7_RBD,FrSBe,0,complete
+enrolled_and_partial/by_determined_dx/7_RBD,MBIC,0,complete
+enrolled_and_partial/by_determined_dx/7_RBD,MBIC (CaPRI),0,complete
+enrolled_and_partial/by_determined_dx/7_RBD,MDS-UPDRS,6,complete
+enrolled_and_partial/by_determined_dx/7_RBD,MDS-UPDRS-1,0,complete
+enrolled_and_partial/by_determined_dx/7_RBD,Medication,4,complete
+enrolled_and_partial/by_determined_dx/7_RBD,MoCA,6,complete
+enrolled_and_partial/by_determined_dx/7_RBD,MoCA-1,0,complete
+enrolled_and_partial/by_determined_dx/7_RBD,MoCA-2,0,complete
+enrolled_and_partial/by_determined_dx/7_RBD,Neuropsychological,2,complete
+enrolled_and_partial/by_determined_dx/7_RBD,Neuropsychological (CaPRI),0,complete
+enrolled_and_partial/by_determined_dx/7_RBD,Neuropsychological V02,0,complete
+enrolled_and_partial/by_determined_dx/7_RBD,PDQ 39,1,complete
+enrolled_and_partial/by_determined_dx/7_RBD,PDQ 8,0,complete
+enrolled_and_partial/by_determined_dx/7_RBD,Parkinson Severity Scale,0,complete
+enrolled_and_partial/by_determined_dx/7_RBD,SCOPA,0,complete
+enrolled_and_partial/by_determined_dx/7_RBD,Schwab & England,0,complete
+enrolled_and_partial/by_determined_dx/7_RBD,Timed Up Go,3,complete
+enrolled_and_partial/by_determined_dx/7_RBD,UPDRS 1.2 part 3,0,complete
