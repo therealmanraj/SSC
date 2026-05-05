@@ -1,23 +1,23 @@
-Project key,Event Name,Assessment completed:     Évaluation remplie:  ,Assessment completed by:     Évaluation complétée par:
-SSC0660,Baseline (Arm 1: C-OPN),2019-06-14,Sabrina Diab
-SSC0672,Baseline (Arm 1: C-OPN),2019-10-04,
-SSC0994,Baseline (Arm 1: C-OPN),2019-11-01,
-SSC1032,Baseline (Arm 1: C-OPN),2018-12-03,Sabrina Diab
-SSC1034,Baseline (Arm 1: C-OPN),2019-02-05,Sabrina Diab
-SSC1052,Baseline (Arm 1: C-OPN),2019-06-19,Sabrina Diab
-SSC1060,Baseline (Arm 1: C-OPN),2018-10-18,Sabrina Diab
-SSC1068,Baseline (Arm 1: C-OPN),2019-07-04,Sabrina Diab
-SSC1070,Baseline (Arm 1: C-OPN),2019-09-27,
-SSC1073,Baseline (Arm 1: C-OPN),2018-12-03,Sabrina Diab
-SSC1078,Baseline (Arm 1: C-OPN),2019-10-04,
-SSC1127,Baseline (Arm 1: C-OPN),2019-03-07,Sabrina Diab
-SSC1138,Baseline (Arm 1: C-OPN),2020-03-12,Sarah Bogard
-SSC1145,Baseline (Arm 1: C-OPN),2019-11-22,
-SSC1177,Baseline (Arm 1: C-OPN),2018-10-22,Sabrina Diab
-SSC1978,Baseline (Arm 1: C-OPN),2018-12-18,Sabrina Diab
-SSC2021,Baseline (Arm 1: C-OPN),2019-08-16,
-SSC2182,Baseline (Arm 1: C-OPN),2019-07-16,Sabrina Diab
-SSC2202,Baseline (Arm 1: C-OPN),2019-04-26,Sabrina Diab
-SSC2268,Baseline (Arm 1: C-OPN),2019-08-27,
-SSC2493,Baseline (Arm 1: C-OPN),2021-03-30,Sarah Bogard
-SSC3133,Baseline (Arm 1: C-OPN),2019-10-18,
+Project key,Event Name,Assessment completed:     Évaluation remplie:  ,Assessment completed by:     Évaluation complétée par:,How was the MDS-UPDRS administered?   Comment le MDS-UPDRS a-t-il été administré?,Is it UPDRS v1.2 (part3) legacy ?  S'agit il d'un héritage de UPDRS v1.2 (partie 3) ?
+SSC0660,Baseline (Arm 1: C-OPN),2019-06-14,Sabrina Diab,In-person/En personne,Yes
+SSC0672,Baseline (Arm 1: C-OPN),2019-10-04,,In-person/En personne,Yes
+SSC0994,Baseline (Arm 1: C-OPN),2019-11-01,,In-person/En personne,Yes
+SSC1032,Baseline (Arm 1: C-OPN),2018-12-03,Sabrina Diab,In-person/En personne,Yes
+SSC1034,Baseline (Arm 1: C-OPN),2019-02-05,Sabrina Diab,In-person/En personne,Yes
+SSC1052,Baseline (Arm 1: C-OPN),2019-06-19,Sabrina Diab,In-person/En personne,Yes
+SSC1060,Baseline (Arm 1: C-OPN),2018-10-18,Sabrina Diab,In-person/En personne,Yes
+SSC1068,Baseline (Arm 1: C-OPN),2019-07-04,Sabrina Diab,In-person/En personne,Yes
+SSC1070,Baseline (Arm 1: C-OPN),2019-09-27,,In-person/En personne,Yes
+SSC1073,Baseline (Arm 1: C-OPN),2018-12-03,Sabrina Diab,In-person/En personne,Yes
+SSC1078,Baseline (Arm 1: C-OPN),2019-10-04,,In-person/En personne,Yes
+SSC1127,Baseline (Arm 1: C-OPN),2019-03-07,Sabrina Diab,In-person/En personne,Yes
+SSC1138,Baseline (Arm 1: C-OPN),2020-03-12,Sarah Bogard,In-person/En personne,
+SSC1145,Baseline (Arm 1: C-OPN),2019-11-22,,In-person/En personne,Yes
+SSC1177,Baseline (Arm 1: C-OPN),2018-10-22,Sabrina Diab,In-person/En personne,Yes
+SSC1978,Baseline (Arm 1: C-OPN),2018-12-18,Sabrina Diab,In-person/En personne,Yes
+SSC2021,Baseline (Arm 1: C-OPN),2019-08-16,,In-person/En personne,Yes
+SSC2182,Baseline (Arm 1: C-OPN),2019-07-16,Sabrina Diab,In-person/En personne,Yes
+SSC2202,Baseline (Arm 1: C-OPN),2019-04-26,Sabrina Diab,In-person/En personne,Yes
+SSC2268,Baseline (Arm 1: C-OPN),2019-08-27,,In-person/En personne,Yes
+SSC2493,Baseline (Arm 1: C-OPN),2021-03-30,Sarah Bogard,In-person/En personne,
+SSC3133,Baseline (Arm 1: C-OPN),2019-10-18,,In-person/En personne,Yes

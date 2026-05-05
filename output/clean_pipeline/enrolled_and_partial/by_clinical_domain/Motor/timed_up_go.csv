@@ -1,0 +1,205 @@
+Project key,Event Name,Le patient a-t-il/elle fait le test:,Temps (secondes),Temps (secondes)2,Temps (secondes)3,"Si fluctuations motrices pendant le test, le patient se considère-t-il/elle:"
+SSC0669,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,13.19,,,OFF
+SSC0672,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,09:39:00,,,ON
+SSC0972,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,"9,7",,,ON
+SSC0981,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,"6,8",,,ON
+SSC0983,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,"6,8",,,ON
+SSC0992,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,6.1,,,ON
+SSC0994,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,8.6,,,ON
+SSC0999,Baseline (Arm 1: C-OPN),Utilisation d'une aide à la marche,,,"15,8",ON
+SSC1000,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,"6,7",,,ON
+SSC1001,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,"7,6",,,ON
+SSC1002,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,8.1,,,ON
+SSC1003,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,"18,4",,,ON
+SSC1004,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,"9,1",,,ON
+SSC1005,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,"8,0",,,ON
+SSC1006,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,"10,9",,,ON
+SSC1009,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,"8,8",,,ON
+SSC1012,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,8.98,,,
+SSC1015,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,13.5,,,ON
+SSC1016,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,"7,4",,,ON
+SSC1017,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,"7,9",,,ON
+SSC1018,Baseline (Arm 1: C-OPN),Utilisation d'une aide à la marche,,,"14,6",OFF
+SSC1020,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,"7,7",,,OFF
+SSC1021,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,"8,2",,,ON
+SSC1022,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,"10,5",,,OFF
+SSC1024,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,"12,4",,,Entre deux
+SSC1025,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,"11,1",,,ON
+SSC1028,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,12.3,,,ON
+SSC1030,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,"6,9",,,ON
+SSC1031,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,"9,4",,,ON
+SSC1032,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,6.8,,,ON
+SSC1033,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,"9,4",,,ON
+SSC1034,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,"8,1",,,ON
+SSC1036,Baseline (Arm 1: C-OPN),Utilisation d'une aide à la marche,,,"19,2",Entre deux
+SSC1038,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,"7,9",,,ON
+SSC1040,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,"6,5",,,ON
+SSC1041,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,"8,1",,,ON
+SSC1042,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,8.3,,,Entre deux
+SSC1056,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,"10,1",,,ON
+SSC1057,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,"11,4",,,ON
+SSC1058,Baseline (Arm 1: C-OPN),Utilisation d'une aide à la marche,,,"10,7",ON
+SSC1062,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,"6,3",,,ON
+SSC1063,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,"15,7",,,ON
+SSC1064,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,"12,6",,,ON
+SSC1069,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,19.5,,,OFF
+SSC1072,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,"7,5",,,ON
+SSC1077,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,9.5,,,
+SSC1083,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,10.7,,,Entre deux
+SSC1084,Baseline (Arm 1: C-OPN),Utilisation d'une aide à la marche,,,"14,0",ON
+SSC1086,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,8.1,,,ON
+SSC1087,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,9.3,,,ON
+SSC1088,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,10,,,ON
+SSC1090,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,8.4,,,ON
+SSC1091,Baseline (Arm 1: C-OPN),Utilisation d'une aide à la marche,,,"17,1",ON
+SSC1092,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,"10,3",,,Entre deux
+SSC1093,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,11.2,,,ON
+SSC1096,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,7.1,,,ON
+SSC1097,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,"11,7",,,ON
+SSC1098,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,10.5,,,Entre deux
+SSC1099,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,8.7,,,ON
+SSC1100,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,6,,,ON
+SSC1103,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,8.1,,,ON
+SSC1106,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,"8,4",,,ON
+SSC1107,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,"8,2",,,ON
+SSC1108,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,9.8,,,ON
+SSC1110,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,7.7,,,ON
+SSC1111,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,7,,,ON
+SSC1113,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,9.3,,,ON
+SSC1133,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,12.2,,,Entre deux
+SSC1136,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,"8,2",,,
+SSC1165,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,12:05:00,,,ON
+SSC1168,Baseline (Arm 1: C-OPN),Repoussant la chaise,,12.57,,OFF
+SSC1172,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,8,,,ON
+SSC1174,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,9.58,,,
+SSC1175,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,10.34,,,ON
+SSC1177,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,08:55:00,,,ON
+SSC1178,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,12:10:00,,,ON
+SSC1179,Baseline (Arm 1: C-OPN),Repoussant la chaise,,9.1,,
+SSC1184,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,08:09:00,,,
+SSC1186,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,08:15:00,,,ON
+SSC1188,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,0.3506944444444444,,,ON
+SSC1189,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,12.98,,,
+SSC1204,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,13.33,,,ON
+SSC1205,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,08:12:00,,,
+SSC1206,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,10.05,,,ON
+SSC1213,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,8.67,,,
+SSC1218,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,12.2,,,ON
+SSC1224,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,"5,8",,,ON
+SSC1242,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,0.39375,,,OFF
+SSC1245,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,11:45:00,,,
+SSC1247,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,10:32:00,,,ON
+SSC1263,Baseline (Arm 1: C-OPN),Repoussant la chaise,,15.57,,OFF
+SSC1269,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,11:25:00,,,ON
+SSC1271,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,14.22,,,ON
+SSC1275,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,12.1,,,
+SSC1277,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,11:02:00,,,ON
+SSC1280,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,"9,57",,,ON
+SSC1283,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,"9,57",,,
+SSC1284,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,10:11:00,,,ON
+SSC1298,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,10.14,,,
+SSC1300,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,10.57,,,ON
+SSC1302,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,10.49,,,ON
+SSC1314,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,11.15,,,
+SSC1326,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,10.92,,,ON
+SSC1329,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,13:49:00,,,
+SSC1336,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,12:12:00,,,OFF
+SSC1338,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,11.25,,,ON
+SSC1339,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,13:36:00,,,ON
+SSC1340,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,8.69,,,
+SSC1343,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,22.05,,,
+SSC1348,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,14.06,,,
+SSC1351,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,13:07:00,,,ON
+SSC1357,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,16.48,,,OFF
+SSC1358,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,10.74,,,ON
+SSC1361,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,9.99,,,ON
+SSC1396,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,12.13,,,
+SSC1402,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,15.81,,,
+SSC1403,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,15.39,,,
+SSC1411,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,8.7,,,ON
+SSC1422,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,13.89,,,ON
+SSC1432,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,13.77,,,
+SSC1440,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,15.94,,,OFF
+SSC1448,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,8.27,,,ON
+SSC1449,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,11.01,,,
+SSC1450,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,10.6,,,OFF
+SSC1456,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,19.45,,,OFF
+SSC1462,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,8.85,,,
+SSC1465,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,11.51,,,
+SSC1466,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,10.21,,,ON
+SSC1468,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,12.14,,,ON
+SSC1472,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,10.57,,,ON
+SSC1473,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,9.6,,,OFF
+SSC1478,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,16.45,,,ON
+SSC1495,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,7.43,,,
+SSC1496,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,9.58,,,ON
+SSC1498,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,8.55,,,ON
+SSC1501,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,14.22,,,ON
+SSC1505,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,10.23,,,
+SSC1507,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,11.07,,,ON
+SSC1514,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,8.33,,,ON
+SSC1520,Baseline (Arm 1: C-OPN),Repoussant la chaise,,15.57,,ON
+SSC1522,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,12.82,,,OFF
+SSC1523,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,11.45,,,ON
+SSC1524,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,7.97,,,ON
+SSC1525,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,10.19,,,OFF
+SSC1528,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,11.94,,,ON
+SSC1529,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,11.74,,,ON
+SSC1532,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,8.44,,,ON
+SSC1534,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,11.87,,,ON
+SSC1536,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,9.77,,,Entre deux
+SSC1538,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,11.34,,,ON
+SSC1540,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,10.92,,,OFF
+SSC1541,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,11.4,,,ON
+SSC1544,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,13.96,,,
+SSC1550,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,10.13,,,
+SSC1553,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,11.02,,,ON
+SSC1554,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,11.07,,,ON
+SSC1555,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,12.41,,,OFF
+SSC1556,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,10.98,,,
+SSC1558,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,18.52,,,OFF
+SSC1559,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,8.07,,,ON
+SSC1563,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,8.55,,,ON
+SSC1565,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,6.56,,,ON
+SSC1567,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,11.15,,,ON
+SSC1576,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,10.79,,,ON
+SSC1581,Baseline (Arm 1: C-OPN),Repoussant la chaise,,13.87,,OFF
+SSC1585,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,7.18,,,OFF
+SSC1596,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,12.11,,,ON
+SSC1599,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,9.1,,,
+SSC1601,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,12.3,,,OFF
+SSC1603,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,6.31,,,
+SSC1607,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,14.38,,,
+SSC1608,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,9.35,,,ON
+SSC1616,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,9.9,,,ON
+SSC1630,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,11.48,,,ON
+SSC1683,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,10.4,,,ON
+SSC1698,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,9.7,,,ON
+SSC1906,Baseline (Arm 1: C-OPN),Repoussant la chaise,,17.17,,OFF
+SSC2012,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,13.5,,,ON
+SSC2061,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,14.5,,,ON
+SSC2079,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,12.2,,,ON
+SSC2107,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,10.6,,,ON
+SSC2126,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,"10,9",,,Entre deux
+SSC2155,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,"9,2",,,ON
+SSC2182,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,9.1,,,Entre deux
+SSC2212,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,9,,,Entre deux
+SSC2217,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,8.8,,,ON
+SSC2240,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,9.6,,,ON
+SSC2300,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,8.1,,,Entre deux
+SSC2315,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,9.1,,,ON
+SSC2327,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,6.5,,,
+SSC2421,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,10.9,,,Entre deux
+SSC2437,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,"12,7",,,OFF
+SSC2457,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,18,,,
+SSC2463,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,15.6,,,ON
+SSC2466,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,"9,6",,,
+SSC2469,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,9.27,,,ON
+SSC2479,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,"10,3",,,
+SSC2480,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,"9,0",,,
+SSC2491,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,"10,3",,,ON
+SSC2495,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,10.1,,,ON
+SSC2498,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,8.8,,,ON
+SSC3119,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,9.56,,,ON
+SSC3131,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,10.82,,,ON
+SSC3138,Baseline (Arm 1: C-OPN),Sans pousser - sans aide,"9,9",,,ON

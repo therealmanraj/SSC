@@ -3,8 +3,13 @@ Builds domain-filtered CSVs grouped by General Clinical Domain.
 
 For each (General Clinical Domain × form) pair:
   - Rows:    enrolled IDs where the form is Complete  (same rule as clean_pipeline)
-  - Columns: only columns whose Short Description matches that domain in the data dictionary
+  - Columns: only columns whose Field Label matches that domain in the data dictionary
   - Saved to by_clinical_domain/{Domain}/{form}.csv
+
+Domain mapping source:
+  - reference/COPN_DataDictionary_2025-09-24_annotated.xlsx  (Field Labels = actual CSV column text)
+  - pending/WORK-Qnaire-and-feature-clinical-domains.xlsx    (General Clinical Domain per variable)
+  Both joined on Variable / Field Name.
 
 Two enrollment groups: full_enrolled and enrolled_and_partial
 
@@ -21,7 +26,9 @@ warnings.filterwarnings("ignore")
 # ---------------------------------------------------------------------------
 # Paths
 # ---------------------------------------------------------------------------
-DOMAIN_FILE  = os.path.join(os.path.dirname(__file__), "..", "pending",
+DD_REFERENCE = os.path.join(os.path.dirname(__file__), "..", "reference",
+                             "COPN_DataDictionary_2025-09-24_annotated.xlsx")
+DD_DOMAIN    = os.path.join(os.path.dirname(__file__), "..", "pending",
                              "WORK-Qnaire-and-feature-clinical-domains.xlsx")
 DATA_DIR     = os.path.join(os.path.dirname(__file__), "..", "data")
 OUTPUT_BASE  = os.path.join(os.path.dirname(__file__), "..", "output", "clean_pipeline")
@@ -43,23 +50,18 @@ DOMAIN_MERGE = {
 }
 
 SKIP_COLS = {"Project key", "Event Name", "Complete?"}
-MATCH_THRESHOLD = 0.45   # minimum Jaccard similarity to accept a column match
+MATCH_THRESHOLD = 0.45
+
 
 # ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
 
 def normalize(s: str) -> str:
-    """Lowercase, strip Q-prefixes (Q1. → 1.), remove punctuation."""
+    """Lowercase, remove punctuation, collapse whitespace."""
     s = str(s).lower()
-    s = re.sub(r"\bq(\d+)\.", r"\1 ", s)      # Q1. Gender → 1 Gender
     s = re.sub(r"[^\w\s]", " ", s)
     return re.sub(r"\s+", " ", s).strip()
-
-
-def csv_english(col: str) -> str:
-    """Extract the English prefix from a bilingual CSV column name."""
-    return normalize(re.split(r"\s{3,}", col)[0].strip())
 
 
 def jaccard(a: str, b: str) -> float:
@@ -85,88 +87,135 @@ def safe_filename(s: str) -> str:
 
 
 # ---------------------------------------------------------------------------
-# Step 1 — Load and clean data dictionary
+# Step 1 — Build merged data dictionary (Field Label + Domain per variable)
 # ---------------------------------------------------------------------------
-print("Loading data dictionary…")
-dd = pd.read_excel(DOMAIN_FILE, sheet_name="Variables by Form and domain")
-dd["General Clinical Domain"] = (
-    dd["General Clinical Domain"].str.strip().replace(DOMAIN_MERGE)
+print("Loading data dictionaries…")
+
+dd_ref = pd.read_excel(DD_REFERENCE, sheet_name="COPN_DataDictionary_selected")
+dd_dom = pd.read_excel(DD_DOMAIN,    sheet_name="Variables by Form and domain")
+
+dd_dom["General Clinical Domain"] = (
+    dd_dom["General Clinical Domain"].str.strip().replace(DOMAIN_MERGE)
 )
-dd = dd.dropna(subset=["File/Qnaire name", "Short Description", "General Clinical Domain"])
+dd_dom = dd_dom.dropna(subset=["Variable/Field Name", "General Clinical Domain"])
 
-print(f"  {len(dd):,} variable rows across {dd['File/Qnaire name'].nunique()} forms")
-print(f"  Domains: {sorted(dd['General Clinical Domain'].unique())}\n")
+# Join on Variable / Field Name → each row has: Form Name, Field Label, Domain
+dd_ref  = dd_ref.rename(columns={"Variable / Field Name": "var_name",
+                                  "Field Label": "field_label",
+                                  "Form Name":   "new_form_name"})
+dd_dom  = dd_dom.rename(columns={"Variable/Field Name":       "var_name",
+                                  "File/Qnaire name":          "old_file_name",
+                                  "General Clinical Domain":   "domain"})
+dd_ref["var_name"] = dd_ref["var_name"].astype(str).str.strip()
+dd_dom["var_name"] = dd_dom["var_name"].astype(str).str.strip()
+
+merged_dd = dd_ref[["var_name", "new_form_name", "field_label"]].merge(
+    dd_dom[["var_name", "old_file_name", "domain"]],
+    on="var_name", how="inner"
+)
+merged_dd = merged_dd.dropna(subset=["field_label", "domain"])
+
+print(f"  Merged DD: {len(merged_dd):,} rows across "
+      f"{merged_dd['new_form_name'].nunique()} forms, "
+      f"{merged_dd['domain'].nunique()} domains")
+print(f"  Domains: {sorted(merged_dd['domain'].unique())}\n")
 
 
 # ---------------------------------------------------------------------------
-# Step 2 — Build column → domain mapping for every form
+# Step 2 — Auto-derive mapping: old File/Qnaire name → new DD form name
 # ---------------------------------------------------------------------------
-print("Matching CSV columns to domains…")
+print("Building form-name mapping (old file names → new form names)…")
 
-form_col_domain = {}   # {form_name: {csv_col: domain}}
-match_report    = []
+old_vars_by_file  = dd_dom.groupby("old_file_name")["var_name"].apply(set)
+new_vars_by_form  = dd_ref.groupby("new_form_name")["var_name"].apply(set)
 
-for form_name in sorted(dd["File/Qnaire name"].unique()):
-    csv_path = os.path.join(DATA_DIR, form_name)
+FORM_MAP: dict[str, str] = {}
+for old_file, old_vars in old_vars_by_file.items():
+    best_form, best_n = None, 0
+    for new_form, new_vars in new_vars_by_form.items():
+        n = len(old_vars & new_vars)
+        if n > best_n:
+            best_n, best_form = n, new_form
+    if best_form:
+        FORM_MAP[old_file] = best_form
+        print(f"  {old_file!r:35} → {best_form!r}  (overlap={best_n})")
+
+print()
+all_domains = sorted(merged_dd["domain"].unique())
+
+
+# ---------------------------------------------------------------------------
+# Step 3 — Match CSV columns to domains via Field Label
+# ---------------------------------------------------------------------------
+print("Matching CSV columns to domains via Field Label…")
+
+form_col_domain: dict[str, dict[str, str]] = {}   # {old_file_name: {csv_col: domain}}
+match_report: list[dict] = []
+
+for old_file in sorted(old_vars_by_file.index):
+    csv_path = os.path.join(DATA_DIR, old_file)
     if not os.path.exists(csv_path):
-        print(f"  WARNING: {form_name!r} not found in data/ — skipping")
+        print(f"  WARNING: {old_file!r} not found in data/ — skipping")
+        continue
+
+    new_form = FORM_MAP.get(old_file)
+    if new_form is None:
+        print(f"  WARNING: no form mapping for {old_file!r} — skipping")
         continue
 
     csv_df   = load_csv(csv_path)
-    form_dd  = dd[dd["File/Qnaire name"] == form_name].copy()
+    form_dd  = merged_dd[merged_dd["new_form_name"] == new_form].copy()
 
-    # Normalised English prefix for each analysable CSV column
-    col_norms = {
-        col: csv_english(col)
-        for col in csv_df.columns
-        if col not in SKIP_COLS and not col.startswith("Unnamed")
-    }
-
-    # Build {desc_norm: domain} from data dictionary.
-    # If the same normalised description appears under two domains,
-    # prefer the non-Admin domain.
-    desc_domain: dict[str, str] = {}
+    # Build {field_label_norm: domain} — prefer non-Admin when label is duplicated
+    label_domain: dict[str, str] = {}
     for _, row in form_dd.iterrows():
-        dn   = normalize(str(row["Short Description"]))
-        dom  = row["General Clinical Domain"]
-        if dn not in desc_domain:
-            desc_domain[dn] = dom
-        elif desc_domain[dn] == "Admin" and dom != "Admin":
-            desc_domain[dn] = dom
+        ln  = normalize(str(row["field_label"]))
+        dom = row["domain"]
+        if ln not in label_domain:
+            label_domain[ln] = dom
+        elif label_domain[ln] == "Admin" and dom != "Admin":
+            label_domain[ln] = dom
 
-    # Match each CSV column to the best-scoring description
+    # Match each CSV column to best-scoring Field Label
     col_domain: dict[str, str] = {}
-    for col, col_norm in col_norms.items():
-        best_score, best_dom, best_desc = 0.0, None, None
-        for desc_norm, dom in desc_domain.items():
-            s = jaccard(col_norm, desc_norm)
+    for col in csv_df.columns:
+        if col in SKIP_COLS or col.startswith("Unnamed"):
+            continue
+        cn = normalize(col)
+        best_score, best_dom, best_lbl = 0.0, None, None
+        for lbl_norm, dom in label_domain.items():
+            s = jaccard(cn, lbl_norm)
             if s > best_score:
-                best_score, best_dom, best_desc = s, dom, desc_norm
+                best_score, best_dom, best_lbl = s, dom, lbl_norm
 
         if best_score >= MATCH_THRESHOLD:
             col_domain[col] = best_dom
             match_report.append({
-                "Form":        form_name,
-                "CSV column":  col[:80],
-                "Matched description": best_desc,
-                "Domain":      best_dom,
-                "Score":       round(best_score, 3),
-                "Matched":     "Yes",
+                "Form":                  old_file,
+                "CSV column":            col[:80],
+                "Matched field label":   best_lbl,
+                "Domain":                best_dom,
+                "Score":                 round(best_score, 3),
+                "Matched":               "Yes",
             })
         else:
             match_report.append({
-                "Form":        form_name,
-                "CSV column":  col[:80],
-                "Matched description": best_desc or "",
-                "Domain":      "UNMATCHED",
-                "Score":       round(best_score, 3),
-                "Matched":     "No",
+                "Form":                  old_file,
+                "CSV column":            col[:80],
+                "Matched field label":   best_lbl or "",
+                "Domain":                "UNMATCHED",
+                "Score":                 round(best_score, 3),
+                "Matched":               "No",
             })
 
-    form_col_domain[form_name] = col_domain
+    form_col_domain[old_file] = col_domain
     n_matched = len(col_domain)
-    n_total   = len(col_norms)
-    print(f"  {form_name:<35}  {n_matched:>3}/{n_total:<3} columns matched")
+    n_total   = len([c for c in csv_df.columns
+                     if c not in SKIP_COLS and not c.startswith("Unnamed")])
+    by_dom = {}
+    for d in col_domain.values():
+        by_dom[d] = by_dom.get(d, 0) + 1
+    print(f"  {old_file:<35}  {n_matched:>3}/{n_total:<3}  {by_dom}")
 
 # Save matching report
 match_df = pd.DataFrame(match_report)
@@ -175,10 +224,9 @@ print(f"\n  → domain_column_mapping.csv saved ({len(match_df)} rows)\n")
 
 
 # ---------------------------------------------------------------------------
-# Step 3 — Build domain CSVs for each enrollment group
+# Step 4 — Build domain CSVs for each enrollment group
 # ---------------------------------------------------------------------------
-enrol_df    = load_csv(os.path.join(DATA_DIR, "Enrollement"))
-all_domains = sorted(dd["General Clinical Domain"].unique())
+enrol_df     = load_csv(os.path.join(DATA_DIR, "Enrollement"))
 summary_rows = []
 
 for group_name, statuses in ENROLLMENT_STATUSES.items():
@@ -191,15 +239,12 @@ for group_name, statuses in ENROLLMENT_STATUSES.items():
         )
         os.makedirs(domain_dir, exist_ok=True)
 
-        # Forms that have at least one variable in this domain
         domain_forms = sorted(
-            dd[dd["General Clinical Domain"] == domain]["File/Qnaire name"].unique()
+            merged_dd[merged_dd["domain"] == domain]["old_file_name"].unique()
         )
 
         for form_name in domain_forms:
             col_domain = form_col_domain.get(form_name, {})
-
-            # Only columns assigned to this domain
             domain_cols = [col for col, d in col_domain.items() if d == domain]
             if not domain_cols:
                 continue
@@ -209,15 +254,11 @@ for group_name, statuses in ENROLLMENT_STATUSES.items():
                 continue
 
             df = load_csv(csv_path)
-
-            # Row filter: enrolled IDs
             df = df[df["Project key"].isin(enrolled_ids)].copy()
 
-            # Completion filter
             if "Complete?" in df.columns:
                 df = df[df["Complete?"] == "Complete"].copy()
 
-            # Column filter: domain columns + identifiers
             keep = ["Project key", "Event Name"] + [
                 c for c in domain_cols if c in df.columns
             ]
@@ -230,10 +271,10 @@ for group_name, statuses in ENROLLMENT_STATUSES.items():
             df.to_csv(out_path, index=False)
 
             summary_rows.append({
-                "group":  group_name,
-                "domain": domain,
-                "form":   form_name,
-                "n_ids":  len(df),
+                "group":         group_name,
+                "domain":        domain,
+                "form":          form_name,
+                "n_ids":         len(df),
                 "n_domain_cols": len(domain_cols),
             })
             print(
