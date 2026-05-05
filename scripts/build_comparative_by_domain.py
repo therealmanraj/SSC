@@ -70,6 +70,37 @@ def load_csv(path):
     df = pd.read_csv(path)
     return df.drop(columns=[c for c in df.columns if c.startswith("Unnamed:")], errors="ignore")
 
+# Ordered response scales → integer codes (case-insensitive prefix match)
+ORDINAL_MAPS = [
+    # SCOPA-AUT 4-point
+    {"never": 0, "sometimes": 1, "regularly": 2, "often": 3, "not applicable": np.nan},
+    # PDQ-39 / PDQ-8 5-point
+    {"never": 0, "occasionally": 1, "sometimes": 2, "often": 3, "always": 4},
+    # Generic yes/no (bilingual)
+    {"no": 0, "yes": 1, "no/non": 0, "yes/oui": 1},
+]
+
+def _build_encode_map(series):
+    """Return an encode map if the series uniquely matches one ORDINAL_MAP, else None."""
+    vals = {str(v).strip().lower() for v in series.dropna().unique()}
+    for omap in ORDINAL_MAPS:
+        if vals <= set(omap.keys()):
+            return omap
+    return None
+
+def encode_ordinal(df):
+    """Return a copy of df with text-ordinal columns converted to numeric."""
+    df = df.copy()
+    for col in df.columns:
+        if col in SKIP_COLS or col.startswith("Unnamed"):
+            continue
+        if pd.to_numeric(df[col], errors="coerce").notna().mean() >= 0.5:
+            continue  # already numeric enough
+        omap = _build_encode_map(df[col])
+        if omap is not None:
+            df[col] = df[col].astype(str).str.strip().str.lower().map(omap)
+    return df
+
 def numeric_cols_of(df):
     cols = []
     for col in df.columns:
@@ -270,6 +301,9 @@ def run_grouping(domain_name, domain_dir, group_col, lookup, palette):
         df = df[df[group_col].isin(valid_grps)]
         if df[group_col].nunique() < 2:
             continue
+
+        # Encode text-ordinal columns (Likert, Yes/No) to numeric
+        df = encode_ordinal(df)
 
         form_name = fname.replace(".csv", "").replace("_", " ").title()
         num_cols  = numeric_cols_of(df)
