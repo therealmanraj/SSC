@@ -70,37 +70,6 @@ def load_csv(path):
     df = pd.read_csv(path)
     return df.drop(columns=[c for c in df.columns if c.startswith("Unnamed:")], errors="ignore")
 
-# Ordered response scales → integer codes (case-insensitive prefix match)
-ORDINAL_MAPS = [
-    # SCOPA-AUT 4-point
-    {"never": 0, "sometimes": 1, "regularly": 2, "often": 3, "not applicable": np.nan},
-    # PDQ-39 / PDQ-8 5-point
-    {"never": 0, "occasionally": 1, "sometimes": 2, "often": 3, "always": 4},
-    # Generic yes/no (bilingual)
-    {"no": 0, "yes": 1, "no/non": 0, "yes/oui": 1},
-]
-
-def _build_encode_map(series):
-    """Return an encode map if the series uniquely matches one ORDINAL_MAP, else None."""
-    vals = {str(v).strip().lower() for v in series.dropna().unique()}
-    for omap in ORDINAL_MAPS:
-        if vals <= set(omap.keys()):
-            return omap
-    return None
-
-def encode_ordinal(df):
-    """Return a copy of df with text-ordinal columns converted to numeric."""
-    df = df.copy()
-    for col in df.columns:
-        if col in SKIP_COLS or col.startswith("Unnamed"):
-            continue
-        if pd.to_numeric(df[col], errors="coerce").notna().mean() >= 0.5:
-            continue  # already numeric enough
-        omap = _build_encode_map(df[col])
-        if omap is not None:
-            df[col] = df[col].astype(str).str.strip().str.lower().map(omap)
-    return df
-
 def numeric_cols_of(df):
     cols = []
     for col in df.columns:
@@ -113,6 +82,102 @@ def numeric_cols_of(df):
         if conv.notna().sum() / len(s) >= 0.5 and conv.std() > 0:
             cols.append(col)
     return cols
+
+def categorical_cols_of(df):
+    """Return columns that are non-numeric text with a small number of distinct values."""
+    cols = []
+    for col in df.columns:
+        if col in SKIP_COLS or col.startswith("Unnamed"):
+            continue
+        s = df[col].dropna()
+        if len(s) == 0:
+            continue
+        conv = pd.to_numeric(s, errors="coerce")
+        if conv.notna().sum() / len(s) >= 0.5:
+            continue  # already numeric — handled by box plots
+        n_unique = s.nunique()
+        if 2 <= n_unique <= 8:  # reasonable number of response categories
+            cols.append(col)
+    return cols
+
+def _chi2_p(df, group_col, col):
+    """Chi-square p-value for association between group and categorical column."""
+    try:
+        ct = pd.crosstab(df[group_col], df[col])
+        if ct.shape[0] < 2 or ct.shape[1] < 2:
+            return np.nan
+        _, p, _, _ = chi2_contingency(ct)
+        return round(p, 6)
+    except Exception:
+        return np.nan
+
+def plot_categorical_form(df, group_col, cat_cols, form_name, out_path, palette):
+    """Grouped bar chart: % of each response level per group, one subplot per column."""
+    valid = [c for c in cat_cols if df[c].notna().sum() >= 10][:MAX_PLOTS]
+    if not valid:
+        return
+
+    groups = sorted(df[group_col].dropna().unique())
+    colors = sns.color_palette(palette, len(groups))
+    n      = len(valid)
+    ncols  = min(3, n)
+    nrows  = math.ceil(n / ncols)
+
+    fig, axes = plt.subplots(nrows, ncols, figsize=(ncols * 5, nrows * 3.8))
+    axes = np.array(axes).flatten()
+
+    for i, col in enumerate(valid):
+        ax = axes[i]
+        # Use positional indexing to safely extract arrays regardless of column name chars
+        col_idx   = list(df.columns).index(col)
+        grp_idx   = list(df.columns).index(group_col)
+        mask      = df.iloc[:, col_idx].notna() & df.iloc[:, grp_idx].notna()
+        val_raw   = df.iloc[mask.values, col_idx].astype(str).str.split("/").str[0].str.strip().values
+        grp_raw   = df.iloc[mask.values, grp_idx].values
+
+        response_levels = sorted(set(val_raw))
+        x     = np.arange(len(response_levels))
+        bar_w = 0.8 / len(groups)
+
+        for gi, (grp, color) in enumerate(zip(groups, colors)):
+            grp_mask = grp_raw == grp
+            grp_vals = val_raw[grp_mask]
+            n_grp    = len(grp_vals)
+            if n_grp == 0:
+                continue
+            counts = {lv: (grp_vals == lv).sum() for lv in response_levels}
+            pct    = [counts[lv] / n_grp * 100 for lv in response_levels]
+            ax.bar(x + gi * bar_w - 0.4 + bar_w / 2, pct, bar_w * 0.9,
+                   label=grp, color=color, alpha=0.85)
+
+        # Chi-square test using a safe crosstab
+        try:
+            ct = pd.crosstab(grp_raw, val_raw)
+            _, p, _, _ = chi2_contingency(ct)
+            p = round(float(p), 6)
+        except Exception:
+            p = np.nan
+        sig = "***" if (not np.isnan(p) and p < 0.001) else \
+              "**"  if (not np.isnan(p) and p < 0.01)  else \
+              "*"   if (not np.isnan(p) and p < 0.05)  else "ns"
+        title = f"{short_label(col, 44)}\nχ²  p={p:.4f} {sig}" if not np.isnan(p) else short_label(col, 44)
+        ax.set_title(title, fontsize=8, pad=3)
+        ax.set_xticks(x)
+        ax.set_xticklabels(response_levels, fontsize=7, rotation=20, ha="right")
+        ax.set_ylabel("% within group", fontsize=7)
+        ax.tick_params(axis="y", labelsize=7)
+        if i == 0:
+            ax.legend(fontsize=7, title=group_col, title_fontsize=7)
+
+    for j in range(len(valid), len(axes)):
+        axes[j].set_visible(False)
+
+    fig.suptitle(f"{form_name}  |  by {group_col}  (bar = % per group)", fontsize=11,
+                 fontweight="bold", y=1.005)
+    sns.despine()
+    plt.tight_layout()
+    plt.savefig(out_path, dpi=150, bbox_inches="tight")
+    plt.close(fig)
 
 def bh_adjust(pvals):
     pvals = np.array(pvals, dtype=float)
@@ -302,11 +367,9 @@ def run_grouping(domain_name, domain_dir, group_col, lookup, palette):
         if df[group_col].nunique() < 2:
             continue
 
-        # Encode text-ordinal columns (Likert, Yes/No) to numeric
-        df = encode_ordinal(df)
-
         form_name = fname.replace(".csv", "").replace("_", " ").title()
         num_cols  = numeric_cols_of(df)
+        cat_cols  = categorical_cols_of(df)
         print(f"    {form_name:<30} {len(df):>5} IDs  {df[group_col].value_counts().to_dict()}")
 
         main_df, pair_df = analyse_form(df, group_col)
@@ -324,9 +387,13 @@ def run_grouping(domain_name, domain_dir, group_col, lookup, palette):
         if not pair_df.empty:
             pair_sheets[sheet] = pair_df
 
-        # Plot
+        # Box plot for numeric columns
         plot_path = os.path.join(plots_dir, fname.replace(".csv", ".png"))
         plot_form(df, group_col, num_cols, form_name, plot_path, palette)
+
+        # Bar plot for categorical columns
+        bar_path = os.path.join(plots_dir, fname.replace(".csv", "_bar.png"))
+        plot_categorical_form(df, group_col, cat_cols, form_name, bar_path, palette)
 
     # Write Excel files
     def write_xl(sheets, path):
