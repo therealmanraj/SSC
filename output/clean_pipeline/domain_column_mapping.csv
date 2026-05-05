@@ -1,0 +1,1547 @@
+Form,CSV column,Matched description,Domain,Score,Matched
+Apathy Evaluation Informant,Questionnaire completed:     Questionnaire rempli:,how questionnaire was completed,Admin,0.5,Yes
+Apathy Evaluation Informant,What is your relationship to the person you are filling out the questionnaire fo,informant s relationship to patient,UNMATCHED,0.125,No
+Apathy Evaluation Informant,How is the questionnaire completed?     Comment le questionnaire est-il rempli?,how questionnaire was completed,Admin,0.5,Yes
+Apathy Evaluation Informant,1. S/he is interested in things,1 subject interested in things,Mood / Psychiatric,0.5,Yes
+Apathy Evaluation Informant,2. S/he gets things done during the day,2 gets things done during the day,Mood / Psychiatric,0.778,Yes
+Apathy Evaluation Informant,3. Getting things started on his/her own is important to him/her.,3 getting started on own is important,Mood / Psychiatric,0.583,Yes
+Apathy Evaluation Informant,4. S/he is interested in having new experiences,4 interested in new experiences,Mood / Psychiatric,0.556,Yes
+Apathy Evaluation Informant,5. S/he is interested in learning new things,5 interested in learning new things,Mood / Psychiatric,0.667,Yes
+Apathy Evaluation Informant,6. S/he puts little effort into anything,6 puts little effort into anything,Mood / Psychiatric,0.75,Yes
+Apathy Evaluation Informant,7. S/he approaches life with intensity,7 approaches life with intensity,Mood / Psychiatric,0.714,Yes
+Apathy Evaluation Informant,8. Seeing a job through to the end is important to him/her,8 seeing a job through is important,Mood / Psychiatric,0.583,Yes
+Apathy Evaluation Informant,9. S/he spends time doing things that interest him/her,9 spends time on interesting things,UNMATCHED,0.308,No
+Apathy Evaluation Informant,10. Someone has to tell him/her what to do each day,10 needs someone to direct daily tasks,UNMATCHED,0.2,No
+Apathy Evaluation Informant,11. S/he is less concerned about her/his problems than s/he should be,11 less concerned about problems,UNMATCHED,0.385,No
+Apathy Evaluation Informant,12. S/he has friends,12 has friends,Mood / Psychiatric,0.6,Yes
+Apathy Evaluation Informant,13. Getting together with friends is important to him/her,13 getting together with friends is important,Mood / Psychiatric,0.7,Yes
+Apathy Evaluation Informant,"14. When something good happens, s/he gets excited",14 gets excited by good events,UNMATCHED,0.364,No
+Apathy Evaluation Informant,15. S/he has an accurate understanding of her/his problems,15 accurate understanding of problems,Mood / Psychiatric,0.455,Yes
+Apathy Evaluation Informant,16. Getting things done during the day is important to her/him,16 getting things done daily is important,Mood / Psychiatric,0.462,Yes
+Apathy Evaluation Informant,17. S/he has initiative,17 has initiative,Mood / Psychiatric,0.6,Yes
+Apathy Evaluation Informant,18. S/he has motivation,18 has motivation,Mood / Psychiatric,0.6,Yes
+Apathy Evaluation Informant,Apathy Scale Score,apathy scale total score informant,Composite Scores,0.6,Yes
+Apathy Evaluation Self,Questionnaire completed:     Questionnaire rempli:,,UNMATCHED,0.0,No
+Apathy Evaluation Self,How is the questionnaire completed?     Comment le questionnaire est-il rempli?,2 gets things done during the day,UNMATCHED,0.091,No
+Apathy Evaluation Self,1. I am interested in things.,1 interested in things,Mood / Psychiatric,0.667,Yes
+Apathy Evaluation Self,2. I get things done during the day.,2 gets things done during the day,Mood / Psychiatric,0.667,Yes
+Apathy Evaluation Self,3. Getting things started on my own is important to me. ,3 getting things started on own is important,Mood / Psychiatric,0.727,Yes
+Apathy Evaluation Self,4. I am interested in having new experiences. ,4 interested in new experiences,Mood / Psychiatric,0.625,Yes
+Apathy Evaluation Self,5. I am interested in learning new things. ,5 interested in learning new things,Mood / Psychiatric,0.75,Yes
+Apathy Evaluation Self,6. I put little effort into anything.,6 puts little effort into anything,Mood / Psychiatric,0.625,Yes
+Apathy Evaluation Self,7. I approach life with intensity. ,7 approaches life with intensity,Mood / Psychiatric,0.571,Yes
+Apathy Evaluation Self,8. Seeing a job through to the end is important to me. ,8 seeing a job through to end is important,Mood / Psychiatric,0.818,Yes
+Apathy Evaluation Self,9. I spend time doing things that interest me.,9 spends time doing interesting things,UNMATCHED,0.364,No
+Apathy Evaluation Self,10. Someone has to tell me what to do each day.,10 needs someone to direct daily tasks,UNMATCHED,0.214,No
+Apathy Evaluation Self,11. I am less concerned about my problems than I should be. ,11 less concerned about problems than should be,Mood / Psychiatric,0.727,Yes
+Apathy Evaluation Self,12. I have friends. ,12 has friends,UNMATCHED,0.4,No
+Apathy Evaluation Self,13. Getting together with friends is important to me.,13 getting together with friends is important,Mood / Psychiatric,0.778,Yes
+Apathy Evaluation Self,"14. When something good happens, I get excited. ",14 gets excited when good things happen,UNMATCHED,0.364,No
+Apathy Evaluation Self,15. I have an accurate understanding of my problems. ,15 has accurate understanding of problems,Mood / Psychiatric,0.5,Yes
+Apathy Evaluation Self,16. Getting things done during the day is important to me. ,16 getting things done daily is important,Mood / Psychiatric,0.5,Yes
+Apathy Evaluation Self,17. I have initiative. ,17 has initiative,UNMATCHED,0.4,No
+Apathy Evaluation Self,18. I have motivation. ,18 has motivation,UNMATCHED,0.4,No
+Apathy Evaluation Self,Apathy Scale Score,apathy scale total score,Composite Scores,0.75,Yes
+Apathy Scale,Questionnaire completed:     Questionnaire rempli:,how questionnaire was completed,Admin,0.5,Yes
+Apathy Scale,How is the questionnaire completed?     Comment le questionnaire est-il rempli?,how questionnaire was completed,Admin,0.5,Yes
+Apathy Scale,1. Are you interested in learning new things?,1 interested in learning new things,Mood / Psychiatric,0.75,Yes
+Apathy Scale,2. Does anything interest you?,2 anything interests you,Mood / Psychiatric,0.5,Yes
+Apathy Scale,3. Are you concerned about your condition?,3 concerned about your condition,Mood / Psychiatric,0.714,Yes
+Apathy Scale,4. Do you put much effort into things?,4 puts effort into things,UNMATCHED,0.444,No
+Apathy Scale,5. Are you always looking for something to do?,5 always looking for something to do,Mood / Psychiatric,0.778,Yes
+Apathy Scale,6. Do you have plans and goals for the future?,6 has plans and goals for future,Mood / Psychiatric,0.545,Yes
+Apathy Scale,7. Do you have motivation?,7 has motivation,UNMATCHED,0.333,No
+Apathy Scale,8. Do you have the energy for daily activities?,8 has energy for daily activities,Mood / Psychiatric,0.5,Yes
+Apathy Scale,9. Does someone have to tell you what to do each day?,9 needs someone to say what to do each day,Mood / Psychiatric,0.538,Yes
+Apathy Scale,10. Are you indifferent to things?,10 indifferent to things,Mood / Psychiatric,0.667,Yes
+Apathy Scale,11. Are you unconcerned with many things?,11 unconcerned with many things,Mood / Psychiatric,0.714,Yes
+Apathy Scale,12. Do you need a push to get started on things?,12 needs a push to get started,Mood / Psychiatric,0.5,Yes
+Apathy Scale,"13. Are you neither happy nor sad, just in between?",13 neither happy nor sad just in between,Mood / Psychiatric,0.8,Yes
+Apathy Scale,14. Would you consider yourself apathetic?,14 considers self apathetic,UNMATCHED,0.25,No
+Apathy Scale,Apathy Scale Score,apathy scale total score,Composite Scores,0.75,Yes
+BAI,Tests completed:     Tests complétés:  ,date tests completed,Admin,0.667,Yes
+BAI,How were the test completed?     Comment les tests ont-ils été remplis?,how tests completed,UNMATCHED,0.333,No
+BAI,1. Numbness or tingling/sensations d'engourdissement ou de picotement,1 numbness or tingling,UNMATCHED,0.4,No
+BAI,2. Feeling hot/bouffées de chaleur,2 feeling hot,Mood / Psychiatric,0.5,Yes
+BAI,"3. Wobbliness in legs/'jambes molles', tremblements dans les jambes",3 wobbliness in legs,UNMATCHED,0.444,No
+BAI,4. Unable to relax/incapacité de se détendre,4 unable to relax,Mood / Psychiatric,0.5,Yes
+BAI,5. Fear of the worst happening/crainte que le pire ne survienne,5 fear of the worst happening,Mood / Psychiatric,0.5,Yes
+BAI,"6. Dizzy or lightheaded/étourdissement ou vertige, désorientation",6 dizzy or lightheaded,Mood / Psychiatric,0.5,Yes
+BAI,7. Heart pounding or racing/battements cardiaques marqués,7 heart pounding or racing,Mood / Psychiatric,0.625,Yes
+BAI,"8. Unsteady/mal assuré(e), manque d'assurance dans mes mouvements",8 unsteady lack of assurance in movement,UNMATCHED,0.2,No
+BAI,9. Terrified/terrifié(e),9 terrified,Mood / Psychiatric,0.5,Yes
+BAI,10. Nervous/nervosité,10 nervous,Mood / Psychiatric,0.667,Yes
+BAI,11. Feeling of choking/sensation d'étouffement,11 feeling of choking,Mood / Psychiatric,0.571,Yes
+BAI,12. Hands trembling/tremblement de mains,12 hands trembling,Mood / Psychiatric,0.5,Yes
+BAI,"13. Shaky/tremblements, chancelant(e)",13 shaky trembling,UNMATCHED,0.333,No
+BAI,14. Fear of losing control/crainte de perdre le contrôle,14 fear of losing control,Mood / Psychiatric,0.5,Yes
+BAI,15. Difficulty breathing/respiration difficile,15 difficulty breathing,Mood / Psychiatric,0.6,Yes
+BAI,16. Fear of dying/peur de mourir,16 fear of dying,Mood / Psychiatric,0.571,Yes
+BAI,"17. Scared/sensation de peur, 'avoir la frousse'",17 scared feeling of fear,UNMATCHED,0.182,No
+BAI,18. Indigestion or discomfort in abdomen/indigestion ou malaise abdominal,18 indigestion or abdominal discomfort,Mood / Psychiatric,0.556,Yes
+BAI,19. Faint/sensation de défaillance ou d'évanouissement,19 faint sensation of fainting,UNMATCHED,0.3,No
+BAI,20. Face flushed/rougissement du visage,20 face flushed,Mood / Psychiatric,0.5,Yes
+BAI,21. Sweating (not due to heat)/transpiration (non associée à la chaleur),21 sweating not heat related,UNMATCHED,0.308,No
+BAI,BAI Total Score,bai total score,Composite Scores,1.0,Yes
+BAI,"BAI Classification:  If score = 0-7, select 'Minimal'  If score = 8-15, select '",bai classification minimal mild moderate severe,UNMATCHED,0.353,No
+BDII,Tests completed:     Tests complétés:  ,,UNMATCHED,0.0,No
+BDII,How were the test completed?     Comment les tests ont-ils été remplis?,,UNMATCHED,0.0,No
+BDII,1. Sadness/Tristesse,1 sadness,Mood / Psychiatric,0.667,Yes
+BDII,2. Pessimism/Pessimisme,2 pessimism,Mood / Psychiatric,0.667,Yes
+BDII,3. Past Failure/Échecs dans le passé,3 past failure,UNMATCHED,0.429,No
+BDII,4. Loss of Pleasure/Perte de plaisir,4 loss of pleasure,Mood / Psychiatric,0.571,Yes
+BDII,5. Guilty Feelings/Sentiments de culpabilité,5 guilt feelings,UNMATCHED,0.286,No
+BDII,6. Punishment Feelings/Sentiment d'être puni(e),6 punishment feelings,UNMATCHED,0.375,No
+BDII,7. Self-Dislike/Sentiments négatifs envers soi-même,7 self dislike,UNMATCHED,0.375,No
+BDII,8. Self-Criticalness/Attitude critique envers soi,8 self criticalness,UNMATCHED,0.429,No
+BDII,9. Suicidal Thoughts or Wishes/Pensées ou désirs de suicide,9 suicidal thoughts or wishes,Mood / Psychiatric,0.5,Yes
+BDII,10. Crying/Pleurs,10 crying,Mood / Psychiatric,0.667,Yes
+BDII,11. Agitation,11 agitation,Mood / Psychiatric,1.0,Yes
+BDII,12. Loss of Interest/Perte d'intérêt,12 loss of interest,Mood / Psychiatric,0.571,Yes
+BDII,13. Indecisiveness/Indécision,13 indecisiveness,Mood / Psychiatric,0.667,Yes
+BDII,14. Worthlessness/Dévalorisation,14 worthlessness,Mood / Psychiatric,0.667,Yes
+BDII,15. Loss of Energy/Perte d'énergie,15 loss of energy,Mood / Psychiatric,0.571,Yes
+BDII,16. Changes in Sleeping Pattern/Modifications dans les habitudes de sommeil,16 changes in sleeping pattern,Mood / Psychiatric,0.455,Yes
+BDII,17. Irritability/Irritabilité,17 irritability,Mood / Psychiatric,0.667,Yes
+BDII,18. Changes in Appetite/Modifications de l'appétit,18 changes in appetite,Mood / Psychiatric,0.5,Yes
+BDII,19. Concentration Difficulty/Difficulté à se concentrer,19 concentration difficulty,UNMATCHED,0.429,No
+BDII,20. Tiredness or Fatigue,20 tiredness or fatigue,Mood / Psychiatric,1.0,Yes
+BDII,21. Loss of interest in Sex/Perte d'intérêt pour le sexe,21 loss of interest in sex,Mood / Psychiatric,0.5,Yes
+BDII,BDI-II Total Score,bdi ii total score,Composite Scores,1.0,Yes
+BDII,"Classification Instructions:  If score = 0-13, select 'Minimal'  If score = 14-1",13 indecisiveness,UNMATCHED,0.056,No
+Clinical,"Determined diagnosis:  If score = 0, Parkinson's Disease (PD)  If score = 1, Pro",1 diagnosed with parkinson s disease,UNMATCHED,0.161,No
+Clinical,Questionnaire completed by:    Questionnaire complété par:,how questionnaire was completed,UNMATCHED,0.4,No
+Clinical,Questionnaire completed:     Questionnaire rempli:  ,how questionnaire was completed,Admin,0.5,Yes
+Clinical,Date Correlation :    Concordance avec la date :,date correlation,Admin,1.0,Yes
+Clinical,How is the questionnaire completed?     Comment le questionnaire est-il rempli?,how questionnaire was completed,Admin,0.5,Yes
+Clinical,A. Weight of the participant (lbs):     A. Poids du participant (lbs):,weight lbs,UNMATCHED,0.333,No
+Clinical,Weight of the participant (kg):     Poids du participant (kg):,weight kg,UNMATCHED,0.4,No
+Clinical,B. Height of the participant (ft):     B. Taille du participant (ft): ,height ft,UNMATCHED,0.333,No
+Clinical,Height of the participant (cm):     Taille du participant (cm): ,height cm,UNMATCHED,0.4,No
+Clinical,BMI,bmi calculated,Admin,0.5,Yes
+Clinical,IMC,imc calculated french label,UNMATCHED,0.25,No
+Clinical,1. Was the patient diagnosed with Parkinson's disease?     1. Est-ce que le pati,1 diagnosed with parkinson s disease,Clinical History / Diagnosis,0.667,Yes
+Clinical,"1a. If 'No' or 'Uncertain', is the diagnosis....    1a. Si la réponse est > ou >",q1a alternative diagnosis if not pd,UNMATCHED,0.167,No
+Clinical,"If other, please specify:     Veuillez préciser si autre:",other diagnosis specification,UNMATCHED,0.167,No
+Clinical,"1b. If applicable, what is the level of certainty of the diagnosis?     1b. Si p",q1b level of certainty of diagnosis,UNMATCHED,0.364,No
+Clinical,1c. How was the diagnosis confirmed for C-OPN?    1c. Comment le diagnostic a-t-,q1c how diagnosis confirmed for c opn,Clinical History / Diagnosis,0.6,Yes
+Clinical,"If other, please specify:     Veuillez préciser si autre:2",other diagnosis specification,UNMATCHED,0.167,No
+Clinical,2. What is the date of diagnosis?    2. Quelle est la date de diagnostic? ,2 date of diagnosis,Clinical History / Diagnosis,0.571,Yes
+Clinical,What is the current duration of disease? (years)    Quelle est la durée actuelle,current disease duration years,Clinical History / Diagnosis,0.5,Yes
+Clinical,What is the duration of disease at the time the clinical questionnaire was compl,disease duration at clinical questionnaire years,Clinical History / Diagnosis,0.462,Yes
+Clinical,What is the duration of disease at the time the covid questionnaire was complete,disease duration at covid questionnaire years,Clinical History / Diagnosis,0.462,Yes
+Clinical,What is the duration of disease at the time the blood draw was completed? (years,disease duration at blood draw years,Clinical History / Diagnosis,0.462,Yes
+Clinical,What is the age at diagnosis? (years)    Quel est l'âge du diagnostic? (années),age at diagnosis years,Clinical History / Diagnosis,0.571,Yes
+Clinical,**UBC and TOH ONLY**  What is the age at diagnosis? (years)    Quel est l'âge du,age at diagnosis ubc toh only,Clinical History / Diagnosis,0.545,Yes
+Clinical,3. Contact with a nurse specializing in parkinsonisms since the last clinical fo,contact with pd nurse since last follow up,UNMATCHED,0.438,No
+Clinical,4. What were the first symptoms?    4. Quels étaient les premiers symptômes de l,4 first symptoms of disease,UNMATCHED,0.375,No
+Clinical,Please specify other symptoms:    Veuillez préciser quels autres symptômes : ,other first symptoms,UNMATCHED,0.4,No
+Clinical,5. Date when the symptoms first appear:     5. Date d'apparition des premiers sy,5 date of first symptom appearance,UNMATCHED,0.3,No
+Clinical,Current duration since symptoms first appear: (years)     Current durée depuis l,current duration since symptom onset years,UNMATCHED,0.444,No
+Clinical,Duration since symptoms first appear when the clinical questionnaire was complet,disease duration at clinical questionnaire years,UNMATCHED,0.286,No
+Clinical,Duration since symptoms first appear when the blood draw was completed: (years) ,disease duration at blood draw years,UNMATCHED,0.286,No
+Clinical,What is the age at onset of disease? (years)    Quel est l'âge d'apparition de l,age at disease onset years,Clinical History / Diagnosis,0.556,Yes
+Clinical,**UBC and TOH ONLY**  What is the age at onset of Parkinson's disease? (years)  ,age at onset ubc toh only,UNMATCHED,0.4,No
+Clinical,6. What is your dominant hand?    6. Quelle est votre main dominante?,6 dominant hand,Motor,0.5,Yes
+Clinical,7. Are you a converted left-hander?    7. Êtes-vous gaucher contrarié?,7 converted left hander,Motor,0.571,Yes
+Clinical,"8. When the symptoms began, did the symptoms present on one side or both sides o",10 symptoms now affect both sides,UNMATCHED,0.158,No
+Clinical,9. What symptoms are currently present?    9. Quels sont les symptômes présents ,9 current symptoms present,UNMATCHED,0.429,No
+Clinical,Please specify other symptoms:    Veuillez préciser quels autres symptômes: ,other first symptoms,UNMATCHED,0.4,No
+Clinical,10. Do the symptoms affect both sides of your body now?     10. Les symptômes af,10 symptoms now affect both sides,Motor,0.545,Yes
+Clinical,11. Does the development of motor symptoms progress gradually?     11. Le dévelo,11 motor symptoms progress gradually,Motor,0.556,Yes
+Clinical,12. Has there been almost complete remission since the onset of symptoms?    12.,12 almost complete remission since onset,Motor,0.5,Yes
+Clinical,"13. Do you currently have dyskinesia? (involuntary movements such as writhing, w",13 currently has dyskinesia,UNMATCHED,0.167,No
+Clinical,13a. What impact do the dyskinesia have on your daily activities?    13a. Quel e,q13a impact of dyskinesia on daily activities,UNMATCHED,0.385,No
+Clinical,"14. Do you experience freezing of gait?   (sudden, brief inability to start or c",14 experiences freezing of gait,Motor,0.5,Yes
+Clinical,14a. What impact does the freezing of gait have on your daily activities?    14a,q14a impact of freezing on daily activities,UNMATCHED,0.429,No
+Clinical,15. Have you fallen in the last 3 months?    15. Avez-vous fait des chutes dans ,15 fallen in last 3 months,Motor,0.667,Yes
+Clinical,15a. How many times did you fall?    15a. Combien de fois avez-vous chuté?,how questionnaire was completed,UNMATCHED,0.1,No
+Clinical,16. Can you stand unaided?    16. Pouvez-vous vous tenir debout sans aide?,16 can stand unaided,Motor,0.8,Yes
+Clinical,17. Can you engage in activities outside of the home unaccompanied?    17. Pouve,17 can engage in activities outside home unaccompanied,Activities of Daily Living,0.727,Yes
+Clinical,18. Do you experience motor fluctuations? (On/Off periods)  Good effect from you,18 experiences motor fluctuations on off,UNMATCHED,0.152,No
+Clinical,18a. What impact do the motor fluctuations (On/Off periods) have on your daily a,q18a impact of motor fluctuations on daily activities,UNMATCHED,0.375,No
+Clinical,19. Was the patient ON or OFF during the study visit?    19. Le patient était-il,19 on or off state during study visit,Admin,0.636,Yes
+Clinical,20. Do you think your medications are working well currently (significant reduct,20 medications working well at visit,UNMATCHED,0.24,No
+Clinical,21. Hoehn & Yahr Rating Scale:    21. Échelle d'évaluation Hoehn & Yahr:,21 hoehn yahr rating,Clinical History / Diagnosis,0.8,Yes
+Clinical,When was the Hoehn & Yahr evaluation completed?    Quand l'échelle d'évaluation ,how questionnaire was completed,UNMATCHED,0.222,No
+Clinical,What method did you use to estimate the Hoehn & Yahr Scale?     Quelle méthode a,method used to estimate h y,UNMATCHED,0.214,No
+Clinical,22. Does the patient have dementia?    22. Est-ce que le patient est atteint de ,22 patient has dementia,UNMATCHED,0.429,No
+Clinical,22a. Date dementia was diagnosed:    22a. Date du diagnostic de démence:  ,q22a date dementia diagnosed,Cognitive Function,0.5,Yes
+Clinical,Current duration of dementia: (years)    Durée actuelle de la démence: (years),current dementia duration years,Cognitive Function,0.8,Yes
+Clinical,Duration of dementia when the clinical questionnaire was completed: (years)    D,dementia duration at clinical questionnaire,UNMATCHED,0.364,No
+Clinical,Duration of dementia when the blood draw was completed: (years)    Durée de la d,dementia duration at blood draw,UNMATCHED,0.364,No
+Clinical,23. Has the patient had surgery for Parkinson's?    23. Le patient a-t-il/elle e,23 had surgery for parkinson s,Clinical History / Diagnosis,0.667,Yes
+Clinical,23a. Please specify type of surgery:    23a. Veuillez préciser le type de chirur,q23a type of surgery,UNMATCHED,0.429,No
+Clinical,Please specify other surgery:    Veuillez préciser si autre chirurgie:,other surgery type,UNMATCHED,0.4,No
+Clinical,23b. Date of DBS surgery:,q23b date of dbs surgery,Clinical History / Diagnosis,0.667,Yes
+Clinical,Current duration of DBS surgery: (years) ,current dbs duration years,Clinical History / Diagnosis,0.667,Yes
+Clinical,Duration of DBS surgery when the clinical questionnaire was completed: (years) ,dbs duration at clinical questionnaire,UNMATCHED,0.333,No
+Clinical,Duration of DBS surgery when the blood draw was completed: (years) ,dbs duration at blood draw,UNMATCHED,0.333,No
+Clinical,24. Other symptoms - neurological signs / medical record    24. Autres symptômes,24 other neurological signs medical record,Clinical History / Diagnosis,0.857,Yes
+Clinical,Please specify other:     Veuillez préciser autre:,other diagnosis specification,UNMATCHED,0.2,No
+Clinical,Additional Comments:  Commentaires supplémentaires:,additional comments,Admin,0.5,Yes
+Demographic,Questionnaire completed:     Questionnaire rempli:  ,how questionnaire was completed,Admin,0.5,Yes
+Demographic,How is the questionnaire completed?     Comment le questionnaire est-il rempli? ,how questionnaire was completed,Admin,0.5,Yes
+Demographic,Age at study visit (automatic calculated field):    Âge au moment de la visite d,age at study visit auto calculated,Admin,0.625,Yes
+Demographic,**OTTAWA HOSPITAL & UBC ONLY**  Age at study visit (input manually): ,age at study visit ottawa ubc manual entry,Admin,0.5,Yes
+Demographic,1. Gender/Genre:,1 gender,Admin,0.667,Yes
+Demographic,"If other, please specify:    Veuillez préciser si vous avez répondu autre:",other gender specification,UNMATCHED,0.167,No
+Demographic,2. What is your current marital status?    2. Quel est votre état matrimonial/ci,2 marital status,UNMATCHED,0.429,No
+Demographic,3. What is your current living situation?    3. Quelle est votre situation de mé,3 living situation,UNMATCHED,0.429,No
+Demographic,4. What is the highest level of education you have completed?    4. Quel est le ,4 highest education level completed,Admin,0.455,Yes
+Demographic,5. Years of education (calculate the total number of years starting from grade 1,5 years of education from grade 1,UNMATCHED,0.304,No
+Demographic,What is your current source of income?,current source of income,Admin,0.571,Yes
+Demographic,Please specify other income source:,other income source,Admin,0.6,Yes
+Demographic,6. What is your current employment status?    6. Quelle est votre situation d'em,6 employment status,UNMATCHED,0.429,No
+Demographic,7. Do you have a regular caregiver? A caregiver as part of this questionnaire is,7 has a regular caregiver,UNMATCHED,0.133,No
+Demographic,7a. Please specify regular caregiver:    7a. Veuillez préciser qui est votre aid,q7a regular caregiver type,UNMATCHED,0.286,No
+Demographic,Please specify other caregiver:    Veuillez préciser si vous avez sélectionné au,other caregiver type,UNMATCHED,0.4,No
+Demographic,7b. Professional status of the caregiver:     7b Situation professionnelle de l',q7b professional status of caregiver,Admin,0.571,Yes
+Demographic,"8. If the questionnaire was done in-person, is the regular caregiver present dur",8 caregiver present during in person visit,Admin,0.5,Yes
+Demographic,9. Do you attend a support group for your disease?    9. Êtes-vous impliqué dans,9 attends disease support group,UNMATCHED,0.364,No
+Demographic,10. Your involvement in a support group is ...    10. Votre implication dans un ,10 involvement in support group,Admin,0.625,Yes
+Demographic,11. What is your first language?    11. Quelle est votre langue maternelle?,11 first language,Admin,0.5,Yes
+Demographic,11a. What is your first language?    11a. Quelle est votre langue maternelle?,11 first language,UNMATCHED,0.286,No
+Demographic,"11b. How many language(s) do you speak?    11b, Combien de langues parlez-vous: ",11 first language,UNMATCHED,0.1,No
+Demographic,11c. List of spoken language(s):     11c. Liste de(s) langue(s) parlée(s): ,q11c list of languages spoken,UNMATCHED,0.375,No
+Demographic,Which of the following best describes your functional level of the English langu,functional level of english,UNMATCHED,0.364,No
+Demographic,Which of the following best describes your functional level of the French langua,functional level of french,UNMATCHED,0.364,No
+Demographic,Which of the following best describes your functional level of the Spanish langu,functional level of spanish,UNMATCHED,0.364,No
+Demographic,Which of the following best describes your functional level of the Mandarin lang,functional level of mandarin,UNMATCHED,0.364,No
+Demographic,Which of the following best describes your functional level of the Cantonese lan,functional level of cantonese,UNMATCHED,0.364,No
+Demographic,Which of the following best describes your functional level of the Punjabi langu,functional level of punjabi,UNMATCHED,0.364,No
+Demographic,Which of the following best describes your functional level of the Hindi languag,functional level of hindi,UNMATCHED,0.364,No
+Demographic,Which of the following best describes your functional level of the Arabic langua,functional level of arabic,UNMATCHED,0.364,No
+Demographic,Which of the following best describes your functional level of the Bengali langu,functional level of bengali,UNMATCHED,0.364,No
+Demographic,Which of the following best describes your functional level of the Russian langu,functional level of russian,UNMATCHED,0.364,No
+Demographic,Which of the following best describes your functional level of the Portuguese la,functional level of portuguese,UNMATCHED,0.364,No
+Demographic,Which of the following best describes your functional level of the Indonesian la,functional level of indonesian,UNMATCHED,0.364,No
+Demographic,Which of the following best describes your functional level of the Italian langu,functional level of italian,UNMATCHED,0.364,No
+Demographic,Which of the following best describes your functional level of the German langua,functional level of german,UNMATCHED,0.364,No
+Demographic,Which of the following best describes your functional level of the Filipino lang,functional level of filipino,UNMATCHED,0.364,No
+Demographic,Which of the following best describes your functional level of the Cree language,functional level of cree,UNMATCHED,0.364,No
+Demographic,Which of the following best describes your functional level of the Inuktitut lan,functional level of inuktitut,UNMATCHED,0.364,No
+Demographic,Which of the following best describes your functional level of the Ojibway langu,functional level of ojibway,UNMATCHED,0.364,No
+Demographic,"If you selected other, please specify:     Si vous en avez sélectionné autre, ve",other gender specification,UNMATCHED,0.125,No
+Demographic,12. Do you understand English well enough to participate in the study?    12. Co,12 understands english well enough to participate,Admin,0.462,Yes
+Demographic,13. Do you understand French well enough to participate in the study?    13. Com,13 understands french well enough to participate,Admin,0.462,Yes
+Demographic,"If applicable, who helped you with translation?    Si applicable, qui vous a aid",translation assistance provided by,UNMATCHED,0.1,No
+EHI,Tests completed:     Tests complétés:  ,date completed,UNMATCHED,0.333,No
+EHI,How were the test completed?     Comment les tests ont-ils été remplis?,how test was completed,Admin,0.5,Yes
+EHI,1. Writing,ehi item 1 writing,Motor,0.5,Yes
+EHI,2. Drawing,ehi item 2 drawing,Motor,0.5,Yes
+EHI,3. Throwing,ehi item 3 throwing,Motor,0.5,Yes
+EHI,4. Scissors,ehi item 4 scissors,Motor,0.5,Yes
+EHI,5. Toothbrush,ehi item 5 toothbrush,Motor,0.5,Yes
+EHI,6. Knife (without a fork),ehi item 6 knife no fork,UNMATCHED,0.375,No
+EHI,7. Spoon,ehi item 7 spoon,Motor,0.5,Yes
+EHI,8. Broom (upper hand),ehi item 8 broom upper hand,Motor,0.667,Yes
+EHI,9. Striking Match (match hand),ehi item 9 striking match match hand,Motor,0.667,Yes
+EHI,10. Opening a box (lid hand),ehi item 10 opening box lid hand,Motor,0.625,Yes
+EHI,11. Which foot do you prefer to kick with?,ehi item 11 which foot to kick with,Motor,0.545,Yes
+EHI,12. Which eye do you use when using only one?,ehi item 12 which eye when using one,Motor,0.5,Yes
+EHI,EHI Total Score Right  ,ehi total right score,Composite Scores,1.0,Yes
+EHI,EHI Total Score Left  ,ehi total left score,Composite Scores,1.0,Yes
+EHI,EHI Handedness Score  ,ehi handedness score,Composite Scores,1.0,Yes
+EHI,"Handedness Classification:   If score < -0.4, select 'Left Handed'  If score -0.",handedness classification left ambidextrous right,UNMATCHED,0.4,No
+Enrollement,Questionnaire completed by:    Questionnaire complété par : ,questionnaire completed by detail,Admin,0.75,Yes
+Enrollement,Questionnaire completed:     Questionnaire rempli: ,questionnaire completed by detail,Admin,0.5,Yes
+Enrollement,Site:,study site,Admin,0.5,Yes
+Enrollement,QPN/RPQ Site:,qpn rpq site,Admin,1.0,Yes
+Enrollement,What language does the participant prefer to be contacted in?    Dans quelle lan,site participant moved to,UNMATCHED,0.167,No
+Enrollement,**FOR NATIONAL COORDINATOR USE ONLY**  Was the participant imported from CaPRI R,whether participant imported from capri redcap,UNMATCHED,0.385,No
+Enrollement,External ID: ,external id,Admin,1.0,Yes
+Enrollement,LARA ID: ,lara id,Admin,1.0,Yes
+Enrollement,Linked PD-MCI id:  ,linked pd mci id,Admin,1.0,Yes
+Enrollement,Linked PD-MCI-TMS id:,linked pd mci tms id,Admin,1.0,Yes
+Enrollement,Linked MIGUT id:  ,linked migut id,Admin,1.0,Yes
+Enrollement,Is this a test participant?,test participant flag,UNMATCHED,0.333,No
+Enrollement,The questionnaire was completed by:     Le questionnaire a été complété par: ,questionnaire completed by detail,Admin,0.5,Yes
+Enrollement,Does the participant have follow-ups prior to this entry in REDCap (QPN patients,prior follow ups in redcap qpn,UNMATCHED,0.4,No
+Enrollement,How many follow-ups were completed by this participant?     Combien de suivis on,questionnaire completed by detail,UNMATCHED,0.182,No
+Enrollement,When was the last follow-up (calculate the number of months)?    À quand remonte,when last follow up completed months,Admin,0.455,Yes
+Enrollement,Date of enrollment (Date participant signed ICF):    Date d'inscription (Date de,date of enrollment icf signed,Admin,0.833,Yes
+Enrollement,Date of study visit:     Date de visite d'étude:     *Enter date that epidemiolo,date of study visit,Admin,1.0,Yes
+Enrollement,Date of blood draw:     Date de prise de sang: ,date of blood draw,Admin,1.0,Yes
+Enrollement,Age at blood draw: ,age at blood draw,Admin,1.0,Yes
+Enrollement,Language that the consent form was completed:    Langue dans laquelle le formula,language consent form completed in,Admin,0.5,Yes
+Enrollement,Enrolment Group:    Groupe d'inscription:,enrolment group,Admin,1.0,Yes
+Enrollement,Study Status:    Statut dans l'étude:,study status,Admin,1.0,Yes
+Enrollement,Reason for withdrawal:    Raison pour le retrait:  ,reason for withdrawal,Admin,1.0,Yes
+Enrollement,  'Please note that the participant can withdraw at any time and for any reason.,reason for withdrawal,UNMATCHED,0.091,No
+Enrollement,"If the participant has moved to a city where a C-OPN site is located, please spe",site participant moved to,UNMATCHED,0.25,No
+Enrollement,"If the reason is 'Other', please specify.    Si la raison est 'Autres' veuillez ",other withdrawal reason specified,UNMATCHED,0.222,No
+Enrollement,Date of withdrawal:    Date de retrait:  ,date of withdrawal,Admin,1.0,Yes
+Enrollement,Reason for exclusion:    Raison pour l'exclusion:,reason for exclusion,Admin,1.0,Yes
+Enrollement,Date of exclusion:    Date d'exclusion:,date of exclusion,Admin,1.0,Yes
+Enrollement,Registry Status:    Statut dans le registre:,registry status,Admin,1.0,Yes
+Enrollement,Is this participant only taking part in the online questionnaire portion of C-OP,online questionnaire only participant,UNMATCHED,0.148,No
+Enrollement,Recruitment Source:     Source de recrutement: ,recruitment source,Admin,1.0,Yes
+Enrollement,Specify if you selected other:     Précisez si vous avez sélectionné autre:,other recruitment source,UNMATCHED,0.143,No
+Enrollement,"If hospital was selected for CaPRI, was the participant recruited through the Mo",hospital recruitment pathway mdc vs general,UNMATCHED,0.143,No
+Enrollement,Has the participant participated in research or clinical trials before?    Le/la,prior research clinical trial participation,UNMATCHED,0.154,No
+Enrollement,Notes:,coordinator notes,Admin,0.5,Yes
+Epidemiological,Questionnaire completed:     Questionnaire rempli:  ,how questionnaire was completed,Admin,0.5,Yes
+Epidemiological,How is the questionnaire completed?     Comment le questionnaire est-il rempli?,how questionnaire was completed,Admin,0.5,Yes
+Epidemiological,1. Have you ever been diagnosed with:    1. Avez-vous déjà été diagnostiqué pour,1 comorbid diagnoses,UNMATCHED,0.111,No
+Epidemiological,Please specify other:    Veuillez préciser autre:,other comorbidities,UNMATCHED,0.25,No
+Epidemiological,2. Have you been admitted to the hospital in the past 18 months?    2. Avez-vous,2 hospitalised in past 18 months,UNMATCHED,0.385,No
+Epidemiological,2a. How many times were you admitted to the hospital?    2a. Combien de fois ave,how questionnaire was completed,UNMATCHED,0.077,No
+Epidemiological,2b. Reason for admission:    2b. Raison de l'admission:,q2b reason for admission,Clinical History / Diagnosis,0.6,Yes
+Epidemiological,Please specify other reason for hospital admission:    Veuillez préciser si autr,other reason for admission,Clinical History / Diagnosis,0.571,Yes
+Epidemiological,2c. Was the altered mental state due to:    2c. Le changement de santé mentale a,q2c altered mental state due to,Cognitive Function,0.556,Yes
+Epidemiological,Please specify other reason for altered mental state:    Veuillez préciser si au,other reason for altered mental state,Cognitive Function,0.75,Yes
+Epidemiological,3. Have you ever experienced a hard blow to the head with or without loss of con,3 hard blow to head with without loc,UNMATCHED,0.219,No
+Epidemiological,3a. How many times?    3a. Combien de fois?,how questionnaire was completed,UNMATCHED,0.143,No
+Epidemiological,"4. Have you ever played high contact sports? (e.g. football, hockey, soccer, rug",4 played high contact sports,UNMATCHED,0.357,No
+Epidemiological,4a. How many years did you play high contact sports?    4a. Combien d'années ave,q4a years of high contact sports,UNMATCHED,0.333,No
+Epidemiological,5. Do you suffer from constipation?    5. Souffrez-vous de constipation?,5 suffers from constipation,UNMATCHED,0.429,No
+Epidemiological,5a. How many years have you been suffering from constipation?  ,q5a years suffering from constipation,UNMATCHED,0.364,No
+Epidemiological,6. Do you often (e.g. every day or multiple times (4+) a week) feel light-headed,6 often feels lightheaded or dizzy,UNMATCHED,0.2,No
+Epidemiological,7. Do you ever have an irrepressible urge to move your legs?    7. Avez-vous déj,7 irrepressible urge to move legs rls,Motor,0.462,Yes
+Epidemiological,8. Do you feel or have people told you that your sense of smell is getting worse,8 worsening sense of smell,UNMATCHED,0.235,No
+Epidemiological,9. Have your friends or family told you lately that you are becoming more forget,9 family notes increased forgetfulness,UNMATCHED,0.118,No
+Epidemiological,10. Have you noticed problems with your short term memory?    10. Avez-vous rema,10 noticed short term memory problems,Cognitive Function,0.6,Yes
+Epidemiological,11. Do you have trouble falling asleep?    11. Avez-vous des difficultés pour vo,11 trouble falling asleep,Non-Motor,0.571,Yes
+Epidemiological,11a. Since when have you had trouble falling asleep? (How many years?)    11a. D,11 trouble falling asleep,UNMATCHED,0.231,No
+Epidemiological,12. Do you have trouble staying asleep?    12. Avez-vous des difficultés à reste,12 trouble staying asleep,Non-Motor,0.571,Yes
+Epidemiological,12a. Since when have you had trouble staying asleep? (How many years?)    12a. D,12 trouble staying asleep,UNMATCHED,0.231,No
+Epidemiological,13. What are the chances that you would doze off or fall asleep when you don't i,11 trouble falling asleep,UNMATCHED,0.037,No
+Epidemiological,13a. Since when have you had trouble dozing off or falling asleep when you don't,11 trouble falling asleep,UNMATCHED,0.15,No
+Epidemiological,14. Have you ever been told or have you ever noticed that you were acting out yo,14 acting out dreams rem sleep behaviour,UNMATCHED,0.16,No
+Epidemiological,14a. Since when have you been acting out your dreams? (How many years?)    14a. ,14 acting out dreams rem sleep behaviour,UNMATCHED,0.176,No
+Epidemiological,"15. In the last month, have you experienced any unexplained pain (that was not d",15 unexplained pain in last month,UNMATCHED,0.286,No
+Epidemiological,16. In which environment have you mostly lived?    16. Dans quel environnement a,16 living environment urban rural,UNMATCHED,0.182,No
+Epidemiological,16a.,,UNMATCHED,0.0,No
+Epidemiological,16b.,,UNMATCHED,0.0,No
+Epidemiological,17. In which environment have you mostly worked?    17. Dans quel environnement ,17 work environment urban rural,UNMATCHED,0.182,No
+Epidemiological,17a. ,,UNMATCHED,0.0,No
+Epidemiological,17b. ,,UNMATCHED,0.0,No
+Epidemiological,"18. Have you ever used or been exposed to pesticides? (Insecticides, herbicides,",18 exposure to pesticides,UNMATCHED,0.2,No
+Epidemiological,19. Have you done any welding on a regular basis or had any exposure to welding ,19 regular welding or welding material exposure,UNMATCHED,0.312,No
+Epidemiological,20. Do you exercise on a regular basis?    20. Faites-vous de l'exercice réguliè,20 regular exercise,UNMATCHED,0.375,No
+Epidemiological,20a. How often do you exercise per week on average?    20a. Combien de fois fait,q20a exercise frequency per week,UNMATCHED,0.25,No
+Epidemiological,20b. How long is one exercise session on average?    20b. Quelle est la durée mo,q20b average exercise session duration,UNMATCHED,0.273,No
+Epidemiological,20c. How many times a week do you do high intensity exercise (impossible to have,q20c high intensity exercise sessions per week,UNMATCHED,0.222,No
+Epidemiological,20d. How many times per week do you exercise at moderate intensity (able to carr,q20d moderate intensity exercise per week,UNMATCHED,0.263,No
+Epidemiological,20e. How many times a week do you exercise at a low intensity (slightly out of b,q20e low intensity exercise per week,UNMATCHED,0.222,No
+Epidemiological,21. What type of exercise do you do?    21. Quel type d'exercice faites-vous?,21 type of exercise,Admin,0.571,Yes
+Epidemiological,Please specify other exercise:    Veuillez préciser autre type d'exercice:  ,other exercise type,UNMATCHED,0.4,No
+Epidemiological,22. Are you currently receiving any of the following therapies?    22. Suivez-vo,22 current therapies received,UNMATCHED,0.167,No
+Epidemiological,Please specify other therapy:    Veuillez préciser quelle autre thérapie:,other therapy type,UNMATCHED,0.4,No
+Epidemiological,22a. Have you had any contact with a PD nurse for care since your last clinic vi,q22a contact with pd nurse since last visit,UNMATCHED,0.389,No
+Epidemiological,23. Do you currently drink coffee?    23. Buvez-vous du café régulièrement?,23 currently drinks coffee,UNMATCHED,0.429,No
+Epidemiological,23a. Since when have you been drinking coffee? (How many years?)    23a. Depuis ,q23a years of coffee drinking,UNMATCHED,0.231,No
+Epidemiological,23b. How many cups of coffee per day?    23b. Combien de tasses de café buvez-vo,q23b cups of coffee per day current,Admin,0.5,Yes
+Epidemiological,23c. Have you ever drank coffee on a regular basis in the past?    23c. Avez-vou,q23c drank coffee regularly in the past,UNMATCHED,0.333,No
+Epidemiological,23d. How many cups of coffee per day did you drink in the past?    23d. Combien ,q23b cups of coffee per day current,UNMATCHED,0.312,No
+Epidemiological,23e. For how many years did you drink coffee?    23e. Pendant combien d'années a,q23a years of coffee drinking,UNMATCHED,0.167,No
+Epidemiological,24. Do you currently use any of the following?    24. Consommez-vous les substan,24 current substance use,UNMATCHED,0.182,No
+Epidemiological,24a. Since when have you been drinking alcohol? (How many years?)    24a. Depuis,q23a years of coffee drinking,UNMATCHED,0.143,No
+Epidemiological,24b. How many glasses per week?    24b. Combien de verres d'alcool consommez-vou,q24b glasses of alcohol per week,UNMATCHED,0.333,No
+Epidemiological,24c. (If you do NOT currently drink alcohol):  Have you ever drank alcohol on a ,q24c drank alcohol regularly in past,UNMATCHED,0.2,No
+Epidemiological,24d. For how many years did you drink alcohol?    24d. Pendant combien d'années ,q24a years of alcohol use,UNMATCHED,0.167,No
+Epidemiological,24e. How many glasses per week?    24e. Combien de verres d'alcool buvez-vous pa,q24b glasses of alcohol per week,UNMATCHED,0.333,No
+Epidemiological,24f. Since when have you been smoking? (How many years?)    24f. Depuis quand fu,q24f years of smoking,UNMATCHED,0.167,No
+Epidemiological,24g. How many cigarettes per day?    24g. Combien de cigarettes par jour? ,q24g cigarettes per day current,UNMATCHED,0.375,No
+Epidemiological,24h. (If you do NOT currently smoke cigarettes):  Have you ever smoked cigarette,q24h smoked cigarettes regularly in past,UNMATCHED,0.2,No
+Epidemiological,24i. For how many years did you smoke?    24i. Pendant combien d'année avez-vous,how questionnaire was completed,UNMATCHED,0.091,No
+Epidemiological,24j. How many cigarettes a day did you smoke?    24j. Combien de cigarettes fumi,q24g cigarettes per day current,UNMATCHED,0.167,No
+Epidemiological,24k. Please specify which recreational drugs:    24k. Veuillez préciser quelles ,q24k recreational drugs specified,UNMATCHED,0.25,No
+Epidemiological,24l. Please specify what kind of cannabis:    24l. Veuillez préciser quel type d,21 type of exercise,UNMATCHED,0.1,No
+Epidemiological,25. Does/did your biological father have Parkinson's disease?    25. Votre père ,25 biological father has had pd,UNMATCHED,0.231,No
+Epidemiological,25a. What is the ethnicity of your biological father?    25a. Quelle est l'ethni,q25a ethnicity of biological father,UNMATCHED,0.4,No
+Epidemiological,Please specify other ethnicity:    Veuillez préciser autre ethnicité:  ,other paternal ethnicity,UNMATCHED,0.4,No
+Epidemiological,26. Does/did your biological mother have Parkinson's disease?    26. Votre mère ,26 biological mother has had pd,UNMATCHED,0.231,No
+Epidemiological,26a. What is the ethnicity of your biological mother?    26a. Quelle est l'ethni,q26a ethnicity of biological mother,UNMATCHED,0.4,No
+Epidemiological,Please specify other ethnicity:    Veuillez préciser autre ethnicité:,other paternal ethnicity,UNMATCHED,0.4,No
+Epidemiological,27. Do you have any brothers or sisters with Parkinson's disease?    27. Avez-vo,27 siblings with pd,UNMATCHED,0.143,No
+Epidemiological,27a. Number of brothers with PD:    27a. Nombre de frères atteints de la maladie,q27a number of brothers with pd,Clinical History / Diagnosis,0.714,Yes
+Epidemiological,27b. Number of sisters with PD:    27b. Nombre de sœurs atteints de la maladie P,q27b number of sisters with pd,Clinical History / Diagnosis,0.714,Yes
+Epidemiological,28. Do you have any children with Parkinson's disease?    28. Avez-vous des enfa,28 children with pd,UNMATCHED,0.273,No
+Epidemiological,28a. Number of sons with PD:    28a. Nombre de fils avec la maladie Parkinson:,q28a number of sons with pd,Clinical History / Diagnosis,0.714,Yes
+Epidemiological,28b. Number of daughters with PD:    28b. Nombre de filles atteintes de la malad,q28b number of daughters with pd,Clinical History / Diagnosis,0.714,Yes
+Epidemiological,29. Do you have grandparents with Parkinson's disease?    29. Avez-vous des gran,29 grandparents with pd,UNMATCHED,0.3,No
+Epidemiological,29a. Grandparents with PD:    29a. Grands-parents atteints de la maladie de Park,29 grandparents with pd,Clinical History / Diagnosis,0.6,Yes
+Epidemiological,30. Do you have any uncles or aunts with Parkinson's disease?    30. Avez-vous d,30 aunts uncles with pd,UNMATCHED,0.308,No
+Epidemiological,30a. Number of maternal aunts/uncles with PD:    30a. Nombre de tantes/oncles ma,q30a maternal aunts uncles with pd,Clinical History / Diagnosis,0.556,Yes
+Epidemiological,30b. Number of paternal aunts/uncles with PD:    30b. Nombre de tantes/oncles pa,q30b paternal aunts uncles with pd,Clinical History / Diagnosis,0.556,Yes
+Epidemiological,31. Do you have any cousins with Parkinson's disease?    31. Avez-vous des cousi,31 cousins with pd,UNMATCHED,0.273,No
+Epidemiological,31a. Number of maternal cousins with PD:    31a. Nombre de cousins maternels att,q31a maternal cousins with pd,Clinical History / Diagnosis,0.5,Yes
+Epidemiological,31b. Number of paternal cousins with PD:    31b. Nombre de cousins paternels att,q31b paternal cousins with pd,Clinical History / Diagnosis,0.5,Yes
+Epidemiological,32. Do you have any nephews or nieces with Parkinson's disease?    32. Avez-vous,32 nephews nieces with pd,UNMATCHED,0.308,No
+Epidemiological,32a. Number of nephews with PD:    32a. Nombre de neveux atteints de la maladie ,q32a number of nephews with pd,Clinical History / Diagnosis,0.714,Yes
+Epidemiological,32b. Number of nieces with PD:    32b. Nombre de nièces atteints de la maladie d,q32b number of nieces with pd,Clinical History / Diagnosis,0.714,Yes
+Epidemiological,33. Have you ever had an MRI scan for medical reasons or for study purposes?    ,33 ever had mri,UNMATCHED,0.286,No
+Epidemiological,34. Does your body contain metallic implants or any other metallic foreign objec,34 metallic implants or foreign objects,UNMATCHED,0.385,No
+Epidemiological,Additional Comments:   (Anything else you'd like to tell us)    Commentaires sup,additional comments,Admin,1.0,Yes
+Fatigue Severity Scale,Questionnaire completed:     Questionnaire rempli:,how questionnaire was completed,Admin,0.5,Yes
+Fatigue Severity Scale,How is the questionnaire completed?     Comment le questionnaire est-il rempli?,how questionnaire was completed,Admin,0.5,Yes
+Fatigue Severity Scale,"1. My motivation is lower when I am fatigued. (Disagree=1, Agree=7)",1 motivation lower when fatigued,UNMATCHED,0.417,No
+Fatigue Severity Scale,"2. Exercise brings on my fatigue. (Disagree=1, Agree=7)",2 exercise brings on fatigue,Non-Motor,0.5,Yes
+Fatigue Severity Scale,"3. I am easily fatigued. (Disagree=1, Agree=7)",3 easily fatigued,UNMATCHED,0.333,No
+Fatigue Severity Scale,"4. Fatigue interferes with my physical functioning. (Disagree=1, Agree=7)",4 fatigue interferes with physical functioning,Non-Motor,0.545,Yes
+Fatigue Severity Scale,"5. Fatigue causes frequent problems for me. (Disagree=1, Agree=7)",5 fatigue causes frequent problems,Non-Motor,0.455,Yes
+Fatigue Severity Scale,"6. My fatigue prevents sustained physical functioning. (Disagree=1, Agree=7)",6 fatigue prevents sustained physical functioning,Non-Motor,0.545,Yes
+Fatigue Severity Scale,7. Fatigue interferes with carrying out certain duties and responsibilities. (Di,7 fatigue interferes with duties responsibilities,Non-Motor,0.462,Yes
+Fatigue Severity Scale,"8. Fatigue is among my three most disabling symptoms. (Disagree=1, Agree=7)",8 fatigue among three most disabling symptoms,Non-Motor,0.538,Yes
+Fatigue Severity Scale,"9. Fatigue interferes with my work, family, or social life. (Disagree=1, Agree=7",9 fatigue interferes with work family social life,Non-Motor,0.571,Yes
+Fatigue Severity Scale,Total of all questions,fss sum of all items,UNMATCHED,0.286,No
+Fatigue Severity Scale,Divided by 9,fss mean score sum 9,UNMATCHED,0.143,No
+FrSBe,Questionnaire completed:     Questionnaire rempli:  ,how questionnaire was completed,Admin,0.5,Yes
+FrSBe,How is the questionnaire completed?     Comment le questionnaire est-il rempli?,how questionnaire was completed,Admin,0.5,Yes
+FrSBe,"1. AVANT BLESSURE OU MALADIE, je ne parle que quand on m'adresse la parole",frsbe instructions part 1,UNMATCHED,0.056,No
+FrSBe,"1. AUJOURD'HUI, je ne parle que quand on m'adresse la parole",frsbe instructions part 1,UNMATCHED,0.062,No
+FrSBe,"2. AVANT BLESSURE OU MALADIE, je m'agace ou me fâche facilement. Je suis si faci",frsbe instructions part 2 reversed scale,UNMATCHED,0.043,No
+FrSBe,"2. AUJOURD'HUI, je m'agace ou me fâche facilement. Je suis si facilement irritab",frsbe instructions part 2 reversed scale,UNMATCHED,0.045,No
+FrSBe,"3. AVANT BLESSURE OU MALADIE, je répète certaines actions ou me braque sur certa",today repeats actions or fixates on ideas perseveration exec,UNMATCHED,0.048,No
+FrSBe,"3. AUJOURD'HUI, je répète certaines actions ou me braque sur certaines idées. ",today repeats actions or fixates on ideas perseveration exec,UNMATCHED,0.05,No
+FrSBe,"4. AVANT BLESSURE OU MALADIE, j'agis de façon impulsive. ",,UNMATCHED,0.0,No
+FrSBe,"4. AUJOURD'HUI, j'agis de façon impulsive. ",,UNMATCHED,0.0,No
+FrSBe,"5. AVANT BLESSURE OU MALADIE, je mélange l'orde des choses, je me sens désorient",,UNMATCHED,0.0,No
+FrSBe,"5. AUJOURD'HUI, je mélange l'orde des choses, je me sens désorienté(e) quand il ",,UNMATCHED,0.0,No
+FrSBe,"6. AVANT BLESSURE OU MALADIE, je ris ou je pleure trop facilement. ",,UNMATCHED,0.0,No
+FrSBe,"6. AUJOURD'HUI, je ris ou je pleure trop facilement. ",,UNMATCHED,0.0,No
+FrSBe,"7. AVANT BLESSURE OU MALADIE, je fais et refais toujours la même erreur, je n'ar",,UNMATCHED,0.0,No
+FrSBe,"7. AUJOURD'HUI, je fais et refais toujours la même erreur, je n'arrive pas à ret",,UNMATCHED,0.0,No
+FrSBe,"8. AVANT BLESSURE OU MALADIE, j'ai du mal à commencer une activité, je manque d'",,UNMATCHED,0.0,No
+FrSBe,"8. AUJOURD'HUI, j'ai du mal à commencer une activité, je manque d'initiatie, de ",,UNMATCHED,0.0,No
+FrSBe,"9. AVANT BLESSURE OU MALADIE, je fais des commentairs et des propositions d'ordr",,UNMATCHED,0.0,No
+FrSBe,"9. AUJOURD'HUI, je fais des commentairs et des propositions d'ordre sexuel hors ",,UNMATCHED,0.0,No
+FrSBe,"10. AVANT BLESSURE OU MALADIE, je dis ou je fais des choses gênantes. ",,UNMATCHED,0.0,No
+FrSBe,"10. AUJOURD'HUI, je dis ou je fais des choses gênantes. ",,UNMATCHED,0.0,No
+FrSBe,"11. AVANT BLESSURE OU MALADIE, je n'églige mon hygiène personnelle. ",,UNMATCHED,0.0,No
+FrSBe,"11. AUJOURD'HUI, je n'églige mon hygiène personnelle. ",,UNMATCHED,0.0,No
+FrSBe,"12. AVANT BLESSURE OU MALADIE, je n'arrive pas à rester tranquille, je suis hype",,UNMATCHED,0.0,No
+FrSBe,"12. AUJOURD'HUI, je n'arrive pas à rester tranquille, je suis hyperactif (ve). ",,UNMATCHED,0.0,No
+FrSBe,"13. AVANT BLESSURE OU MALADIE, je ne me rends pas compte de mes problèmes ou de ",,UNMATCHED,0.0,No
+FrSBe,"13. AUJOURD'HUI, je ne me rends pas compte de mes problèmes ou de quand je fais ",,UNMATCHED,0.0,No
+FrSBe,"14. AVANT BLESSURE OU MALADIE, je reste à ne rien faire. ",,UNMATCHED,0.0,No
+FrSBe,"14. AUJOURD'HUI, je reste à ne rien faire. ",,UNMATCHED,0.0,No
+FrSBe,"15. AVANT BLESSURE OU MALADIE, je suis désorganisé(e). ",,UNMATCHED,0.0,No
+FrSBe,"15. AUJOURD'HUI, je suis désorganisé(e). ",,UNMATCHED,0.0,No
+FrSBe,"16. AVANT BLESSURE OU MALADIE, je n'arrive pas à contrôler mon urine ou mes sell",,UNMATCHED,0.0,No
+FrSBe,"16. AUJOURD'HUI, je n'arrive pas à contrôler mon urine ou mes selles, mais ça ne",,UNMATCHED,0.0,No
+FrSBe,"17. AVANT BLESSURE OU MALADIE, je ne peux pas faire deux choses à la fois (par e",,UNMATCHED,0.0,No
+FrSBe,"17. AUJOURD'HUI, je ne peux pas faire deux choses à la fois (par exemple parler ",,UNMATCHED,0.0,No
+FrSBe,"18. AVANT BLESSURE OU MALADIE, je parle quand ce n'est pas à moi de le faire, j'",,UNMATCHED,0.0,No
+FrSBe,"18. AUJOURD'HUI, je parle quand ce n'est pas à moi de le faire, j'interromps les",,UNMATCHED,0.0,No
+FrSBe,"19. AVANT BLESSURE OU MALADIE, je n'ai pas beaucoup de discernement, je ne sais ",,UNMATCHED,0.0,No
+FrSBe,"19. AUJOURD'HUI, je n'ai pas beaucoup de discernement, je ne sais pas bien résou",,UNMATCHED,0.0,No
+FrSBe,"20. AVANT BLESSURE OU MALADIE, je peux inventer des histoires extraordinaires, a",,UNMATCHED,0.0,No
+FrSBe,"20. AUJOURD'HUI, je peux inventer des histoires extraordinaires, alors que je su",,UNMATCHED,0.0,No
+FrSBe,"21. AVANT BLESSURE OU MALADIE, j'ai perdu l'intérêt pour des choses qui étaient ",,UNMATCHED,0.0,No
+FrSBe,"21. AUJOURD'HUI, j'ai perdu l'intérêt pour des choses qui étaient auparavant amu",,UNMATCHED,0.0,No
+FrSBe,"22. AVANT BLESSURE OU MALADIE, je dis quelque chose, puis je fais autre chose. ",,UNMATCHED,0.0,No
+FrSBe,"22. AUJOURD'HUI, je dis quelque chose, puis je fais autre chose. ",,UNMATCHED,0.0,No
+FrSBe,"23. AVANT BLESSURE OU MALADIE, je commence des choses, mais je n'arrive pas à le",,UNMATCHED,0.0,No
+FrSBe,"23. AUJOURD'HUI, je commence des choses, mais je n'arrive pas à les finir, ça to",,UNMATCHED,0.0,No
+FrSBe,"24. AVANT BLESSURE OU MALADIE, je ne manifeste pas beaucoup d'émotions, je suis ",,UNMATCHED,0.0,No
+FrSBe,"24. AUJOURD'HUI, je ne manifeste pas beaucoup d'émotions, je suis pas concerné(e",,UNMATCHED,0.0,No
+FrSBe,"25. AVANT BLESSURE OU MALADIE, j'oublie de faire des choses, et puis je m'en sou",today repeats actions or fixates on ideas perseveration exec,UNMATCHED,0.029,No
+FrSBe,"25. AUJOURD'HUI, j'oublie de faire des choses, et puis je m'en souviens quand on",today repeats actions or fixates on ideas perseveration exec,UNMATCHED,0.03,No
+FrSBe,"26. AVANT BLESSURE OU MALADIE, je suis rigide, je suis incapable de changer mes ",,UNMATCHED,0.0,No
+FrSBe,"26. AUJOURD'HUI, je suis rigide, je suis incapable de changer mes habitudes. ",,UNMATCHED,0.0,No
+FrSBe,"27. AVANT BLESSURE OU MALADIE, j'ai des ennuis avec la loi ou les autorités. ",,UNMATCHED,0.0,No
+FrSBe,"27. AUJOURD'HUI, j'ai des ennuis avec la loi ou les autorités. ",,UNMATCHED,0.0,No
+FrSBe,"28. AVANT BLESSURE OU MALADIE, je fais des choses dangeureuses juste pour m'amus",,UNMATCHED,0.0,No
+FrSBe,"28. AUJOURD'HUI, je fais des choses dangeureuses juste pour m'amuser. ",,UNMATCHED,0.0,No
+FrSBe,"29. AVANT BLESSURE OU MALADIE, je me déplace lentement, je manque d'énergie, je ",,UNMATCHED,0.0,No
+FrSBe,"29. AUJOURD'HUI, je me déplace lentement, je manque d'énergie, je suis inactif(v",,UNMATCHED,0.0,No
+FrSBe,"30. AVANT BLESSURE OU MALADIE, je suis trop bête, j'ai un humour puéril.  ",today silly childish humour disinhibition,UNMATCHED,0.056,No
+FrSBe,"30. AUJOURD'HUI, je suis trop bête, j'ai un humour puéril.  ",today silly childish humour disinhibition,UNMATCHED,0.062,No
+FrSBe,"31. AVANT BLESSURE OU MALADIE, je trouve que la nourriture n'a pas de goût ni d'",,UNMATCHED,0.0,No
+FrSBe,"31. AUJOURD'HUI, je trouve que la nourriture n'a pas de goût ni d'odeur. ",,UNMATCHED,0.0,No
+FrSBe,"32. AVANT BLESSURE OU MALADIE, je dis des gros mots. ",,UNMATCHED,0.0,No
+FrSBe,"32. AUJOURD'HUI, je dis des gros mots. ",,UNMATCHED,0.0,No
+FrSBe,"33. AVANT BLESSURE OU MALADIE, je m'excuse de mes écarts de comportement (par ex",,UNMATCHED,0.0,No
+FrSBe,"33. AUJOURD'HUI, je m'excuse de mes écarts de comportement (par exemple, je m'ex",,UNMATCHED,0.0,No
+FrSBe,"34. AVANT BLESSURE OU MALADIE, je fais attention, je me concentre, même quand il",today pays attention concentrates despite distractions,UNMATCHED,0.095,No
+FrSBe,"34. AUJOURD'HUI, je fais attention, je me concentre, même quand il y a des distr",today pays attention concentrates despite distractions,UNMATCHED,0.105,No
+FrSBe,"35. AVANT BLESSURE OU MALADIE, je réfléchis avant d'agir (par exemple, je pense ",,UNMATCHED,0.0,No
+FrSBe,"35. AUJOURD'HUI, je réfléchis avant d'agir (par exemple, je pense au budget avan",,UNMATCHED,0.0,No
+FrSBe,"36. AVANT BLESSURE OU MALADIE, j'utilise des stratégies pour me souvenir des cho",,UNMATCHED,0.0,No
+FrSBe,"36. AUJOURD'HUI, j'utilise des stratégies pour me souvenir des choses importante",,UNMATCHED,0.0,No
+FrSBe,"37. AVANT BLESSURE OU MALADIE, je suis capable de faire des projets. ",,UNMATCHED,0.0,No
+FrSBe,"37. AUJOURD'HUI, je suis capable de faire des projets. ",,UNMATCHED,0.0,No
+FrSBe,"38. AVANT BLESSURE OU MALADIE, je suis attiré(e) par le sexe. ",,UNMATCHED,0.0,No
+FrSBe,"38. AUJOURD'HUI, je suis attiré(e) par le sexe. ",,UNMATCHED,0.0,No
+FrSBe,"39. AVANT BLESSURE OU MALADIE, je fais attention à mon aspect extérieur (par exe",today pays attention concentrates despite distractions,UNMATCHED,0.04,No
+FrSBe,"39. AUJOURD'HUI, je fais attention à mon aspect extérieur (par exemple, je soign",today pays attention concentrates despite distractions,UNMATCHED,0.043,No
+FrSBe,"40. AVANT BLESSURE OU MALADIE, je tire bénéfice des réactions que je provoque, j",,UNMATCHED,0.0,No
+FrSBe,"40. AUJOURD'HUI, je tire bénéfice des réactions que je provoque, j'accepte les c",,UNMATCHED,0.0,No
+FrSBe,"41. AVANT BLESSURE OU MALADIE, je me lance spontanément dans des activités ou de",,UNMATCHED,0.0,No
+FrSBe,"41. AUJOURD'HUI, je me lance spontanément dans des activités ou des passe-temps.",,UNMATCHED,0.0,No
+FrSBe,"42. AVANT BLESSURE OU MALADIE, je fais mes choses sans qu'on me le demande. ",today repeats actions or fixates on ideas perseveration exec,UNMATCHED,0.043,No
+FrSBe,"42. AUJOURD'HUI, je fais mes choses sans qu'on me le demande. ",today repeats actions or fixates on ideas perseveration exec,UNMATCHED,0.048,No
+FrSBe,"43. AVANT BLESSURE OU MALADIE, je suis sensible aux besoins d'autrui. ",,UNMATCHED,0.0,No
+FrSBe,"43. AUJOURD'HUI, je suis sensible aux besoins d'autrui. ",,UNMATCHED,0.0,No
+FrSBe,"44. AVANT BLESSURE OU MALADIE, je m'entends bien avec les autres gens. ",,UNMATCHED,0.0,No
+FrSBe,"44. AUJOURD'HUI, je m'entends bien avec les autres gens. ",,UNMATCHED,0.0,No
+FrSBe,"45. AVANT BLESSURE OU MALADIE, j'agis conformément à mon âge. ",,UNMATCHED,0.0,No
+FrSBe,"45. AUJOURD'HUI, j'agis conformément à mon âge. ",,UNMATCHED,0.0,No
+FrSBe,"46. AVANT BLESSURE OU MALADIE, je peux facilement engager une conversation. ",today easily engages in conversation,UNMATCHED,0.067,No
+FrSBe,"46. AUJOURD'HUI, je peux facilement engager une conversation. ",today easily engages in conversation,UNMATCHED,0.077,No
+FrSBe,Apathy Score (Before),apathy subscale score before illness,Composite Scores,0.6,Yes
+FrSBe,Apathy Score (After),apathy subscale score current,UNMATCHED,0.4,No
+FrSBe,Disinhibition Score (Before),disinhibition subscale score before,Composite Scores,0.75,Yes
+FrSBe,Disinhibition Score (After),disinhibition subscale score before,UNMATCHED,0.4,No
+FrSBe,Executive Dysfunction Score (Before),executive dysfunction subscale score before,Composite Scores,0.8,Yes
+FrSBe,Executive Dysfunction Score (After),executive dysfunction subscale score before,Composite Scores,0.5,Yes
+MBIC,Questionnaire completed:     Questionnaire rempli:  ,how questionnaire was completed,Admin,0.5,Yes
+MBIC,Who filled out the questionnaire?    Qui a rempli le questionnaire ?,who filled out questionnaire,Admin,0.8,Yes
+MBIC,How is the questionnaire completed?     Comment le questionnaire est-il rempli ?,how questionnaire was completed,Admin,0.5,Yes
+MBIC,"1. Has the person lost interest in friends, family, or home activities?    1. La",domain 1 q1 lost interest in friends family home activities,Mood / Psychiatric,0.571,Yes
+MBIC,Severity:    Sévérité:,domain 1 q1 severity,UNMATCHED,0.25,No
+MBIC,2. Does the person lack curiosity in topics that would usually have attracted th,domain 1 q1 lost interest in friends family home activities,UNMATCHED,0.087,No
+MBIC,Severity:    Sévérité:2,domain 1 q1 severity,UNMATCHED,0.25,No
+MBIC,"3. Has the person become less spontaneous and active - for example, is she/he le",domain 1 q3 less spontaneous and active,UNMATCHED,0.174,No
+MBIC,Severity:    Sévérité:3,domain 1 q1 severity,UNMATCHED,0.25,No
+MBIC,4. Has the person lost the motivation to act on their obligations or interests? ,domain 1 q4 lost motivation for obligations interests,UNMATCHED,0.235,No
+MBIC,Severity:    Sévérité:4,domain 1 q1 severity,UNMATCHED,0.25,No
+MBIC,5. Is the person less affectionate and/or lacking in emotions when compared to h,domain 1 q5 less affectionate lacking emotions,UNMATCHED,0.19,No
+MBIC,Severity:    Sévérité:5,domain 1 q1 severity,UNMATCHED,0.25,No
+MBIC,6. Does she/he no longer care about anything?    6. La personne semble-t-elle ne,domain 1 q6 no longer cares about anything,UNMATCHED,0.308,No
+MBIC,Severity:    Sévérité:6,domain 1 q1 severity,UNMATCHED,0.25,No
+MBIC,7. Has the person developed sadness or appear to be in low spirits? Does she/he ,domain 2 q7 sadness low spirits tearfulness,UNMATCHED,0.174,No
+MBIC,Severity:    Sévérité:7,domain 1 q1 severity,UNMATCHED,0.25,No
+MBIC,8. Has the person become less able to experience pleasure?    8. La personne a-t,domain 2 q8 reduced pleasure anhedonia,UNMATCHED,0.067,No
+MBIC,Severity:    Sévérité:8,domain 1 q1 severity,UNMATCHED,0.25,No
+MBIC,9. Has the person become discouraged about their future or feel that she/he is a,domain 2 q9 discouraged about future,UNMATCHED,0.15,No
+MBIC,Severity:    Sévérité:9,domain 1 q1 severity,UNMATCHED,0.25,No
+MBIC,10. Does the person view herself/himself as a burden to family?    10. La person,domain 2 q10 views self as burden,UNMATCHED,0.118,No
+MBIC,Severity:    Sévérité:10,domain 1 q1 severity,UNMATCHED,0.25,No
+MBIC,11. Has the person become unduly anxious or worried about things that are routin,domain 2 q11 unduly anxious about routines,UNMATCHED,0.13,No
+MBIC,Severity:    Sévérité:11,domain 1 q1 severity,UNMATCHED,0.25,No
+MBIC,"12. Does the person feel very tense, having developed an inability to relax, sha",domain 2 q12 tense unable to relax panic,UNMATCHED,0.182,No
+MBIC,Severity:    Sévérité:12,domain 1 q1 severity,UNMATCHED,0.25,No
+MBIC,"13. Has the person become agitated, aggressive, irritable, or temperamental?    ",domain 3 q13 agitated aggressive irritable,UNMATCHED,0.231,No
+MBIC,Severity:    Sévérité:13,domain 1 q1 severity,UNMATCHED,0.25,No
+MBIC,14. Has she/he become unreasonably or uncharacteristically argumentative?    14.,domain 3 q14 unreasonably argumentative,UNMATCHED,0.167,No
+MBIC,Severity:    Sévérité:14,domain 1 q1 severity,UNMATCHED,0.25,No
+MBIC,"15. Has the person become more impulsive, seeming to act without considering thi",domain 3 q15 more impulsive,UNMATCHED,0.125,No
+MBIC,Severity:    Sévérité:15,domain 1 q1 severity,UNMATCHED,0.25,No
+MBIC,"16. Does the person display sexually disinhibited or intrusive behaviour, such a",domain 3 q16 sexually disinhibited,UNMATCHED,0.062,No
+MBIC,Severity:    Sévérité:16,domain 1 q1 severity,UNMATCHED,0.25,No
+MBIC,17. Has the person become more easily frustrated or impatient? Does she/he have ,domain 3 q17 easily frustrated impatient,UNMATCHED,0.115,No
+MBIC,Severity:    Sévérité:17,domain 1 q1 severity,UNMATCHED,0.25,No
+MBIC,18. Does the person display a new recklessness or lack of judgement when driving,domain 3 q18 recklessness while driving,UNMATCHED,0.074,No
+MBIC,Severity:    Sévérité:18,domain 1 q1 severity,UNMATCHED,0.25,No
+MBIC,"19. Has the person become more stubborn or rigid, i.e., uncharacteristically ins",domain 3 q19 stubborn rigid,UNMATCHED,0.074,No
+MBIC,Severity:    Sévérité:19,domain 1 q1 severity,UNMATCHED,0.25,No
+MBIC,"20. Is there a change in eating behaviors (e.g., overeating, cramming the mouth,",domain 3 q21 no longer enjoys food eating less,UNMATCHED,0.065,No
+MBIC,Severity:    Sévérité:20,domain 1 q1 severity,UNMATCHED,0.25,No
+MBIC,21. Does the person no longer find food tasteful or enjoyable? Are they eating l,domain 3 q21 no longer enjoys food eating less,UNMATCHED,0.263,No
+MBIC,Severity:    Sévérité:21,domain 1 q1 severity,UNMATCHED,0.25,No
+MBIC,22. Does the person hoard objects when she/he did not do so before?    22. La pe,,UNMATCHED,0.0,No
+MBIC,Severity:    Sévérité:22,domain 1 q1 severity,UNMATCHED,0.25,No
+MBIC,23. Has the person developed simple repetitive behaviors or compulsions?    23. ,domain 3 q23 new repetitive behaviours compulsions,UNMATCHED,0.133,No
+MBIC,Severity:    Sévérité:23,domain 1 q1 severity,UNMATCHED,0.25,No
+MBIC,"24. Has the person recently developed trouble regulating smoking, alcohol, drug ",domain 3 q24 trouble regulating substance gambling,UNMATCHED,0.15,No
+MBIC,Severity:    Sévérité:24,domain 1 q1 severity,UNMATCHED,0.25,No
+MBIC,25. Has the person become less concerned about how her/his words or actions affe,domain 4 q25 insensitive to others,UNMATCHED,0.125,No
+MBIC,Severity:    Sévérité:25,domain 1 q1 severity,UNMATCHED,0.25,No
+MBIC,26. Has the person started talking openly about very personal or private matters,domain 4 q26 overshares private matters,UNMATCHED,0.091,No
+MBIC,Severity:    Sévérité:26,domain 1 q1 severity,UNMATCHED,0.25,No
+MBIC,27. Does the person say rude or crude things or make lewd sexual remarks that sh,domain 4 q27 rude crude remarks,UNMATCHED,0.125,No
+MBIC,Severity:    Sévérité:27,domain 1 q1 severity,UNMATCHED,0.25,No
+MBIC,28. Does the person seem to lack the social judgement they previously had about ,domain 4 q28 lacks social judgement,UNMATCHED,0.08,No
+MBIC,Severity:    Sévérité:28,domain 1 q1 severity,UNMATCHED,0.25,No
+MBIC,"29. Does the person now talk to strangers as if familiar, or intrude on their ac",domain 4 q29 talks to strangers as if familiar,UNMATCHED,0.25,No
+MBIC,Severity:    Sévérité:29,domain 1 q1 severity,UNMATCHED,0.25,No
+MBIC,30. Has the person developed beliefs that they are in danger or that others are ,domain 4 q25 insensitive to others,UNMATCHED,0.083,No
+MBIC,Severity:    Sévérité:30,domain 1 q1 severity,UNMATCHED,0.25,No
+MBIC,31. Has the person developed suspiciousness about the intentions or motives of o,domain 5 q31 suspicious of others motives,UNMATCHED,0.111,No
+MBIC,Severity:    Sévérité:31,domain 1 q1 severity,UNMATCHED,0.25,No
+MBIC,"32. Does she/he have unrealistic beliefs about their power, wealth or skills?   ",domain 5 q32 unrealistic beliefs about own abilities,UNMATCHED,0.167,No
+MBIC,Severity:    Sévérité:32,domain 1 q1 severity,UNMATCHED,0.25,No
+MBIC,33. Does the person describe hearing voices or talking to imaginary people or 's,domain 4 q25 insensitive to others,UNMATCHED,0.056,No
+MBIC,Severity:    Sévérité:33,domain 1 q1 severity,UNMATCHED,0.25,No
+MBIC,"34. Does the person report or complain about, or act as if seeing things (e.g. p",domain 4 q29 talks to strangers as if familiar,UNMATCHED,0.094,No
+MBIC,Severity:    Sévérité:34,domain 1 q1 severity,UNMATCHED,0.25,No
+MBIC,Motivation/Drive (sum of Question 1-6),domain 1 score motivation drive,UNMATCHED,0.333,No
+MBIC,Mood/Anxiety (sum of Question 7-12),domain 2 score mood anxiety,UNMATCHED,0.2,No
+MBIC,Impulsivity/Delay Gratification (sum of Question 13-24),domain 3 score impulsivity,UNMATCHED,0.091,No
+MBIC,Societal Norms (sum of Question 25-29),domain 4 score societal norms,UNMATCHED,0.2,No
+MBIC,Beliefs/Sensory Experiences (sum of Question 30-34),domain 5 score beliefs sensory,UNMATCHED,0.182,No
+MBIC,MBI-C Grand Total,mbi c grand total,Composite Scores,1.0,Yes
+MBIC (CaPRI),Questionnaire completed:     Questionnaire rempli:  ,how questionnaire was completed,Admin,0.5,Yes
+MBIC (CaPRI),Who filled out the questionnaire?    Qui a rempli le questionnaire ?,who filled out questionnaire,Admin,0.8,Yes
+MBIC (CaPRI),How is the questionnaire completed?     Comment le questionnaire est-il rempli ?,how questionnaire was completed,Admin,0.5,Yes
+MBIC (CaPRI),"1. Has the person lost interest in friends, family, or home activities?    1. La",domain 1 q1 lost interest in friends family home activities,Mood / Psychiatric,0.571,Yes
+MBIC (CaPRI),Severity:    Sévérité:,mbi c instructions severity guidance,UNMATCHED,0.2,No
+MBIC (CaPRI),2. Does the person lack curiosity in topics that would usually have attracted th,domain 1 q2 lacks curiosity for usual topics of interest,UNMATCHED,0.136,No
+MBIC (CaPRI),Severity:    Sévérité:2,mbi c instructions severity guidance,UNMATCHED,0.2,No
+MBIC (CaPRI),"3. Has the person become less spontaneous and active - for example, is she/he le",domain 1 q3 less spontaneous and active in conversation activity,UNMATCHED,0.2,No
+MBIC (CaPRI),Severity:    Sévérité:3,mbi c instructions severity guidance,UNMATCHED,0.2,No
+MBIC (CaPRI),4. Has the person lost the motivation to act on their obligations or interests? ,domain 1 q4 lost motivation to act on obligations or interests,Mood / Psychiatric,0.5,Yes
+MBIC (CaPRI),Severity:    Sévérité:4,mbi c instructions severity guidance,UNMATCHED,0.2,No
+MBIC (CaPRI),5. Is the person less affectionate and/or lacking in emotions when compared to h,domain 1 q5 less affectionate lacking emotions compared to usual,UNMATCHED,0.333,No
+MBIC (CaPRI),Severity:    Sévérité:5,mbi c instructions severity guidance,UNMATCHED,0.2,No
+MBIC (CaPRI),6. Does she/he no longer care about anything?    6. La personne semble-t-elle ne,domain 1 q6 no longer cares about anything,UNMATCHED,0.308,No
+MBIC (CaPRI),Severity:    Sévérité:6,mbi c instructions severity guidance,UNMATCHED,0.2,No
+MBIC (CaPRI),7. Has the person developed sadness or appear to be in low spirits? Does she/he ,domain 2 q7 developed sadness low spirits tearfulness,UNMATCHED,0.217,No
+MBIC (CaPRI),Severity:    Sévérité:7,mbi c instructions severity guidance,UNMATCHED,0.2,No
+MBIC (CaPRI),8. Has the person become less able to experience pleasure?    8. La personne a-t,domain 2 q8 less able to experience pleasure anhedonia,UNMATCHED,0.357,No
+MBIC (CaPRI),Severity:    Sévérité:8,mbi c instructions severity guidance,UNMATCHED,0.2,No
+MBIC (CaPRI),9. Has the person become discouraged about their future or feel that she/he is a,domain 2 q9 discouraged about future or feels a failure,UNMATCHED,0.286,No
+MBIC (CaPRI),Severity:    Sévérité:9,mbi c instructions severity guidance,UNMATCHED,0.2,No
+MBIC (CaPRI),10. Does the person view herself/himself as a burden to family?    10. La person,domain 2 q10 views self as burden to family,UNMATCHED,0.235,No
+MBIC (CaPRI),Severity:    Sévérité:10,mbi c instructions severity guidance,UNMATCHED,0.2,No
+MBIC (CaPRI),11. Has the person become unduly anxious or worried about things that are routin,domain 2 q11 unduly anxious about routine events,UNMATCHED,0.227,No
+MBIC (CaPRI),Severity:    Sévérité:11,mbi c instructions severity guidance,UNMATCHED,0.2,No
+MBIC (CaPRI),"12. Does the person feel very tense, having developed an inability to relax, sha",domain 2 q12 very tense unable to relax shaky panic symptoms,UNMATCHED,0.261,No
+MBIC (CaPRI),Severity:    Sévérité:12,mbi c instructions severity guidance,UNMATCHED,0.2,No
+MBIC (CaPRI),"13. Has the person become agitated, aggressive, irritable, or temperamental?    ",domain 3 q13 agitated aggressive irritable temperamental,UNMATCHED,0.308,No
+MBIC (CaPRI),Severity:    Sévérité:13,mbi c instructions severity guidance,UNMATCHED,0.2,No
+MBIC (CaPRI),14. Has she/he become unreasonably or uncharacteristically argumentative?    14.,domain 3 q14 unreasonably argumentative,UNMATCHED,0.167,No
+MBIC (CaPRI),Severity:    Sévérité:14,mbi c instructions severity guidance,UNMATCHED,0.2,No
+MBIC (CaPRI),"15. Has the person become more impulsive, seeming to act without considering thi",domain 3 q15 more impulsive acts without considering things,UNMATCHED,0.294,No
+MBIC (CaPRI),Severity:    Sévérité:15,mbi c instructions severity guidance,UNMATCHED,0.2,No
+MBIC (CaPRI),"16. Does the person display sexually disinhibited or intrusive behaviour, such a",domain 3 q16 sexually disinhibited or intrusive behaviour,UNMATCHED,0.156,No
+MBIC (CaPRI),Severity:    Sévérité:16,mbi c instructions severity guidance,UNMATCHED,0.2,No
+MBIC (CaPRI),17. Has the person become more easily frustrated or impatient? Does she/he have ,domain 3 q17 more easily frustrated impatient trouble waiting,UNMATCHED,0.185,No
+MBIC (CaPRI),Severity:    Sévérité:17,mbi c instructions severity guidance,UNMATCHED,0.2,No
+MBIC (CaPRI),18. Does the person display a new recklessness or lack of judgement when driving,domain 3 q18 new recklessness lack of judgement while driving,UNMATCHED,0.222,No
+MBIC (CaPRI),Severity:    Sévérité:18,mbi c instructions severity guidance,UNMATCHED,0.2,No
+MBIC (CaPRI),"19. Has the person become more stubborn or rigid, i.e., uncharacteristically ins",domain 3 q19 more stubborn or rigid insistent on own way,UNMATCHED,0.25,No
+MBIC (CaPRI),Severity:    Sévérité:19,mbi c instructions severity guidance,UNMATCHED,0.2,No
+MBIC (CaPRI),"20. Is there a change in eating behaviors (e.g., overeating, cramming the mouth,",domain 3 q20 change in eating behaviours overeating cramming food fixation,UNMATCHED,0.207,No
+MBIC (CaPRI),Severity:    Sévérité:20,mbi c instructions severity guidance,UNMATCHED,0.2,No
+MBIC (CaPRI),21. Does the person no longer find food tasteful or enjoyable? Are they eating l,domain 3 q21 no longer finds food tasteful eating less,UNMATCHED,0.316,No
+MBIC (CaPRI),Severity:    Sévérité:21,mbi c instructions severity guidance,UNMATCHED,0.2,No
+MBIC (CaPRI),22. Does the person hoard objects when she/he did not do so before?    22. La pe,domain 3 q22 hoards objects when did not do so before,UNMATCHED,0.389,No
+MBIC (CaPRI),Severity:    Sévérité:22,mbi c instructions severity guidance,UNMATCHED,0.2,No
+MBIC (CaPRI),23. Has the person developed simple repetitive behaviors or compulsions?    23. ,domain 3 q23 new repetitive behaviours or compulsions,UNMATCHED,0.2,No
+MBIC (CaPRI),Severity:    Sévérité:23,mbi c instructions severity guidance,UNMATCHED,0.2,No
+MBIC (CaPRI),"24. Has the person recently developed trouble regulating smoking, alcohol, drug ",domain 3 q24 trouble regulating substance use gambling shoplifting,UNMATCHED,0.19,No
+MBIC (CaPRI),Severity:    Sévérité:24,mbi c instructions severity guidance,UNMATCHED,0.2,No
+MBIC (CaPRI),25. Has the person become less concerned about how her/his words or actions affe,domain 4 q25 less concerned how words actions affect others insensitive,UNMATCHED,0.333,No
+MBIC (CaPRI),Severity:    Sévérité:25,mbi c instructions severity guidance,UNMATCHED,0.2,No
+MBIC (CaPRI),26. Has the person started talking openly about very personal or private matters,domain 4 q26 talks openly about personal private matters in public,UNMATCHED,0.318,No
+MBIC (CaPRI),Severity:    Sévérité:26,mbi c instructions severity guidance,UNMATCHED,0.2,No
+MBIC (CaPRI),27. Does the person say rude or crude things or make lewd sexual remarks that sh,domain 4 q27 rude crude or lewd sexual remarks,UNMATCHED,0.25,No
+MBIC (CaPRI),Severity:    Sévérité:27,mbi c instructions severity guidance,UNMATCHED,0.2,No
+MBIC (CaPRI),28. Does the person seem to lack the social judgement they previously had about ,domain 4 q28 lacks social judgement on what to say do in public,UNMATCHED,0.259,No
+MBIC (CaPRI),Severity:    Sévérité:28,mbi c instructions severity guidance,UNMATCHED,0.2,No
+MBIC (CaPRI),"29. Does the person now talk to strangers as if familiar, or intrude on their ac",domain 4 q29 talks to strangers as if familiar intrudes on activities,UNMATCHED,0.333,No
+MBIC (CaPRI),Severity:    Sévérité:29,mbi c instructions severity guidance,UNMATCHED,0.2,No
+MBIC (CaPRI),30. Has the person developed beliefs that they are in danger or that others are ,domain 5 q30 believes others are planning to harm them paranoia,UNMATCHED,0.24,No
+MBIC (CaPRI),Severity:    Sévérité:30,mbi c instructions severity guidance,UNMATCHED,0.2,No
+MBIC (CaPRI),31. Has the person developed suspiciousness about the intentions or motives of o,domain 5 q31 suspicious about intentions of other people,UNMATCHED,0.294,No
+MBIC (CaPRI),Severity:    Sévérité:31,mbi c instructions severity guidance,UNMATCHED,0.2,No
+MBIC (CaPRI),"32. Does she/he have unrealistic beliefs about their power, wealth or skills?   ",domain 5 q32 unrealistic beliefs about own power wealth skills,UNMATCHED,0.353,No
+MBIC (CaPRI),Severity:    Sévérité:32,mbi c instructions severity guidance,UNMATCHED,0.2,No
+MBIC (CaPRI),33. Does the person describe hearing voices or talking to imaginary people or 's,domain 5 q33 hears voices or talks to imaginary people,UNMATCHED,0.278,No
+MBIC (CaPRI),Severity:    Sévérité:33,mbi c instructions severity guidance,UNMATCHED,0.2,No
+MBIC (CaPRI),"34. Does the person report or complain about, or act as if seeing things (e.g. p",domain 5 q33 hears voices or talks to imaginary people,UNMATCHED,0.125,No
+MBIC (CaPRI),Severity:    Sévérité:34,mbi c instructions severity guidance,UNMATCHED,0.2,No
+MBIC (CaPRI),Motivation/Drive (sum of Question 1-6),domain 1 score motivation drive q1 6,UNMATCHED,0.4,No
+MBIC (CaPRI),Mood/Anxiety (sum of Question 7-12),domain 2 score mood anxiety q7 12,UNMATCHED,0.273,No
+MBIC (CaPRI),Impulsivity/Delay Gratification (sum of Question 13-24),domain 3 score impulsivity q13 24,UNMATCHED,0.167,No
+MBIC (CaPRI),Societal Norms (sum of Question 25-29),domain 4 score societal norms q25 29,UNMATCHED,0.273,No
+MBIC (CaPRI),Beliefs/Sensory Experiences (sum of Question 30-34),domain 5 score beliefs sensory q30 34,UNMATCHED,0.25,No
+MBIC (CaPRI),MBI-C Grand Total,mbi c grand total,Composite Scores,1.0,Yes
+MDS-UPDRS,Assessment completed:     Évaluation remplie:  ,date assessment completed,Admin,0.667,Yes
+MDS-UPDRS,Assessment completed by:     Évaluation complétée par:,date assessment completed,Admin,0.5,Yes
+MDS-UPDRS,How was the MDS-UPDRS administered?   Comment le MDS-UPDRS a-t-il été administré,method of mds updrs administration,UNMATCHED,0.222,No
+MDS-UPDRS,Is it UPDRS v1.2 (part3) legacy ?  S'agit il d'un héritage de UPDRS v1.2 (partie,whether updrs v1 2 part 3 legacy used,UNMATCHED,0.263,No
+MDS-UPDRS,Primary source of information:,primary source of information,Non-Motor,1.0,Yes
+MDS-UPDRS,1.1 COGNITIVE IMPAIRMENT,1 1 cognitive impairment,Cognitive Function,1.0,Yes
+MDS-UPDRS,Updrs_1_1 value,1 1 cognitive impairment numeric value,UNMATCHED,0.167,No
+MDS-UPDRS,1.2 HALLUCINATIONS AND PSYCHOSIS,1 2 hallucinations and psychosis,Non-Motor,1.0,Yes
+MDS-UPDRS,Updrs_1_2 value,1 1 cognitive impairment numeric value,UNMATCHED,0.167,No
+MDS-UPDRS,1.3 DEPRESSED MOOD,1 3 depressed mood,Mood / Psychiatric,1.0,Yes
+MDS-UPDRS,Updrs_1_3,,UNMATCHED,0.0,No
+MDS-UPDRS,1.4 ANXIOUS MOOD,1 4 anxious mood,Mood / Psychiatric,1.0,Yes
+MDS-UPDRS,Updrs_1_4 value,1 1 cognitive impairment numeric value,UNMATCHED,0.167,No
+MDS-UPDRS,1.5 APATHY,1 5 apathy,Non-Motor,1.0,Yes
+MDS-UPDRS,Updrs_1_5 value,1 1 cognitive impairment numeric value,UNMATCHED,0.167,No
+MDS-UPDRS,1.6 FEATURES OF DOPAMINE DYSREGULATION SYNDROME,1 6 features of dopamine dysregulation syndrome,Non-Motor,1.0,Yes
+MDS-UPDRS,Updrs_1_6 value,1 1 cognitive impairment numeric value,UNMATCHED,0.167,No
+MDS-UPDRS,Who is filling out this questionnaire (check the best answer):,who completed part ib questionnaire,UNMATCHED,0.154,No
+MDS-UPDRS,"1.7 SLEEP PROBLEMS/PROBLEMES DE SOMMEIL  Over the past week, have you had troubl",1 7 sleep problems,UNMATCHED,0.125,No
+MDS-UPDRS,"1.8 DAYTIME SLEEPINESS/SOMNOLENCE DIURNE  Over the past week, have you had troub",1 8 daytime sleepiness,UNMATCHED,0.235,No
+MDS-UPDRS,"1.9 PAIN AND OTHER SENSATIONS/DOULEUR ET AUTRES SENSATIONS  Over the past week, ",1 9 pain and other sensations,UNMATCHED,0.231,No
+MDS-UPDRS,"1.10 URINARY PROBLEMS/PROBLEMES URINAIRES  Over the past week, have you had trou",1 10 urinary problems,UNMATCHED,0.138,No
+MDS-UPDRS,1.11 CONSTIPATION PROBLEMS/PROBLEMES DE CONSTIPATION  Over the past week have yo,1 11 constipation problems,UNMATCHED,0.2,No
+MDS-UPDRS,1.12 LIGHT HEADEDNESS ON STANDING/SENSATION DE TETE VIDE AU LEVER  Over the past,1 12 lightheadedness on standing,UNMATCHED,0.129,No
+MDS-UPDRS,"1.13 FATIGUE  Over the past week, have you usually felt fatigued? This feeling i",1 13 fatigue,UNMATCHED,0.136,No
+MDS-UPDRS,"2.1 SPEECH  Over the past week, have you had problems with your speech?",2 1 speech problems,UNMATCHED,0.308,No
+MDS-UPDRS,"2.2 SALIVA & DROOLING  Over the past week, have you usually had too much saliva ",2 2 saliva drooling,UNMATCHED,0.158,No
+MDS-UPDRS,"2.3 CHEWING AND SWALLOWING  Over the past week, have you usually had problems sw",2 3 chewing and swallowing,UNMATCHED,0.161,No
+MDS-UPDRS,"2.4 EATING TASKS  Over the past week, have you usually had troubles handling you",2 4 eating tasks,UNMATCHED,0.133,No
+MDS-UPDRS,"2.5 DRESSING  Over the past week, have you usually had problems dressing? For ex",2 5 dressing,UNMATCHED,0.097,No
+MDS-UPDRS,"2.6 HYGIENE  Over the past week, have you usually been slow or do you need help ",2 6 hygiene,UNMATCHED,0.111,No
+MDS-UPDRS,"2.7 HANDWRITING  Over the past week, have people usually had trouble reading you",2 7 handwriting,UNMATCHED,0.214,No
+MDS-UPDRS,"2.8 DOING HOBBIES AND OTHER ACTIVITIES  Over the past week, have you usually had",2 8 doing hobbies and other activities,UNMATCHED,0.304,No
+MDS-UPDRS,"2.9 TURNING IN BED  Over the past week, do you usually have trouble turning over",2 9 turning in bed,UNMATCHED,0.357,No
+MDS-UPDRS,"2.10 TREMOR  Over the past week, have you usually had shaking or tremor?",2 10 tremor self report,UNMATCHED,0.2,No
+MDS-UPDRS,"2.11 GETTING OUT OF BED, A CAR, OR A DEEP CHAIR  Over the past week, have you us",2 11 getting out of bed car or deep chair,Motor,0.476,Yes
+MDS-UPDRS,"2.12 WALKING AND BALANCE  Over the past week, have you usually had problems with",2 12 walking and balance,UNMATCHED,0.333,No
+MDS-UPDRS,"2.13 FREEZING  Over the past week, on your usual day when walking, do you sudden",2 13 freezing of gait self report,UNMATCHED,0.1,No
+MDS-UPDRS,3a Is the patient on medication for treating the symptoms of Parkinson's Disease,3a medication status for pd,UNMATCHED,0.2,No
+MDS-UPDRS,3b If the patient is receiving medication for treating the symptoms of Parkinson,3b clinical state on off,UNMATCHED,0.136,No
+MDS-UPDRS,3c Is the patient on Levodopa ?,3c levodopa use,UNMATCHED,0.286,No
+MDS-UPDRS,3.C1 Time of assessment:   Temps de l'évaluation:,time of assessment,Motor,0.6,Yes
+MDS-UPDRS,3.C1 Time last PD medications taken:   Heure de la dernière prise de médicaments,time last pd medication taken,Motor,0.5,Yes
+MDS-UPDRS,3.C1 Minutes since last levodopa dose:  Minutes depuis la dernière dose de lévod,minutes since last levodopa dose,UNMATCHED,0.417,No
+MDS-UPDRS,3.1 SPEECH  ,3 1 speech examiner rated,Motor,0.6,Yes
+MDS-UPDRS,Updrs_3_1 value,1 1 cognitive impairment numeric value,UNMATCHED,0.167,No
+MDS-UPDRS,3.2 FACIAL EXPRESSION  ,3 2 facial expression,Motor,1.0,Yes
+MDS-UPDRS,Updrs_3_2 value,1 1 cognitive impairment numeric value,UNMATCHED,0.167,No
+MDS-UPDRS,3.3 RIGIDITY- NECK  ,3 3 rigidity neck,Motor,1.0,Yes
+MDS-UPDRS,Updrs_3_3_neck value,1 1 cognitive impairment numeric value,UNMATCHED,0.167,No
+MDS-UPDRS,3.3 RIGIDITY- RUE  ,3 3 rigidity rue numeric value,Motor,0.6,Yes
+MDS-UPDRS,Updrs_3_3_rue value,1 1 cognitive impairment numeric value,UNMATCHED,0.167,No
+MDS-UPDRS,3.3 RIGIDITY- LUE  ,3 3 rigidity lue numeric value,Motor,0.6,Yes
+MDS-UPDRS,Updrs_3_3_lue value,1 1 cognitive impairment numeric value,UNMATCHED,0.167,No
+MDS-UPDRS,3.3 RIGIDITY- RLE  ,3 3 rigidity rle numeric value,Motor,0.6,Yes
+MDS-UPDRS,Updrs_3_3_rle value,1 1 cognitive impairment numeric value,UNMATCHED,0.167,No
+MDS-UPDRS,3.3 RIGIDITY- LLE  ,3 3 rigidity lle numeric value,Motor,0.6,Yes
+MDS-UPDRS,Updrs_3_3_lle value,1 1 cognitive impairment numeric value,UNMATCHED,0.167,No
+MDS-UPDRS,3.4 FINGER TAPPING- R  ,3 4 finger tapping r numeric value,Motor,0.714,Yes
+MDS-UPDRS,Updrs_3_4_r value,1 1 cognitive impairment numeric value,UNMATCHED,0.167,No
+MDS-UPDRS,3.4 FINGER TAPPING- L  ,3 4 finger tapping l numeric value,Motor,0.714,Yes
+MDS-UPDRS,Updrs_3_4_l value,1 1 cognitive impairment numeric value,UNMATCHED,0.167,No
+MDS-UPDRS,3.5 HAND MOVEMENTS- R  ,3 5 hand movements r numeric value,Motor,0.714,Yes
+MDS-UPDRS,Updrs_3_5_r value,1 1 cognitive impairment numeric value,UNMATCHED,0.167,No
+MDS-UPDRS,3.5 HAND MOVEMENTS- L  ,3 5 hand movements l numeric value,Motor,0.714,Yes
+MDS-UPDRS,Updrs_3_5_l value,1 1 cognitive impairment numeric value,UNMATCHED,0.167,No
+MDS-UPDRS,3.6 PRONATION-SUPINATION MOVEMENTS OF HANDS - R  ,3 6 pronation supination hands right,Motor,0.556,Yes
+MDS-UPDRS,Updrs_3_6_r value,1 1 cognitive impairment numeric value,UNMATCHED,0.167,No
+MDS-UPDRS,3.6 PRONATION-SUPINATION MOVEMENTS OF HANDS- L  ,3 6 pronation supination hands right,Motor,0.556,Yes
+MDS-UPDRS,Updrs_3_6_l value,1 1 cognitive impairment numeric value,UNMATCHED,0.167,No
+MDS-UPDRS,3.7 TOE TAPPING - R  ,3 7 toe tapping r numeric value,Motor,0.714,Yes
+MDS-UPDRS,Updrs_3_7_r value,1 1 cognitive impairment numeric value,UNMATCHED,0.167,No
+MDS-UPDRS,3.7 TOE TAPPING - L  ,3 7 toe tapping l numeric value,Motor,0.714,Yes
+MDS-UPDRS,Updrs_3_7_l value,1 1 cognitive impairment numeric value,UNMATCHED,0.167,No
+MDS-UPDRS,3.8 LEG AGILITY - R  ,3 8 leg agility r numeric value,Motor,0.714,Yes
+MDS-UPDRS,Updrs_3_8_r value,1 1 cognitive impairment numeric value,UNMATCHED,0.167,No
+MDS-UPDRS,3.8 LEG AGILITY - L  ,3 8 leg agility l numeric value,Motor,0.714,Yes
+MDS-UPDRS,Updrs_3_8_l value,1 1 cognitive impairment numeric value,UNMATCHED,0.167,No
+MDS-UPDRS,3.9 ARISING FROM CHAIR  ,3 9 arising from chair,Motor,1.0,Yes
+MDS-UPDRS,Updrs_3_9 value,1 1 cognitive impairment numeric value,UNMATCHED,0.167,No
+MDS-UPDRS,3.10 GAIT  ,3 10 gait,Motor,1.0,Yes
+MDS-UPDRS,Updrs_3_10 value,1 1 cognitive impairment numeric value,UNMATCHED,0.167,No
+MDS-UPDRS,3.11 FREEZING OF GAIT  ,3 11 freezing of gait examiner,Motor,0.833,Yes
+MDS-UPDRS,Updrs_3_11 value,1 1 cognitive impairment numeric value,UNMATCHED,0.167,No
+MDS-UPDRS,3.12 POSTURAL STABILITY  ,3 12 postural stability,Motor,1.0,Yes
+MDS-UPDRS,Updrs_3_12 value,1 1 cognitive impairment numeric value,UNMATCHED,0.167,No
+MDS-UPDRS,3.13 POSTURE  ,3 13 posture,Motor,1.0,Yes
+MDS-UPDRS,Updrs_3_13 value,1 1 cognitive impairment numeric value,UNMATCHED,0.167,No
+MDS-UPDRS,3.14 GLOBAL SPONTANEITY OF MOVEMENT (BODY BRADYKINESIA)  ,3 14 global spontaneity of movement body bradykinesia,Motor,1.0,Yes
+MDS-UPDRS,Updrs_3_14,,UNMATCHED,0.0,No
+MDS-UPDRS,3.15 POSTURAL TREMOR OF THE HANDS - R  ,3 15 postural tremor hands right,Motor,0.556,Yes
+MDS-UPDRS,Updrs_3_15_r value,1 1 cognitive impairment numeric value,UNMATCHED,0.167,No
+MDS-UPDRS,3.15 POSTURAL TREMOR OF THE HANDS - L  ,3 15 postural tremor hands right,Motor,0.556,Yes
+MDS-UPDRS,Updrs_3_15_l value,1 1 cognitive impairment numeric value,UNMATCHED,0.167,No
+MDS-UPDRS,3.16 KINETIC TREMOR OF THE HANDS - R  ,3 16 kinetic tremor hands right,Motor,0.556,Yes
+MDS-UPDRS,Updrs_3_16_r value,1 1 cognitive impairment numeric value,UNMATCHED,0.167,No
+MDS-UPDRS,3.16 KINETIC TREMOR OF THE HANDS - L  ,3 16 kinetic tremor hands right,Motor,0.556,Yes
+MDS-UPDRS,Updrs_3_16_l value,1 1 cognitive impairment numeric value,UNMATCHED,0.167,No
+MDS-UPDRS,3.17 REST TREMOR AMPLITUDE - RUE  ,3 17 rest tremor amplitude rue,Motor,1.0,Yes
+MDS-UPDRS,Updrs_3_17_rue value,1 1 cognitive impairment numeric value,UNMATCHED,0.167,No
+MDS-UPDRS,3.17 REST TREMOR AMPLITUDE - LUE  ,3 17 rest tremor amplitude lue,Motor,1.0,Yes
+MDS-UPDRS,Updrs_3_17_lue value,1 1 cognitive impairment numeric value,UNMATCHED,0.167,No
+MDS-UPDRS,3.17 REST TREMOR AMPLITUDE - RLE  ,3 17 rest tremor amplitude rle,Motor,1.0,Yes
+MDS-UPDRS,Updrs_3_17_rle value,1 1 cognitive impairment numeric value,UNMATCHED,0.167,No
+MDS-UPDRS,3.17 REST TREMOR AMPLITUDE - LLE  ,3 17 rest tremor amplitude lle,Motor,1.0,Yes
+MDS-UPDRS,Updrs_3_17_lle value,1 1 cognitive impairment numeric value,UNMATCHED,0.167,No
+MDS-UPDRS,3.17 REST TREMOR AMPLITUDE - Lip/Jaw  ,3 17 rest tremor amplitude lip jaw,Motor,1.0,Yes
+MDS-UPDRS,Updrs_3_17_lipjaw value,1 1 cognitive impairment numeric value,UNMATCHED,0.167,No
+MDS-UPDRS,3.18 CONSTANCY OF REST TREMOR  ,3 18 constancy of rest tremor,Motor,1.0,Yes
+MDS-UPDRS,Updrs_3_18 value,1 1 cognitive impairment numeric value,UNMATCHED,0.167,No
+MDS-UPDRS,A. Were dyskinesias (chorea or dystonia) present during examination?,dyskinesias present during examination yes no,UNMATCHED,0.364,No
+MDS-UPDRS,"B. If yes, did these movements interfere with your ratings?",dyskinesias interfered with ratings yes no,UNMATCHED,0.231,No
+MDS-UPDRS,Hoehn and Yahr Stage: ,hoehn and yahr stage,Motor,1.0,Yes
+MDS-UPDRS,4.1 TIME SPENT WITH DYSKINESIAS,4 1 time spent with dyskinesias,Motor,1.0,Yes
+MDS-UPDRS,Updrs_4_1 value,1 1 cognitive impairment numeric value,UNMATCHED,0.167,No
+MDS-UPDRS,4.2 FUNCTIONAL IMPACT OF DYSKINESIAS,4 2 functional impact of dyskinesias,Motor,1.0,Yes
+MDS-UPDRS,Updrs_4_2 value,1 1 cognitive impairment numeric value,UNMATCHED,0.167,No
+MDS-UPDRS,4.3 TIME SPENT IN THE OFF STATE,4 3 time spent in the off state,Motor,1.0,Yes
+MDS-UPDRS,Updrs_4_3 value,1 1 cognitive impairment numeric value,UNMATCHED,0.167,No
+MDS-UPDRS,4.4 FUNCTIONAL IMPACT OF FLUCTUATIONS,4 4 functional impact of fluctuations,Motor,1.0,Yes
+MDS-UPDRS,Updrs_4_4 value,1 1 cognitive impairment numeric value,UNMATCHED,0.167,No
+MDS-UPDRS,4.5 COMPLEXITY OF MOTOR FLUCTUATIONS,4 5 complexity of motor fluctuations,Motor,1.0,Yes
+MDS-UPDRS,Updrs_4_5 value,1 1 cognitive impairment numeric value,UNMATCHED,0.167,No
+MDS-UPDRS,4.6 PAINFUL OFF-STATE DYSTONIA,4 6 painful off state dystonia,Motor,1.0,Yes
+MDS-UPDRS,Updrs_4_6 value,1 1 cognitive impairment numeric value,UNMATCHED,0.167,No
+MDS-UPDRS,Part I: Non-Motor Aspects of Experiences of Daily Living (nM-EDL),part i total score nm edl,UNMATCHED,0.308,No
+MDS-UPDRS,Part II: Motor Aspects of Experiences of Daily Living (M-EDL),part ii total score m edl,UNMATCHED,0.333,No
+MDS-UPDRS,Part III: Motor Examination,part iii total score motor examination,Composite Scores,0.667,Yes
+MDS-UPDRS,Part IV: Motor Complications,part iv total score motor complications,Composite Scores,0.667,Yes
+MDS-UPDRS-1,Assessment completed:     Évaluation remplie:  ,date assessment completed,Admin,0.667,Yes
+MDS-UPDRS-1,Assessment completed by:     Évaluation complétée par:,date assessment completed,Admin,0.5,Yes
+MDS-UPDRS-1,How was the MDS-UPDRS administered?   Comment le MDS-UPDRS a-t-il été administré,method of mds updrs administration,UNMATCHED,0.222,No
+MDS-UPDRS-1,Is it UPDRS v1.2 (part3) legacy ?  S'agit il d'un héritage de UPDRS v1.2 (partie,whether updrs v1 2 part 3 legacy used,UNMATCHED,0.263,No
+MDS-UPDRS-1,Primary source of information:,primary source of information,Non-Motor,1.0,Yes
+MDS-UPDRS-1,1.1 COGNITIVE IMPAIRMENT,1 1 cognitive impairment,Cognitive Function,1.0,Yes
+MDS-UPDRS-1,Updrs_1_1 value,,UNMATCHED,0.0,No
+MDS-UPDRS-1,1.2 HALLUCINATIONS AND PSYCHOSIS,1 2 hallucinations and psychosis,Non-Motor,1.0,Yes
+MDS-UPDRS-1,Updrs_1_2 value,,UNMATCHED,0.0,No
+MDS-UPDRS-1,1.3 DEPRESSED MOOD,1 3 depressed mood,Mood / Psychiatric,1.0,Yes
+MDS-UPDRS-1,Updrs_1_3,,UNMATCHED,0.0,No
+MDS-UPDRS-1,1.4 ANXIOUS MOOD,1 4 anxious mood,Mood / Psychiatric,1.0,Yes
+MDS-UPDRS-1,Updrs_1_4 value,,UNMATCHED,0.0,No
+MDS-UPDRS-1,1.5 APATHY,1 5 apathy,Non-Motor,1.0,Yes
+MDS-UPDRS-1,Updrs_1_5 value,,UNMATCHED,0.0,No
+MDS-UPDRS-1,1.6 FEATURES OF DOPAMINE DYSREGULATION SYNDROME,1 6 dopamine dysregulation syndrome features,Non-Motor,0.857,Yes
+MDS-UPDRS-1,Updrs_1_6 value,,UNMATCHED,0.0,No
+MDS-UPDRS-1,Who is filling out this questionnaire (check the best answer):,staff who completed assessment,UNMATCHED,0.077,No
+MDS-UPDRS-1,"1.7 SLEEP PROBLEMS/PROBLEMES DE SOMMEIL  Over the past week, have you had troubl",1 7 sleep problems,UNMATCHED,0.125,No
+MDS-UPDRS-1,"1.8 DAYTIME SLEEPINESS/SOMNOLENCE DIURNE  Over the past week, have you had troub",1 8 daytime sleepiness,UNMATCHED,0.235,No
+MDS-UPDRS-1,"1.9 PAIN AND OTHER SENSATIONS/DOULEUR ET AUTRES SENSATIONS  Over the past week, ",1 9 pain and other sensations,UNMATCHED,0.231,No
+MDS-UPDRS-1,"1.10 URINARY PROBLEMS/PROBLEMES URINAIRES  Over the past week, have you had trou",1 10 urinary problems,UNMATCHED,0.138,No
+MDS-UPDRS-1,1.11 CONSTIPATION PROBLEMS/PROBLEMES DE CONSTIPATION  Over the past week have yo,1 11 constipation problems,UNMATCHED,0.2,No
+MDS-UPDRS-1,1.12 LIGHT HEADEDNESS ON STANDING/SENSATION DE TETE VIDE AU LEVER  Over the past,1 12 lightheadedness on standing,UNMATCHED,0.129,No
+MDS-UPDRS-1,"1.13 FATIGUE  Over the past week, have you usually felt fatigued? This feeling i",1 13 fatigue,UNMATCHED,0.136,No
+MDS-UPDRS-1,"2.1 SPEECH  Over the past week, have you had problems with your speech?",2 1 speech problems,UNMATCHED,0.308,No
+MDS-UPDRS-1,"2.2 SALIVA & DROOLING  Over the past week, have you usually had too much saliva ",2 2 saliva and drooling,UNMATCHED,0.15,No
+MDS-UPDRS-1,"2.3 CHEWING AND SWALLOWING  Over the past week, have you usually had problems sw",2 3 chewing and swallowing,UNMATCHED,0.161,No
+MDS-UPDRS-1,"2.4 EATING TASKS  Over the past week, have you usually had troubles handling you",2 4 eating tasks,UNMATCHED,0.133,No
+MDS-UPDRS-1,"2.5 DRESSING  Over the past week, have you usually had problems dressing? For ex",2 5 dressing,UNMATCHED,0.097,No
+MDS-UPDRS-1,"2.6 HYGIENE  Over the past week, have you usually been slow or do you need help ",2 6 hygiene,UNMATCHED,0.111,No
+MDS-UPDRS-1,"2.7 HANDWRITING  Over the past week, have people usually had trouble reading you",2 7 handwriting,UNMATCHED,0.214,No
+MDS-UPDRS-1,"2.8 DOING HOBBIES AND OTHER ACTIVITIES  Over the past week, have you usually had",2 8 hobbies and other activities,UNMATCHED,0.261,No
+MDS-UPDRS-1,"2.9 TURNING IN BED  Over the past week, do you usually have trouble turning over",2 9 turning in bed,UNMATCHED,0.357,No
+MDS-UPDRS-1,"2.10 TREMOR  Over the past week, have you usually had shaking or tremor?",2 10 tremor self report,UNMATCHED,0.2,No
+MDS-UPDRS-1,"2.11 GETTING OUT OF BED, A CAR, OR A DEEP CHAIR  Over the past week, have you us",2 11 getting out of bed car chair,UNMATCHED,0.381,No
+MDS-UPDRS-1,"2.12 WALKING AND BALANCE  Over the past week, have you usually had problems with",2 12 walking and balance,UNMATCHED,0.333,No
+MDS-UPDRS-1,"2.13 FREEZING  Over the past week, on your usual day when walking, do you sudden",2 13 freezing of gait self report,UNMATCHED,0.1,No
+MDS-UPDRS-1,3a Is the patient on medication for treating the symptoms of Parkinson's Disease,3a medication status for pd,UNMATCHED,0.2,No
+MDS-UPDRS-1,3b If the patient is receiving medication for treating the symptoms of Parkinson,3b clinical state on off,UNMATCHED,0.136,No
+MDS-UPDRS-1,3c Is the patient on Levodopa ?,3c levodopa use,UNMATCHED,0.286,No
+MDS-UPDRS-1,3.C1 Time of assessment:   Temps de l'évaluation:,time of assessment,Motor,0.6,Yes
+MDS-UPDRS-1,3.C1 Time last PD medications taken:   Heure de la dernière prise de médicaments,time last pd medication taken,Motor,0.5,Yes
+MDS-UPDRS-1,3.C1 Minutes since last levodopa dose:  Minutes depuis la dernière dose de lévod,minutes since last levodopa dose,UNMATCHED,0.417,No
+MDS-UPDRS-1,3.1 SPEECH  ,3 1 speech examiner,Motor,0.75,Yes
+MDS-UPDRS-1,Updrs_3_1 value,,UNMATCHED,0.0,No
+MDS-UPDRS-1,3.2 FACIAL EXPRESSION  ,3 2 facial expression,Motor,1.0,Yes
+MDS-UPDRS-1,Updrs_3_2 value,,UNMATCHED,0.0,No
+MDS-UPDRS-1,3.3 RIGIDITY- NECK  ,3 3 rigidity neck,Motor,1.0,Yes
+MDS-UPDRS-1,Updrs_3_3_neck value,,UNMATCHED,0.0,No
+MDS-UPDRS-1,3.3 RIGIDITY- RUE  ,3 3 rigidity rue,Motor,1.0,Yes
+MDS-UPDRS-1,Updrs_3_3_rue value,,UNMATCHED,0.0,No
+MDS-UPDRS-1,3.3 RIGIDITY- LUE  ,3 3 rigidity lue,Motor,1.0,Yes
+MDS-UPDRS-1,Updrs_3_3_lue value,,UNMATCHED,0.0,No
+MDS-UPDRS-1,3.3 RIGIDITY- RLE  ,3 3 rigidity rle,Motor,1.0,Yes
+MDS-UPDRS-1,Updrs_3_3_rle value,,UNMATCHED,0.0,No
+MDS-UPDRS-1,3.3 RIGIDITY- LLE  ,3 3 rigidity lle,Motor,1.0,Yes
+MDS-UPDRS-1,Updrs_3_3_lle value,,UNMATCHED,0.0,No
+MDS-UPDRS-1,3.4 FINGER TAPPING- R  ,3 4 finger tapping r,Motor,1.0,Yes
+MDS-UPDRS-1,Updrs_3_4_r value,,UNMATCHED,0.0,No
+MDS-UPDRS-1,3.4 FINGER TAPPING- L  ,3 4 finger tapping l,Motor,1.0,Yes
+MDS-UPDRS-1,Updrs_3_4_l value,,UNMATCHED,0.0,No
+MDS-UPDRS-1,3.5 HAND MOVEMENTS- R  ,3 5 hand movements r,Motor,1.0,Yes
+MDS-UPDRS-1,Updrs_3_5_r value,,UNMATCHED,0.0,No
+MDS-UPDRS-1,3.5 HAND MOVEMENTS- L  ,3 5 hand movements l,Motor,1.0,Yes
+MDS-UPDRS-1,Updrs_3_5_l value,,UNMATCHED,0.0,No
+MDS-UPDRS-1,3.6 PRONATION-SUPINATION MOVEMENTS OF HANDS - R  ,3 6 pronation supination r,Motor,0.625,Yes
+MDS-UPDRS-1,Updrs_3_6_r value,,UNMATCHED,0.0,No
+MDS-UPDRS-1,3.6 PRONATION-SUPINATION MOVEMENTS OF HANDS- L  ,3 6 pronation supination l,Motor,0.625,Yes
+MDS-UPDRS-1,Updrs_3_6_l value,,UNMATCHED,0.0,No
+MDS-UPDRS-1,3.7 TOE TAPPING - R  ,3 7 toe tapping r,Motor,1.0,Yes
+MDS-UPDRS-1,Updrs_3_7_r value,,UNMATCHED,0.0,No
+MDS-UPDRS-1,3.7 TOE TAPPING - L  ,3 7 toe tapping l,Motor,1.0,Yes
+MDS-UPDRS-1,Updrs_3_7_l value,,UNMATCHED,0.0,No
+MDS-UPDRS-1,3.8 LEG AGILITY - R  ,3 8 leg agility r,Motor,1.0,Yes
+MDS-UPDRS-1,Updrs_3_8_r value,,UNMATCHED,0.0,No
+MDS-UPDRS-1,3.8 LEG AGILITY - L  ,3 8 leg agility l,Motor,1.0,Yes
+MDS-UPDRS-1,Updrs_3_8_l value,,UNMATCHED,0.0,No
+MDS-UPDRS-1,3.9 ARISING FROM CHAIR  ,3 9 arising from chair,Motor,1.0,Yes
+MDS-UPDRS-1,Updrs_3_9 value,,UNMATCHED,0.0,No
+MDS-UPDRS-1,3.10 GAIT  ,3 10 gait,Motor,1.0,Yes
+MDS-UPDRS-1,Updrs_3_10 value,,UNMATCHED,0.0,No
+MDS-UPDRS-1,3.11 FREEZING OF GAIT  ,3 11 freezing of gait examiner,Motor,0.833,Yes
+MDS-UPDRS-1,Updrs_3_11 value,,UNMATCHED,0.0,No
+MDS-UPDRS-1,3.12 POSTURAL STABILITY  ,3 12 postural stability,Motor,1.0,Yes
+MDS-UPDRS-1,Updrs_3_12 value,,UNMATCHED,0.0,No
+MDS-UPDRS-1,3.13 POSTURE  ,3 13 posture,Motor,1.0,Yes
+MDS-UPDRS-1,Updrs_3_13 value,,UNMATCHED,0.0,No
+MDS-UPDRS-1,3.14 GLOBAL SPONTANEITY OF MOVEMENT (BODY BRADYKINESIA)  ,3 14 global spontaneity of movement body bradykinesia,Motor,1.0,Yes
+MDS-UPDRS-1,Updrs_3_14,,UNMATCHED,0.0,No
+MDS-UPDRS-1,3.15 POSTURAL TREMOR OF THE HANDS - R  ,3 15 postural tremor hands r,Motor,0.75,Yes
+MDS-UPDRS-1,Updrs_3_15_r value,,UNMATCHED,0.0,No
+MDS-UPDRS-1,3.15 POSTURAL TREMOR OF THE HANDS - L  ,3 15 postural tremor hands l,Motor,0.75,Yes
+MDS-UPDRS-1,Updrs_3_15_l value,,UNMATCHED,0.0,No
+MDS-UPDRS-1,3.16 KINETIC TREMOR OF THE HANDS - R  ,3 16 kinetic tremor hands r,Motor,0.75,Yes
+MDS-UPDRS-1,Updrs_3_16_r value,,UNMATCHED,0.0,No
+MDS-UPDRS-1,3.16 KINETIC TREMOR OF THE HANDS - L  ,3 16 kinetic tremor hands l,Motor,0.75,Yes
+MDS-UPDRS-1,Updrs_3_16_l value,,UNMATCHED,0.0,No
+MDS-UPDRS-1,3.17 REST TREMOR AMPLITUDE - RUE  ,3 17 rest tremor amplitude rue,Motor,1.0,Yes
+MDS-UPDRS-1,Updrs_3_17_rue value,,UNMATCHED,0.0,No
+MDS-UPDRS-1,3.17 REST TREMOR AMPLITUDE - LUE  ,3 17 rest tremor amplitude lue,Motor,1.0,Yes
+MDS-UPDRS-1,Updrs_3_17_lue value,,UNMATCHED,0.0,No
+MDS-UPDRS-1,3.17 REST TREMOR AMPLITUDE - RLE  ,3 17 rest tremor amplitude rle,Motor,1.0,Yes
+MDS-UPDRS-1,Updrs_3_17_rle value,,UNMATCHED,0.0,No
+MDS-UPDRS-1,3.17 REST TREMOR AMPLITUDE - LLE  ,3 17 rest tremor amplitude lle,Motor,1.0,Yes
+MDS-UPDRS-1,Updrs_3_17_lle value,,UNMATCHED,0.0,No
+MDS-UPDRS-1,3.17 REST TREMOR AMPLITUDE - Lip/Jaw  ,3 17 rest tremor amplitude lip jaw,Motor,1.0,Yes
+MDS-UPDRS-1,Updrs_3_17_lipjaw value,,UNMATCHED,0.0,No
+MDS-UPDRS-1,3.18 CONSTANCY OF REST TREMOR  ,3 18 constancy of rest tremor,Motor,1.0,Yes
+MDS-UPDRS-1,Updrs_3_18 value,,UNMATCHED,0.0,No
+MDS-UPDRS-1,A. Were dyskinesias (chorea or dystonia) present during examination?,dyskinesias present during examination,UNMATCHED,0.444,No
+MDS-UPDRS-1,"B. If yes, did these movements interfere with your ratings?",dyskinesias interfered with ratings,UNMATCHED,0.167,No
+MDS-UPDRS-1,Hoehn and Yahr Stage: ,hoehn and yahr stage,Motor,1.0,Yes
+MDS-UPDRS-1,4.1 TIME SPENT WITH DYSKINESIAS,4 1 time spent with dyskinesias,Motor,1.0,Yes
+MDS-UPDRS-1,Updrs_4_1 value,,UNMATCHED,0.0,No
+MDS-UPDRS-1,4.2 FUNCTIONAL IMPACT OF DYSKINESIAS,4 2 functional impact of dyskinesias,Motor,1.0,Yes
+MDS-UPDRS-1,Updrs_4_2 value,,UNMATCHED,0.0,No
+MDS-UPDRS-1,4.3 TIME SPENT IN THE OFF STATE,4 3 time spent in the off state,Motor,1.0,Yes
+MDS-UPDRS-1,Updrs_4_3 value,,UNMATCHED,0.0,No
+MDS-UPDRS-1,4.4 FUNCTIONAL IMPACT OF FLUCTUATIONS,4 4 functional impact of fluctuations,Motor,1.0,Yes
+MDS-UPDRS-1,Updrs_4_4 value,,UNMATCHED,0.0,No
+MDS-UPDRS-1,4.5 COMPLEXITY OF MOTOR FLUCTUATIONS,4 5 complexity of motor fluctuations,Motor,1.0,Yes
+MDS-UPDRS-1,Updrs_4_5 value,,UNMATCHED,0.0,No
+MDS-UPDRS-1,4.6 PAINFUL OFF-STATE DYSTONIA,4 6 painful off state dystonia,Motor,1.0,Yes
+MDS-UPDRS-1,Updrs_4_6 value,,UNMATCHED,0.0,No
+MDS-UPDRS-1,Part I: Non-Motor Aspects of Experiences of Daily Living (nM-EDL),part i total score nm edl,UNMATCHED,0.308,No
+MDS-UPDRS-1,Part II: Motor Aspects of Experiences of Daily Living (M-EDL),part ii total score m edl,UNMATCHED,0.333,No
+MDS-UPDRS-1,Part III: Motor Examination,part iii total score motor examination,Composite Scores,0.667,Yes
+MDS-UPDRS-1,Part IV: Motor Complications,part iv total score motor complications,Composite Scores,0.667,Yes
+Medication,Questionnaire completed by:    Questionnaire complété par:,questionnaire completed by,Admin,1.0,Yes
+Medication,Questionnaire completed:     Questionnaire rempli:  ,questionnaire completed by,Admin,0.667,Yes
+Medication,Date Correlation :    Concordance avec la date :,date correlation,Admin,1.0,Yes
+Medication,How is the questionnaire completed?     Comment le questionnaire est-il rempli? ,how questionnaire was completed,Admin,0.5,Yes
+Medication,1. Select all current medications:    1. Sélectionnez vos médicaments actuels :,1 current levodopa medications selected,UNMATCHED,0.429,No
+Medication,1a. IR levodopa dosage (Sinemet):    1a. Dose IR lévodopa (Sinemet):   ,q1a sinemet ir levodopa dose,UNMATCHED,0.429,No
+Medication,1b. IR levodopa dosage (Prolopa):    1b. Dose IR lévodopa (Prolopa): ,q1b prolopa ir levodopa dose,UNMATCHED,0.429,No
+Medication,1c. IR levodopa dosage (Stalevo):    1c. Dose IR lévodopa (Stalevo):,q1c stalevo ir levodopa dose,UNMATCHED,0.429,No
+Medication,1d. Intestinal levodopa dosage (Duodopa):    1d. Dose intestinal lévodopa (Duodo,q1d duodopa intestinal levodopa dose,UNMATCHED,0.429,No
+Medication,1e. CR levodopa dosage (Sinemet CR):    1e. Dose CR lévodopa (Sinemet CR):,q1e sinemet cr levodopa dose,UNMATCHED,0.429,No
+Medication,1f. ER levodopa dosage (Rytary):    1f. Dose ER lévodopa (Rytary): ,q1f rytary er levodopa dose,UNMATCHED,0.429,No
+Medication,1g. Name of other PD medication:    1g. Nom d'autres médicaments pour la maladie,q1g other pd medication name,Medications,0.571,Yes
+Medication,1h. Levodopa dosage (Other PD medication):    1h. Dose lévodopa (autre médicamen,q1h other pd medication levodopa dose,Medications,0.5,Yes
+Medication,"1i. Foslevodopa, foscarbidopa subcutaneous infusion (Vyalev)    1i. Foslevodopa,",q1i foslevodopa foscarbidopa subcutaneous infusion vyalev,Medications,0.714,Yes
+Medication,2. Has the patient shown a significant reduction in symptoms after starting a do,2 significant reduction in symptoms after dopaminergic agent,Medications,0.571,Yes
+Medication,2a. Is this improvement in symptoms due to treatment still present?    2a. Cette,q2a improvement from treatment still present,UNMATCHED,0.308,No
+Medication,"2b. If 'no or uncertain', did the medication ever help in the past?    2b. Si no",q2b did medication ever help in the past,Medications,0.538,Yes
+Medication,2c. How long did the medication help?    2c. Combien de temps le médicament a-t-,q2c how long did medication help,Medications,0.625,Yes
+Medication,3. Current COMT Inhibitor Medications:(Catechol-O-Methyl Transferase)    3. Médi,3 current comt inhibitor medications,Medications,0.556,Yes
+Medication,3a. COMT Inhibitor dosage (entacapone/Comtan):    3a. Dose inhibiteur de la COMT,q3a entacapone comtan dose,UNMATCHED,0.25,No
+Medication,3b. COMT Inhibitor dosage (entacapone/Stalevo):    3b. Dose inhibiteur de la COM,q3b entacapone stalevo dose,UNMATCHED,0.25,No
+Medication,3c. COMT Inhibitor dosage (tolcapone/Tasmar):    3c. Dose inhibiteur de la COMT(,q3c tolcapone tasmar dose,UNMATCHED,0.25,No
+Medication,3d. Name of other COMT Inhibitor:    3d. Nom d'un autre inhibiteur de la COMT:,q3d other comt inhibitor name,Medications,0.571,Yes
+Medication,3e. COMT Inhibitor dosage (Other):    3e. Dose d'inhibiteur de la COMT (autre):,q3d other comt inhibitor name,UNMATCHED,0.429,No
+Medication,4. Current Dopamine Agonist Medications:    4. Médication actuelle - Agoniste do,4 current dopamine agonist medications,Medications,1.0,Yes
+Medication,4a. Dopamine Agonist dosage (pramipexole/Mirapex):    4a. Dose agoniste dopamine,q4a pramipexole mirapex dose,UNMATCHED,0.25,No
+Medication,4b. Dopamine Agonists dosage (ropinirole/Requip):    4b. Dose agoniste dopaminer,q4b ropinirole requip dose,UNMATCHED,0.25,No
+Medication,4c. Dopamine Agonist dosage (rotigotine/Neupro):    4c. Dose agoniste dopaminerg,q4c rotigotine neupro dose,UNMATCHED,0.25,No
+Medication,4d. Dopamine Agonist dosage (apomorphine/Movapo):    4d. Dose agoniste dopaminer,q4d apomorphine movapo dose,UNMATCHED,0.25,No
+Medication,4e. Name of other Dopamine agonist:    4e. Nom d'autre agoniste dopaminergique:,q4e other dopamine agonist name,Medications,0.571,Yes
+Medication,4f. Dopamine Agonist dosage (Other):    4f. Dose agoniste dopaminergique (autre),q4e other dopamine agonist name,UNMATCHED,0.429,No
+Medication,"5. Since taking a dopamine agonist, has the patient shown:    5. Depuis la prise",5 side effects since taking dopamine agonist,UNMATCHED,0.417,No
+Medication,Please specify other dopamine agonist side effect:    Veuillez préciser si vous ,other dopamine agonist side effects,Medications,0.5,Yes
+Medication,6. Current MAO-B Inhibitor Medications: (Monoamine Oxidase)    6. Médication act,6 current mao b inhibitor medications,Medications,0.75,Yes
+Medication,6a. MAO-B Inhibitor dosage (rasagiline/Azilect):    6a. MAO-B Inhibiteur dose (r,6 current mao b inhibitor medications,UNMATCHED,0.3,No
+Medication,6b. MAO-B Inhibitor dosage (selegiline/Eldepryl):    6b. MAO-B Inhibiteur dose (,6 current mao b inhibitor medications,UNMATCHED,0.3,No
+Medication,6c. MAO-B Inhibitor dosage (safinamide/Onstryv):    6c. Dose inhibiteur MAO-B (s,6 current mao b inhibitor medications,UNMATCHED,0.3,No
+Medication,6d. Name of other MAO-B Inhibitor:    6d. Nom d'un autre inhbibiteur  MAO-B:,q6d other mao b inhibitor name,Medications,0.625,Yes
+Medication,6e. MAO-B Inhibitor dosage (Other):    6e. Dose inhibiteur MAO-B (autre):,q6d other mao b inhibitor name,Medications,0.5,Yes
+Medication,7. Other PD medications:    7. Autres médicaments anti-parkinsoniens:,7 other pd medications,Medications,1.0,Yes
+Medication,7a. Dosage (amantadine/Symmetrel):    7a. Dose (amantadine/Symmetrel):,q7a amantadine symmetrel dose,UNMATCHED,0.333,No
+Medication,"7b. Dosage anticholinergics (biperiden, orphenadrine, procyclidine, benztropine)",q7b anticholinergics dose,UNMATCHED,0.111,No
+Medication,7c. If other precise medication name and dosage (if known):    7c. Si autre médi,q7c other pd medication name and dose,UNMATCHED,0.333,No
+Medication,8. Total LED (if participant is not on any medications to treat the symptoms of ,8 total levodopa equivalency dose led,UNMATCHED,0.12,No
+Medication,9. Non-PD Medications:    9. Médicaments non-PD:,9 non pd medications,Medications,1.0,Yes
+Medication,Please specify name of other medication:    Veuillez préciser le nom de votre au,q1g other pd medication name,UNMATCHED,0.375,No
+Medication,9a. Benzodiazepines prescribed for:    9a. Benzodiazépines prescrits pour:,q9a benzodiazepines prescribed for,Medications,0.6,Yes
+Medication,10. Has the patient ever had a psychiatric disorder?    10. Le patient a-t-il/el,10 history of psychiatric disorder,UNMATCHED,0.273,No
+Medication,Please specify which other psychiatric disorder:    Veuillez préciser si autre t,other psychiatric disorder,Mood / Psychiatric,0.5,Yes
+Medication,11. Is the participant followed by health professionals for mental health?     1,11 participant followed for mental health,Mood / Psychiatric,0.6,Yes
+MoCA,Was the MoCA administered?     Le MoCA a-t-il été administré?,was moca administered,Admin,0.75,Yes
+MoCA,Who administered the MoCA?     Qui a administré le MoCA?,who administered moca,Admin,0.75,Yes
+MoCA,How was the MoCA administered?     Comment le MoCA a-t-il été administré?,how moca was administered,Admin,0.8,Yes
+MoCA,MoCA Test Version Administered    Version du test MoCA administrée  ,moca test version administered,Admin,1.0,Yes
+MoCA,Please specify what MoCA Test Version was administered if you selected other:   ,moca test version administered,UNMATCHED,0.333,No
+MoCA,What language was the MoCA administered?     Dans quelle langue le MoCA a-t-il é,was moca administered,Admin,0.5,Yes
+MoCA,Please specify what language the MoCA Test was administered if you selected othe,was moca administered,UNMATCHED,0.231,No
+MoCA,Date of MoCA administration     Date d'administration du MoCA,date of moca administration,Admin,1.0,Yes
+MoCA,Question for the coordinator: Was the patient ON or OFF during the MoCA?    Ques,patient on off during moca coordinator,Admin,0.545,Yes
+MoCA,Question for the participant: do you currently feel ON or OFF during the MoCA? (,patient on off during moca coordinator,UNMATCHED,0.19,No
+MoCA,Visuospatial/Executive Score    Score Visuospatial/Éxécutif ,visuospatial executive score,Cognitive Function,1.0,Yes
+MoCA,Naming Score    Score Dénomination,naming score,Cognitive Function,1.0,Yes
+MoCA,Memory Score    Score Mémoire,memory score,Cognitive Function,1.0,Yes
+MoCA,Attention Score    Score Attention,attention score,Cognitive Function,1.0,Yes
+MoCA,Language Score    Score Langage,language score,Cognitive Function,1.0,Yes
+MoCA,Abstraction Score    Score Abstraction,abstraction score,Cognitive Function,1.0,Yes
+MoCA,Delayed Recall Score    Score Rappel,delayed recall score,Cognitive Function,1.0,Yes
+MoCA,Orientation Score    Score Orientation,orientation score,Cognitive Function,1.0,Yes
+MoCA,TOTAL SCORE (make sure to include extra point for 12 years or less of education),extra point awarded for 12 years education,UNMATCHED,0.375,No
+MoCA,Make sure total score and calculation of total score are the same (will not incl,extra point awarded for 12 years education,UNMATCHED,0.273,No
+MoCA,Did the participant receive +1 extra point for 12 years or less of education?   ,extra point awarded for 12 years education,UNMATCHED,0.4,No
+MoCA,Comments:     Commentaires: ,comments,Admin,1.0,Yes
+MoCA-1,Was the MoCA administered?     Le MoCA a-t-il été administré?,was moca administered,Admin,0.75,Yes
+MoCA-1,Who administered the MoCA?     Qui a administré le MoCA?,who administered moca,Admin,0.75,Yes
+MoCA-1,How was the MoCA administered?     Comment le MoCA a-t-il été administré?,how moca was administered,Admin,0.8,Yes
+MoCA-1,MoCA Test Version Administered    Version du test MoCA administrée  ,moca test version administered,Admin,1.0,Yes
+MoCA-1,Please specify what MoCA Test Version was administered if you selected other:   ,moca test version administered,UNMATCHED,0.333,No
+MoCA-1,What language was the MoCA administered?     Dans quelle langue le MoCA a-t-il é,was moca administered,Admin,0.5,Yes
+MoCA-1,Please specify what language the MoCA Test was administered if you selected othe,was moca administered,UNMATCHED,0.231,No
+MoCA-1,Date of MoCA administration     Date d'administration du MoCA,date of moca administration,Admin,1.0,Yes
+MoCA-1,Question for the coordinator: Was the patient ON or OFF during the MoCA?    Ques,patient on off during moca coordinator,Admin,0.545,Yes
+MoCA-1,Question for the participant: do you currently feel ON or OFF during the MoCA? (,patient on off during moca coordinator,UNMATCHED,0.19,No
+MoCA-1,Visuospatial/Executive Score    Score Visuospatial/Éxécutif ,naming score,UNMATCHED,0.25,No
+MoCA-1,Naming Score    Score Dénomination,naming score,Cognitive Function,1.0,Yes
+MoCA-1,Memory Score    Score Mémoire,memory score,Cognitive Function,1.0,Yes
+MoCA-1,Attention Score    Score Attention,attention score,Cognitive Function,1.0,Yes
+MoCA-1,Language Score    Score Langage,language score,Cognitive Function,1.0,Yes
+MoCA-1,Abstraction Score    Score Abstraction,abstraction score,Cognitive Function,1.0,Yes
+MoCA-1,Delayed Recall Score    Score Rappel,delayed recall score,Cognitive Function,1.0,Yes
+MoCA-1,Orientation Score    Score Orientation,orientation score,Cognitive Function,1.0,Yes
+MoCA-1,TOTAL SCORE (make sure to include extra point for 12 years or less of education),extra point awarded for 12 years education,UNMATCHED,0.375,No
+MoCA-1,Make sure total score and calculation of total score are the same (will not incl,extra point awarded for 12 years education,UNMATCHED,0.273,No
+MoCA-1,Did the participant receive +1 extra point for 12 years or less of education?   ,extra point awarded for 12 years education,UNMATCHED,0.4,No
+MoCA-1,Comments:     Commentaires: ,comments,Admin,1.0,Yes
+MoCA-2,Was the MoCA administered?     Le MoCA a-t-il été administré?,was moca administered,Admin,0.75,Yes
+MoCA-2,Who administered the MoCA?     Qui a administré le MoCA?,who administered moca,Admin,0.75,Yes
+MoCA-2,How was the MoCA administered?     Comment le MoCA a-t-il été administré?,how moca was administered,Admin,0.8,Yes
+MoCA-2,MoCA Test Version Administered    Version du test MoCA administrée  ,moca test version administered,Admin,1.0,Yes
+MoCA-2,Please specify what MoCA Test Version was administered if you selected other:   ,moca test version administered,UNMATCHED,0.333,No
+MoCA-2,What language was the MoCA administered?     Dans quelle langue le MoCA a-t-il é,was moca administered,Admin,0.5,Yes
+MoCA-2,Please specify what language the MoCA Test was administered if you selected othe,was moca administered,UNMATCHED,0.231,No
+MoCA-2,Date of MoCA administration     Date d'administration du MoCA,date of moca administration,Admin,1.0,Yes
+MoCA-2,Question for the coordinator: Was the patient ON or OFF during the MoCA?    Ques,patient on off during moca coordinator,Admin,0.545,Yes
+MoCA-2,Question for the participant: do you currently feel ON or OFF during the MoCA? (,patient on off during moca coordinator,UNMATCHED,0.19,No
+MoCA-2,Visuospatial/Executive Score    Score Visuospatial/Éxécutif ,naming score,UNMATCHED,0.25,No
+MoCA-2,Naming Score    Score Dénomination,naming score,Cognitive Function,1.0,Yes
+MoCA-2,Memory Score    Score Mémoire,memory score,Cognitive Function,1.0,Yes
+MoCA-2,Attention Score    Score Attention,attention score,Cognitive Function,1.0,Yes
+MoCA-2,Language Score    Score Langage,language score,Cognitive Function,1.0,Yes
+MoCA-2,Abstraction Score    Score Abstraction,abstraction score,Cognitive Function,1.0,Yes
+MoCA-2,Delayed Recall Score    Score Rappel,delayed recall score,Cognitive Function,1.0,Yes
+MoCA-2,Orientation Score    Score Orientation,orientation score,Cognitive Function,1.0,Yes
+MoCA-2,TOTAL SCORE (make sure to include extra point for 12 years or less of education),extra point awarded for 12 years education,UNMATCHED,0.375,No
+MoCA-2,Make sure total score and calculation of total score are the same (will not incl,extra point awarded for 12 years education,UNMATCHED,0.273,No
+MoCA-2,Did the participant receive +1 extra point for 12 years or less of education?   ,extra point awarded for 12 years education,UNMATCHED,0.4,No
+MoCA-2,Comments:     Commentaires: ,comments,Admin,1.0,Yes
+Neuropsychological,Neuropsycholgical Test Date:,brixton test administered,UNMATCHED,0.2,No
+Neuropsychological,Administered by / Administré par : ,administered by,Admin,0.5,Yes
+Neuropsychological,Age at evaluation / Âge au moment de l'évaluation:,age at evaluation,UNMATCHED,0.333,No
+Neuropsychological,Native language / Langue maternelle (choice=English / Anglais),,UNMATCHED,0.0,No
+Neuropsychological,Native language / Langue maternelle (choice=French / Français),,UNMATCHED,0.0,No
+Neuropsychological,Native language / Langue maternelle (choice=Other / Autre),,UNMATCHED,0.0,No
+Neuropsychological,Years of education /  nombre d'années d'éducation (calculated by neuropsy):  ,administered by,UNMATCHED,0.091,No
+Neuropsychological,Other / Autre,,UNMATCHED,0.0,No
+Neuropsychological,Language of evaluation / Langue d'évaluation:   (choice=English / Anglais),age at evaluation,UNMATCHED,0.125,No
+Neuropsychological,Language of evaluation / Langue d'évaluation:   (choice=French / Français),age at evaluation,UNMATCHED,0.125,No
+Neuropsychological,Language of evaluation / Langue d'évaluation:   (choice=Other / Autre),age at evaluation,UNMATCHED,0.125,No
+Neuropsychological,Other / Autre2,,UNMATCHED,0.0,No
+Neuropsychological,Normal cognition (superior or equal to 26 on MoCA),,UNMATCHED,0.0,No
+Neuropsychological,Self-reported medical history  Histoire médicale auto-rapportée,,UNMATCHED,0.0,No
+Neuropsychological,"Subjective Complaint: more difficulties with memory, judgement, concentration, p",,UNMATCHED,0.0,No
+Neuropsychological,Functional Impact: the cognitive complaints affect daily activities    Impact fo,,UNMATCHED,0.0,No
+Neuropsychological,Was the Hopkins Verbal Learning Test Revised administered?,brixton test administered,UNMATCHED,0.222,No
+Neuropsychological,Details for missing data,,UNMATCHED,0.0,No
+Neuropsychological,Trial 1 raw,hvltr trial 1 raw score,Cognitive Function,0.6,Yes
+Neuropsychological,Trial 2 raw,hvltr trial 2 raw score,Cognitive Function,0.6,Yes
+Neuropsychological,Trial 3 raw,hvltr trial 3 raw score,Cognitive Function,0.6,Yes
+Neuropsychological,"Trial total 1,2,3 (Raw score)",hvltr trial 1 raw score,Cognitive Function,0.5,Yes
+Neuropsychological,"Intrusions total 1,2,3 (Raw score)",hvltr trial 1 raw score,UNMATCHED,0.333,No
+Neuropsychological,"Repetitions total 1,2,3 (Raw score)",hvltr trial 1 raw score,UNMATCHED,0.333,No
+Neuropsychological,Trial 4 delayed (Raw score),hvltr trial 1 raw score,UNMATCHED,0.429,No
+Neuropsychological,Intrusion 4,,UNMATCHED,0.0,No
+Neuropsychological,Repetition 4,,UNMATCHED,0.0,No
+Neuropsychological,Comments,,UNMATCHED,0.0,No
+Neuropsychological,Was the Rey Complex Figure Test administered?,brixton test administered,UNMATCHED,0.25,No
+Neuropsychological,Details for missing data3,,UNMATCHED,0.0,No
+Neuropsychological,Copy raw,rcft copy raw score,Cognitive Function,0.5,Yes
+Neuropsychological,Copy time (sec),trail a time sec,UNMATCHED,0.4,No
+Neuropsychological,Copy strategy / Stratégie de copie,rcft copy raw score,UNMATCHED,0.125,No
+Neuropsychological,Immediate recall raw,rcft immediate recall raw,Cognitive Function,0.75,Yes
+Neuropsychological,Immediate recall time (sec),rcft immediate recall raw,UNMATCHED,0.333,No
+Neuropsychological,Delayed recall raw,hvltr delayed recall raw,Cognitive Function,0.75,Yes
+Neuropsychological,Delayed recall time (sec),hvltr delayed recall raw,UNMATCHED,0.333,No
+Neuropsychological,Comments4,,UNMATCHED,0.0,No
+Neuropsychological,Was the WAIS IV Digit Span test administered?,wais iv digit span administered,Cognitive Function,0.625,Yes
+Neuropsychological,Details for missing data5,,UNMATCHED,0.0,No
+Neuropsychological,Digit Span Forward - total correct (Raw score) ,digit span forward total correct,Cognitive Function,0.714,Yes
+Neuropsychological,Digit span forward - longest correct serie (Raw score),digit span forward total correct,UNMATCHED,0.444,No
+Neuropsychological,Digit Span Backward - total correct (Raw score),digit span backward total correct,Cognitive Function,0.714,Yes
+Neuropsychological,Digit span backward - longest correct serie (Raw score)  ,digit span backward total correct,UNMATCHED,0.444,No
+Neuropsychological,Comments6,,UNMATCHED,0.0,No
+Neuropsychological,Was the Trails A B test administered?,trails a b administered,Cognitive Function,0.571,Yes
+Neuropsychological,Details for missing data7,,UNMATCHED,0.0,No
+Neuropsychological,Trail A raw score (time in sec.),trail a time sec,Cognitive Function,0.571,Yes
+Neuropsychological,Trail A Errors raw score ,trail a errors,Cognitive Function,0.6,Yes
+Neuropsychological,Trail B raw score (time in sec.),trail b time sec,Cognitive Function,0.571,Yes
+Neuropsychological,Trail B Errors raw score,trail b errors,Cognitive Function,0.6,Yes
+Neuropsychological,Comments8,,UNMATCHED,0.0,No
+Neuropsychological,Was the CDT test administered?,brixton test administered,UNMATCHED,0.333,No
+Neuropsychological,Details for missing data9,,UNMATCHED,0.0,No
+Neuropsychological,Command Clock raw (max 10),cdt command clock raw max 10,Cognitive Function,0.833,Yes
+Neuropsychological,Copy Clock raw (max 10),cdt copy clock raw max 10,Cognitive Function,0.833,Yes
+Neuropsychological,Comments10,,UNMATCHED,0.0,No
+Neuropsychological,Was the Stroop Colour and Word test (Golden) administered?,stroop golden administered,UNMATCHED,0.333,No
+Neuropsychological,Details for missing data11,,UNMATCHED,0.0,No
+Neuropsychological,"STROOP GOLDEN : WORDS, number of responses",stroop golden words responses,Cognitive Function,0.667,Yes
+Neuropsychological,"STROOP GOLDEN : words, self-corrected errors (raw score)",stroop golden words responses,UNMATCHED,0.333,No
+Neuropsychological,"STROOP GOLDEN, words, uncorrected errors (raw score)",stroop golden words responses,UNMATCHED,0.375,No
+Neuropsychological,STROOP GOLDEN : COLORS Number of responses,stroop golden words responses,UNMATCHED,0.429,No
+Neuropsychological,"STROOP GOLDEN : colors, self-corrected errors (raw scores)",stroop golden administered,UNMATCHED,0.222,No
+Neuropsychological,"STROOP GOLDEN: colors, uncorrected errors",stroop golden administered,UNMATCHED,0.333,No
+Neuropsychological,Stroop GOLDEN: INK Number of Responses ,stroop golden words responses,UNMATCHED,0.429,No
+Neuropsychological,"Stroop GOLDEN : ink, self-corrected errors (raw score)",stroop golden administered,UNMATCHED,0.222,No
+Neuropsychological,"Stroop GOLDEN, ink, uncorrected errors (raw score)",stroop golden administered,UNMATCHED,0.25,No
+Neuropsychological,Was the Stroop Colour and Word (D-KEFS) test administered?,stroop golden administered,UNMATCHED,0.182,No
+Neuropsychological,Details for missing data12,,UNMATCHED,0.0,No
+Neuropsychological,"Stroop - D-Kefs, Cond. 1 - COLORS : Time (sec) (Raw score)",hvltr trial 1 raw score,UNMATCHED,0.25,No
+Neuropsychological,Stroop - D-Kefs - cond. 1: self-corrected errors (Raw score),hvltr trial 1 raw score,UNMATCHED,0.25,No
+Neuropsychological,Stroop - D-Kefs - Cond.1: Uncorrected errors (Raw score),hvltr trial 1 raw score,UNMATCHED,0.273,No
+Neuropsychological,Stroop - D-Kefs - Cond.1: Total errors (Raw score),hvltr trial 1 raw score,UNMATCHED,0.273,No
+Neuropsychological,Stroop - D-Kefs - Cond.1: Total errors (Automatic Calculation),trail a errors,UNMATCHED,0.091,No
+Neuropsychological,Stroop - D-Kefs - Cond.2 WORDS: Time (sec) (Raw score),hvltr trial 2 raw score,UNMATCHED,0.25,No
+Neuropsychological,Stroop - D-Kefs -  Cond.2: Self-corrected errors (Raw score),hvltr trial 2 raw score,UNMATCHED,0.25,No
+Neuropsychological,Stroop - D-Kefs - Cond.2: uncorrected errors (Raw score),hvltr trial 2 raw score,UNMATCHED,0.273,No
+Neuropsychological,Stroop - D-Kefs - Cond.2: total errors (Raw score),hvltr trial 2 raw score,UNMATCHED,0.273,No
+Neuropsychological,Stroop - D-Kefs - Cond.2: total errors (Automatic Calculation),trail a errors,UNMATCHED,0.091,No
+Neuropsychological,Stroop - D-Kefs - Cond.3 - INK: Time (sec) (Raw score),hvltr trial 3 raw score,UNMATCHED,0.25,No
+Neuropsychological,Stroop - D-Kefs - Cond.3: self-corrected errors (Raw score),hvltr trial 3 raw score,UNMATCHED,0.25,No
+Neuropsychological,Stroop - D-Kefs - Cond.3: Uncorrected errors (Raw score),hvltr trial 3 raw score,UNMATCHED,0.273,No
+Neuropsychological,Stroop - D-Kefs - Cond.3: Total errors (Raw score),hvltr trial 3 raw score,UNMATCHED,0.273,No
+Neuropsychological,Stroop - D-Kefs - Cond.3: Total errors (Automatic calculation),trail a errors,UNMATCHED,0.091,No
+Neuropsychological,Stroop - D-Kefs - Cond. 3 - 1 (time),stroop golden administered,UNMATCHED,0.111,No
+Neuropsychological,Stroop - D-Kefs - Cond. 3 - 1 (time) (Automatic Calculation),stroop golden administered,UNMATCHED,0.091,No
+Neuropsychological,Comments13,,UNMATCHED,0.0,No
+Neuropsychological,Was the Letter Fluency test administered?,letter fluency fas administered,UNMATCHED,0.429,No
+Neuropsychological,Details for missing data14,,UNMATCHED,0.0,No
+Neuropsychological,Letter Fluency F (Raw score),letter fluency f raw,Cognitive Function,0.8,Yes
+Neuropsychological,Letter Fluency A (Raw score),letter fluency f raw,Cognitive Function,0.5,Yes
+Neuropsychological,Letter Fluency S (Raw score),letter fluency f raw,Cognitive Function,0.5,Yes
+Neuropsychological,Letter Fluency Total (Raw score),letter fluency f raw,Cognitive Function,0.5,Yes
+Neuropsychological,Total Set-Loss errors,trail a errors,UNMATCHED,0.167,No
+Neuropsychological,Total repetition errors ,trail a errors,UNMATCHED,0.2,No
+Neuropsychological,Letter Fluency Total (Automatic Calculation),letter fluency fas administered,UNMATCHED,0.286,No
+Neuropsychological,Comments15,,UNMATCHED,0.0,No
+Neuropsychological,Was the Brixton test administered?,brixton test administered,Cognitive Function,0.6,Yes
+Neuropsychological,Details for missing data16,,UNMATCHED,0.0,No
+Neuropsychological,Brixton raw score,brixton raw score,Cognitive Function,1.0,Yes
+Neuropsychological,Comments17,,UNMATCHED,0.0,No
+Neuropsychological,Was the Semantic Fluency test administered?,semantic fluency administered,Cognitive Function,0.5,Yes
+Neuropsychological,Details for missing data18,,UNMATCHED,0.0,No
+Neuropsychological,Semantic Fluency Animals (Raw score),semantic fluency animals raw,Cognitive Function,0.8,Yes
+Neuropsychological,Semantic Fluency Actions (Raw score),semantic fluency actions raw,Cognitive Function,0.8,Yes
+Neuropsychological,Semantic Fluency Total (Raw score),semantic fluency animals raw,Cognitive Function,0.5,Yes
+Neuropsychological,Total Set-Loss errors19,digit span forward total correct,UNMATCHED,0.125,No
+Neuropsychological,Total Repetition errors,trail a errors,UNMATCHED,0.2,No
+Neuropsychological,Semantic Fluency Total (Automatic Calculation),semantic fluency administered,UNMATCHED,0.333,No
+Neuropsychological,Comments20,,UNMATCHED,0.0,No
+Neuropsychological,Was the Boston Naming test administered?,boston naming test administered,Cognitive Function,0.667,Yes
+Neuropsychological,Details for missing data21,,UNMATCHED,0.0,No
+Neuropsychological,BNT sans indice (Raw score),brixton raw score,UNMATCHED,0.333,No
+Neuropsychological,BNT sans indice + IS,bnt raw no cues,UNMATCHED,0.143,No
+Neuropsychological,BNT sans indice + IS + IP,bnt raw no cues,UNMATCHED,0.125,No
+Neuropsychological,Comments22,,UNMATCHED,0.0,No
+Neuropsychological,Was the Purdue pegboard administered?,administered by,UNMATCHED,0.167,No
+Neuropsychological,Details for missing data23,,UNMATCHED,0.0,No
+Neuropsychological,Main dominante (30 sec),trail a time sec,UNMATCHED,0.143,No
+Neuropsychological,Main dominante (1 min),hvltr trial 1 raw score,UNMATCHED,0.125,No
+Neuropsychological,Main non dominante (30 sec),trail a time sec,UNMATCHED,0.125,No
+Neuropsychological,Main non dominante (1 min),hvltr trial 1 raw score,UNMATCHED,0.111,No
+Neuropsychological,Deux mains (30 sec),trail a time sec,UNMATCHED,0.143,No
+Neuropsychological,Comments24,,UNMATCHED,0.0,No
+Neuropsychological,Comments25,,UNMATCHED,0.0,No
+Neuropsychological (CaPRI),Neuropsycholgical Test Date:,brixton test administered,UNMATCHED,0.2,No
+Neuropsychological (CaPRI),Age at Neuropsych:,age at neuropsych,Admin,1.0,Yes
+Neuropsychological (CaPRI),How is the assessment completed?     Comment l'évaluation est-il rempli?,method of assessment completion,UNMATCHED,0.125,No
+Neuropsychological (CaPRI),Was the CDT test administered?,cdt administered,UNMATCHED,0.4,No
+Neuropsychological (CaPRI),Command Clock raw (max 10),cdt command clock raw,Cognitive Function,0.5,Yes
+Neuropsychological (CaPRI),Command Clock z score,cdt command clock z score,Cognitive Function,0.8,Yes
+Neuropsychological (CaPRI),Copy Clock raw (max 10),cdt copy clock raw,Cognitive Function,0.5,Yes
+Neuropsychological (CaPRI),Copy Clock z score,cdt copy clock z score,Cognitive Function,0.8,Yes
+Neuropsychological (CaPRI),Was the Brixton test administered?,brixton test administered,Cognitive Function,0.6,Yes
+Neuropsychological (CaPRI),Brixton raw score,brixton raw score,Cognitive Function,1.0,Yes
+Neuropsychological (CaPRI),Brixton z score,brixton z score,Cognitive Function,1.0,Yes
+Neuropsychological (CaPRI),Was the Stroop Colour and Word test administered?,stroop administered,UNMATCHED,0.25,No
+Neuropsychological (CaPRI),Colour Words raw:,stroop colour words raw,Cognitive Function,0.75,Yes
+Neuropsychological (CaPRI),Colour words t score ,stroop colour words t score,Cognitive Function,0.8,Yes
+Neuropsychological (CaPRI),Colour Words z score,stroop colour words z score,Cognitive Function,0.8,Yes
+Neuropsychological (CaPRI),Was the Trails A B test administered?,trails a b administered,Cognitive Function,0.571,Yes
+Neuropsychological (CaPRI),Trail A raw score,trail a t score,Cognitive Function,0.6,Yes
+Neuropsychological (CaPRI),Trail A Errors raw score ,trail a errors,Cognitive Function,0.6,Yes
+Neuropsychological (CaPRI),Trail A t score,trail a t score,Cognitive Function,1.0,Yes
+Neuropsychological (CaPRI),Trail A z score,trail a z score,Cognitive Function,1.0,Yes
+Neuropsychological (CaPRI),Trail B raw score,trail b t score,Cognitive Function,0.6,Yes
+Neuropsychological (CaPRI),Trail B Errors raw score,trail b errors,Cognitive Function,0.6,Yes
+Neuropsychological (CaPRI),Trail B t score,trail b t score,Cognitive Function,1.0,Yes
+Neuropsychological (CaPRI),Trail B z score,trail b z score,Cognitive Function,1.0,Yes
+Neuropsychological (CaPRI),Was the WAIS IV Digit Span test administered?,wais iv digit span administered,Cognitive Function,0.625,Yes
+Neuropsychological (CaPRI),Digit Span Forward raw,digit span forward raw,Cognitive Function,1.0,Yes
+Neuropsychological (CaPRI),Digit Span Forward scaled scores,digit span forward scaled score,Cognitive Function,0.667,Yes
+Neuropsychological (CaPRI),Digit Span Forward z score,digit span forward z score,Cognitive Function,1.0,Yes
+Neuropsychological (CaPRI),Digit Span Backward raw,digit span backward raw,Cognitive Function,1.0,Yes
+Neuropsychological (CaPRI),Digit span Backward scaled score,digit span backward scaled score,Cognitive Function,1.0,Yes
+Neuropsychological (CaPRI),Digit Span Backward z score ,digit span backward z score,Cognitive Function,1.0,Yes
+Neuropsychological (CaPRI),Digit Span Sequencing raw,digit span sequencing raw,Cognitive Function,1.0,Yes
+Neuropsychological (CaPRI),Digit Span Sequencing scaled score ,digit span sequencing scaled score,Cognitive Function,1.0,Yes
+Neuropsychological (CaPRI),Digit Span Sequencing z score ,digit span sequencing z score,Cognitive Function,1.0,Yes
+Neuropsychological (CaPRI),Digit Span Total raw,digit span total raw,Cognitive Function,1.0,Yes
+Neuropsychological (CaPRI),Digit Span total scaled score ,digit span total scaled score,Cognitive Function,1.0,Yes
+Neuropsychological (CaPRI),Digit Span Total z score,digit span total z score,Cognitive Function,1.0,Yes
+Neuropsychological (CaPRI),Was the Letter Fluency test administered?,letter fluency fas administered,UNMATCHED,0.429,No
+Neuropsychological (CaPRI),FAS total raw,fas total raw,Cognitive Function,1.0,Yes
+Neuropsychological (CaPRI),FAS Repetition raw ,fas total raw,Cognitive Function,0.5,Yes
+Neuropsychological (CaPRI),FAS Rule Break raw,fas rule break errors,Cognitive Function,0.6,Yes
+Neuropsychological (CaPRI),FAS t score,fas t score,Cognitive Function,1.0,Yes
+Neuropsychological (CaPRI),FAS z score ,fas z score,Cognitive Function,1.0,Yes
+Neuropsychological (CaPRI),Was the Semantic Fluency test administered?,semantic fluency administered,Cognitive Function,0.5,Yes
+Neuropsychological (CaPRI),Animals total raw,animals total raw,Cognitive Function,1.0,Yes
+Neuropsychological (CaPRI),Animals Repetition raw,animals total raw,Cognitive Function,0.5,Yes
+Neuropsychological (CaPRI),Animals Rule Break raw,animals rule break errors,Cognitive Function,0.6,Yes
+Neuropsychological (CaPRI),Animals t score,animals t score,Cognitive Function,1.0,Yes
+Neuropsychological (CaPRI),Animals z score ,animals z score,Cognitive Function,1.0,Yes
+Neuropsychological (CaPRI),Actions total raw ,actions total raw,Cognitive Function,1.0,Yes
+Neuropsychological (CaPRI),Actions t score,actions t score,Cognitive Function,1.0,Yes
+Neuropsychological (CaPRI),Actions z score,actions z score,Cognitive Function,1.0,Yes
+Neuropsychological (CaPRI),Actions Rule Break raw,actions rule break errors,Cognitive Function,0.6,Yes
+Neuropsychological (CaPRI),Actions Repetition raw,actions repetition raw,Cognitive Function,1.0,Yes
+Neuropsychological (CaPRI),Actions Repetition t score ,actions repetition t score,Cognitive Function,1.0,Yes
+Neuropsychological (CaPRI),Actions Repetition z score,actions repetition z score,Cognitive Function,1.0,Yes
+Neuropsychological (CaPRI),Was the Boston Naming test administered?,boston naming test administered,Cognitive Function,0.667,Yes
+Neuropsychological (CaPRI),Total (SR+SC) raw,bnt total sr sc raw,Cognitive Function,0.8,Yes
+Neuropsychological (CaPRI),SR+SC+PC raw,bnt sr sc pc raw,Cognitive Function,0.8,Yes
+Neuropsychological (CaPRI),Semantic Cues,bnt semantic cues used,Cognitive Function,0.5,Yes
+Neuropsychological (CaPRI),Phonemic Cues,bnt phonemic cues used,Cognitive Function,0.5,Yes
+Neuropsychological (CaPRI),Total (SR+SC) t score,bnt total sr sc raw,UNMATCHED,0.429,No
+Neuropsychological (CaPRI),Total (SR+SC) z score,digit span total z score,UNMATCHED,0.429,No
+Neuropsychological (CaPRI),Was the Rey Complex Figure Test administered?,brixton test administered,UNMATCHED,0.25,No
+Neuropsychological (CaPRI),Copy raw,rcft copy raw,Cognitive Function,0.667,Yes
+Neuropsychological (CaPRI),Copy z score,rcft copy z score,Cognitive Function,0.75,Yes
+Neuropsychological (CaPRI),"Copy % range:If score = 1, select: > 16If score = 2, select: 11-16If score = 3, ",rcft copy z score,UNMATCHED,0.118,No
+Neuropsychological (CaPRI),Time raw,rcft time raw,Cognitive Function,0.667,Yes
+Neuropsychological (CaPRI),"Time % range:If score = 1, select: > 16If score = 2, select: 11-16If score = 3, ",rcft time percentile range,UNMATCHED,0.118,No
+Neuropsychological (CaPRI),Immediate Recall raw,rcft immediate recall raw,Cognitive Function,0.75,Yes
+Neuropsychological (CaPRI),Immediate Recall t score,rcft immediate recall t score,Cognitive Function,0.8,Yes
+Neuropsychological (CaPRI),Immediate Recall z score,rcft immediate recall z score,Cognitive Function,0.8,Yes
+Neuropsychological (CaPRI),Delayed Recall raw,rcft delayed recall raw,Cognitive Function,0.75,Yes
+Neuropsychological (CaPRI),Delayed Recall t score,rcft delayed recall t score,Cognitive Function,0.8,Yes
+Neuropsychological (CaPRI),Delayed Recall z score,rcft delayed recall z score,Cognitive Function,0.8,Yes
+Neuropsychological (CaPRI),Recog raw,brixton raw score,UNMATCHED,0.25,No
+Neuropsychological (CaPRI),Recog t score,fas t score,Cognitive Function,0.5,Yes
+Neuropsychological (CaPRI),Recog z score,brixton z score,Cognitive Function,0.5,Yes
+Neuropsychological (CaPRI),Was the Hopkins Verbal Learning Test Revised administered?,brixton test administered,UNMATCHED,0.222,No
+Neuropsychological (CaPRI),Trial 1 raw,hvltr trial 1 raw,Cognitive Function,0.75,Yes
+Neuropsychological (CaPRI),Trial 2 raw,hvltr trial 2 raw,Cognitive Function,0.75,Yes
+Neuropsychological (CaPRI),Trial 3 raw,hvltr trial 3 raw,Cognitive Function,0.75,Yes
+Neuropsychological (CaPRI),Total Recall raw,hvltr total recall raw,Cognitive Function,0.75,Yes
+Neuropsychological (CaPRI),Total Recall t score,hvltr total recall t score,Cognitive Function,0.8,Yes
+Neuropsychological (CaPRI),Total Recall z score,hvltr total recall z score,Cognitive Function,0.8,Yes
+Neuropsychological (CaPRI),Delayed Recall raw2,rcft delayed recall raw,UNMATCHED,0.4,No
+Neuropsychological (CaPRI),Delayed Recall t score3,rcft delayed recall t score,Cognitive Function,0.5,Yes
+Neuropsychological (CaPRI),Delayed Recall z score ,rcft delayed recall z score,Cognitive Function,0.8,Yes
+Neuropsychological (CaPRI),Retention (%),hvltr retention,Cognitive Function,0.5,Yes
+Neuropsychological (CaPRI),Retention t score ,hvltr retention t score,Cognitive Function,0.75,Yes
+Neuropsychological (CaPRI),Retention z score,hvltr retention z score,Cognitive Function,0.75,Yes
+Neuropsychological (CaPRI),Recog. Disc. Index Raw,hvltr recognition discrimination index raw,UNMATCHED,0.286,No
+Neuropsychological (CaPRI),Recog. Disc. Index T score,fas t score,UNMATCHED,0.333,No
+Neuropsychological (CaPRI),Recog. Disc. Index z sore ,brixton z score,UNMATCHED,0.143,No
+Neuropsychological (CaPRI),Memory z score,memory domain z score,Composite Scores,0.75,Yes
+Neuropsychological (CaPRI),Visio-Perceptual Function z score,visio perceptual function z score,Composite Scores,1.0,Yes
+Neuropsychological (CaPRI),Attention z score,attention domain z score,Composite Scores,0.75,Yes
+Neuropsychological (CaPRI),Executive Function z score,executive function domain z score,Composite Scores,0.8,Yes
+Neuropsychological (CaPRI),Language z score,language domain z score,Composite Scores,0.75,Yes
+Neuropsychological (CaPRI),Global Cognition z score,global cognition z score,Composite Scores,1.0,Yes
+Neuropsychological (CaPRI),Cognitive Status,cognitive status classification,Composite Scores,0.667,Yes
+Neuropsychological V02,Neuropsycholgical Test Date:,brixton test administered,UNMATCHED,0.2,No
+Neuropsychological V02,Administered by / Administré par : ,purdue pegboard administered,UNMATCHED,0.167,No
+Neuropsychological V02,Age at evaluation / Âge au moment de l'évaluation:,age at evaluation,UNMATCHED,0.333,No
+Neuropsychological V02,Native language / Langue maternelle,native language,Admin,0.5,Yes
+Neuropsychological V02,Years of education /  nombre d'années d'éducation (calculated by neuropsy):  ,years of education neuropsychologist calculated,UNMATCHED,0.364,No
+Neuropsychological V02,Other / Autre,other language,UNMATCHED,0.333,No
+Neuropsychological V02,Language of evaluation / Langue d'évaluation:  ,language of evaluation,Admin,0.5,Yes
+Neuropsychological V02,Other / Autre2,other language,UNMATCHED,0.333,No
+Neuropsychological V02,Normal cognition (superior or equal to 26 on MoCA),normal cognition flag moca 26,UNMATCHED,0.4,No
+Neuropsychological V02,Self-reported medical history  Histoire médicale auto-rapportée,self reported medical history,Cognitive Function,0.5,Yes
+Neuropsychological V02,"Subjective Complaint: more difficulties with memory, judgement, concentration, p",subjective cognitive complaint,UNMATCHED,0.154,No
+Neuropsychological V02,Functional Impact: the cognitive complaints affect daily activities    Impact fo,cognitive complaints affect daily activities,Cognitive Function,0.625,Yes
+Neuropsychological V02,Was the Hopkins Verbal Learning Test Revised administered?,brixton test administered,UNMATCHED,0.222,No
+Neuropsychological V02,Details for missing data,missing data details hvltr,Cognitive Function,0.6,Yes
+Neuropsychological V02,Trial 1 raw,hvltr trial 1 raw score,Cognitive Function,0.6,Yes
+Neuropsychological V02,Trial 2 raw,hvltr trial 2 raw score,Cognitive Function,0.6,Yes
+Neuropsychological V02,Trial 3 raw,hvltr trial 3 raw score,Cognitive Function,0.6,Yes
+Neuropsychological V02,"Trial total 1,2,3 (Raw score)",hvltr trial 1 raw score,Cognitive Function,0.5,Yes
+Neuropsychological V02,"Intrusions total 1,2,3 (Raw score)",hvltr trial 1 raw score,UNMATCHED,0.333,No
+Neuropsychological V02,"Repetitions total 1,2,3 (Raw score)",hvltr trial 1 raw score,UNMATCHED,0.333,No
+Neuropsychological V02,Trial 4 delayed (Raw score),hvltr trial 1 raw score,UNMATCHED,0.429,No
+Neuropsychological V02,Intrusion 4,hvltr intrusion errors t4,UNMATCHED,0.2,No
+Neuropsychological V02,Repetition 4,hvltr repetition errors t4,UNMATCHED,0.2,No
+Neuropsychological V02,Comments,hvltr comments,Cognitive Function,0.5,Yes
+Neuropsychological V02,Was the Rey Complex Figure Test administered?,brixton test administered,UNMATCHED,0.25,No
+Neuropsychological V02,Details for missing data3,missing data details hvltr,UNMATCHED,0.333,No
+Neuropsychological V02,Copy raw,rcft copy raw score,Cognitive Function,0.5,Yes
+Neuropsychological V02,Copy time (sec),rcft copy time sec,Cognitive Function,0.75,Yes
+Neuropsychological V02,Copy strategy / Stratégie de copie,rcft copy strategy,UNMATCHED,0.333,No
+Neuropsychological V02,Immediate recall raw,rcft immediate recall raw,Cognitive Function,0.75,Yes
+Neuropsychological V02,Immediate recall time (sec),rcft immediate recall time sec,Cognitive Function,0.8,Yes
+Neuropsychological V02,Delayed recall raw,hvltr delayed recall raw,Cognitive Function,0.75,Yes
+Neuropsychological V02,Delayed recall time (sec),rcft delayed recall time sec,Cognitive Function,0.8,Yes
+Neuropsychological V02,Comments4,,UNMATCHED,0.0,No
+Neuropsychological V02,Was the WAIS IV Digit Span test administered?,wais iv digit span administered,Cognitive Function,0.625,Yes
+Neuropsychological V02,Details for missing data5,missing data details hvltr,UNMATCHED,0.333,No
+Neuropsychological V02,Digit Span Forward - total correct (Raw score) ,digit span forward total correct,Cognitive Function,0.714,Yes
+Neuropsychological V02,Digit span forward - longest correct serie (Raw score),digit span forward longest correct series,Cognitive Function,0.556,Yes
+Neuropsychological V02,Digit Span Backward - total correct (Raw score),digit span backward total correct,Cognitive Function,0.714,Yes
+Neuropsychological V02,Digit span backward - longest correct serie (Raw score)  ,digit span backward longest correct series,Cognitive Function,0.556,Yes
+Neuropsychological V02,Comments6,,UNMATCHED,0.0,No
+Neuropsychological V02,Was the Trails A B test administered?,trails a b administered,Cognitive Function,0.571,Yes
+Neuropsychological V02,Details for missing data7,missing data details hvltr,UNMATCHED,0.333,No
+Neuropsychological V02,Trail A raw score (time in sec.),trail a time sec,Cognitive Function,0.571,Yes
+Neuropsychological V02,Trail A Errors raw score ,trail a errors,Cognitive Function,0.6,Yes
+Neuropsychological V02,Trail B raw score (time in sec.),trail b time sec,Cognitive Function,0.571,Yes
+Neuropsychological V02,Trail B Errors raw score,trail b errors,Cognitive Function,0.6,Yes
+Neuropsychological V02,Comments8,,UNMATCHED,0.0,No
+Neuropsychological V02,Was the CDT test administered?,brixton test administered,UNMATCHED,0.333,No
+Neuropsychological V02,Details for missing data9,missing data details hvltr,UNMATCHED,0.333,No
+Neuropsychological V02,Command Clock raw (max 10),cdt command clock raw max 10,Cognitive Function,0.833,Yes
+Neuropsychological V02,Copy Clock raw (max 10),cdt copy clock raw max 10,Cognitive Function,0.833,Yes
+Neuropsychological V02,Comments10,,UNMATCHED,0.0,No
+Neuropsychological V02,Was the Stroop Colour and Word test (Golden) administered?,stroop golden administered,UNMATCHED,0.333,No
+Neuropsychological V02,Details for missing data11,missing data details hvltr,UNMATCHED,0.333,No
+Neuropsychological V02,"STROOP GOLDEN : WORDS, number of responses",stroop golden words responses,Cognitive Function,0.667,Yes
+Neuropsychological V02,"STROOP GOLDEN : words, self-corrected errors (raw score)",stroop golden words self corrected errors,Cognitive Function,0.75,Yes
+Neuropsychological V02,"STROOP GOLDEN, words, uncorrected errors (raw score)",stroop golden words uncorrected errors,Cognitive Function,0.714,Yes
+Neuropsychological V02,STROOP GOLDEN : COLORS Number of responses,stroop golden colors responses,Cognitive Function,0.667,Yes
+Neuropsychological V02,"STROOP GOLDEN : colors, self-corrected errors (raw scores)",stroop golden colors self corrected errors,Cognitive Function,0.75,Yes
+Neuropsychological V02,"STROOP GOLDEN: colors, uncorrected errors",stroop golden colors uncorrected errors,Cognitive Function,1.0,Yes
+Neuropsychological V02,Stroop GOLDEN: INK Number of Responses ,stroop golden ink responses,Cognitive Function,0.667,Yes
+Neuropsychological V02,"Stroop GOLDEN : ink, self-corrected errors (raw score)",stroop golden ink self corrected errors,Cognitive Function,0.75,Yes
+Neuropsychological V02,"Stroop GOLDEN, ink, uncorrected errors (raw score)",stroop golden ink uncorrected errors,Cognitive Function,0.714,Yes
+Neuropsychological V02,Was the Stroop Colour and Word (D-KEFS) test administered?,stroop d kefs administered,UNMATCHED,0.4,No
+Neuropsychological V02,Details for missing data12,missing data details hvltr,UNMATCHED,0.333,No
+Neuropsychological V02,"Stroop - D-Kefs, Cond. 1 - COLORS : Time (sec) (Raw score)",stroop d kefs cond 1 colors time sec,Cognitive Function,0.8,Yes
+Neuropsychological V02,Stroop - D-Kefs - cond. 1: self-corrected errors (Raw score),stroop d kefs cond 1 self corrected errors,Cognitive Function,0.8,Yes
+Neuropsychological V02,Stroop - D-Kefs - Cond.1: Uncorrected errors (Raw score),stroop d kefs cond 1 uncorrected errors,Cognitive Function,0.778,Yes
+Neuropsychological V02,Stroop - D-Kefs - Cond.1: Total errors (Raw score),stroop d kefs cond 1 total errors,Cognitive Function,0.778,Yes
+Neuropsychological V02,Stroop - D-Kefs - Cond.1: Total errors (Automatic Calculation),stroop d kefs cond 1 total errors,Cognitive Function,0.778,Yes
+Neuropsychological V02,Stroop - D-Kefs - Cond.2 WORDS: Time (sec) (Raw score),stroop d kefs cond 2 words time sec,Cognitive Function,0.8,Yes
+Neuropsychological V02,Stroop - D-Kefs -  Cond.2: Self-corrected errors (Raw score),stroop d kefs cond 2 self corrected errors,Cognitive Function,0.8,Yes
+Neuropsychological V02,Stroop - D-Kefs - Cond.2: uncorrected errors (Raw score),stroop d kefs cond 2 uncorrected errors,Cognitive Function,0.778,Yes
+Neuropsychological V02,Stroop - D-Kefs - Cond.2: total errors (Raw score),stroop d kefs cond 2 total errors,Cognitive Function,0.778,Yes
+Neuropsychological V02,Stroop - D-Kefs - Cond.2: total errors (Automatic Calculation),stroop d kefs cond 2 total errors,Cognitive Function,0.778,Yes
+Neuropsychological V02,Stroop - D-Kefs - Cond.3 - INK: Time (sec) (Raw score),stroop d kefs cond 3 ink time sec,Cognitive Function,0.8,Yes
+Neuropsychological V02,Stroop - D-Kefs - Cond.3: self-corrected errors (Raw score),stroop d kefs cond 3 self corrected errors,Cognitive Function,0.8,Yes
+Neuropsychological V02,Stroop - D-Kefs - Cond.3: Uncorrected errors (Raw score),stroop d kefs cond 3 uncorrected errors,Cognitive Function,0.778,Yes
+Neuropsychological V02,Stroop - D-Kefs - Cond.3: Total errors (Raw score),stroop d kefs cond 3 total errors,Cognitive Function,0.778,Yes
+Neuropsychological V02,Stroop - D-Kefs - Cond.3: Total errors (Automatic calculation),stroop d kefs cond 3 total errors,Cognitive Function,0.778,Yes
+Neuropsychological V02,Stroop - D-Kefs - Cond. 3 - 1 (time),stroop d kefs cond 3 1 time,Cognitive Function,1.0,Yes
+Neuropsychological V02,Stroop - D-Kefs - Cond. 3 - 1 (time) (Automatic Calculation),stroop d kefs cond 3 1 time,Cognitive Function,0.778,Yes
+Neuropsychological V02,Comments13,,UNMATCHED,0.0,No
+Neuropsychological V02,Was the Letter Fluency test administered?,letter fluency fas administered,UNMATCHED,0.429,No
+Neuropsychological V02,Details for missing data14,missing data details hvltr,UNMATCHED,0.333,No
+Neuropsychological V02,Letter Fluency F (Raw score),letter fluency f raw,Cognitive Function,0.8,Yes
+Neuropsychological V02,Letter Fluency A (Raw score),letter fluency a raw,Cognitive Function,0.8,Yes
+Neuropsychological V02,Letter Fluency S (Raw score),letter fluency s raw,Cognitive Function,0.8,Yes
+Neuropsychological V02,Letter Fluency Total (Raw score),letter fluency total raw,Cognitive Function,0.8,Yes
+Neuropsychological V02,Total Set-Loss errors,fas set loss errors total,Cognitive Function,0.8,Yes
+Neuropsychological V02,Total repetition errors ,fas repetition errors total,Cognitive Function,0.75,Yes
+Neuropsychological V02,Letter Fluency Total (Automatic Calculation),letter fluency total raw,Cognitive Function,0.5,Yes
+Neuropsychological V02,Comments15,,UNMATCHED,0.0,No
+Neuropsychological V02,Was the Brixton test administered?,brixton test administered,Cognitive Function,0.6,Yes
+Neuropsychological V02,Details for missing data16,missing data details hvltr,UNMATCHED,0.333,No
+Neuropsychological V02,Brixton raw score,brixton raw score,Cognitive Function,1.0,Yes
+Neuropsychological V02,Comments17,,UNMATCHED,0.0,No
+Neuropsychological V02,Was the Semantic Fluency test administered?,semantic fluency administered,Cognitive Function,0.5,Yes
+Neuropsychological V02,Details for missing data18,missing data details hvltr,UNMATCHED,0.333,No
+Neuropsychological V02,Semantic Fluency Animals (Raw score),semantic fluency animals raw,Cognitive Function,0.8,Yes
+Neuropsychological V02,Semantic Fluency Actions (Raw score),semantic fluency actions raw,Cognitive Function,0.8,Yes
+Neuropsychological V02,Semantic Fluency Total (Raw score),semantic fluency total raw,Cognitive Function,0.8,Yes
+Neuropsychological V02,Total Set-Loss errors19,fas set loss errors total,Cognitive Function,0.5,Yes
+Neuropsychological V02,Total Repetition errors,fas repetition errors total,Cognitive Function,0.75,Yes
+Neuropsychological V02,Semantic Fluency Total (Automatic Calculation),semantic fluency total raw,Cognitive Function,0.5,Yes
+Neuropsychological V02,Comments20,,UNMATCHED,0.0,No
+Neuropsychological V02,Was the Boston Naming test administered?,boston naming test administered,Cognitive Function,0.667,Yes
+Neuropsychological V02,Details for missing data21,missing data details hvltr,UNMATCHED,0.333,No
+Neuropsychological V02,BNT sans indice (Raw score),brixton raw score,UNMATCHED,0.333,No
+Neuropsychological V02,BNT sans indice + IS,bnt comments,UNMATCHED,0.2,No
+Neuropsychological V02,BNT sans indice + IS + IP,bnt comments,UNMATCHED,0.167,No
+Neuropsychological V02,Comments22,,UNMATCHED,0.0,No
+Neuropsychological V02,Was the Purdue pegboard administered?,purdue pegboard administered,Motor,0.6,Yes
+Neuropsychological V02,Details for missing data23,missing data details hvltr,UNMATCHED,0.333,No
+Neuropsychological V02,Main dominante (30 sec),dominant hand 30 sec,UNMATCHED,0.333,No
+Neuropsychological V02,Main dominante (1 min),dominant hand 1 min,UNMATCHED,0.333,No
+Neuropsychological V02,Main non dominante (30 sec),non dominant hand 30 sec,UNMATCHED,0.429,No
+Neuropsychological V02,Main non dominante (1 min),non dominant hand 1 min,UNMATCHED,0.429,No
+Neuropsychological V02,Deux mains (30 sec),dominant hand 30 sec,UNMATCHED,0.333,No
+Neuropsychological V02,Comments24,,UNMATCHED,0.0,No
+Neuropsychological V02,Comments25,,UNMATCHED,0.0,No
+PDQ 39,Questionnaire completed:     Questionnaire rempli:,how questionnaire was completed,Admin,0.5,Yes
+PDQ 39,How is the questionnaire completed?     Comment le questionnaire est-il rempli? ,how questionnaire was completed,Admin,0.5,Yes
+PDQ 39,1. Had difficulty doing the leisure activities which you would like to do?/Avez-,q1 difficulty with leisure activities,UNMATCHED,0.115,No
+PDQ 39,"2. Had difficulty looking after your home, e.g. DIY, housework, cooking?/Avez-­v",q2 difficulty looking after home,UNMATCHED,0.143,No
+PDQ 39,3. Had difficulty carrying bags of shopping?/Avez-­vous eu des difficultés à por,q3 difficulty carrying shopping bags,UNMATCHED,0.222,No
+PDQ 39,4. Had problems walking half a mile?/Avez­�?vous eu des problèmes  pour faire 1 ,q4 problems walking half a mile,UNMATCHED,0.263,No
+PDQ 39,5. Had problems walking 100 yards?/Avez-­vous eu des problèmes pour faire 100 mè,q5 problems walking 100 yards,UNMATCHED,0.235,No
+PDQ 39,6. Had problems getting around the house as easily as you would like?/Avez-­vous,q6 problems getting around the house,UNMATCHED,0.185,No
+PDQ 39,7 Had difficulty getting around in public?/Avez-­vous eu des difficultés à vous ,q7 difficulty getting around in public,UNMATCHED,0.263,No
+PDQ 39,8. Needed someone else to accompany you when you went out?/Avez-­vous eu besoin ,q8 needed someone to accompany when going out,UNMATCHED,0.25,No
+PDQ 39,9. Felt frightened or worried about falling over in  public?/Avez-­vous eu peur ,q9 frightened about falling in public,UNMATCHED,0.192,No
+PDQ 39,10. Been confined to the house more than you  would like?/Avez-­vous été confine,q10 confined to house more than would like,UNMATCHED,0.292,No
+PDQ 39,11. Had difficulty washing  yourself?/Avez-­vous eu des difficultés   pour vous ,q11 difficulty washing self,UNMATCHED,0.167,No
+PDQ 39,12. Had difficulty dressing  yourself?/Avez­�?vous eu des difficultés pour vous ,q12 difficulty dressing self,UNMATCHED,0.143,No
+PDQ 39,13. Had problems doing up your shoe laces?/Avez-­�?vous eu des problèmes pour  b,q14 problems writing clearly,UNMATCHED,0.043,No
+PDQ 39,14. Had problems writing clearly?/Avez­�?vous eu des problèmes pour écrire lisib,q14 problems writing clearly,UNMATCHED,0.214,No
+PDQ 39,15. Had difficulty cutting up your food?/Avez-­vous eu des difficultés pour coup,q15 difficulty cutting food,UNMATCHED,0.176,No
+PDQ 39,16. Had difficulty holding a drink without spilling it?/Avez-vous eu des difficu,q16 difficulty holding drink without spilling,UNMATCHED,0.227,No
+PDQ 39,17. Felt depressed?/Vous êtes-­�?vous senti(e) déprimé(e)?,q17 felt depressed,UNMATCHED,0.222,No
+PDQ 39,18. Felt isolated and lonely?/Vous êtes�?vous senti(e) isolé(e) et seul(e)?,q18 felt isolated and lonely,UNMATCHED,0.308,No
+PDQ 39,19. Felt weepy or tearful?/Vous êtes-­vous senti(e) au  bord des larmes ou avez-,q19 felt weepy or tearful,UNMATCHED,0.235,No
+PDQ 39,20. Felt angry or bitter?/Avez-­vous ressenti de la colère ou de l'amertume ?,q20 felt angry or bitter,UNMATCHED,0.267,No
+PDQ 39,21. Felt anxious?/Vous êtes-­vous senti(e)  anxieux(se) ?  ,q21 felt anxious,UNMATCHED,0.2,No
+PDQ 39,22. Felt worried about your future?/Vous êtes-­�?vous senti(e) inquiet(e) pour v,q22 worried about future,UNMATCHED,0.2,No
+PDQ 39,23. Felt you had to conceal your Parkinson's from people?/Avez-­vous ressenti le,q23 felt need to conceal parkinson s from others,UNMATCHED,0.24,No
+PDQ 39,24. Avoided situations which involve eating or drinking in public?/Avez-­vous év,q24 avoided eating drinking in public,UNMATCHED,0.238,No
+PDQ 39,25. Felt embarrassed in public due to having Parkinson's disease?/Vous êtes-­vou,q25 felt embarrassed in public due to pd,UNMATCHED,0.25,No
+PDQ 39,26. Felt worried by other people's reaction to you?/Vous êtes-­�?vous senti(e) i,q36 felt ignored by people,UNMATCHED,0.13,No
+PDQ 39,27. Had problems with your close personal relationships?/Avez-­vous eu des probl,q27 problems with close personal relationships,UNMATCHED,0.263,No
+PDQ 39,28. Lacked support in the ways you need from your spouse or partner?/Avez-­vous ,q28 lacked support from spouse partner,UNMATCHED,0.119,No
+PDQ 39,29. Lacked support in the ways you need from your family or close friends?/Avez-,q29 lacked support from family close friends,UNMATCHED,0.188,No
+PDQ 39,30. Unexpectedly fallen asleep during the day?/Vous êtes-­�?vous endormi(e) dans,q30 unexpectedly fallen asleep during the day,UNMATCHED,0.333,No
+PDQ 39,"31. Had problems with your concentration, e.g. when reading or watching TV?/Avez",q31 problems with concentration,UNMATCHED,0.107,No
+PDQ 39,32. Felt your memory was bad?/Avez�?vous senti que votre mémoire était mauvaise?,q32 felt memory was bad,UNMATCHED,0.267,No
+PDQ 39,33.  Had distressing dreams or hallucinations?/Avez­�?vous fait des mauvais rêve,q33 distressing dreams or hallucinations,UNMATCHED,0.267,No
+PDQ 39,34 Had difficulty with your speech?/Avez-­vous eu des difficultés pour parler?  ,q34 difficulty with speech,UNMATCHED,0.214,No
+PDQ 39,35. Felt unable to communicate with people properly?/Vous êtes-­vous senti(e) in,q35 unable to communicate with people properly,UNMATCHED,0.3,No
+PDQ 39,36. Felt ignored by people?/Vous êtes­�?vous senti(e) ignoré(e) par les autres? ,q36 felt ignored by people,UNMATCHED,0.286,No
+PDQ 39,37. Had painful muscle cramps or spasms?/Avez vous eu des crampes ou des spasmes,q37 painful muscle cramps or spasms,UNMATCHED,0.294,No
+PDQ 39,38. Had aches and pains in your joints or body?/Avez-­vous eu mal ou avez-vous e,q38 aches and pains in joints or body,UNMATCHED,0.304,No
+PDQ 39,39. Felt unpleasantly hot or cold?/Avez-­vous eu la sensation désagréable de cha,q39 felt unpleasantly hot or cold,UNMATCHED,0.294,No
+PDQ 39,PDQ-39 Mobility (Raw Score),pdq 39 mobility raw,Composite Scores,0.8,Yes
+PDQ 39,PDQ-39 Mobility (Scale Score),pdq 39 mobility scale,Composite Scores,0.8,Yes
+PDQ 39,PDQ-39 Activities of Daily Living  (Raw Score),pdq 39 total raw score,UNMATCHED,0.444,No
+PDQ 39,PDQ-39 Activities of Daily Living (Scale Score),pdq 39 mobility scale,UNMATCHED,0.333,No
+PDQ 39,PDQ-39 Emotional Well Being (Raw Score),pdq 39 emotional well being raw,Composite Scores,0.857,Yes
+PDQ 39,PDQ-39 Emotional Well Being (Scale Score),pdq 39 emotional well being scale,Composite Scores,0.857,Yes
+PDQ 39,PDQ-39 Stigma (Raw Score),pdq 39 stigma raw,Composite Scores,0.8,Yes
+PDQ 39,PDQ-39 Stigma (Scale Score),pdq 39 stigma scale,Composite Scores,0.8,Yes
+PDQ 39,PDQ-39 Social Support (Raw Score),pdq 39 social support raw,Composite Scores,0.833,Yes
+PDQ 39,PDQ-39 Social Support (Scale Score),pdq 39 social support scale,Composite Scores,0.833,Yes
+PDQ 39,PDQ-39 Cognition (Raw Score),pdq 39 cognition raw,Composite Scores,0.8,Yes
+PDQ 39,PDQ-39 Cognition (Scale Score),pdq 39 cognition scale,Composite Scores,0.8,Yes
+PDQ 39,PDQ-39 Communication (Raw Score),pdq 39 communication raw,Composite Scores,0.8,Yes
+PDQ 39,PDQ-39 Communication (Scale Score),pdq 39 communication scale,Composite Scores,0.8,Yes
+PDQ 39,PDQ-39 Bodily Discomfort (Raw Score),pdq 39 bodily discomfort raw,Composite Scores,0.833,Yes
+PDQ 39,PDQ-39 Bodily Discomfort (Scale Score),pdq 39 bodily discomfort scale,Composite Scores,0.833,Yes
+PDQ 39,PDQ-39 Total Raw Score ,pdq 39 total raw score,Composite Scores,1.0,Yes
+PDQ 39,PDQ-39 Summary Index,pdq 39 pdq 39 summary index pdi,Composite Scores,0.8,Yes
+PDQ 8,Questionnaire completed:     Questionnaire rempli:,how questionnaire was completed,Admin,0.5,Yes
+PDQ 8,How is the questionnaire completed?     Comment le questionnaire est-il rempli?,how questionnaire was completed,Admin,0.5,Yes
+PDQ 8,1. Had difficulty getting around in public?,1 difficulty getting around in public,Motor,0.857,Yes
+PDQ 8,2. Had difficulty dressing yourself?,2 difficulty dressing self,Activities of Daily Living,0.5,Yes
+PDQ 8,3. Felt depressed?,3 felt depressed,Mood / Psychiatric,1.0,Yes
+PDQ 8,4. Had problems with your close personal relationships?,4 problems with close personal relationships,Mood / Psychiatric,0.75,Yes
+PDQ 8,"5. Had problems with your concentration, e.g. when reading or watching TV?",5 problems with concentration,UNMATCHED,0.308,No
+PDQ 8,6. Felt unable to communicate with people properly?,6 unable to communicate properly,Mood / Psychiatric,0.625,Yes
+PDQ 8,7. Had painful muscle cramps or spasms?,7 painful muscle cramps or spasms,Non-Motor,0.857,Yes
+PDQ 8,8. Felt embarrassed in public due to having Parkinson's disease?,8 felt embarrassed in public due to pd,Mood / Psychiatric,0.583,Yes
+PDQ 8,PDQ-8 Raw Score,pdq 8 raw score,Composite Scores,1.0,Yes
+PDQ 8,PDQ-8 Summary Index,pdq 8 summary index,Composite Scores,1.0,Yes
+Parkinson Severity Scale,Questionnaire completed:     Questionnaire rempli:,how questionnaire was completed,Admin,0.5,Yes
+Parkinson Severity Scale,How is the questionnaire completed?     Comment le questionnaire est-il rempli?,how questionnaire was completed,Admin,0.5,Yes
+Parkinson Severity Scale,A.1. Feeling anxious or nervous,a1 feeling anxious or nervous,Mood / Psychiatric,0.571,Yes
+Parkinson Severity Scale,A.2. Feeling Tense or stressed,a2 feeling tense or stressed,Mood / Psychiatric,0.571,Yes
+Parkinson Severity Scale,A.3. Being unable to relax ,a3 unable to relax,UNMATCHED,0.429,No
+Parkinson Severity Scale,A.4. Excessive worrying about everyday matters,a4 excessive worrying about everyday matters,Mood / Psychiatric,0.625,Yes
+Parkinson Severity Scale,"A.5. Fear of something bad, or even the worst, happening",a5 fear of something bad happening,UNMATCHED,0.417,No
+Parkinson Severity Scale,B.1. Panic or intense fear,b1 panic or intense fear,Mood / Psychiatric,0.571,Yes
+Parkinson Severity Scale,B.2. Shortness of breath,b2 shortness of breath episodic,UNMATCHED,0.429,No
+Parkinson Severity Scale,B.3. Heart palpitations or heart beating fast (not related to physical effort or,b3 heart palpitations not exertion related,UNMATCHED,0.267,No
+Parkinson Severity Scale,B.4. Fear of losing control,b4 fear of losing control,Mood / Psychiatric,0.571,Yes
+Parkinson Severity Scale,"C.1. Social situations (where one may be observed, or evaluated by others, such ",c1 fear avoidance of social situations,UNMATCHED,0.077,No
+Parkinson Severity Scale,C.2. Public Setting (situations from which it may be difficult or embarrassing t,a3 unable to relax,UNMATCHED,0.04,No
+Parkinson Severity Scale,"C.3. Specific objects or situations (such as flying, heights, spiders or other a",c3 fear avoidance of specific objects situations,UNMATCHED,0.158,No
+Parkinson Severity Scale,PAS Score,pas total score,Composite Scores,0.667,Yes
+SCOPA,Questionnaire completed:     Questionnaire rempli:,how questionnaire was completed,Admin,0.5,Yes
+SCOPA,How is the questionnaire completed?     Comment le questionnaire est-il rempli?,how questionnaire was completed,Admin,0.5,Yes
+SCOPA,"1. In the past month, have you had difficulty swallowing or have you choked?",1 difficulty swallowing or choking,UNMATCHED,0.308,No
+SCOPA,"2. In the past month, has saliva dribbled out of your mouth?",2 saliva dribbling from mouth,UNMATCHED,0.214,No
+SCOPA,"3. In the past month, has food ever become stuck in your throath?",3 food stuck in throat,UNMATCHED,0.308,No
+SCOPA,"4. In the past month, did you ever have the feeling during a meal that you were ",4 feeling very full quickly during meals,UNMATCHED,0.316,No
+SCOPA,"5. Constipation is a blockage of the bowel, a condition in which someone has a b",5 constipation bowel movement 2 week,UNMATCHED,0.192,No
+SCOPA,"6. In the past month, did you have to strain hard to pass stools?",6 straining hard to pass stools,UNMATCHED,0.357,No
+SCOPA,"7. In the past month, have you had involuntary loss of stools?",7 involuntary loss of stools incontinence,UNMATCHED,0.385,No
+SCOPA,Questions 8 to 13 deal with problems with passing urine. If you use a catheter y,catheter use note q8 13,UNMATCHED,0.115,No
+SCOPA,"8. In the past month, have you had difficulty retaining urine?",8 difficulty retaining urine,UNMATCHED,0.364,No
+SCOPA,"9. In the past month, have you had involuntary loss of urine?",9 involuntary loss of urine incontinence,UNMATCHED,0.385,No
+SCOPA,"10. In the past month, have you had the feeling that after passing urine your bl",10 bladder not fully empty after urination,UNMATCHED,0.238,No
+SCOPA,"11. In the past month, has the stream of urine been weak?",11 weak urine stream,UNMATCHED,0.364,No
+SCOPA,"12. In the past month, have you had to pass urine again within 2 hours of the pr",12 urinating again within 2 hours of previous,UNMATCHED,0.368,No
+SCOPA,"13. In the past month, have you had to pass urine at night?",13 urinating at night nocturia,UNMATCHED,0.2,No
+SCOPA,"14. In the past month, when standing up have you had the feeling of either becom",14 lightheaded unable to stand after rising,UNMATCHED,0.1,No
+SCOPA,"15. In the past month, did you become light-headed after standing for some time?",15 lightheaded after prolonged standing,UNMATCHED,0.176,No
+SCOPA,16. Have you fainted in the past 6 months?,16 fainted in past 6 months,Autonomic Functioning,0.667,Yes
+SCOPA,"17. In the past month, have you ever perspired excessively during the day?",17 excessive sweating during the day,UNMATCHED,0.286,No
+SCOPA,"18. In the past month, have you ever perspired excessively during the night?",18 excessive sweating at night,UNMATCHED,0.133,No
+SCOPA,"19. In the past month, have your eyes ever been over-sensitive to bright light?",19 eyes oversensitive to bright light pupillomotor,UNMATCHED,0.294,No
+SCOPA,"20. In the past month, how often have you had trouble tolerating cold?",20 trouble tolerating cold,UNMATCHED,0.308,No
+SCOPA,"21. In the past month, how often have you had trouble tolerating heat?",21 trouble tolerating heat,UNMATCHED,0.308,No
+SCOPA,What is the gender of the participant?,gender of participant for routing q22 24,UNMATCHED,0.3,No
+SCOPA,"22. In the past month, have you been impotent (unable to have or maintain an ere",22 impotent unable to maintain erection male,UNMATCHED,0.375,No
+SCOPA,"23. In the past month, how often have you been unable to ejaculate?",23 unable to ejaculate male,UNMATCHED,0.286,No
+SCOPA,"23a. In the past month, have you taken medication for an erection disorder? ",q23a medication taken for erection disorder,UNMATCHED,0.357,No
+SCOPA,Which medication have you taken for an erection disorder?,q23a medication taken for erection disorder,Autonomic Functioning,0.5,Yes
+SCOPA,"24. In the past month, was your vagina too dry during sexual activity?",24 vagina too dry during sexual activity female,Autonomic Functioning,0.5,Yes
+SCOPA,"25. In the past month, have you had difficulty reaching an orgasm?",25 difficulty reaching orgasm,UNMATCHED,0.333,No
+SCOPA,a. constipation?,q26a medication for constipation,UNMATCHED,0.2,No
+SCOPA,What medication have used?,q26 medication section explanation,UNMATCHED,0.143,No
+SCOPA,d. urinary problems?,q26d medication for urinary problems,UNMATCHED,0.333,No
+SCOPA,What medication have used?2,q26 medication section explanation,UNMATCHED,0.125,No
+SCOPA,e. blood pressure?,q26e medication for blood pressure,UNMATCHED,0.333,No
+SCOPA,What medication have used?3,q26 medication section explanation,UNMATCHED,0.125,No
+SCOPA,f. other symptoms (not symptoms related to Parkinson's disease),name of other medication,UNMATCHED,0.083,No
+SCOPA,What medication have used?4,q26 medication section explanation,UNMATCHED,0.125,No
+SCOPA,Gastrointestinal dysfunction ,scopa aut gastrointestinal subscale score,UNMATCHED,0.167,No
+SCOPA,Urinary dysfunction ,scopa aut urinary dysfunction subscale score,UNMATCHED,0.333,No
+SCOPA,Cardiovascular dysfunction,scopa aut cardiovascular dysfunction subscale score,UNMATCHED,0.333,No
+SCOPA,Thermoregulatory dysfunction ,scopa aut thermoregulatory dysfunction subscale score,UNMATCHED,0.333,No
+SCOPA,Pupillomotor dysfunction ,scopa aut pupillomotor dysfunction subscale score,UNMATCHED,0.333,No
+SCOPA,Sexual dysfunction men ,scopa aut sexual dysfunction men subscale score,UNMATCHED,0.429,No
+SCOPA,Sexual dysfunction women,scopa aut sexual dysfunction women subscale score,UNMATCHED,0.429,No
+SCOPA,Total Score,scopa aut total score,Composite Scores,0.5,Yes
+Schwab & England,Questionnaire completed:     Questionnaire rempli:,how questionnaire was completed,Admin,0.5,Yes
+Schwab & England,How is the questionnaire completed?     Comment le questionnaire est-il rempli?,how questionnaire was completed,Admin,0.5,Yes
+Schwab & England,Please carefully read each item in the list below. Mark one box based on how clo,how questionnaire was completed,UNMATCHED,0.043,No
+Schwab & England,Score,schwab england adl score 0 100,UNMATCHED,0.167,No
+Timed Up Go,Questionnaire completed:     Questionnaire rempli:,date completed,UNMATCHED,0.333,No
+Timed Up Go,How is the test completed?     Comment le test est-il complété?,how test was completed,Admin,0.5,Yes
+Timed Up Go,Le patient a-t-il/elle fait le test:,patient performed the test yes no details,UNMATCHED,0.154,No
+Timed Up Go,Temps (secondes),,UNMATCHED,0.0,No
+Timed Up Go,Temps (secondes)2,tug time trial 2 seconds,UNMATCHED,0.143,No
+Timed Up Go,Temps (secondes)3,tug time trial 3 seconds,UNMATCHED,0.143,No
+Timed Up Go,"Si fluctuations motrices pendant le test, le patient se considère-t-il/elle:",patient performed the test yes no details,UNMATCHED,0.118,No
+UPDRS 1.2 part 3,Assessment completed:     Évaluation remplie:,date assessment completed,Admin,0.667,Yes
+UPDRS 1.2 part 3,How was the UPDRS administered?   Comment le UPDRS a-t-il été administré?,updrs total score,UNMATCHED,0.143,No
+UPDRS 1.2 part 3,1. Speech,1 speech,Motor,1.0,Yes
+UPDRS 1.2 part 3,2. Facial Express,2 facial expression,Motor,0.5,Yes
+UPDRS 1.2 part 3,"3a. Tremor/ Rest (face, lips chin)",3a rest tremor face lips chin,Motor,1.0,Yes
+UPDRS 1.2 part 3,3b. Tremor/ Rest Hand (right),3b rest tremor right hand,Motor,1.0,Yes
+UPDRS 1.2 part 3,3c. Tremor/ Rest Hand (left),3c rest tremor left hand,Motor,1.0,Yes
+UPDRS 1.2 part 3,3d. Tremor/ Rest Foot (right),3d rest tremor right foot,Motor,1.0,Yes
+UPDRS 1.2 part 3,3e. Tremor/ Rest Foot (left),3e rest tremor left foot,Motor,1.0,Yes
+UPDRS 1.2 part 3,4a. Action: Hand (right),4a action tremor right hand,Motor,0.8,Yes
+UPDRS 1.2 part 3,4b. Action: Hand (left),4b action tremor left hand,Motor,0.8,Yes
+UPDRS 1.2 part 3,5a. Rigidity: Neck,5a rigidity neck,Motor,1.0,Yes
+UPDRS 1.2 part 3,5b. Rigidity: Upper Extremity (right hand),5b rigidity right upper extremity,Motor,0.833,Yes
+UPDRS 1.2 part 3,5c. Rigidity: Upper Extremity (left hand),5c rigidity left upper extremity,Motor,0.833,Yes
+UPDRS 1.2 part 3,5d. Rigidity: Lower Extremity (right leg),5d rigidity right lower extremity,Motor,0.833,Yes
+UPDRS 1.2 part 3,5e. Rigidity: Lower Extremity (left leg) ,5e rigidity left lower extremity,Motor,0.833,Yes
+UPDRS 1.2 part 3,6a. Finger Taps (right),6a finger taps right,Motor,1.0,Yes
+UPDRS 1.2 part 3,6b. Finger Taps (left),6b finger taps left,Motor,1.0,Yes
+UPDRS 1.2 part 3,7a. Hand Mov. (right),7a hand movements right,Motor,0.6,Yes
+UPDRS 1.2 part 3,7b. Hand Mov. (left),7b hand movements left,Motor,0.6,Yes
+UPDRS 1.2 part 3,8a. Rapid Alt Hand Mov. (right),8a rapid alternating hand movements right,Motor,0.5,Yes
+UPDRS 1.2 part 3,8b. Rapid Alt Hand Mov. (left),8b rapid alternating hand movements left,Motor,0.5,Yes
+UPDRS 1.2 part 3,9a. Leg Agility (right),9a leg agility right,Motor,1.0,Yes
+UPDRS 1.2 part 3,9b. Leg Agility (left),9b leg agility left,Motor,1.0,Yes
+UPDRS 1.2 part 3,10. Arise Chair,10 arise from chair,Motor,0.75,Yes
+UPDRS 1.2 part 3,11. Posture,11 posture,Motor,1.0,Yes
+UPDRS 1.2 part 3,12. Gait,12 gait,Motor,1.0,Yes
+UPDRS 1.2 part 3,13. Postural Stability,13 postural stability,Motor,1.0,Yes
+UPDRS 1.2 part 3,14. Body Bradykinesia & Hypokinesia  ,14 body bradykinesia and hypokinesia,Motor,0.8,Yes
+UPDRS 1.2 part 3,UPDRS Total,updrs total score,Composite Scores,0.667,Yes
+UPDRS 1.2 part 3,Tremor Total,tremor total,Composite Scores,1.0,Yes
+UPDRS 1.2 part 3,Rigidity Total,rigidity total,Composite Scores,1.0,Yes
+UPDRS 1.2 part 3,Ratio Tremor/ Rigidity Total,ratio tremor rigidity total,Composite Scores,1.0,Yes
+UPDRS 1.2 part 3,Right Part Score Total,right side score total,Composite Scores,0.6,Yes
+UPDRS 1.2 part 3,Left Part Score Total,left side score total,Composite Scores,0.6,Yes
+UPDRS 1.2 part 3,Laterality Index (+=right) ,laterality index right,Composite Scores,1.0,Yes

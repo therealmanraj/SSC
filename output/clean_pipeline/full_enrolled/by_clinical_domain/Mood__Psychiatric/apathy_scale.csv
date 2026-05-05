@@ -1,0 +1,187 @@
+Project key,Event Name,1. Are you interested in learning new things?,2. Does anything interest you?,3. Are you concerned about your condition?,5. Are you always looking for something to do?,6. Do you have plans and goals for the future?,8. Do you have the energy for daily activities?,9. Does someone have to tell you what to do each day?,10. Are you indifferent to things?,11. Are you unconcerned with many things?,12. Do you need a push to get started on things?,"13. Are you neither happy nor sad, just in between?"
+SSC2846,Baseline (Arm 1: C-OPN),Some,A lot,Some,A lot,Slightly,Some,Not at all,Slightly,Slightly,Some,A lot
+SSC2847,Baseline (Arm 1: C-OPN),A lot,A lot,Some,Some,Slightly,Slightly,Not at all,Some,Some,Slightly,Some
+SSC2848,Baseline (Arm 1: C-OPN),A lot,A lot,A lot,A lot,A lot,A lot,Not at all,Not at all,Slightly,Not at all,Not at all
+SSC2849,Baseline (Arm 1: C-OPN),Some,Some,Some,Slightly,Some,Some,Not at all,Some,Slightly,Slightly,Some
+SSC2850,Baseline (Arm 1: C-OPN),Some,Some,Slightly,Not at all,Not at all,Slightly,Not at all,Some,A lot,Some,A lot
+SSC2851,Baseline (Arm 1: C-OPN),A lot,Some,Slightly,Some,Some,A lot,Not at all,Not at all,Some,Not at all,Not at all
+SSC2852,Baseline (Arm 1: C-OPN),A lot,A lot,Some,A lot,A lot,A lot,Slightly,Slightly,Slightly,Slightly,Not at all
+SSC2853,Baseline (Arm 1: C-OPN),A lot,Some,Slightly,Some,Some,A lot,Not at all,Not at all,Not at all,Not at all,
+SSC2854,Baseline (Arm 1: C-OPN),A lot,A lot,Slightly,A lot,A lot,A lot,Not at all,Not at all,Not at all,Not at all,Not at all
+SSC2855,Baseline (Arm 1: C-OPN),A lot,Some,Slightly,A lot,Some,Slightly,Not at all,Not at all,Not at all,Not at all,Some
+SSC2856,Baseline (Arm 1: C-OPN),Some,Some,Not at all,A lot,A lot,Some,Not at all,Not at all,Not at all,Not at all,A lot
+SSC2857,Baseline (Arm 1: C-OPN),A lot,Some,Not at all,Slightly,Some,A lot,Not at all,Slightly,A lot,Slightly,A lot
+SSC2858,Baseline (Arm 1: C-OPN),A lot,A lot,Some,Some,Slightly,Some,Slightly,Slightly,Some,Slightly,Some
+SSC2859,Baseline (Arm 1: C-OPN),Some,A lot,Some,Slightly,Some,Some,Not at all,Slightly,Some,Slightly,Some
+SSC2860,Baseline (Arm 1: C-OPN),Some,A lot,Slightly,Some,Some,Some,Not at all,Not at all,Not at all,Slightly,Slightly
+SSC2861,Baseline (Arm 1: C-OPN),A lot,A lot,Slightly,A lot,A lot,A lot,Not at all,Not at all,Slightly,Some,Some
+SSC2863,Baseline (Arm 1: C-OPN),Some,Some,Some,Slightly,Some,Some,Slightly,Some,Some,Some,Some
+SSC2864,Baseline (Arm 1: C-OPN),A lot,A lot,Some,A lot,A lot,A lot,Not at all,Not at all,Not at all,Not at all,Not at all
+SSC2865,Baseline (Arm 1: C-OPN),Some,Some,Some,Some,Some,A lot,Not at all,Some,Some,Not at all,Slightly
+SSC2866,Baseline (Arm 1: C-OPN),Some,A lot,A lot,Some,A lot,Some,Not at all,Slightly,Slightly,Not at all,A lot
+SSC2867,Baseline (Arm 1: C-OPN),Some,A lot,Some,A lot,Some,Some,Not at all,Not at all,Slightly,Not at all,Not at all
+SSC2868,Baseline (Arm 1: C-OPN),Slightly,Some,Some,Some,Some,Some,Slightly,Not at all,Slightly,Slightly,Slightly
+SSC2869,Baseline (Arm 1: C-OPN),A lot,,Some,Not at all,A lot,Some,Not at all,Slightly,Some,Some,Some
+SSC2870,Baseline (Arm 1: C-OPN),A lot,Some,Some,Some,Some,Some,Slightly,Not at all,Not at all,Some,Some
+SSC2871,Baseline (Arm 1: C-OPN),Not at all,Some,Some,Not at all,Some,Slightly,Not at all,Some,Some,Slightly,Some
+SSC2872,Baseline (Arm 1: C-OPN),Slightly,Slightly,Some,Slightly,Slightly,Some,Not at all,Not at all,Some,Slightly,Slightly
+SSC2873,Baseline (Arm 1: C-OPN),Some,A lot,Not at all,Not at all,Not at all,Some,Not at all,Not at all,Slightly,Slightly,Some
+SSC2874,Baseline (Arm 1: C-OPN),Some,Some,Some,Slightly,Slightly,Some,Not at all,Slightly,Some,Slightly,Some
+SSC2875,Baseline (Arm 1: C-OPN),Some,A lot,A lot,Some,Some,Some,Not at all,Some,Some,Slightly,Some
+SSC2876,Baseline (Arm 1: C-OPN),Some,Slightly,A lot,Not at all,Slightly,A lot,Not at all,Slightly,Slightly,Some,A lot
+SSC2877,Baseline (Arm 1: C-OPN),A lot,A lot,Some,Some,A lot,A lot,Not at all,Not at all,Some,Not at all,Slightly
+SSC2878,Baseline (Arm 1: C-OPN),A lot,A lot,Some,Some,Some,A lot,Not at all,Not at all,Not at all,Not at all,Slightly
+SSC2879,Baseline (Arm 1: C-OPN),Slightly,Slightly,A lot,Not at all,Slightly,Not at all,Not at all,Some,Some,Slightly,Some
+SSC2880,Baseline (Arm 1: C-OPN),A lot,Some,Some,Some,Slightly,Slightly,Slightly,Some,Slightly,Some,Some
+SSC2881,Baseline (Arm 1: C-OPN),Some,Some,Some,Some,A lot,Some,Not at all,Slightly,Not at all,Not at all,Some
+SSC2882,Baseline (Arm 1: C-OPN),A lot,A lot,Some,A lot,A lot,Some,Not at all,Some,Some,Not at all,Slightly
+SSC2883,Baseline (Arm 1: C-OPN),Some,Some,Some,Not at all,Some,A lot,Not at all,Slightly,Slightly,Not at all,Not at all
+SSC2884,Baseline (Arm 1: C-OPN),Some,Some,Slightly,A lot,Some,A lot,Not at all,Not at all,Not at all,Not at all,Not at all
+SSC2885,Baseline (Arm 1: C-OPN),Slightly,Some,Some,Slightly,A lot,Some,Some,Some,Some,Some,Some
+SSC2886,Baseline (Arm 1: C-OPN),Some,Some,A lot,Some,Some,Some,Slightly,Some,Slightly,Slightly,Some
+SSC2887,Baseline (Arm 1: C-OPN),Some,A lot,Some,Slightly,Some,Some,Not at all,Slightly,Slightly,Slightly,Not at all
+SSC2888,Baseline (Arm 1: C-OPN),A lot,Some,A lot,Some,Slightly,Slightly,Some,Some,Some,A lot,Slightly
+SSC2889,Baseline (Arm 1: C-OPN),A lot,A lot,Some,A lot,A lot,Some,Slightly,Some,Some,Slightly,Some
+SSC2891,Baseline (Arm 1: C-OPN),A lot,A lot,Some,Some,Some,Some,Not at all,Not at all,Some,Not at all,Not at all
+SSC2892,Baseline (Arm 1: C-OPN),Some,Some,Some,Some,Some,Some,Slightly,Slightly,Slightly,Slightly,Slightly
+SSC2893,Baseline (Arm 1: C-OPN),Slightly,A lot,Slightly,Slightly,Slightly,Some,Not at all,Some,Some,Slightly,Slightly
+SSC2894,Baseline (Arm 1: C-OPN),A lot,A lot,Some,Not at all,Some,Some,Slightly,Slightly,Some,Slightly,Some
+SSC2895,Baseline (Arm 1: C-OPN),Slightly,Some,A lot,Slightly,Some,Slightly,Not at all,Slightly,Some,Not at all,Some
+SSC2896,Baseline (Arm 1: C-OPN),Some,Some,A lot,Some,Slightly,Some,Not at all,Some,Some,Some,A lot
+SSC2897,Baseline (Arm 1: C-OPN),Slightly,Some,Some,Some,Some,Some,Slightly,Slightly,Some,Some,Some
+SSC2898,Baseline (Arm 1: C-OPN),Slightly,Some,Some,Some,Some,Some,Not at all,Slightly,Slightly,Slightly,Some
+SSC2899,Baseline (Arm 1: C-OPN),Slightly,Some,Some,A lot,Some,Some,Not at all,Slightly,Slightly,Slightly,Slightly
+SSC2900,Baseline (Arm 1: C-OPN),Some,Some,A lot,Slightly,Some,Some,Not at all,Not at all,Not at all,Not at all,Some
+SSC2901,Baseline (Arm 1: C-OPN),Some,Some,Slightly,Slightly,A lot,Some,Not at all,Slightly,Some,Slightly,Some
+SSC2903,Baseline (Arm 1: C-OPN),Some,A lot,Some,Some,A lot,Some,Not at all,Slightly,Slightly,Not at all,Slightly
+SSC2904,Baseline (Arm 1: C-OPN),Some,A lot,Slightly,Not at all,Some,Some,Not at all,Not at all,Not at all,Not at all,Not at all
+SSC2905,Baseline (Arm 1: C-OPN),Some,Some,Slightly,Some,Slightly,Some,Not at all,Slightly,Slightly,Slightly,Some
+SSC2907,Baseline (Arm 1: C-OPN),Some,A lot,Some,A lot,A lot,Some,Not at all,Not at all,Not at all,Not at all,Not at all
+SSC2908,Baseline (Arm 1: C-OPN),A lot,Some,Slightly,Not at all,A lot,Some,Not at all,Slightly,Not at all,Slightly,Slightly
+SSC2909,Baseline (Arm 1: C-OPN),A lot,A lot,Some,Some,Some,Some,Not at all,Slightly,Slightly,Slightly,Some
+SSC2912,Baseline (Arm 1: C-OPN),Slightly,A lot,Slightly,A lot,A lot,A lot,Not at all,Not at all,Not at all,Not at all,Not at all
+SSC2913,Baseline (Arm 1: C-OPN),Slightly,Some,Some,Not at all,Some,Some,Slightly,Some,Some,Slightly,Some
+SSC2914,Baseline (Arm 1: C-OPN),A lot,A lot,A lot,Not at all,Some,Some,Not at all,Not at all,Not at all,Not at all,A lot
+SSC2915,Baseline (Arm 1: C-OPN),A lot,A lot,Slightly,A lot,A lot,A lot,Not at all,Not at all,Not at all,Not at all,Not at all
+SSC2916,Baseline (Arm 1: C-OPN),A lot,A lot,Slightly,Not at all,Some,Some,Not at all,Some,Slightly,Slightly,Some
+SSC2917,Baseline (Arm 1: C-OPN),A lot,A lot,Some,Not at all,Some,Some,Not at all,Not at all,Not at all,Not at all,A lot
+SSC2918,Baseline (Arm 1: C-OPN),Some,A lot,Some,Slightly,Some,Some,Slightly,Slightly,Slightly,Some,Not at all
+SSC2919,Baseline (Arm 1: C-OPN),Some,A lot,Slightly,Not at all,Some,Some,Not at all,Not at all,Slightly,Some,Slightly
+SSC2920,Baseline (Arm 1: C-OPN),Some,A lot,Some,Some,A lot,Some,Not at all,Not at all,Slightly,Not at all,
+SSC2921,Baseline (Arm 1: C-OPN),Some,Some,Some,Some,Some,Some,Not at all,Not at all,Not at all,Not at all,Slightly
+SSC2922,Baseline (Arm 1: C-OPN),Some,Some,Slightly,Not at all,Some,Some,Not at all,Not at all,Slightly,Slightly,Slightly
+SSC2923,Baseline (Arm 1: C-OPN),Some,A lot,Some,Slightly,Slightly,Slightly,Not at all,Not at all,Not at all,Slightly,Some
+SSC2924,Baseline (Arm 1: C-OPN),A lot,A lot,Slightly,Slightly,A lot,Some,Not at all,Not at all,Not at all,Slightly,Slightly
+SSC2925,Baseline (Arm 1: C-OPN),A lot,A lot,Slightly,A lot,A lot,Some,Some,Slightly,Slightly,Slightly,Slightly
+SSC2926,Baseline (Arm 1: C-OPN),A lot,A lot,Slightly,Some,Some,Some,Not at all,Not at all,Not at all,Not at all,Some
+SSC2927,Baseline (Arm 1: C-OPN),Some,Some,Some,Some,Some,Some,Slightly,Slightly,Some,Some,Some
+SSC2928,Baseline (Arm 1: C-OPN),Some,A lot,Some,A lot,Some,Some,Not at all,Slightly,Slightly,Not at all,Slightly
+SSC2929,Baseline (Arm 1: C-OPN),A lot,A lot,Some,Not at all,A lot,A lot,Not at all,Not at all,Not at all,Not at all,Not at all
+SSC2931,Baseline (Arm 1: C-OPN),Some,Some,Slightly,Some,Some,A lot,Slightly,Slightly,Slightly,Slightly,Some
+SSC2932,Baseline (Arm 1: C-OPN),Some,A lot,Not at all,Some,A lot,Some,Not at all,Some,Slightly,Not at all,Slightly
+SSC2935,Baseline (Arm 1: C-OPN),Some,Some,Some,Some,Some,Slightly,Not at all,Slightly,Slightly,Slightly,Slightly
+SSC2937,Baseline (Arm 1: C-OPN),Some,Some,Some,Not at all,Some,Some,Not at all,Slightly,Slightly,Slightly,Slightly
+SSC2938,Baseline (Arm 1: C-OPN),Slightly,Some,Slightly,Not at all,Slightly,Some,Not at all,Not at all,Slightly,Some,A lot
+SSC2940,Baseline (Arm 1: C-OPN),Some,Some,Slightly,Slightly,Slightly,Slightly,Slightly,Slightly,Slightly,Some,Slightly
+SSC2941,Baseline (Arm 1: C-OPN),Some,A lot,Some,A lot,Some,Slightly,Not at all,Not at all,Not at all,Not at all,Slightly
+SSC2944,Baseline (Arm 1: C-OPN),Some,Some,Slightly,Slightly,Some,Slightly,Not at all,Some,Slightly,Slightly,Some
+SSC2945,Baseline (Arm 1: C-OPN),Some,Some,Slightly,Some,Some,Some,Not at all,Slightly,Slightly,Slightly,Some
+SSC2946,Baseline (Arm 1: C-OPN),Slightly,Some,Some,Slightly,Some,Some,Not at all,Slightly,Slightly,Slightly,Slightly
+SSC2947,Baseline (Arm 1: C-OPN),Slightly,Some,Some,Slightly,Slightly,Slightly,Slightly,Slightly,Slightly,Slightly,Slightly
+SSC2948,Baseline (Arm 1: C-OPN),Some,A lot,Some,A lot,A lot,A lot,Not at all,Not at all,Slightly,Not at all,Not at all
+SSC2949,Baseline (Arm 1: C-OPN),Some,A lot,Some,Some,Some,Some,Not at all,Slightly,Some,Some,Some
+SSC2950,Baseline (Arm 1: C-OPN),A lot,Some,A lot,A lot,A lot,Not at all,Not at all,Not at all,Slightly,Slightly,Some
+SSC2951,Baseline (Arm 1: C-OPN),Some,Some,Slightly,Some,Some,Some,Not at all,Not at all,Some,Slightly,Slightly
+SSC2952,Baseline (Arm 1: C-OPN),A lot,Some,Some,Some,Slightly,A lot,Not at all,Not at all,Not at all,Not at all,Some
+SSC2954,Baseline (Arm 1: C-OPN),A lot,Some,Not at all,Not at all,Some,Some,Not at all,Not at all,Not at all,Slightly,Not at all
+SSC2955,Baseline (Arm 1: C-OPN),Some,Slightly,Some,Slightly,Slightly,Slightly,Not at all,A lot,Some,Some,Some
+SSC2957,Baseline (Arm 1: C-OPN),Some,Some,Slightly,Some,Slightly,Some,Not at all,Slightly,Slightly,Slightly,Slightly
+SSC2959,Baseline (Arm 1: C-OPN),A lot,A lot,A lot,Some,Some,Some,Not at all,Some,Not at all,Slightly,Some
+SSC2963,Baseline (Arm 1: C-OPN),Some,Some,Some,Some,Some,Some,Not at all,Some,Some,Slightly,Some
+SSC2970,Baseline (Arm 1: C-OPN),Slightly,Slightly,Some,Not at all,Some,Slightly,Slightly,Some,Not at all,Slightly,Slightly
+SSC2972,Baseline (Arm 1: C-OPN),Some,A lot,Some,Some,Some,Some,Not at all,Not at all,Some,Slightly,Slightly
+SSC2973,Baseline (Arm 1: C-OPN),A lot,A lot,Slightly,A lot,A lot,A lot,Not at all,Not at all,A lot,Not at all,Not at all
+SSC2975,Baseline (Arm 1: C-OPN),Some,Some,Some,Some,Some,Some,Not at all,Some,Some,Not at all,Not at all
+SSC2976,Baseline (Arm 1: C-OPN),Some,Slightly,Some,Slightly,Slightly,Some,Slightly,Slightly,A lot,Slightly,Slightly
+SSC2977,Baseline (Arm 1: C-OPN),A lot,A lot,A lot,Slightly,A lot,Slightly,A lot,Not at all,Not at all,Some,A lot
+SSC2981,Baseline (Arm 1: C-OPN),A lot,A lot,Slightly,Some,Some,A lot,Not at all,Some,Some,Slightly,Slightly
+SSC2982,Baseline (Arm 1: C-OPN),A lot,A lot,A lot,A lot,Some,Some,Not at all,Some,Some,Not at all,Slightly
+SSC2983,Baseline (Arm 1: C-OPN),A lot,A lot,Some,A lot,Some,A lot,Not at all,Not at all,Some,Not at all,Some
+SSC2984,Baseline (Arm 1: C-OPN),Some,Some,A lot,Some,Some,Some,Not at all,Slightly,Not at all,Slightly,Some
+SSC2985,Baseline (Arm 1: C-OPN),Some,Some,A lot,Some,Some,Slightly,A lot,Slightly,Slightly,Some,Some
+SSC2988,Baseline (Arm 1: C-OPN),Some,Some,A lot,A lot,Slightly,Some,Not at all,Slightly,Some,Some,Some
+SSC2989,Baseline (Arm 1: C-OPN),A lot,A lot,A lot,Some,A lot,Some,Not at all,Not at all,Not at all,Not at all,Not at all
+SSC2992,Baseline (Arm 1: C-OPN),Some,A lot,Some,Some,Some,A lot,Slightly,Slightly,Slightly,Some,Slightly
+SSC2993,Baseline (Arm 1: C-OPN),A lot,Some,A lot,Some,Slightly,Some,Slightly,Slightly,Slightly,Slightly,Some
+SSC2995,Baseline (Arm 1: C-OPN),A lot,A lot,Slightly,A lot,Some,A lot,Not at all,Not at all,Not at all,Not at all,Some
+SSC2997,Baseline (Arm 1: C-OPN),A lot,A lot,Slightly,A lot,A lot,A lot,Not at all,Not at all,Not at all,Slightly,A lot
+SSC2998,Baseline (Arm 1: C-OPN),Slightly,Some,Some,Not at all,Slightly,Some,Not at all,Slightly,Slightly,Slightly,Slightly
+SSC3000,Baseline (Arm 1: C-OPN),Slightly,Slightly,A lot,Not at all,Not at all,Slightly,Some,Slightly,Some,Some,Slightly
+SSC3001,Baseline (Arm 1: C-OPN),Some,Some,Slightly,Slightly,Some,Slightly,Not at all,Slightly,Slightly,Some,Slightly
+SSC3002,Baseline (Arm 1: C-OPN),A lot,A lot,Slightly,A lot,A lot,Some,Not at all,Not at all,Slightly,Slightly,Not at all
+SSC3004,Baseline (Arm 1: C-OPN),Some,Some,A lot,Some,Slightly,Some,Not at all,Some,Some,Some,A lot
+SSC3005,Baseline (Arm 1: C-OPN),Some,A lot,Some,Some,Some,Some,Not at all,Slightly,Some,Slightly,Slightly
+SSC3007,Baseline (Arm 1: C-OPN),Some,Some,Slightly,Slightly,Slightly,A lot,Not at all,Not at all,Slightly,Not at all,Not at all
+SSC3011,Baseline (Arm 1: C-OPN),A lot,A lot,A lot,A lot,A lot,Some,Not at all,Slightly,Not at all,Slightly,Some
+SSC3012,Baseline (Arm 1: C-OPN),A lot,A lot,Some,Some,Some,A lot,Not at all,Slightly,Some,Some,Slightly
+SSC3013,Baseline (Arm 1: C-OPN),A lot,A lot,A lot,Some,Some,Some,Not at all,Some,Some,Some,Some
+SSC3015,Baseline (Arm 1: C-OPN),Some,Some,Slightly,A lot,Some,Some,Not at all,Not at all,Slightly,Slightly,Not at all
+SSC3016,Baseline (Arm 1: C-OPN),A lot,A lot,Some,Not at all,A lot,Some,Not at all,Not at all,Some,Not at all,Not at all
+SSC3018,Baseline (Arm 1: C-OPN),A lot,A lot,,A lot,A lot,A lot,Slightly,Slightly,Not at all,Slightly,Not at all
+SSC3019,Baseline (Arm 1: C-OPN),Some,A lot,Some,Some,A lot,A lot,Not at all,Slightly,Slightly,Slightly,A lot
+SSC3021,Baseline (Arm 1: C-OPN),A lot,A lot,A lot,A lot,A lot,Some,Not at all,Not at all,Not at all,Not at all,Not at all
+SSC3022,Baseline (Arm 1: C-OPN),A lot,Some,Slightly,Not at all,Not at all,Some,Not at all,Some,Slightly,Slightly,Some
+SSC3023,Baseline (Arm 1: C-OPN),Some,A lot,Some,Some,Some,Some,Slightly,Some,Not at all,Some,Some
+SSC3024,Baseline (Arm 1: C-OPN),A lot,A lot,Slightly,Not at all,Some,Some,Not at all,Some,Slightly,Slightly,Slightly
+SSC3025,Baseline (Arm 1: C-OPN),Some,A lot,Not at all,Some,Some,Slightly,Not at all,Not at all,Not at all,Not at all,Some
+SSC3026,Baseline (Arm 1: C-OPN),Some,,Some,,Some,Some,Not at all,Not at all,Not at all,Not at all,Not at all
+SSC3027,Baseline (Arm 1: C-OPN),A lot,A lot,A lot,Some,Some,Some,Some,Slightly,Not at all,Some,Some
+SSC3028,Baseline (Arm 1: C-OPN),Some,A lot,Some,Not at all,Some,Some,Not at all,Slightly,Some,Some,Slightly
+SSC3029,Baseline (Arm 1: C-OPN),Some,A lot,Some,Some,Slightly,Some,Not at all,Not at all,Some,Not at all,Some
+SSC3030,Baseline (Arm 1: C-OPN),A lot,A lot,Some,Some,Some,Some,Slightly,Some,Slightly,Slightly,Slightly
+SSC3031,Baseline (Arm 1: C-OPN),A lot,A lot,Not at all,A lot,A lot,A lot,Not at all,Slightly,Some,Not at all,Not at all
+SSC3032,Baseline (Arm 1: C-OPN),Some,Some,Slightly,Some,Some,Some,Not at all,Slightly,Slightly,Slightly,Slightly
+SSC3033,Baseline (Arm 1: C-OPN),Some,A lot,Slightly,Some,Some,Some,Not at all,Slightly,Slightly,Slightly,Some
+SSC3034,Baseline (Arm 1: C-OPN),Some,Some,Some,Some,Some,Some,Not at all,Not at all,Not at all,Not at all,Some
+SSC3035,Baseline (Arm 1: C-OPN),Some,Some,Slightly,Some,Some,A lot,Not at all,Not at all,Slightly,Not at all,Slightly
+SSC3036,Baseline (Arm 1: C-OPN),A lot,A lot,Some,Some,Some,Some,Not at all,Not at all,Not at all,Not at all,Some
+SSC3037,Baseline (Arm 1: C-OPN),Some,A lot,Not at all,Not at all,Some,Some,Some,Some,Not at all,Slightly,Slightly
+SSC3038,Baseline (Arm 1: C-OPN),A lot,A lot,A lot,A lot,Some,A lot,Not at all,Not at all,Slightly,Slightly,Slightly
+SSC3046,Baseline (Arm 1: C-OPN),A lot,A lot,Slightly,A lot,Some,A lot,Not at all,Not at all,Not at all,Not at all,Not at all
+SSC3048,Baseline (Arm 1: C-OPN),A lot,Some,Some,Slightly,Some,Some,Not at all,Slightly,Slightly,Slightly,Not at all
+SSC3049,Baseline (Arm 1: C-OPN),Some,A lot,A lot,Some,A lot,A lot,Not at all,Slightly,Some,Slightly,Not at all
+SSC3050,Baseline (Arm 1: C-OPN),Some,Some,A lot,A lot,Some,Some,Some,Some,Slightly,Slightly,Some
+SSC3053,Baseline (Arm 1: C-OPN),Some,Some,Slightly,Some,Some,Some,Not at all,Slightly,Not at all,Not at all,Slightly
+SSC3059,Baseline (Arm 1: C-OPN),Some,Some,Slightly,Not at all,Some,Some,Not at all,Slightly,Slightly,Some,
+SSC3060,Baseline (Arm 1: C-OPN),Some,Some,A lot,Slightly,Some,Slightly,Not at all,Slightly,Slightly,Some,Not at all
+SSC3063,Baseline (Arm 1: C-OPN),A lot,Some,Slightly,A lot,A lot,Some,Not at all,Some,Slightly,Not at all,Some
+SSC3064,Baseline (Arm 1: C-OPN),Some,Some,Slightly,Not at all,A lot,Some,Not at all,Not at all,A lot,Slightly,Slightly
+SSC3065,Baseline (Arm 1: C-OPN),A lot,A lot,Some,A lot,A lot,A lot,Not at all,Not at all,Not at all,Not at all,Not at all
+SSC3066,Baseline (Arm 1: C-OPN),A lot,Slightly,Slightly,Not at all,Slightly,Slightly,Not at all,Slightly,Slightly,Some,Slightly
+SSC3069,Baseline (Arm 1: C-OPN),A lot,A lot,Slightly,A lot,Some,A lot,Not at all,Slightly,Slightly,Slightly,Some
+SSC3070,Baseline (Arm 1: C-OPN),Not at all,Slightly,A lot,Not at all,Some,Some,Slightly,Some,Slightly,A lot,Some
+SSC3071,Baseline (Arm 1: C-OPN),A lot,A lot,,Some,A lot,Some,Not at all,Not at all,Not at all,Not at all,Not at all
+SSC3072,Baseline (Arm 1: C-OPN),A lot,A lot,Some,Slightly,A lot,Some,Not at all,Not at all,Slightly,Some,Not at all
+SSC3074,Baseline (Arm 1: C-OPN),Some,A lot,A lot,Some,Slightly,Slightly,Not at all,Some,Slightly,Slightly,Some
+SSC3075,Baseline (Arm 1: C-OPN),A lot,A lot,Some,Slightly,Some,Some,Slightly,Slightly,Slightly,Some,Slightly
+SSC3077,Baseline (Arm 1: C-OPN),Some,Some,Some,Slightly,Slightly,Some,Not at all,Slightly,Slightly,Not at all,Some
+SSC3078,Baseline (Arm 1: C-OPN),Some,A lot,Some,Some,A lot,Some,Not at all,Not at all,Not at all,Not at all,Slightly
+SSC3079,Baseline (Arm 1: C-OPN),Some,Some,A lot,Slightly,Some,Slightly,Not at all,Not at all,A lot,A lot,Slightly
+SSC3081,Baseline (Arm 1: C-OPN),A lot,A lot,Some,Some,A lot,A lot,Slightly,Not at all,Slightly,Slightly,Slightly
+SSC3083,Baseline (Arm 1: C-OPN),A lot,A lot,Some,A lot,A lot,A lot,Not at all,Not at all,Not at all,Not at all,Not at all
+SSC3084,Baseline (Arm 1: C-OPN),Not at all,Slightly,Some,Not at all,Not at all,Slightly,Slightly,Some,Some,A lot,Some
+SSC3086,Baseline (Arm 1: C-OPN),A lot,A lot,A lot,A lot,Some,A lot,Not at all,Not at all,Not at all,Not at all,Slightly
+SSC3088,Baseline (Arm 1: C-OPN),A lot,A lot,Slightly,Some,Some,Some,Not at all,Slightly,A lot,,A lot
+SSC3089,Baseline (Arm 1: C-OPN),Some,Some,Slightly,Some,Slightly,Some,Not at all,Slightly,Slightly,Slightly,Slightly
+SSC3090,Baseline (Arm 1: C-OPN),A lot,A lot,Slightly,Some,Some,Some,Slightly,Not at all,Not at all,Some,Slightly
+SSC3092,Baseline (Arm 1: C-OPN),A lot,A lot,A lot,A lot,A lot,Some,Not at all,Slightly,Not at all,Slightly,Slightly
+SSC3093,Baseline (Arm 1: C-OPN),,A lot,A lot,,A lot,A lot,A lot,Not at all,Not at all,Not at all,Some
+SSC3094,Baseline (Arm 1: C-OPN),A lot,A lot,Slightly,Not at all,Some,Some,Not at all,Not at all,Some,Not at all,Slightly
+SSC3098,Baseline (Arm 1: C-OPN),A lot,A lot,Slightly,Not at all,Some,A lot,Slightly,Slightly,Slightly,Not at all,Slightly
+SSC3104,Baseline (Arm 1: C-OPN),A lot,A lot,Slightly,Not at all,Some,Some,Not at all,Not at all,Not at all,Not at all,Slightly
+SSC3109,Baseline (Arm 1: C-OPN),A lot,Some,A lot,Some,Slightly,Slightly,Not at all,Slightly,Not at all,Some,Not at all
+SSC3110,Baseline (Arm 1: C-OPN),Some,A lot,Slightly,Slightly,A lot,Some,Not at all,Slightly,Not at all,Not at all,Slightly
+SSC3111,Baseline (Arm 1: C-OPN),Some,Some,A lot,Some,Slightly,Some,Not at all,Slightly,Some,Slightly,Not at all
+SSC3112,Baseline (Arm 1: C-OPN),A lot,A lot,Some,Some,Some,Slightly,Not at all,Slightly,Slightly,Slightly,Some
+SSC3117,Baseline (Arm 1: C-OPN),Some,Some,Some,Some,Some,Some,Not at all,Not at all,Not at all,Slightly,Some
+SSC3118,Baseline (Arm 1: C-OPN),Slightly,Slightly,A lot,Slightly,Slightly,Some,Not at all,Some,Some,Slightly,A lot

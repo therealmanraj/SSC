@@ -1,0 +1,136 @@
+Project key,Event Name,Memory z score,Visio-Perceptual Function z score,Attention z score,Executive Function z score,Language z score,Global Cognition z score,Cognitive Status
+SSC0001,Baseline (Arm 1: C-OPN),,,0.58,,0.62,,
+SSC0002,Baseline (Arm 1: C-OPN),0.86,0.26,-0.8,-0.09,0.46,0.14,Non-MCI
+SSC0003,Baseline (Arm 1: C-OPN),-1.41,0.69,1.08,0.26,-0.73,-0.02,
+SSC0004,Baseline (Arm 1: C-OPN),1.32,0.9,-0.55,0.44,1.03,0.63,Non-MCI
+SSC0005,Baseline (Arm 1: C-OPN),-0.23,-0.3,0.91,0.7,1.23,0.46,Non-MCI
+SSC0008,Baseline (Arm 1: C-OPN),0.2,0.26,-0.14,0.07,-1.32,-0.19,MCI (2 tests â¤1.5 std overall)
+SSC0010,Baseline (Arm 1: C-OPN),0.26,,-0.65,,,,Non-MCI
+SSC0011,Baseline (Arm 1: C-OPN),1.53,0.9,0.66,0.79,1.13,1.0,Non-MCI
+SSC0012,Baseline (Arm 1: C-OPN),0.93,1.11,-0.2,0.28,1.52,0.73,Non-MCI
+SSC0013,Baseline (Arm 1: C-OPN),-0.44,0.43,-1.04,-0.63,-0.03,-0.34,MCI (2 tests â¤1.5 std overall)
+SSC0014,Baseline (Arm 1: C-OPN),0.03,,-0.64,-0.35,-0.12,,Non-MCI
+SSC0015,Baseline (Arm 1: C-OPN),-0.29,,-0.9,-0.12,-0.36,,Non-MCI
+SSC0016,Baseline (Arm 1: C-OPN),0.1,-1.07,0.22,0.39,1.23,0.17,Non-MCI
+SSC0018,Baseline (Arm 1: C-OPN),-0.83,,-1.67,-1.88,-2.08,,Dementia (2 tests â¤2 std within a domain)
+SSC0021,Baseline (Arm 1: C-OPN),1.5,0.9,-0.48,0.59,0.23,0.55,Non-MCI
+SSC0022,Baseline (Arm 1: C-OPN),0.57,-1.35,-0.64,-0.53,-0.3,-0.45,Non-MCI
+SSC0023,Baseline (Arm 1: C-OPN),0.17,0.27,1.26,0.96,0.67,0.67,Non-MCI
+SSC0025,Baseline (Arm 1: C-OPN),-0.67,-1.28,0.5,-0.38,-0.03,-0.37,MCI (2 tests â¤1.5 std overall)
+SSC0026,Baseline (Arm 1: C-OPN),0.64,0.24,0.02,0.2,0.97,0.41,Non-MCI
+SSC0027,Baseline (Arm 1: C-OPN),-0.26,1.14,-0.34,-0.15,0.56,0.19,Non-MCI
+SSC0028,Baseline (Arm 1: C-OPN),-1.29,0.46,0.07,0.31,0.89,0.09,MCI (2 tests â¤1.5 std overall)
+SSC0029,Baseline (Arm 1: C-OPN),-0.01,0.26,-0.8,-0.65,-0.63,-0.37,Non-MCI
+SSC0031,Baseline (Arm 1: C-OPN),0.57,0.27,1.65,1.31,-0.09,0.74,Non-MCI
+SSC0032,Baseline (Arm 1: C-OPN),0.14,0.76,0.99,0.44,-0.96,0.27,Non-MCI
+SSC0033,Baseline (Arm 1: C-OPN),-1.76,-1.1,-0.66,-1.24,-0.63,-1.08,MCI (2 tests â¤1.5 std overall)
+SSC0035,Baseline (Arm 1: C-OPN),-1.79,-0.39,-0.07,-0.44,-0.28,-0.59,MCI (2 tests â¤1.5 std overall)
+SSC0036,Baseline (Arm 1: C-OPN),1.02,0.28,-1.21,0.15,0.81,0.21,Non-MCI
+SSC0037,Baseline (Arm 1: C-OPN),-0.83,,0.16,-0.62,-0.73,,MCI (2 tests â¤1.5 std overall)
+SSC0038,Baseline (Arm 1: C-OPN),-0.9,-0.58,0.63,0.42,0.44,0.0,MCI (2 tests â¤1.5 std overall)
+SSC0041,Baseline (Arm 1: C-OPN),0.79,-0.66,-1.07,-0.82,-1.9,-0.73,Dementia (2 tests â¤2 std within a domain)
+SSC0042,Baseline (Arm 1: C-OPN),0.63,0.98,0.87,0.86,0.49,0.77,Non-MCI
+SSC0043,Baseline (Arm 1: C-OPN),0.31,-0.19,0.58,0.96,1.04,0.54,Non-MCI
+SSC0044,Baseline (Arm 1: C-OPN),1.17,0.21,-0.1,0.43,0.96,0.53,Non-MCI
+SSC0045,Baseline (Arm 1: C-OPN),0.37,1.33,0.87,0.89,0.28,0.75,Non-MCI
+SSC0048,Baseline (Arm 1: C-OPN),0.24,-0.66,0.51,0.64,0.23,0.19,Non-MCI
+SSC0049,Baseline (Arm 1: C-OPN),-0.27,-0.28,-0.17,0.04,0.59,-0.02,MCI (2 tests â¤1.5 std overall)
+SSC0050,Baseline (Arm 1: C-OPN),0.63,1.11,1.33,0.1,0.26,0.69,Non-MCI
+SSC0051,Baseline (Arm 1: C-OPN),0.23,0.3,0.55,0.37,0.53,0.4,Non-MCI
+SSC0052,Baseline (Arm 1: C-OPN),-1.04,-0.06,0.16,0.3,0.72,0.02,MCI (2 tests â¤1.5 std overall)
+SSC0053,Baseline (Arm 1: C-OPN),-0.47,,0.71,-0.58,-0.69,,MCI (2 tests â¤1.5 std overall)
+SSC0054,Baseline (Arm 1: C-OPN),0.47,1.33,-0.64,-0.9,-1.17,-0.18,Non-MCI
+SSC0055,Baseline (Arm 1: C-OPN),1.21,,1.18,0.94,0.62,,Non-MCI
+SSC0057,Baseline (Arm 1: C-OPN),0.07,,-0.82,0.0,0.34,,MCI (2 tests â¤1.5 std overall)
+SSC0058,Baseline (Arm 1: C-OPN),0.23,0.3,1.34,0.57,0.24,0.54,Non-MCI
+SSC0059,Baseline (Arm 1: C-OPN),0.09,0.26,-0.95,-0.15,-0.01,-0.15,Non-MCI
+SSC0061,Baseline (Arm 1: C-OPN),0.05,0.26,0.91,0.34,-0.52,0.21,MCI (2 tests â¤1.5 std overall)
+SSC0062,Baseline (Arm 1: C-OPN),-0.94,-1.35,-1.84,-1.65,-2.67,-1.69,Dementia (2 tests â¤2 std within a domain)
+SSC0063,Baseline (Arm 1: C-OPN),-0.17,0.43,-0.62,-0.8,0.6,-0.11,Non-MCI
+SSC0064,Baseline (Arm 1: C-OPN),-1.42,-0.75,-0.5,-0.32,-0.62,-0.72,MCI (2 tests â¤1.5 std overall)
+SSC0066,Baseline (Arm 1: C-OPN),0.76,,-0.01,-0.06,-0.23,,Non-MCI
+SSC0067,Baseline (Arm 1: C-OPN),-0.19,0.76,0.32,-0.22,-1.06,-0.08,
+SSC0069,Baseline (Arm 1: C-OPN),-0.45,0.98,-0.9,-0.5,0.08,-0.16,MCI (2 tests â¤1.5 std overall)
+SSC0070,Baseline (Arm 1: C-OPN),0.44,0.38,0.07,-1.17,-0.41,-0.14,Dementia (2 tests â¤2 std within a domain)
+SSC0071,Baseline (Arm 1: C-OPN),-2.7,1.39,-0.55,-0.78,0.96,-0.34,Dementia (2 tests â¤2 std within a domain)
+SSC0072,Baseline (Arm 1: C-OPN),0.6,0.98,-0.34,0.0,-1.26,0.0,MCI (2 tests â¤1.5 std overall)
+SSC0073,Baseline (Arm 1: C-OPN),0.31,1.01,-0.05,0.74,0.64,0.53,Non-MCI
+SSC0074,Baseline (Arm 1: C-OPN),0.55,,-0.16,-0.67,-1.44,,MCI (2 tests â¤1.5 std overall)
+SSC0075,Baseline (Arm 1: C-OPN),0.54,0.76,0.19,0.45,1.81,0.75,Non-MCI
+SSC0076,Baseline (Arm 1: C-OPN),-0.68,-0.05,-0.28,0.18,-0.11,-0.19,MCI (2 tests â¤1.5 std overall)
+SSC0077,Baseline (Arm 1: C-OPN),0.37,0.95,-0.57,0.29,0.17,0.24,Non-MCI
+SSC0081,Baseline (Arm 1: C-OPN),-1.97,-0.66,-0.07,-0.1,0.01,-0.56,MCI (2 tests â¤1.5 std overall)
+SSC0082,Baseline (Arm 1: C-OPN),0.7,-0.61,0.21,0.01,0.36,0.13,Non-MCI
+SSC0084,Baseline (Arm 1: C-OPN),0.03,-0.42,-0.84,0.17,0.84,-0.04,Non-MCI
+SSC0085,Baseline (Arm 1: C-OPN),0.99,0.76,0.93,0.41,0.5,0.72,Non-MCI
+SSC0086,Baseline (Arm 1: C-OPN),0.79,0.64,0.26,-0.72,-0.61,0.07,Non-MCI
+SSC0087,Baseline (Arm 1: C-OPN),0.1,0.99,-0.24,0.68,0.82,0.47,MCI (2 tests â¤1.5 std overall)
+SSC0089,Baseline (Arm 1: C-OPN),0.08,1.53,0.68,0.01,-0.37,0.39,
+SSC0090,Baseline (Arm 1: C-OPN),0.39,-0.43,0.5,1.27,0.73,0.49,Non-MCI
+SSC0092,Baseline (Arm 1: C-OPN),-0.59,-1.35,0.75,-0.29,-0.38,-0.37,
+SSC0093,Baseline (Arm 1: C-OPN),0.9,0.26,0.09,0.64,-0.44,0.29,Non-MCI
+SSC0094,Baseline (Arm 1: C-OPN),0.75,1.33,0.68,1.24,0.66,0.93,Non-MCI
+SSC0095,Baseline (Arm 1: C-OPN),-0.03,0.39,1.1,1.43,0.79,0.74,Non-MCI
+SSC0097,Baseline (Arm 1: C-OPN),-1.02,-0.66,1.1,0.03,0.01,-0.11,MCI (2 tests â¤1.5 std overall)
+SSC0098,Baseline (Arm 1: C-OPN),-1.1,-1.28,0.96,0.68,1.27,0.11,MCI (2 tests â¤1.5 std overall)
+SSC0099,Baseline (Arm 1: C-OPN),-0.13,0.85,0.6,0.92,0.91,0.63,Non-MCI
+SSC0100,Baseline (Arm 1: C-OPN),-1.05,,0.16,-0.15,-1.46,,Dementia (2 tests â¤2 std within a domain)
+SSC0101,Baseline (Arm 1: C-OPN),1.27,1.02,-0.44,-0.25,-1.6,0.0,
+SSC0102,Baseline (Arm 1: C-OPN),0.17,0.95,0.22,0.07,0.21,0.32,Non-MCI
+SSC0103,Baseline (Arm 1: C-OPN),0.06,-1.0,-0.47,0.05,0.29,-0.21,Non-MCI
+SSC0107,Baseline (Arm 1: C-OPN),-0.09,0.9,-0.39,-0.51,-0.23,-0.06,MCI (2 tests â¤1.5 std overall)
+SSC0109,Baseline (Arm 1: C-OPN),0.39,0.96,0.34,-0.13,0.36,0.38,Non-MCI
+SSC0110,Baseline (Arm 1: C-OPN),0.63,0.37,0.3,0.32,-0.14,0.3,
+SSC0112,Baseline (Arm 1: C-OPN),-0.6,0.26,0.07,0.0,-0.26,-0.11,Non-MCI
+SSC0113,Baseline (Arm 1: C-OPN),0.07,0.65,0.53,0.05,-0.67,0.13,Non-MCI
+SSC0114,Baseline (Arm 1: C-OPN),-0.23,1.16,0.65,0.84,-0.97,0.29,MCI (2 tests â¤1.5 std overall)
+SSC0115,Baseline (Arm 1: C-OPN),-0.21,0.69,-0.31,0.11,0.93,0.24,Non-MCI
+SSC0117,Baseline (Arm 1: C-OPN),0.07,-0.01,-0.78,0.0,-0.36,-0.22,Non-MCI
+SSC0118,Baseline (Arm 1: C-OPN),1.0,0.55,0.66,0.2,0.2,0.52,Non-MCI
+SSC0119,Baseline (Arm 1: C-OPN),0.63,1.33,0.0,0.35,0.93,0.65,Non-MCI
+SSC0120,Baseline (Arm 1: C-OPN),-1.3,-1.07,-0.99,-0.22,-0.42,-0.8,MCI (2 tests â¤1.5 std overall)
+SSC0121,Baseline (Arm 1: C-OPN),0.49,1.11,-0.62,-0.52,0.2,0.13,Non-MCI
+SSC0122,Baseline (Arm 1: C-OPN),0.4,,-0.03,-0.3,-0.19,,MCI (2 tests â¤1.5 std overall)
+SSC0124,Baseline (Arm 1: C-OPN),-0.59,0.09,0.29,1.06,0.59,0.29,Non-MCI
+SSC0125,Baseline (Arm 1: C-OPN),0.56,,-0.25,-0.89,-0.08,,MCI (2 tests â¤1.5 std overall)
+SSC0126,Baseline (Arm 1: C-OPN),0.58,,0.81,,0.05,,
+SSC0127,Baseline (Arm 1: C-OPN),0.23,1.11,0.81,1.4,0.52,0.81,Non-MCI
+SSC0128,Baseline (Arm 1: C-OPN),0.05,0.85,0.55,0.6,-1.42,0.13,MCI (2 tests â¤1.5 std overall)
+SSC0129,Baseline (Arm 1: C-OPN),0.07,0.64,1.23,0.52,0.07,0.51,
+SSC0132,Baseline (Arm 1: C-OPN),0.8,-0.3,-0.48,0.55,0.99,0.31,Non-MCI
+SSC0134,Baseline (Arm 1: C-OPN),0.9,0.72,0.37,-0.02,1.21,0.64,Non-MCI
+SSC0136,Baseline (Arm 1: C-OPN),-0.33,,-0.29,,0.29,,MCI (2 tests â¤1.5 std overall)
+SSC0137,Baseline (Arm 1: C-OPN),1.31,0.47,0.84,0.21,0.4,0.65,
+SSC0141,Baseline (Arm 1: C-OPN),0.37,0.14,-0.47,-0.56,-1.21,-0.35,Non-MCI
+SSC0142,Baseline (Arm 1: C-OPN),0.4,0.76,1.08,0.81,1.33,0.88,Non-MCI
+SSC0144,Baseline (Arm 1: C-OPN),0.35,0.64,-0.34,-0.04,-0.5,0.02,Non-MCI
+SSC0145,Baseline (Arm 1: C-OPN),-1.84,-0.8,-0.71,-1.37,-0.87,-1.12,Dementia (2 tests â¤2 std within a domain)
+SSC0147,Baseline (Arm 1: C-OPN),0.2,0.43,0.55,0.28,-0.25,0.24,Non-MCI
+SSC0148,Baseline (Arm 1: C-OPN),0.57,0.69,1.05,1.21,0.97,0.9,Non-MCI
+SSC0149,Baseline (Arm 1: C-OPN),0.7,0.98,-0.25,0.26,-0.37,0.26,Non-MCI
+SSC0150,Baseline (Arm 1: C-OPN),0.16,0.9,0.66,1.3,0.7,0.74,Non-MCI
+SSC0153,Baseline (Arm 1: C-OPN),0.14,-1.07,0.22,-0.56,-0.24,-0.3,Non-MCI
+SSC0154,Baseline (Arm 1: C-OPN),1.21,1.11,-0.24,0.17,0.33,0.52,Non-MCI
+SSC0155,Baseline (Arm 1: C-OPN),0.94,1.24,0.06,0.65,0.19,0.62,Non-MCI
+SSC0156,Baseline (Arm 1: C-OPN),0.66,0.45,1.42,1.16,0.87,0.91,Non-MCI
+SSC0159,Baseline (Arm 1: C-OPN),0.47,-0.7,0.18,0.49,0.4,0.17,Non-MCI
+SSC0161,Baseline (Arm 1: C-OPN),-1.13,0.76,0.34,0.86,0.86,0.34,MCI (2 tests â¤1.5 std overall)
+SSC0162,Baseline (Arm 1: C-OPN),-0.82,0.11,0.52,0.82,0.07,0.14,Non-MCI
+SSC0163,Baseline (Arm 1: C-OPN),1.13,0.64,0.93,0.11,0.45,0.65,Non-MCI
+SSC0165,Baseline (Arm 1: C-OPN),-1.02,0.26,-1.13,-0.49,0.34,-0.41,Non-MCI
+SSC0166,Baseline (Arm 1: C-OPN),-1.57,0.29,-0.24,,-2.0,,MCI (2 tests â¤1.5 std overall)
+SSC0168,Baseline (Arm 1: C-OPN),0.56,0.14,0.65,0.56,0.06,0.39,Non-MCI
+SSC0169,Baseline (Arm 1: C-OPN),0.82,0.0,0.66,-0.21,-0.1,0.23,Non-MCI
+SSC0172,Baseline (Arm 1: C-OPN),0.87,1.02,-0.62,0.36,-0.53,0.22,Non-MCI
+SSC0173,Baseline (Arm 1: C-OPN),-0.56,-0.31,-1.56,-0.29,0.63,-0.42,Non-MCI
+SSC0174,Baseline (Arm 1: C-OPN),0.0,-0.11,-0.48,-0.59,-0.85,-0.41,MCI (2 tests â¤1.5 std overall)
+SSC0177,Baseline (Arm 1: C-OPN),0.36,0.76,1.17,0.97,2.05,1.06,Non-MCI
+SSC0178,Baseline (Arm 1: C-OPN),0.66,0.2,-0.87,0.0,-0.26,-0.05,MCI (2 tests â¤1.5 std overall)
+SSC0182,Baseline (Arm 1: C-OPN),-0.36,-0.64,-0.24,-0.38,0.07,-0.31,MCI (2 tests â¤1.5 std overall)
+SSC0186,Baseline (Arm 1: C-OPN),0.74,1.11,0.01,0.37,0.66,0.58,Non-MCI
+SSC0192,Baseline (Arm 1: C-OPN),-0.07,-0.64,0.15,0.07,0.41,-0.02,
+SSC0195,Baseline (Arm 1: C-OPN),-0.96,,-0.7,-1.75,-0.91,,MCI (2 tests â¤1.5 std overall)
+SSC0196,Baseline (Arm 1: C-OPN),0.49,0.27,-0.39,,-0.63,,MCI (2 tests â¤1.5 std overall)
+SSC0220,Baseline (Arm 1: C-OPN),0.59,-0.04,0.63,0.23,-0.28,0.23,MCI (2 tests â¤1.5 std overall)
+SSC0342,Baseline (Arm 1: C-OPN),,,,,,,
+SSC0390,Baseline (Arm 1: C-OPN),,,,,,,
