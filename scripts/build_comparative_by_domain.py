@@ -57,6 +57,33 @@ SKIP_COLS   = {"Project key", "Event Name", "Complete?"}
 MIN_N       = 5
 MAX_PLOTS   = 24
 
+# Field types that should be bar plots (categorical/ordinal responses)
+BAR_FIELD_TYPES  = {"radio", "yesno", "checkbox", "dropdown"}
+# Field types that should be box plots (continuous/calculated)
+BOX_FIELD_TYPES  = {"calc", "text"}
+
+# ---------------------------------------------------------------------------
+# Load column → field_type mapping produced by build_domain_pipeline.py
+# ---------------------------------------------------------------------------
+_MAPPING_PATH = os.path.join(
+    os.path.dirname(__file__), "..", "output", "clean_pipeline", "domain_column_mapping.csv"
+)
+
+def _load_col_field_type_map():
+    """Return {normalised_csv_col: field_type} for all matched columns."""
+    try:
+        dm = pd.read_csv(_MAPPING_PATH)
+        dm = dm[dm["Matched"] == "Yes"].dropna(subset=["Field Type"])
+        mapping = {}
+        for _, row in dm.iterrows():
+            key = str(row["CSV column"]).strip()
+            mapping[key] = str(row["Field Type"]).strip()
+        return mapping
+    except Exception:
+        return {}
+
+_COL_FIELD_TYPE = _load_col_field_type_map()
+
 # ---------------------------------------------------------------------------
 # Shared helpers
 # ---------------------------------------------------------------------------
@@ -70,10 +97,20 @@ def load_csv(path):
     df = pd.read_csv(path)
     return df.drop(columns=[c for c in df.columns if c.startswith("Unnamed:")], errors="ignore")
 
+def _field_type(col):
+    """Look up the REDCap field type for a CSV column name (truncated to 80 chars in mapping)."""
+    # The mapping stores column names truncated to 80 chars
+    return _COL_FIELD_TYPE.get(col[:80], _COL_FIELD_TYPE.get(col, None))
+
 def numeric_cols_of(df):
+    """Columns suitable for box plots: continuous/calculated numeric values."""
     cols = []
     for col in df.columns:
         if col in SKIP_COLS or col.startswith("Unnamed"):
+            continue
+        ft = _field_type(col)
+        # If field type is known as categorical → skip here (goes to bar plot)
+        if ft in BAR_FIELD_TYPES:
             continue
         s = df[col].dropna()
         if len(s) == 0:
@@ -84,7 +121,7 @@ def numeric_cols_of(df):
     return cols
 
 def categorical_cols_of(df):
-    """Return columns that are non-numeric text with a small number of distinct values."""
+    """Columns suitable for bar plots: radio/yesno/checkbox/dropdown OR text with few distinct values."""
     cols = []
     for col in df.columns:
         if col in SKIP_COLS or col.startswith("Unnamed"):
@@ -92,12 +129,16 @@ def categorical_cols_of(df):
         s = df[col].dropna()
         if len(s) == 0:
             continue
-        conv = pd.to_numeric(s, errors="coerce")
-        if conv.notna().sum() / len(s) >= 0.5:
-            continue  # already numeric — handled by box plots
-        n_unique = s.nunique()
-        if 2 <= n_unique <= 8:  # reasonable number of response categories
+        ft = _field_type(col)
+        # Explicitly categorical by field type
+        if ft in BAR_FIELD_TYPES:
             cols.append(col)
+            continue
+        # Fallback: non-numeric text with a small number of distinct levels
+        conv = pd.to_numeric(s, errors="coerce")
+        if conv.notna().sum() / len(s) < 0.5:
+            if 2 <= s.nunique() <= 8:
+                cols.append(col)
     return cols
 
 def _chi2_p(df, group_col, col):

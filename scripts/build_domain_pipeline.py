@@ -109,7 +109,7 @@ dd_dom  = dd_dom.rename(columns={"Variable/Field Name":       "var_name",
 dd_ref["var_name"] = dd_ref["var_name"].astype(str).str.strip()
 dd_dom["var_name"] = dd_dom["var_name"].astype(str).str.strip()
 
-merged_dd = dd_ref[["var_name", "new_form_name", "field_label"]].merge(
+merged_dd = dd_ref[["var_name", "new_form_name", "field_label", "Field Type"]].merge(
     dd_dom[["var_name", "old_file_name", "domain"]],
     on="var_name", how="inner"
 )
@@ -166,15 +166,17 @@ for old_file in sorted(old_vars_by_file.index):
     csv_df   = load_csv(csv_path)
     form_dd  = merged_dd[merged_dd["new_form_name"] == new_form].copy()
 
-    # Build {field_label_norm: domain} — prefer non-Admin when label is duplicated
-    label_domain: dict[str, str] = {}
+    # Build {field_label_norm: (domain, field_type, var_name)} — prefer non-Admin
+    label_info: dict[str, tuple] = {}
     for _, row in form_dd.iterrows():
         ln  = normalize(str(row["field_label"]))
         dom = row["domain"]
-        if ln not in label_domain:
-            label_domain[ln] = dom
-        elif label_domain[ln] == "Admin" and dom != "Admin":
-            label_domain[ln] = dom
+        ft  = str(row.get("Field Type", "")) if pd.notna(row.get("Field Type", "")) else ""
+        vn  = str(row["var_name"])
+        if ln not in label_info:
+            label_info[ln] = (dom, ft, vn)
+        elif label_info[ln][0] == "Admin" and dom != "Admin":
+            label_info[ln] = (dom, ft, vn)
 
     # Match each CSV column to best-scoring Field Label
     col_domain: dict[str, str] = {}
@@ -182,11 +184,11 @@ for old_file in sorted(old_vars_by_file.index):
         if col in SKIP_COLS or col.startswith("Unnamed"):
             continue
         cn = normalize(col)
-        best_score, best_dom, best_lbl = 0.0, None, None
-        for lbl_norm, dom in label_domain.items():
+        best_score, best_dom, best_lbl, best_ft, best_vn = 0.0, None, None, "", ""
+        for lbl_norm, (dom, ft, vn) in label_info.items():
             s = jaccard(cn, lbl_norm)
             if s > best_score:
-                best_score, best_dom, best_lbl = s, dom, lbl_norm
+                best_score, best_dom, best_lbl, best_ft, best_vn = s, dom, lbl_norm, ft, vn
 
         if best_score >= MATCH_THRESHOLD:
             col_domain[col] = best_dom
@@ -194,6 +196,8 @@ for old_file in sorted(old_vars_by_file.index):
                 "Form":                  old_file,
                 "CSV column":            col[:80],
                 "Matched field label":   best_lbl,
+                "Variable / Field Name": best_vn,
+                "Field Type":            best_ft,
                 "Domain":                best_dom,
                 "Score":                 round(best_score, 3),
                 "Matched":               "Yes",
@@ -203,6 +207,8 @@ for old_file in sorted(old_vars_by_file.index):
                 "Form":                  old_file,
                 "CSV column":            col[:80],
                 "Matched field label":   best_lbl or "",
+                "Variable / Field Name": best_vn,
+                "Field Type":            best_ft,
                 "Domain":                "UNMATCHED",
                 "Score":                 round(best_score, 3),
                 "Matched":               "No",
