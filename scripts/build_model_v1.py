@@ -118,8 +118,7 @@ enrol_df = load_csv("Enrollement")
 clin_df  = load_csv("Clinical")
 demo_df  = load_csv("Demographic")
 epi_df   = load_csv("Epidemiological")
-upd_df   = load_csv("MDS-UPDRS")       # Part 1A value cols + Part 3
-upd1_df  = load_csv("MDS-UPDRS-1")     # Part 1B + Part 2 text cols
+upd_df   = load_csv("MDS-UPDRS")       # ALL UPDRS data (Part 1 + 2 + 3)
 pdq_df   = load_csv("PDQ 39")
 moca_df  = load_csv("MoCA")
 neuro_df = load_csv("Neuropsychological")
@@ -264,9 +263,10 @@ def build_features(ids: set) -> pd.DataFrame:
         fts["first_sx_brady"]     = (s.str.contains("Bradykinesia|Bradykinésie", na=False)).astype(float)
         fts["first_sx_rigidity"]  = (s.str.contains("Rigidity|Rigidité", na=False)).astype(float)
 
-    # ----- MDS-UPDRS Part 1 (clinician-rated 1.1–1.5 → value cols) -----
+    # ----- MDS-UPDRS: Part 1A value cols, Part 1B text cols, Part 2, Part 3 -----
     u = upd_df[upd_df["Project key"].isin(ids)].set_index("Project key")
 
+    # Part 1A — clinician-rated, have computed value columns
     for var, vcol in [
         ("updrs_1_1", "Updrs_1_1 value"),
         ("updrs_1_2", "Updrs_1_2 value"),
@@ -276,24 +276,22 @@ def build_features(ids: set) -> pd.DataFrame:
         if vcol in upd_df.columns:
             fts[var] = pd.to_numeric(u[vcol], errors="coerce")
 
-    # ----- MDS-UPDRS-1 file: Part 1B (1.3, 1.10–1.13) + Part 2 -----
-    u1 = upd1_df[upd1_df["Project key"].isin(ids)].set_index("Project key")
+    # 1.3 DEPRESSED MOOD — has Updrs_1_3 computed col in MDS-UPDRS
+    if "Updrs_1_3" in upd_df.columns:
+        fts["updrs_1_3"] = pd.to_numeric(u["Updrs_1_3"], errors="coerce")
 
-    # 1.3 DEPRESSED MOOD — has Updrs_1_3 computed col in MDS-UPDRS-1
-    if "Updrs_1_3" in upd1_df.columns:
-        fts["updrs_1_3"] = pd.to_numeric(u1["Updrs_1_3"], errors="coerce")
-
+    # Part 1B — self-rated text responses
     for var, prefix in [
         ("updrs_1_10", "1.10 URINARY"),
         ("updrs_1_11", "1.11 CONSTIPATION"),
         ("updrs_1_12", "1.12 LIGHT HEADEDNESS"),
         ("updrs_1_13", "1.13 FATIGUE"),
     ]:
-        col = find_col(upd1_df, prefix)
+        col = find_col(upd_df, prefix)
         if col:
-            fts[var] = u1[col].apply(extract_int)
+            fts[var] = u[col].apply(extract_int)
 
-    # Part 2 items (all text in MDS-UPDRS-1)
+    # Part 2 items — self-rated text responses
     for var, prefix in [
         ("updrs_2_1",  "2.1 SPEECH"),
         ("updrs_2_5",  "2.5 DRESSING"),
@@ -303,9 +301,9 @@ def build_features(ids: set) -> pd.DataFrame:
         ("updrs_2_12", "2.12 WALKING AND BALANCE"),
         ("updrs_2_13", "2.13 FREEZING"),
     ]:
-        col = find_col(upd1_df, prefix)
+        col = find_col(upd_df, prefix)
         if col:
-            fts[var] = u1[col].apply(extract_int)
+            fts[var] = u[col].apply(extract_int)
 
     # ----- MDS-UPDRS Part 3 (value columns) -----
     for var, vcol in [
@@ -471,9 +469,6 @@ def run_variant(X: pd.DataFrame, y: pd.Series, task: str, balanced: bool,
                 if balanced else 1.0,
             )
         else:
-            if balanced:
-                cls_counts = np.bincount(y_tr)
-                weights = (len(y_tr) / (n_classes * cls_counts))[y_tr]
             model = XGBClassifier(
                 n_estimators=400, max_depth=4, learning_rate=0.05,
                 subsample=0.8, colsample_bytree=0.8,
@@ -484,7 +479,11 @@ def run_variant(X: pd.DataFrame, y: pd.Series, task: str, balanced: bool,
 
         fit_kwargs = {}
         if task == "multi" and balanced:
-            fit_kwargs["sample_weight"] = weights
+            # Per-sample weights: inverse class frequency, robust to absent classes in fold
+            cls_counts = np.bincount(y_tr, minlength=n_classes).astype(float)
+            cls_counts[cls_counts == 0] = 1.0  # avoid div-by-zero for absent classes
+            w_per_class = len(y_tr) / (n_classes * cls_counts)
+            fit_kwargs["sample_weight"] = w_per_class[y_tr]
 
         model.fit(X_tr, y_tr, **fit_kwargs)
 
@@ -512,19 +511,31 @@ def run_variant(X: pd.DataFrame, y: pd.Series, task: str, balanced: bool,
         f1    = f1_score(y_true, y_pred, average="macro")
         f1_w  = f1_score(y_true, y_pred, average="weighted")
 
-    report = classification_report(y_true, y_pred, target_names=label_names,
+    present_labels = sorted(np.unique(y_true))
+    present_names  = [label_names[i] for i in present_labels]
+    report = classification_report(y_true, y_pred,
+                                   labels=present_labels,
+                                   target_names=present_names,
                                    output_dict=True, zero_division=0)
 
     metrics = {
-        "roc_auc":   round(float(auc), 4),
-        "f1_macro":  round(float(f1), 4),
+        "roc_auc":     round(float(auc), 4),
+        "f1_macro":    round(float(f1), 4),
         "f1_weighted": round(float(f1_w), 4),
-        "n_samples": int(len(y_true)),
-        "per_class": {label_names[i]: report.get(label_names[i], {})
-                      for i in range(n_classes)},
+        "n_samples":   int(len(y_true)),
+        "per_class":   {name: report.get(name, {}) for name in present_names},
     }
+    def _to_json(obj):
+        if isinstance(obj, (np.integer, np.floating)):
+            return float(obj)
+        if isinstance(obj, dict):
+            return {k: _to_json(v) for k, v in obj.items()}
+        if isinstance(obj, list):
+            return [_to_json(v) for v in obj]
+        return obj
+
     with open(out_dir / "metrics.json", "w") as fh:
-        json.dump(metrics, fh, indent=2)
+        json.dump(_to_json(metrics), fh, indent=2)
 
     # --- Confusion matrix ---
     cm   = confusion_matrix(y_true, y_pred, labels=list(range(n_classes)))
@@ -552,7 +563,8 @@ def run_variant(X: pd.DataFrame, y: pd.Series, task: str, balanced: bool,
             if balanced else 1.0,
         )
     else:
-        cls_counts = np.bincount(y_full)
+        cls_counts = np.bincount(y_full, minlength=n_classes).astype(float)
+        cls_counts[cls_counts == 0] = 1.0
         weights    = (len(y_full) / (n_classes * cls_counts))[y_full] if balanced else None
         final_model = XGBClassifier(
             n_estimators=400, max_depth=4, learning_rate=0.05,
@@ -568,20 +580,30 @@ def run_variant(X: pd.DataFrame, y: pd.Series, task: str, balanced: bool,
     explainer   = shap.TreeExplainer(final_model)
     shap_values = explainer.shap_values(X_full)
 
-    fig, ax = plt.subplots(figsize=(8, max(4, len(X.columns) * 0.25)))
+    fig, ax = plt.subplots(figsize=(8, max(4, len(X.columns) * 0.3)))
     if task == "binary":
         sv = shap_values if not isinstance(shap_values, list) else shap_values[1]
+        if isinstance(sv, np.ndarray) and sv.ndim == 3:
+            sv = sv[:, :, 1]  # XGBoost sometimes returns (n_samples, n_features, n_classes)
         shap.summary_plot(sv, X_full, show=False, max_display=30, plot_size=None)
+        plt.tight_layout()
     else:
-        sv = np.abs(np.array(shap_values)).mean(axis=0) if isinstance(shap_values, list) \
-             else np.abs(shap_values).mean(axis=0)
-        mean_shap = pd.Series(sv.mean(axis=0) if sv.ndim == 2 else sv,
-                              index=X.columns).sort_values(ascending=True)
+        # Multiclass: average |SHAP| across classes
+        # TreeExplainer returns (n_samples, n_features, n_classes) for multiclass XGBoost
+        if isinstance(shap_values, list):
+            sv_arr = np.abs(np.stack(shap_values, axis=-1))  # → (n_samples, n_features, n_classes)
+            mean_shap_vals = sv_arr.mean(axis=(0, 2))         # per feature
+        elif shap_values.ndim == 3:
+            # shape (n_samples, n_features, n_classes)
+            mean_shap_vals = np.abs(shap_values).mean(axis=(0, 2))
+        else:
+            mean_shap_vals = np.abs(shap_values).mean(axis=0)
+        mean_shap = pd.Series(mean_shap_vals, index=X.columns).sort_values(ascending=True)
         mean_shap.tail(30).plot(kind="barh", ax=ax)
         ax.set_xlabel("Mean |SHAP|")
         ax.set_title(f"Feature importance — {out_dir.name}", fontsize=9)
+        plt.tight_layout()
 
-    plt.tight_layout()
     plt.savefig(out_dir / "shap_summary.png", dpi=120, bbox_inches="tight")
     plt.close()
 
@@ -628,7 +650,7 @@ for tier_name, tier_vars in TIER_MAP.items():
             print(f"  → {var_name}  ({X_task.shape[0]} samples, {n_feat} features)", flush=True)
 
             try:
-                y_task = y.reset_index(drop=True) if task == "multi" else y[mask].reset_index(drop=True)
+                y_task  = y.reset_index(drop=True)
                 X_reset = X_task.reset_index(drop=True)
 
                 # Drop features with >80% missing
