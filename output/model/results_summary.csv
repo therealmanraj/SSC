@@ -1,0 +1,9 @@
+variant,tier,task,balanced,n_samples,n_features,roc_auc,f1_macro,f1_weighted,error
+TierA_binary_balanced,TierA,binary,True,1942.0,23.0,0.8352,0.2174,0.9467,
+TierA_binary_unbalanced,TierA,binary,False,1942.0,23.0,0.8366,0.1463,0.9545,
+TierA_multi_balanced,,,,,,,,,Length of values (5) does not match length of index (23)
+TierA_multi_unbalanced,,,,,,,,,Length of values (5) does not match length of index (23)
+TierAB_binary_balanced,TierAB,binary,True,1942.0,40.0,0.8819,0.2645,0.9533,
+TierAB_binary_unbalanced,TierAB,binary,False,1942.0,40.0,0.8935,0.2927,0.9623,
+TierAB_multi_balanced,,,,,,,,,Length of values (5) does not match length of index (40)
+TierAB_multi_unbalanced,,,,,,,,,Length of values (5) does not match length of index (40)

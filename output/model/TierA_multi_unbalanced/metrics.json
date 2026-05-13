@@ -1,0 +1,38 @@
+{
+  "roc_auc": 0.836,
+  "f1_macro": 0.2194,
+  "f1_weighted": 0.9528,
+  "n_samples": 1942,
+  "per_class": {
+    "PD": {
+      "precision": 0.96849173553719,
+      "recall": 0.9978712080894092,
+      "f1-score": 0.9829619921363041,
+      "support": 1879.0
+    },
+    "PSP": {
+      "precision": 0.4,
+      "recall": 0.06666666666666667,
+      "f1-score": 0.11428571428571428,
+      "support": 30.0
+    },
+    "MSA": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 21.0
+    },
+    "DLB": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 9.0
+    },
+    "CBS": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 3.0
+    }
+  }
+}
