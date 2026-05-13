@@ -45,21 +45,16 @@ from xgboost import XGBClassifier
 warnings.filterwarnings("ignore")
 
 # ---------------------------------------------------------------------------
-# Paths
+# Paths — uses clean pipeline (enrolled + complete rows only)
 # ---------------------------------------------------------------------------
-ROOT       = Path(__file__).parent.parent
-DATA       = ROOT / "data"
-OUTPUT     = ROOT / "output" / "model"
-FEAT_EXCEL = ROOT / "pending" / "COPN_Selected_Features_v3_11May2026.xlsx"
+ROOT      = Path(__file__).parent.parent
+CLEAN_DIR = ROOT / "output" / "clean_pipeline" / "full_enrolled"
+OUTPUT    = ROOT / "output" / "model"
 
 OUTPUT.mkdir(parents=True, exist_ok=True)
 
-STATUS_COL  = "Study Status:    Statut dans l'étude:"
-ENROL_STATUSES = ["Enrolled/Inscrit",
-                  "QPN partially enrolled/RPQ partiellement inscrit"]
-
 # Clinical "Determined diagnosis" numeric codes
-DIAG_COL  = next(c for c in pd.read_csv(DATA / "Clinical").columns
+DIAG_COL  = next(c for c in pd.read_csv(CLEAN_DIR / "clinical.csv").columns
                  if "Determined diagnosis" in c)
 DIAG_MAP  = {0.0: "PD", 1.0: "PSP", 2.0: "MSA", 3.0: "CBS", 4.0: "DLB"}
 PDPLUS    = {1.0, 2.0, 3.0, 4.0}  # PSP, MSA, CBS, DLB
@@ -70,7 +65,7 @@ PDPLUS    = {1.0, 2.0, 3.0, 4.0}  # PSP, MSA, CBS, DLB
 # ---------------------------------------------------------------------------
 
 def load_csv(name: str) -> pd.DataFrame:
-    df = pd.read_csv(DATA / name)
+    df = pd.read_csv(CLEAN_DIR / name)
     return df.drop(columns=[c for c in df.columns if c.startswith("Unnamed:")],
                    errors="ignore")
 
@@ -114,29 +109,19 @@ def encode_yesno(series: pd.Series,
 # Load data files (once, reused)
 # ---------------------------------------------------------------------------
 print("Loading data files…")
-enrol_df = load_csv("Enrollement")
-clin_df  = load_csv("Clinical")
-demo_df  = load_csv("Demographic")
-epi_df   = load_csv("Epidemiological")
-upd_df   = load_csv("MDS-UPDRS")       # ALL UPDRS data (Part 1 + 2 + 3)
-pdq_df   = load_csv("PDQ 39")
-moca_df  = load_csv("MoCA")
-neuro_df = load_csv("Neuropsychological")
+clin_df  = load_csv("clinical.csv")
+demo_df  = load_csv("demographic.csv")
+epi_df   = load_csv("epidemiological.csv")
+upd_df   = load_csv("mds_updrs.csv")       # ALL UPDRS data (Part 1 + 2 + 3)
+pdq_df   = load_csv("pdq_39.csv")
+moca_df  = load_csv("moca.csv")
+neuro_df = load_csv("neuropsychological.csv")
 
 
 # ---------------------------------------------------------------------------
-# 1. Enrolled participants
+# 1 + 2. Diagnosis — clean pipeline is already enrolled+complete filtered
 # ---------------------------------------------------------------------------
-enrolled_ids = set(
-    enrol_df[enrol_df[STATUS_COL].isin(ENROL_STATUSES)]["Project key"]
-)
-print(f"  Enrolled: {len(enrolled_ids)}")
-
-
-# ---------------------------------------------------------------------------
-# 2. Diagnosis — filter to PD + PD-plus only
-# ---------------------------------------------------------------------------
-clin_sub = clin_df[clin_df["Project key"].isin(enrolled_ids)].copy()
+clin_sub = clin_df.copy()
 clin_sub["_diag_code"] = pd.to_numeric(clin_sub[DIAG_COL], errors="coerce")
 clin_sub = clin_sub[clin_sub["_diag_code"].isin(DIAG_MAP.keys())].copy()
 clin_sub["diagnosis"] = clin_sub["_diag_code"].map(DIAG_MAP)

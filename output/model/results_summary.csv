@@ -1,9 +1,9 @@
 variant,tier,task,balanced,n_samples,n_features,roc_auc,f1_macro,f1_weighted
-TierA_binary_balanced,TierA,binary,True,1942,35,0.8699,0.2519,0.9497
-TierA_binary_unbalanced,TierA,binary,False,1942,35,0.8789,0.15,0.9551
-TierA_multi_balanced,TierA,multi,True,1942,35,0.8637,0.2624,0.9447
-TierA_multi_unbalanced,TierA,multi,False,1942,35,0.866,0.2281,0.9532
-TierAB_binary_balanced,TierAB,binary,True,1942,52,0.8907,0.2812,0.953
-TierAB_binary_unbalanced,TierAB,binary,False,1942,52,0.9043,0.2308,0.9598
-TierAB_multi_balanced,TierAB,multi,True,1942,52,0.8938,0.2694,0.9515
-TierAB_multi_unbalanced,TierAB,multi,False,1942,52,0.8799,0.2427,0.9547
+TierA_binary_balanced,TierA,binary,True,1704,35,0.8986,0.3838,0.963
+TierA_binary_unbalanced,TierA,binary,False,1704,35,0.8988,0.1846,0.9593
+TierA_multi_balanced,TierA,multi,True,1704,35,0.8614,0.3365,0.9563
+TierA_multi_unbalanced,TierA,multi,False,1704,35,0.8828,0.2555,0.9579
+TierAB_binary_balanced,TierAB,binary,True,1704,52,0.9143,0.2979,0.9589
+TierAB_binary_unbalanced,TierAB,binary,False,1704,52,0.9169,0.2571,0.9618
+TierAB_multi_balanced,TierAB,multi,True,1704,52,0.8995,0.3637,0.9586
+TierAB_multi_unbalanced,TierAB,multi,False,1704,52,0.9133,0.2657,0.9581
