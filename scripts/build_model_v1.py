@@ -498,12 +498,18 @@ def run_variant(X: pd.DataFrame, y: pd.Series, task: str, balanced: bool,
                                    target_names=present_names,
                                    output_dict=True, zero_division=0)
 
+    macro_avg  = report.get("macro avg", {})
+    weight_avg = report.get("weighted avg", {})
     metrics = {
-        "roc_auc":     round(float(auc), 4),
-        "f1_macro":    round(float(f1), 4),
-        "f1_weighted": round(float(f1_w), 4),
-        "n_samples":   int(len(y_true)),
-        "per_class":   {name: report.get(name, {}) for name in present_names},
+        "roc_auc":            round(float(auc), 4),
+        "f1_macro":           round(float(f1), 4),
+        "f1_weighted":        round(float(f1_w), 4),
+        "precision_macro":    round(float(macro_avg.get("precision", 0)), 4),
+        "recall_macro":       round(float(macro_avg.get("recall", 0)), 4),
+        "precision_weighted": round(float(weight_avg.get("precision", 0)), 4),
+        "recall_weighted":    round(float(weight_avg.get("recall", 0)), 4),
+        "n_samples":          int(len(y_true)),
+        "per_class":          {name: report.get(name, {}) for name in present_names},
     }
     def _to_json(obj):
         if isinstance(obj, (np.integer, np.floating)):
@@ -649,17 +655,22 @@ for tier_name, tier_vars in TIER_MAP.items():
 
                 m = run_variant(X_reset, y_task, task, balanced, lbl, out_dir)
                 results.append({
-                    "variant":     var_name,
-                    "tier":        tier_name,
-                    "task":        task,
-                    "balanced":    balanced,
-                    "n_samples":   m["n_samples"],
-                    "n_features":  len(keep),
-                    "roc_auc":     m["roc_auc"],
-                    "f1_macro":    m["f1_macro"],
-                    "f1_weighted": m["f1_weighted"],
+                    "variant":            var_name,
+                    "tier":               tier_name,
+                    "task":               task,
+                    "balanced":           balanced,
+                    "n_samples":          m["n_samples"],
+                    "n_features":         len(keep),
+                    "roc_auc":            m["roc_auc"],
+                    "f1_macro":           m["f1_macro"],
+                    "f1_weighted":        m["f1_weighted"],
+                    "precision_macro":    m["precision_macro"],
+                    "recall_macro":       m["recall_macro"],
+                    "precision_weighted": m["precision_weighted"],
+                    "recall_weighted":    m["recall_weighted"],
                 })
-                print(f"     AUC={m['roc_auc']:.3f}  F1={m['f1_macro']:.3f}")
+                print(f"     AUC={m['roc_auc']:.3f}  F1={m['f1_macro']:.3f}  "
+                      f"Prec={m['precision_macro']:.3f}  Rec={m['recall_macro']:.3f}")
             except Exception as exc:
                 print(f"     ERROR: {exc}")
                 results.append({"variant": var_name, "error": str(exc)})
@@ -671,7 +682,8 @@ results_df = pd.DataFrame(results)
 results_df.to_csv(OUTPUT / "results_summary.csv", index=False)
 print("\n" + "="*60)
 print("Results summary (full features):")
-print(results_df[["variant","n_samples","n_features","roc_auc","f1_macro"]].to_string(index=False))
+print(results_df[["variant","n_samples","n_features","roc_auc",
+                   "f1_macro","precision_macro","recall_macro"]].to_string(index=False))
 
 
 # ---------------------------------------------------------------------------
@@ -728,16 +740,21 @@ for tier_name, tier_vars in TIER_MAP.items():
 
                 m = run_variant(X_reset, y_task, task, balanced, lbl, out_dir)
                 results_top20.append({
-                    "variant":     var_name,
-                    "tier":        tier_name,
-                    "task":        task,
-                    "balanced":    balanced,
-                    "n_features":  len(keep),
-                    "roc_auc":     m["roc_auc"],
-                    "f1_macro":    m["f1_macro"],
-                    "f1_weighted": m["f1_weighted"],
+                    "variant":            var_name,
+                    "tier":               tier_name,
+                    "task":               task,
+                    "balanced":           balanced,
+                    "n_features":         len(keep),
+                    "roc_auc":            m["roc_auc"],
+                    "f1_macro":           m["f1_macro"],
+                    "f1_weighted":        m["f1_weighted"],
+                    "precision_macro":    m["precision_macro"],
+                    "recall_macro":       m["recall_macro"],
+                    "precision_weighted": m["precision_weighted"],
+                    "recall_weighted":    m["recall_weighted"],
                 })
-                print(f"     AUC={m['roc_auc']:.3f}  F1={m['f1_macro']:.3f}")
+                print(f"     AUC={m['roc_auc']:.3f}  F1={m['f1_macro']:.3f}  "
+                      f"Prec={m['precision_macro']:.3f}  Rec={m['recall_macro']:.3f}")
             except Exception as exc:
                 print(f"     ERROR: {exc}")
                 results_top20.append({"variant": var_name, "error": str(exc)})
@@ -750,8 +767,9 @@ top20_df.to_csv(OUTPUT / "results_summary_top20.csv", index=False)
 
 print("\n" + "="*60)
 print("Comparison: full features vs top-20 SHAP selection")
-print(f"\n{'Variant':<35} {'Full AUC':>9} {'Top20 AUC':>10} {'ΔAUC':>7}  {'Full F1':>8} {'Top20 F1':>9} {'ΔF1':>6}")
-print("-" * 90)
+print(f"\n{'Variant':<35} {'AUC(F)':>7} {'AUC(20)':>8} {'ΔAUC':>6}  "
+      f"{'Pre(F)':>7} {'Pre(20)':>8}  {'Rec(F)':>7} {'Rec(20)':>8}  {'F1(F)':>6} {'F1(20)':>7}")
+print("-" * 110)
 
 full_lookup = results_df.set_index("variant")
 for row in results_top20:
@@ -761,11 +779,111 @@ for row in results_top20:
     vfull = v20.replace("_top20", "")
     if vfull not in full_lookup.index:
         continue
-    full_auc = full_lookup.loc[vfull, "roc_auc"]
-    full_f1  = full_lookup.loc[vfull, "f1_macro"]
-    d_auc    = row["roc_auc"] - full_auc
-    d_f1     = row["f1_macro"] - full_f1
-    print(f"{vfull:<35} {full_auc:>9.4f} {row['roc_auc']:>10.4f} {d_auc:>+7.4f}  "
-          f"{full_f1:>8.4f} {row['f1_macro']:>9.4f} {d_f1:>+6.4f}")
+    fl = full_lookup.loc[vfull]
+    d_auc = row["roc_auc"] - fl["roc_auc"]
+    print(f"{vfull:<35} {fl['roc_auc']:>7.4f} {row['roc_auc']:>8.4f} {d_auc:>+6.4f}  "
+          f"{fl['precision_macro']:>7.4f} {row['precision_macro']:>8.4f}  "
+          f"{fl['recall_macro']:>7.4f} {row['recall_macro']:>8.4f}  "
+          f"{fl['f1_macro']:>6.4f} {row['f1_macro']:>7.4f}")
+
+print(f"\n→ All outputs saved to {OUTPUT}/")
+
+# ---------------------------------------------------------------------------
+# 12. Top-15 SHAP — binary only
+# ---------------------------------------------------------------------------
+print("\n" + "="*60)
+print("Top-15 SHAP feature selection — binary only…")
+
+top15_features = shap_ref.head(15)["feature"].tolist()
+print(f"  Top 15 features:")
+for i, f in enumerate(top15_features, 1):
+    score = shap_ref.loc[shap_ref["feature"] == f, "mean_abs_shap"].values[0]
+    print(f"    {i:2}. {f:<30}  {score:.5f}")
+
+results_top15 = []
+
+for tier_name, tier_vars in TIER_MAP.items():
+    feat_cols = [v for v in tier_vars if v in df_full.columns and v in top15_features]
+    if not feat_cols:
+        continue
+    X_base = df_full[feat_cols].copy()
+    print(f"\n{tier_name} (top-15 subset): {len(feat_cols)} features — {feat_cols}")
+
+    y    = (df_full["_diag_code"] != 0.0).astype(int)
+    lbl  = ["PD", "PD-plus"]
+
+    for balanced in [True, False]:
+        bal_str  = "balanced" if balanced else "unbalanced"
+        var_name = f"{tier_name}_binary_{bal_str}_top15"
+        out_dir  = OUTPUT / var_name
+        print(f"  → {var_name}", flush=True)
+
+        try:
+            y_task  = y.reset_index(drop=True)
+            X_reset = X_base.reset_index(drop=True)
+            keep    = [c for c in X_reset.columns if X_reset[c].isna().mean() <= 0.80]
+            X_reset = X_reset[keep]
+
+            m = run_variant(X_reset, y_task, "binary", balanced, lbl, out_dir)
+            results_top15.append({
+                "variant":            var_name,
+                "tier":               tier_name,
+                "task":               "binary",
+                "balanced":           balanced,
+                "n_features":         len(keep),
+                "roc_auc":            m["roc_auc"],
+                "f1_macro":           m["f1_macro"],
+                "f1_weighted":        m["f1_weighted"],
+                "precision_macro":    m["precision_macro"],
+                "recall_macro":       m["recall_macro"],
+                "precision_weighted": m["precision_weighted"],
+                "recall_weighted":    m["recall_weighted"],
+            })
+            print(f"     AUC={m['roc_auc']:.3f}  F1={m['f1_macro']:.3f}  "
+                  f"Prec={m['precision_macro']:.3f}  Rec={m['recall_macro']:.3f}")
+        except Exception as exc:
+            print(f"     ERROR: {exc}")
+            results_top15.append({"variant": var_name, "error": str(exc)})
+
+top15_df = pd.DataFrame(results_top15)
+top15_df.to_csv(OUTPUT / "results_summary_top15.csv", index=False)
+
+# ---------------------------------------------------------------------------
+# 13. Final comparison: full vs top-20 vs top-15 (binary only)
+# ---------------------------------------------------------------------------
+print("\n" + "="*60)
+print("Binary comparison: full vs top-20 vs top-15")
+
+top20_lookup = pd.DataFrame(results_top20).set_index("variant") \
+    if results_top20 else pd.DataFrame()
+top15_lookup = top15_df.set_index("variant") if not top15_df.empty else pd.DataFrame()
+
+hdr = (f"\n{'Variant':<30} "
+       f"{'AUC':>6} {'P':>6} {'R':>6} {'F1':>6}  "
+       f"{'AUC20':>6} {'P20':>6} {'R20':>6} {'F120':>6}  "
+       f"{'AUC15':>6} {'P15':>6} {'R15':>6} {'F115':>6}")
+print(hdr)
+print("-" * len(hdr))
+
+for tier_name in TIER_MAP:
+    for bal_str in ["balanced", "unbalanced"]:
+        vfull = f"{tier_name}_binary_{bal_str}"
+        v20   = vfull + "_top20"
+        v15   = vfull + "_top15"
+        if vfull not in full_lookup.index:
+            continue
+        fl  = full_lookup.loc[vfull]
+        r20 = top20_lookup.loc[v20] if v20 in top20_lookup.index else None
+        r15 = top15_lookup.loc[v15] if v15 in top15_lookup.index else None
+
+        def _v(row, key): return f"{row[key]:>6.4f}" if row is not None else f"{'—':>6}"
+
+        print(f"{vfull:<30} "
+              f"{fl['roc_auc']:>6.4f} {fl['precision_macro']:>6.4f} "
+              f"{fl['recall_macro']:>6.4f} {fl['f1_macro']:>6.4f}  "
+              f"{_v(r20,'roc_auc')} {_v(r20,'precision_macro')} "
+              f"{_v(r20,'recall_macro')} {_v(r20,'f1_macro')}  "
+              f"{_v(r15,'roc_auc')} {_v(r15,'precision_macro')} "
+              f"{_v(r15,'recall_macro')} {_v(r15,'f1_macro')}")
 
 print(f"\n→ All outputs saved to {OUTPUT}/")

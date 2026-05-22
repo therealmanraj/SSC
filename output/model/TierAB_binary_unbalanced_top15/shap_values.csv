@@ -1,0 +1,16 @@
+rank,feature,mean_abs_shap
+1,first_sx_tremor,1.30862
+2,bradykinesia_mean,0.94778
+3,study_visit_age,0.72505
+4,smell,0.60932
+5,updrs_2_8,0.49203
+6,updrs_3_10,0.43882
+7,moca_total,0.42132
+8,symptom_asymmetry,0.40896
+9,yrs_education,0.37424
+10,gender,0.31963
+11,updrs_2_12,0.30833
+12,dreams,0.30277
+13,updrs_2_1,0.29614
+14,moca_visuosp,0.22524
+15,moca_attention,0.16906

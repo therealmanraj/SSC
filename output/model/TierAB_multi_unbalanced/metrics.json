@@ -2,6 +2,10 @@
   "roc_auc": 0.921,
   "f1_macro": 0.2881,
   "f1_weighted": 0.9605,
+  "precision_macro": 0.3699,
+  "recall_macro": 0.261,
+  "precision_weighted": 0.9544,
+  "recall_weighted": 0.9701,
   "n_samples": 1704,
   "per_class": {
     "PD": {

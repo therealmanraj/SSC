@@ -288,20 +288,39 @@ Tier A subset = 14 of these 20 (Tier B features filtered out). Tier AB subset = 
 
 **Finding:** For binary PD vs AP classification, top-20 features match or slightly exceed the full model (ΔAUC ≤ +0.004). For multiclass subtype classification, the full feature set is preferred (ΔAUC up to -0.019), likely because rare subtypes benefit from additional discriminating variables.
 
+### Pass 3 — Top-15 SHAP feature selection (binary only)
+
+Top 15 = features 1–15 from the Pass 1 SHAP ranking above. Binary variants only (4 variants). Tests whether the bottom 5 of the top-20 are load-bearing.
+
+Tier A subset = 10 features (Tier B items filtered out). Tier AB subset = all 15.
+
+**3-way binary comparison: full vs top-20 vs top-15**
+
+| Variant | Full AUC | Top-20 AUC | Top-15 AUC | ΔTop20 | ΔTop15 |
+|---------|----------|------------|------------|--------|--------|
+| TierAB_binary_balanced | 0.9226 | **0.9247** | 0.8989 | +0.002 | -0.024 |
+| TierAB_binary_unbalanced | 0.9178 | **0.9220** | 0.9047 | +0.004 | -0.013 |
+| TierA_binary_balanced | 0.9061 | **0.9078** | 0.8924 | +0.002 | -0.014 |
+| TierA_binary_unbalanced | 0.9039 | 0.9016 | 0.8905 | -0.002 | -0.013 |
+
+**Finding:** Dropping features 16–20 (pdq39_mobility, pdq39_communication, updrs_3_14, updrs_2_7, comorbidities) costs 1.3–2.4 AUC points — these features are contributing. Top-20 is the efficient operating point for binary classification.
+
 ### Outputs
 
 ```
 output/model/{variant}/              — 8 full-feature variants
 output/model/{variant}_top20/        — 8 top-20 variants
+output/model/{variant}_top15/        — 4 top-15 binary variants
   confusion_matrix.png    cross-validated confusion matrix
   shap_summary.png        mean |SHAP| feature importance bar chart
   shap_values.csv         ranked feature importances (for custom charts)
   metrics.json            AUC, F1-macro, F1-weighted, per-class precision/recall/F1
 
 output/model/
-  feature_matrix.csv          1704 × 53 joined feature table
-  results_summary.csv         full-feature variant results
-  results_summary_top20.csv   top-20 variant results
+  feature_matrix.csv           1704 × 53 joined feature table
+  results_summary.csv          full-feature variant results
+  results_summary_top20.csv    top-20 variant results
+  results_summary_top15.csv    top-15 binary variant results
 ```
 
 ---

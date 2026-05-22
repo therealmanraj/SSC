@@ -1,0 +1,5 @@
+variant,tier,task,balanced,n_features,roc_auc,f1_macro,f1_weighted,precision_macro,recall_macro,precision_weighted,recall_weighted
+TierA_binary_balanced_top15,TierA,binary,True,10,0.8924,0.2667,0.9546,0.6228,0.6206,0.9544,0.9548
+TierA_binary_unbalanced_top15,TierA,binary,False,10,0.8905,0.2466,0.9606,0.7119,0.5816,0.9576,0.9677
+TierAB_binary_balanced_top15,TierAB,binary,True,15,0.8989,0.2523,0.9524,0.6088,0.6188,0.9534,0.9513
+TierAB_binary_unbalanced_top15,TierAB,binary,False,15,0.9047,0.1918,0.9577,0.6613,0.5621,0.9533,0.9654

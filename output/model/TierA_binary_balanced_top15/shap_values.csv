@@ -1,0 +1,11 @@
+rank,feature,mean_abs_shap
+1,study_visit_age,1.8773
+2,first_sx_tremor,1.82766
+3,yrs_education,1.28429
+4,updrs_2_12,1.28308
+5,updrs_2_1,0.95436
+6,updrs_2_8,0.84271
+7,smell,0.80958
+8,symptom_asymmetry,0.712
+9,dreams,0.651
+10,gender,0.4466
