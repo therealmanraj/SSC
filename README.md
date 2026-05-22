@@ -225,18 +225,22 @@ output/comparative_analysis/by_clinical_domain/{Domain}/
 
 ### Pass 1 — 8 variants = 2 tiers × 2 tasks × 2 balance settings
 
-| Variant | Features | AUC | F1 macro | F1 weighted |
-|---------|----------|-----|----------|-------------|
-| TierAB_binary_balanced | 52 | **0.923** | 0.333 | 0.962 |
-| TierAB_multi_unbalanced | 52 | 0.921 | 0.288 | 0.961 |
-| TierAB_binary_unbalanced | 52 | 0.918 | 0.254 | 0.961 |
-| TierAB_multi_balanced | 52 | 0.905 | **0.368** | 0.958 |
-| TierA_binary_balanced | 35 | 0.906 | 0.273 | 0.959 |
-| TierA_multi_unbalanced | 35 | 0.900 | 0.244 | 0.956 |
-| TierA_binary_unbalanced | 35 | 0.904 | 0.206 | 0.960 |
-| TierA_multi_balanced | 35 | 0.882 | 0.337 | 0.957 |
+All metrics are macro-averaged over classes (5-fold stratified CV).
+
+| Variant | Feat | AUC | Prec | Rec | F1 macro | F1 weighted |
+|---------|------|-----|------|-----|----------|-------------|
+| TierAB_binary_balanced | 52 | **0.923** | 0.691 | 0.635 | 0.333 | 0.962 |
+| TierAB_multi_unbalanced | 52 | 0.921 | 0.370 | 0.261 | 0.288 | 0.961 |
+| TierAB_binary_unbalanced | 52 | 0.918 | 0.737 | 0.582 | 0.254 | 0.961 |
+| TierAB_multi_balanced | 52 | 0.905 | 0.438 | 0.344 | **0.368** | 0.958 |
+| TierA_binary_balanced | 35 | 0.906 | 0.659 | 0.606 | 0.273 | 0.959 |
+| TierA_multi_unbalanced | 35 | 0.900 | 0.328 | 0.228 | 0.244 | 0.956 |
+| TierA_binary_unbalanced | 35 | 0.904 | 0.720 | 0.564 | 0.206 | 0.960 |
+| TierA_multi_balanced | 35 | 0.882 | 0.409 | 0.317 | 0.337 | 0.957 |
 
 AUC gain Tier A → Tier AB: **+0.017** (binary), **+0.021** (multiclass)
+
+Note: balanced variants sacrifice precision for recall on the minority AP class — clinically preferred (fewer missed atypical cases).
 
 **Targets:**
 - Binary: PD=0, PD-plus (PSP+MSA+DLB+CBS)=1
@@ -275,16 +279,16 @@ Tier A subset = 14 of these 20 (Tier B features filtered out). Tier AB subset = 
 
 **Full vs top-20 comparison:**
 
-| Variant | Full AUC | Top-20 AUC | ΔAUC | Full F1 | Top-20 F1 | ΔF1 |
-|---------|----------|------------|------|---------|-----------|-----|
-| TierAB_binary_balanced | 0.9226 | **0.9247** | +0.002 | 0.333 | 0.314 | -0.019 |
-| TierAB_binary_unbalanced | 0.9178 | **0.9220** | +0.004 | 0.254 | 0.247 | -0.007 |
-| TierAB_multi_balanced | 0.9046 | 0.8966 | -0.008 | **0.368** | 0.333 | -0.035 |
-| TierAB_multi_unbalanced | 0.9210 | 0.9157 | -0.005 | 0.288 | 0.249 | -0.039 |
-| TierA_binary_balanced | 0.9061 | **0.9078** | +0.002 | 0.273 | 0.286 | +0.013 |
-| TierA_binary_unbalanced | 0.9039 | 0.9016 | -0.002 | 0.206 | 0.260 | +0.054 |
-| TierA_multi_balanced | 0.8821 | 0.8629 | -0.019 | 0.337 | 0.348 | +0.011 |
-| TierA_multi_unbalanced | 0.8998 | 0.8837 | -0.016 | 0.244 | 0.249 | +0.006 |
+| Variant | Full AUC | Top-20 AUC | ΔAUC | Full Prec | Top-20 Prec | Full Rec | Top-20 Rec | Full F1 | Top-20 F1 |
+|---------|----------|------------|------|-----------|-------------|----------|------------|---------|-----------|
+| TierAB_binary_balanced | 0.9226 | **0.9247** | +0.002 | 0.691 | 0.652 | 0.635 | 0.641 | 0.333 | 0.314 |
+| TierAB_binary_unbalanced | 0.9178 | **0.9220** | +0.004 | 0.737 | 0.712 | 0.582 | 0.582 | 0.254 | 0.247 |
+| TierAB_multi_balanced | 0.9046 | 0.8966 | -0.008 | 0.438 | 0.378 | 0.344 | 0.311 | **0.368** | 0.333 |
+| TierAB_multi_unbalanced | 0.9210 | 0.9157 | -0.005 | 0.370 | 0.320 | 0.261 | 0.232 | 0.288 | 0.249 |
+| TierA_binary_balanced | 0.9061 | **0.9078** | +0.002 | 0.659 | 0.633 | 0.606 | 0.630 | 0.273 | 0.286 |
+| TierA_binary_unbalanced | 0.9039 | 0.9016 | -0.002 | 0.720 | 0.696 | 0.564 | 0.590 | 0.206 | 0.260 |
+| TierA_multi_balanced | 0.8821 | 0.8629 | -0.019 | 0.409 | 0.383 | 0.317 | 0.334 | 0.337 | 0.348 |
+| TierA_multi_unbalanced | 0.8998 | 0.8837 | -0.016 | 0.328 | 0.320 | 0.228 | 0.232 | 0.244 | 0.249 |
 
 **Finding:** For binary PD vs AP classification, top-20 features match or slightly exceed the full model (ΔAUC ≤ +0.004). For multiclass subtype classification, the full feature set is preferred (ΔAUC up to -0.019), likely because rare subtypes benefit from additional discriminating variables.
 
@@ -296,12 +300,12 @@ Tier A subset = 10 features (Tier B items filtered out). Tier AB subset = all 15
 
 **3-way binary comparison: full vs top-20 vs top-15**
 
-| Variant | Full AUC | Top-20 AUC | Top-15 AUC | ΔTop20 | ΔTop15 |
-|---------|----------|------------|------------|--------|--------|
-| TierAB_binary_balanced | 0.9226 | **0.9247** | 0.8989 | +0.002 | -0.024 |
-| TierAB_binary_unbalanced | 0.9178 | **0.9220** | 0.9047 | +0.004 | -0.013 |
-| TierA_binary_balanced | 0.9061 | **0.9078** | 0.8924 | +0.002 | -0.014 |
-| TierA_binary_unbalanced | 0.9039 | 0.9016 | 0.8905 | -0.002 | -0.013 |
+| Variant | AUC | Prec | Rec | F1 | AUC₂₀ | Prec₂₀ | Rec₂₀ | F1₂₀ | AUC₁₅ | Prec₁₅ | Rec₁₅ | F1₁₅ |
+|---------|-----|------|-----|----|--------|--------|-------|------|--------|--------|-------|------|
+| TierAB_binary_balanced | 0.923 | 0.691 | 0.635 | 0.333 | **0.925** | 0.652 | 0.641 | 0.314 | 0.899 | 0.609 | 0.619 | 0.252 |
+| TierAB_binary_unbalanced | 0.918 | 0.737 | 0.582 | 0.254 | **0.922** | 0.712 | 0.582 | 0.247 | 0.905 | 0.661 | 0.562 | 0.192 |
+| TierA_binary_balanced | 0.906 | 0.659 | 0.606 | 0.273 | **0.908** | 0.633 | 0.630 | 0.286 | 0.892 | 0.623 | 0.621 | 0.267 |
+| TierA_binary_unbalanced | 0.904 | 0.720 | 0.564 | 0.206 | 0.902 | 0.696 | 0.590 | 0.260 | 0.891 | 0.712 | 0.582 | 0.247 |
 
 **Finding:** Dropping features 16–20 (pdq39_mobility, pdq39_communication, updrs_3_14, updrs_2_7, comorbidities) costs 1.3–2.4 AUC points — these features are contributing. Top-20 is the efficient operating point for binary classification.
 
