@@ -1,16 +1,37 @@
-# SSC Data Pipeline
+# C-OPN Parkinsonism Classification Study
 
-A data audit and analysis pipeline for the SSC/C-OPN Parkinson's study dataset.
+Machine learning pipeline for differentiating Parkinson's Disease (PD) from Atypical Parkinsonism (AP: PSP, MSA, DLB, CBS) using the Canadian Open Parkinson Network (C-OPN) cohort.
+
+---
+
+## Project Structure
+
+```
+data/                    Raw REDCap CSV exports (one file per form, no extension)
+reference/               Data dictionary and study documentation
+  COPN_DataDictionary_2025-09-24_annotated.xlsx
+pending/                 Working/input files
+  WORK-Qnaire-and-feature-clinical-domains.xlsx
+  COPN_Selected_Features_v3_11May2026.xlsx
+source/                  Encrypted source Excel file
+output/
+  clean_pipeline/        Filtered CSVs (enrolled + complete rows only)
+    full_enrolled/
+    enrolled_and_partial/
+  comparative_analysis/  Statistical plots and test results per domain
+  model/                 XGBoost model outputs
+scripts/                 All pipeline scripts
+```
 
 ---
 
 ## Setup
 
-### 1. Place the source file
+### 1. Place source file
 
-Put `SSC - Full report - UPDATED.xlsx` in the `source/` folder.
+Put `SSC - Full report - UPDATED.xlsx` in `source/`.
 
-### 2. Create a `.env` file in the project root
+### 2. Create `.env`
 
 ```
 PASSWORD="your_password_here"
@@ -19,125 +40,226 @@ PASSWORD="your_password_here"
 ### 3. Install dependencies
 
 ```bash
-python3 -m venv venv
-source venv/bin/activate
+python3 -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
 ```
 
----
-
-## Folder Structure
-
-```
-SSC/
-├── scripts/          # All Python scripts
-├── data/             # Raw CSV exports (one file per form, no extension)
-├── output/           # Generated Excel analysis files
-├── source/           # Encrypted source Excel file
-├── reference/        # Data dictionary and study documentation
-├── pending/          # New input data (e.g. PD_Diagnosis.xlsx)
-├── notebooks/        # Jupyter notebooks
-├── .env              # Password (do not commit)
-└── requirements.txt
-```
+Dependencies: `pandas`, `numpy`, `matplotlib`, `seaborn`, `scipy`, `scikit-learn`, `xgboost`, `shap`, `openpyxl`
 
 ---
 
-## Scripts — Run Order
-
-### Step 1 — Extract CSVs from the encrypted source file
+## Full Run Order
 
 ```bash
+# Phase 1 — Data extraction and audit
 python3 scripts/extract_csv.py
-```
-
-Decrypts `source/SSC - Full report - UPDATED.xlsx` using the password in `.env` and writes one CSV per sheet into `data/`.
-
----
-
-### Step 2 — Build the cross-reference workbook
-
-```bash
 python3 scripts/export_stats.py
-```
 
-Reads all CSVs from `data/` and the data dictionary from `reference/`, then writes `output/cross_reference.xlsx`.
+# Phase 2 — Clean pipeline + domain splits
+python3 scripts/build_domain_pipeline.py
 
-See [Cross-Reference Workbook](#cross-reference-workbook-outputcross_referencexlsx) below for a full description of each sheet.
+# Phase 3 — Comparative analysis
+python3 scripts/build_comparative_by_domain.py
 
----
-
-### Step 3 (optional) — Build derived analysis files
-
-These can be run independently after Step 1:
-
-```bash
-python3 scripts/build_moca.py         # → output/moca_analysis.xlsx
-python3 scripts/build_updrs.py        # → output/updrs_analysis.xlsx
-python3 scripts/build_pd_diagnosis.py # → output/pd_diagnosis.xlsx
+# Phase 4 — ML model
+python3 scripts/build_model_v1.py
 ```
 
 ---
 
-## Cross-Reference Workbook (`output/cross_reference.xlsx`)
+## Phase 1 — Data Extraction and Audit
 
-### Reference sheets
+### `extract_csv.py`
 
-| Sheet                 | What it shows                                                                                                                                                                                                            |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **All Variables**     | Every variable in the data dictionary with its base variable name, which CSV file it was found in, % missing, and sample values                                                                                          |
-| **Consolidated**      | One row per base variable — groups versioned variables (e.g. `age_onset_2`, `age_onset_3`) together, with aggregated stats across all versions. Variables with different field labels in the same file are kept separate |
-| **Numerical Stats**   | Descriptive statistics (mean, median, std, min, Q1, Q3, max, skew, kurtosis) per base variable, pooled across all versions                                                                                               |
-| **Categorical Stats** | Value counts and percentages per base variable, pooled across all versions                                                                                                                                               |
+Decrypts `source/SSC - Full report - UPDATED.xlsx` using the password in `.env` and writes one CSV per sheet into `data/`. All subsequent scripts read from `data/`.
 
-### Diagnosis sheets
+### `export_stats.py` → `output/cross_reference.xlsx`
 
-| Sheet                | What it shows                                                                                                                                                                                                                                                        |
-| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Diagnosis Flags**  | Participants with at least one inconsistency between their Enrolment Group, Determined Diagnosis, and "Was diagnosed with PD?" fields. Sorted by number of flags (most flags first). Red = 2+ flags, orange = 1 flag                                                 |
-| **Diagnosis Review** | Every participant (all 3,541) with their diagnosis fields, Study Status, Withdrawal Date, flag status, and — for unflagged participants — the reason they were not flagged (e.g. "AP enrolled, Determined = ET: consistent"). Flagged rows red/orange, OK rows green |
+Reads all `data/` CSVs and the data dictionary, then builds a full audit workbook:
 
-**Flags checked:**
+| Sheet | Contents |
+|-------|----------|
+| All Variables | Every variable — source file, % missing, sample values |
+| Consolidated | One row per base variable, versioned variables grouped |
+| Numerical Stats | Mean, median, SD, min, Q1, Q3, max, skew, kurtosis |
+| Categorical Stats | Value counts and % per variable |
+| Diagnosis Flags | Participants with inconsistencies between enrolment group, determined diagnosis, and "Was diagnosed with PD?" |
+| Diagnosis Review | All 3,541 participants with flag status and flag reason |
+| Completeness Matrix | Participants × forms heatmap — % fields missing per cell |
+| Completeness by Dx | Average % missing per form, by enrolment group |
+| Enrollment Coverage | Every participant × every form — Yes/No data present |
+| Withdrawn Summary | 246 withdrawn participants with per-form coverage |
 
-- Enrolled as PD but Determined Dx ≠ PD
-- Enrolled as AP but Determined Dx = PD
-- "Was diagnosed with PD?" contradicts Determined Dx
-- Enrolment Group contradicts "Was diagnosed with PD?"
-- 1a alternative dx field contradicts Determined Dx code
-
-### Completeness sheets
-
-| Sheet                   | What it shows                                                                                                                                                                                              |
-| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Completeness Matrix** | Participants × forms heatmap — each cell is the average % of fields missing for that participant in that form. Green = low missing, red = high missing                                                     |
-| **Completeness by Dx**  | Summary of average % missing per form, broken down by Enrolment Group (PD / AP / HC)                                                                                                                       |
-| **Enrollment Coverage** | Every enrollment key vs every form — `Yes` (green) if the participant has data in that form, `No` (red) if absent. Includes N Forms Present / N Forms Missing. Sorted most-missing first within each group |
-| **Withdrawn Summary**   | All 246 withdrawn participants with their Withdrawal Date, per-form data coverage (Yes/No), and N Forms With Data / N Forms Missing. Useful for understanding what data was collected before withdrawal    |
-
-### Data sheets
-
-One sheet per form (e.g. `Clinical`, `MoCA`, `MDS-UPDRS`) containing the cleaned data with:
-
-- Column names renamed from raw labels to standardised variable names from the data dictionary
-- Skeleton rows (all fields blank) removed
-- `Days since dx` column added — days between the form completion date and the participant's clinical diagnosis date
+**Flags checked:** enrolled as PD but determined Dx ≠ PD; enrolled as AP but determined Dx = PD; "Was diagnosed with PD?" contradicts determined Dx; 1a alternative Dx contradicts determined code.
 
 ---
 
-## Output Files
+## Phase 2 — Clean Pipeline (`build_domain_pipeline.py`)
 
-| File                          | Script                  | Description                                                                                            |
-| ----------------------------- | ----------------------- | ------------------------------------------------------------------------------------------------------ |
-| `output/cross_reference.xlsx` | `export_stats.py`       | Full data audit workbook (see above)                                                                   |
-| `output/moca_analysis.xlsx`   | `build_moca.py`         | Combined MoCA, MoCA-1, MoCA-2 with delta scores between timepoints                                     |
-| `output/updrs_analysis.xlsx`  | `build_updrs.py`        | UPDRS General and Part 3 combined from all three source forms, with delta scores                       |
-| `output/pd_diagnosis.xlsx`    | `build_pd_diagnosis.py` | Derived PD diagnosis per participant using the step-by-step algorithm from `pending/PD_Diagnosis.xlsx` |
+**What it does:** Filters raw data to enrolled + complete rows, matches each CSV column to its clinical domain, and produces domain-split CSVs.
+
+**Inputs:**
+- `data/` — raw REDCap CSVs
+- `reference/COPN_DataDictionary_2025-09-24_annotated.xlsx` — Field Labels (= exact CSV column header text) + Field Type per variable
+- `pending/WORK-Qnaire-and-feature-clinical-domains.xlsx` — Variable → General Clinical Domain
+
+**Key logic:**
+- **Enrollment filter:** `Study Status = Enrolled/Inscrit` (full_enrolled) or + partially enrolled
+- **Row filter:** `Complete? = Complete` per form
+- **Column matching:** Jaccard similarity between CSV column headers and Field Labels from the data dictionary. Field Labels are the exact REDCap export text so matches score ~1.0 (near-perfect). Threshold: 0.45.
+- **Form mapping:** Auto-derived by counting variable overlap between old file names and new DD form names — no hard-coded mapping.
+- **Domain merging:** `"Cognitive Functioning"` → `"Cognitive Function"`, `"Mood / Psychiatric "` → `"Mood / Psychiatric"`
+
+**Outputs:**
+```
+output/clean_pipeline/full_enrolled/
+  {form}.csv                                   one per form, enrolled+complete rows
+  by_clinical_domain/{Domain}/{form}.csv       domain-filtered column subsets
+  domain_column_mapping.csv                    CSV col → variable → domain → Field Type → match score
+  domain_summary.csv                           row/column counts per domain × form × group
+```
+
+**Domains:** Admin · Activities of Daily Living · Autonomic Functioning · Behaviour · Clinical History & Diagnosis · Cognitive Function · Composite Scores · Medications · Mood/Psychiatric · Motor · Non-Motor
 
 ---
 
-## Notes
+## Phase 3 — Comparative Analysis (`build_comparative_by_domain.py`)
 
-- **Excluded forms:** Apathy Evaluation Self, Apathy Evaluation Informant, FrSBe are excluded from all analysis.
-- **Variable versioning:** Variables like `moca_score_v01`, `moca_score_v02` are grouped under the base name `moca_score` in Consolidated. However, if multiple versions exist in the same file with different field labels (different timepoints), they are kept separate.
-- **Column renaming:** In the data sheets, column names are renamed to the standardised variable name from the data dictionary. If only one version of a variable exists in a file, it is further simplified to the base variable name (e.g. `site_2` → `site`).
-- **Withdrawal reasons:** No withdrawal reasons are recorded in the dataset — the reason field is blank for all 246 withdrawn participants.
+**What it does:** For each clinical domain, compares groups statistically and generates plots.
+
+**Input:** `output/clean_pipeline/full_enrolled/by_clinical_domain/`
+
+**Groups compared:** by enrolment group (PD / AP / HC) and by determined diagnosis (PD / PSP / MSA / DLB / CBS / HC / ET / RBD)
+
+**Column routing via Field Type from `domain_column_mapping.csv`:**
+- `radio`, `yesno`, `checkbox`, `dropdown` → **bar plots** (% per response per group) + chi-square test
+- `calc`, `text` (numeric) → **box plots** + Kruskal-Wallis test
+
+**Statistics:**
+- Numeric: Kruskal-Wallis H statistic + η² effect size + BH FDR correction; pairwise Mann-Whitney U + Bonferroni correction + Cohen's d
+- Categorical: chi-square contingency test per variable
+- Min group size: 5; max 30 subplots per figure
+
+**Outputs:**
+```
+output/comparative_analysis/by_clinical_domain/{Domain}/
+  by_enrolment_group/    plots/  stats.xlsx  pairwise.xlsx
+  by_determined_dx/      plots/  stats.xlsx  pairwise.xlsx
+  significant_fdr.csv    all BH-significant findings across all domains
+```
+
+---
+
+## Phase 4 — Feature Selection
+
+51 features selected from comparative analysis results, clinical literature, and MDS diagnostic criteria. Documented in `pending/COPN_Selected_Features_v3_11May2026.xlsx`.
+
+**Tiers by implementation difficulty:**
+
+| Tier | Level | n | Description |
+|------|-------|---|-------------|
+| A | 1–2 | 33 | Self-report only — completable remotely without a clinic visit |
+| B | 3 | 17 | Clinic visit required — UPDRS Part 3 motor exam + MoCA |
+| C | 4 | 1 | Trail Making B — excluded from models (85% missing data) |
+
+**Tier A:** age, sex, education; UPDRS Part 1 (cognitive, mood, autonomic NMS items 1.1–1.5, 1.10–1.13); UPDRS Part 2 (motor ADL self-report items 2.1, 2.5, 2.7, 2.8, 2.10, 2.12, 2.13); prodromal NMS (smell loss, REM sleep behaviour disorder, constipation); family history (grandparents, aunts/uncles with PD); comorbidities; head injury; pesticide exposure; symptom asymmetry at onset and current; first symptom type; PDQ-39 mobility, communication, summary index
+
+**Tier B:** UPDRS Part 3 composite scores + individual items (gait, freezing, postural stability, posture, body bradykinesia, speech, facial expression, neck rigidity, rest tremor constancy); MoCA total + visuospatial + attention subscores
+
+**Composite score definitions:**
+
+| Composite | Constituent variables | Formula |
+|-----------|----------------------|---------|
+| `bradykinesia_mean` | UPDRS 3.4–3.8 (R+L) — 10 items | mean |
+| `rest_tremor_mean` | UPDRS 3.17 RUE/LUE/RLE/LLE | mean |
+| `action_tremor_mean` | UPDRS 3.15–3.16 (R+L) | mean |
+| `rigidity_limb_mean` | UPDRS 3.3 RUE/LUE/RLE/LLE | mean |
+| `asymmetry_index` | Right vs left bradykinesia means | `\|R − L\| / (R + L + 1)` |
+
+**Leakage exclusions:** diagnosis labels, enrolment group, disease duration, age at symptom onset
+
+---
+
+## Phase 5 — ML Model (`build_model_v1.py`)
+
+### Cohort
+
+| Stage | n |
+|-------|---|
+| Total C-OPN participants | 3,541 |
+| Enrolled (full_enrolled) | 2,286 |
+| Confirmed PD/AP diagnosis | **1,704** |
+| — PD | 1,651 |
+| — PSP | 25 |
+| — MSA | 16 |
+| — DLB | 9 |
+| — CBS | 3 |
+
+### Feature extraction
+
+| Column type | Extraction method |
+|-------------|------------------|
+| `Updrs_X_Y value` or `Updrs_X_Y` | Direct numeric (pre-computed in REDCap) |
+| UPDRS text e.g. `"2: Mild: …"` | Regex extract leading integer (0–4), strips HTML tags |
+| Yes/No epidemiological fields | Yes=1, No=0, Uncertain/Unknown=NaN |
+| Multi-select (first symptoms, comorbidities) | Binary flags per category |
+| Symptom asymmetry Q8 | Unilateral (R or L)=1, Bilateral=0 |
+| Current asymmetry Q10 | One side only=1, One side more=0.5, Equal both=0 |
+| PDQ-39, MoCA, Trail B | Direct numeric |
+
+### Missing data handling
+
+- Features with **>80% missing** dropped (Trail B: 85% → excluded)
+- All remaining NaN values passed **directly to XGBoost** — no imputation, no row dropping
+- XGBoost learns the optimal split direction for missing observations at each node
+- PDQ-39 (~76% missing) is retained and handled natively
+
+### Model configuration
+
+**Algorithm:** XGBoost (`n_estimators=400, max_depth=4, learning_rate=0.05, subsample=0.8, colsample_bytree=0.8`)  
+**Validation:** 5-fold stratified cross-validation (`random_state=42`)  
+**Class balancing:**
+- Binary: `scale_pos_weight = n_PD / n_AP`
+- Multiclass: per-sample weights = `n_total / (n_classes × n_class_i)`, `minlength=n_classes` to handle absent classes in folds  
+**Interpretability:** SHAP TreeExplainer on model trained on full data; multiclass SHAP shape `(n_samples, n_features, n_classes)` averaged over samples and classes
+
+### 8 variants = 2 tiers × 2 tasks × 2 balance settings
+
+| Variant | AUC | F1 macro | F1 weighted |
+|---------|-----|----------|-------------|
+| TierAB_binary_balanced | **0.923** | 0.333 | 0.962 |
+| TierAB_multi_unbalanced | 0.921 | 0.288 | 0.961 |
+| TierAB_binary_unbalanced | 0.918 | 0.254 | 0.961 |
+| TierAB_multi_balanced | 0.905 | **0.368** | 0.958 |
+| TierA_binary_balanced | 0.906 | 0.273 | 0.959 |
+| TierA_multi_unbalanced | 0.900 | 0.244 | 0.956 |
+| TierA_binary_unbalanced | 0.904 | 0.206 | 0.960 |
+| TierA_multi_balanced | 0.882 | 0.337 | 0.957 |
+
+AUC gain Tier A → Tier AB: **+0.017** (binary), **+0.021** (multiclass)
+
+**Targets:**
+- Binary: PD=0, PD-plus (PSP+MSA+DLB+CBS)=1
+- Multiclass: PD=0, PSP=1, MSA=2, DLB=3, CBS=4
+
+### Outputs
+
+```
+output/model/{variant}/
+  confusion_matrix.png    cross-validated confusion matrix
+  shap_summary.png        mean |SHAP| feature importance (top 30)
+  metrics.json            AUC, F1-macro, F1-weighted, per-class precision/recall/F1
+
+output/model/
+  feature_matrix.csv      1704 × 53 joined feature table
+  results_summary.csv     one row per variant
+```
+
+---
+
+## Key Methodological Notes
+
+- **Column matching:** REDCap exports use full bilingual question text as column headers. Matching to the data dictionary uses Field Labels (identical text) via Jaccard — near-perfect scores (~1.0), not manual mapping.
+- **No imputation:** XGBoost native NaN handling used throughout. Median imputation was tested but produces ~76% synthetic values for PDQ-39 (76% missing); complete-case drops 90% of samples. Native handling is preferred.
+- **Class imbalance:** Severe (97% PD vs 3% AP). Balanced variants up-weight minority classes. Report AUC (discrimination ability) alongside F1-macro (sensitivity to minority class performance) — they capture different things.
+- **AP subtype reliability:** PSP=25, MSA=16, DLB=9, CBS=3. Multiclass results for CBS especially should be interpreted with caution.
