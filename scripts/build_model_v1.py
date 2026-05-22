@@ -558,26 +558,37 @@ def run_variant(X: pd.DataFrame, y: pd.Series, task: str, balanced: bool,
     explainer   = shap.TreeExplainer(final_model)
     shap_values = explainer.shap_values(X_full)
 
-    fig, ax = plt.subplots(figsize=(8, max(4, len(X.columns) * 0.3)))
+    # --- Compute mean |SHAP| per feature ---
     if task == "binary":
         sv = shap_values if not isinstance(shap_values, list) else shap_values[1]
         if isinstance(sv, np.ndarray) and sv.ndim == 3:
-            sv = sv[:, :, 1]  # XGBoost sometimes returns (n_samples, n_features, n_classes)
-        shap.summary_plot(sv, X_full, show=False, max_display=30, plot_size=None)
-        plt.tight_layout()
+            sv = sv[:, :, 1]
+        mean_shap_vals = np.abs(sv).mean(axis=0)
     else:
-        # Multiclass: average |SHAP| across classes
-        # TreeExplainer returns (n_samples, n_features, n_classes) for multiclass XGBoost
         if isinstance(shap_values, list):
-            sv_arr = np.abs(np.stack(shap_values, axis=-1))  # → (n_samples, n_features, n_classes)
-            mean_shap_vals = sv_arr.mean(axis=(0, 2))         # per feature
+            sv_arr = np.abs(np.stack(shap_values, axis=-1))
+            mean_shap_vals = sv_arr.mean(axis=(0, 2))
         elif shap_values.ndim == 3:
-            # shape (n_samples, n_features, n_classes)
             mean_shap_vals = np.abs(shap_values).mean(axis=(0, 2))
         else:
             mean_shap_vals = np.abs(shap_values).mean(axis=0)
-        mean_shap = pd.Series(mean_shap_vals, index=X.columns).sort_values(ascending=True)
-        mean_shap.tail(30).plot(kind="barh", ax=ax)
+
+    mean_shap = (pd.Series(mean_shap_vals, index=X.columns)
+                   .sort_values(ascending=False)
+                   .reset_index())
+    mean_shap.columns = ["feature", "mean_abs_shap"]
+    mean_shap.insert(0, "rank", range(1, len(mean_shap) + 1))
+    mean_shap["mean_abs_shap"] = mean_shap["mean_abs_shap"].round(5)
+    mean_shap.to_csv(out_dir / "shap_values.csv", index=False)
+
+    # --- Plot ---
+    fig, ax = plt.subplots(figsize=(8, max(4, len(X.columns) * 0.3)))
+    if task == "binary":
+        shap.summary_plot(sv, X_full, show=False, max_display=30, plot_size=None)
+        plt.tight_layout()
+    else:
+        mean_shap.set_index("feature")["mean_abs_shap"].sort_values().tail(30).plot(
+            kind="barh", ax=ax)
         ax.set_xlabel("Mean |SHAP|")
         ax.set_title(f"Feature importance — {out_dir.name}", fontsize=9)
         plt.tight_layout()
@@ -654,11 +665,107 @@ for tier_name, tier_vars in TIER_MAP.items():
                 results.append({"variant": var_name, "error": str(exc)})
 
 # ---------------------------------------------------------------------------
-# 9. Summary table
+# 9. Summary table (full feature set)
 # ---------------------------------------------------------------------------
 results_df = pd.DataFrame(results)
 results_df.to_csv(OUTPUT / "results_summary.csv", index=False)
 print("\n" + "="*60)
-print("Results summary:")
+print("Results summary (full features):")
 print(results_df[["variant","n_samples","n_features","roc_auc","f1_macro"]].to_string(index=False))
+
+
+# ---------------------------------------------------------------------------
+# 10. Top-20 SHAP feature selection pass
+# ---------------------------------------------------------------------------
+print("\n" + "="*60)
+print("Top-20 SHAP feature selection pass…")
+
+# Use TierAB_binary_balanced SHAP as the selector (best model)
+shap_ref_path = OUTPUT / "TierAB_binary_balanced" / "shap_values.csv"
+shap_ref = pd.read_csv(shap_ref_path)
+top20_features = shap_ref.head(20)["feature"].tolist()
+print(f"  Top 20 features (from TierAB_binary_balanced SHAP):")
+for i, f in enumerate(top20_features, 1):
+    score = shap_ref.loc[shap_ref["feature"] == f, "mean_abs_shap"].values[0]
+    print(f"    {i:2}. {f:<30}  {score:.5f}")
+
+results_top20 = []
+
+for tier_name, tier_vars in TIER_MAP.items():
+    # Keep only features that are both in this tier AND in top 20
+    feat_cols = [v for v in tier_vars if v in df_full.columns and v in top20_features]
+    if not feat_cols:
+        print(f"\n{tier_name}: no top-20 features — skipping")
+        continue
+    X_base = df_full[feat_cols].copy()
+    print(f"\n{tier_name} (top-20 subset): {len(feat_cols)} features — {feat_cols}")
+
+    for task in ["binary", "multi"]:
+        if task == "binary":
+            y    = (df_full["_diag_code"] != 0.0).astype(int)
+            lbl  = ["PD", "PD-plus"]
+            mask = pd.Series(True, index=df_full.index)
+        else:
+            code_to_mc = {0.0: 0, 1.0: 1, 2.0: 2, 4.0: 3, 3.0: 4}
+            mc   = df_full["_diag_code"].map(code_to_mc)
+            mask = mc.notna()
+            y    = mc[mask].astype(int)
+            lbl  = ["PD","PSP","MSA","DLB","CBS"]
+
+        X_task = X_base[mask].copy()
+
+        for balanced in [True, False]:
+            bal_str  = "balanced" if balanced else "unbalanced"
+            var_name = f"{tier_name}_{task}_{bal_str}_top20"
+            out_dir  = OUTPUT / var_name
+            print(f"  → {var_name}", flush=True)
+
+            try:
+                y_task  = y.reset_index(drop=True)
+                X_reset = X_task.reset_index(drop=True)
+                keep    = [c for c in X_reset.columns if X_reset[c].isna().mean() <= 0.80]
+                X_reset = X_reset[keep]
+
+                m = run_variant(X_reset, y_task, task, balanced, lbl, out_dir)
+                results_top20.append({
+                    "variant":     var_name,
+                    "tier":        tier_name,
+                    "task":        task,
+                    "balanced":    balanced,
+                    "n_features":  len(keep),
+                    "roc_auc":     m["roc_auc"],
+                    "f1_macro":    m["f1_macro"],
+                    "f1_weighted": m["f1_weighted"],
+                })
+                print(f"     AUC={m['roc_auc']:.3f}  F1={m['f1_macro']:.3f}")
+            except Exception as exc:
+                print(f"     ERROR: {exc}")
+                results_top20.append({"variant": var_name, "error": str(exc)})
+
+# ---------------------------------------------------------------------------
+# 11. Comparison table: full vs top-20
+# ---------------------------------------------------------------------------
+top20_df = pd.DataFrame(results_top20)
+top20_df.to_csv(OUTPUT / "results_summary_top20.csv", index=False)
+
+print("\n" + "="*60)
+print("Comparison: full features vs top-20 SHAP selection")
+print(f"\n{'Variant':<35} {'Full AUC':>9} {'Top20 AUC':>10} {'ΔAUC':>7}  {'Full F1':>8} {'Top20 F1':>9} {'ΔF1':>6}")
+print("-" * 90)
+
+full_lookup = results_df.set_index("variant")
+for row in results_top20:
+    if "error" in row:
+        continue
+    v20   = row["variant"]
+    vfull = v20.replace("_top20", "")
+    if vfull not in full_lookup.index:
+        continue
+    full_auc = full_lookup.loc[vfull, "roc_auc"]
+    full_f1  = full_lookup.loc[vfull, "f1_macro"]
+    d_auc    = row["roc_auc"] - full_auc
+    d_f1     = row["f1_macro"] - full_f1
+    print(f"{vfull:<35} {full_auc:>9.4f} {row['roc_auc']:>10.4f} {d_auc:>+7.4f}  "
+          f"{full_f1:>8.4f} {row['f1_macro']:>9.4f} {d_f1:>+6.4f}")
+
 print(f"\n→ All outputs saved to {OUTPUT}/")

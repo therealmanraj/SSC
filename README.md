@@ -223,18 +223,18 @@ output/comparative_analysis/by_clinical_domain/{Domain}/
 - Multiclass: per-sample weights = `n_total / (n_classes × n_class_i)`, `minlength=n_classes` to handle absent classes in folds  
 **Interpretability:** SHAP TreeExplainer on model trained on full data; multiclass SHAP shape `(n_samples, n_features, n_classes)` averaged over samples and classes
 
-### 8 variants = 2 tiers × 2 tasks × 2 balance settings
+### Pass 1 — 8 variants = 2 tiers × 2 tasks × 2 balance settings
 
-| Variant | AUC | F1 macro | F1 weighted |
-|---------|-----|----------|-------------|
-| TierAB_binary_balanced | **0.923** | 0.333 | 0.962 |
-| TierAB_multi_unbalanced | 0.921 | 0.288 | 0.961 |
-| TierAB_binary_unbalanced | 0.918 | 0.254 | 0.961 |
-| TierAB_multi_balanced | 0.905 | **0.368** | 0.958 |
-| TierA_binary_balanced | 0.906 | 0.273 | 0.959 |
-| TierA_multi_unbalanced | 0.900 | 0.244 | 0.956 |
-| TierA_binary_unbalanced | 0.904 | 0.206 | 0.960 |
-| TierA_multi_balanced | 0.882 | 0.337 | 0.957 |
+| Variant | Features | AUC | F1 macro | F1 weighted |
+|---------|----------|-----|----------|-------------|
+| TierAB_binary_balanced | 52 | **0.923** | 0.333 | 0.962 |
+| TierAB_multi_unbalanced | 52 | 0.921 | 0.288 | 0.961 |
+| TierAB_binary_unbalanced | 52 | 0.918 | 0.254 | 0.961 |
+| TierAB_multi_balanced | 52 | 0.905 | **0.368** | 0.958 |
+| TierA_binary_balanced | 35 | 0.906 | 0.273 | 0.959 |
+| TierA_multi_unbalanced | 35 | 0.900 | 0.244 | 0.956 |
+| TierA_binary_unbalanced | 35 | 0.904 | 0.206 | 0.960 |
+| TierA_multi_balanced | 35 | 0.882 | 0.337 | 0.957 |
 
 AUC gain Tier A → Tier AB: **+0.017** (binary), **+0.021** (multiclass)
 
@@ -242,17 +242,66 @@ AUC gain Tier A → Tier AB: **+0.017** (binary), **+0.021** (multiclass)
 - Binary: PD=0, PD-plus (PSP+MSA+DLB+CBS)=1
 - Multiclass: PD=0, PSP=1, MSA=2, DLB=3, CBS=4
 
+### Pass 2 — Top-20 SHAP feature selection
+
+After Pass 1, the script loads `TierAB_binary_balanced/shap_values.csv` (best model) and takes the top 20 features by mean |SHAP|. All 8 variants are rerun with this reduced feature set to test whether low-importance features are adding noise.
+
+**Top 20 selected features:**
+
+| Rank | Feature | Mean \|SHAP\| |
+|------|---------|--------------|
+| 1 | first_sx_tremor | 1.738 |
+| 2 | bradykinesia_mean | 1.141 |
+| 3 | study_visit_age | 0.888 |
+| 4 | smell | 0.801 |
+| 5 | moca_total | 0.478 |
+| 6 | symptom_asymmetry | 0.453 |
+| 7 | updrs_3_10 | 0.445 |
+| 8 | gender | 0.437 |
+| 9 | yrs_education | 0.427 |
+| 10 | updrs_2_8 | 0.321 |
+| 11 | updrs_2_12 | 0.286 |
+| 12 | updrs_2_1 | 0.280 |
+| 13 | moca_attention | 0.278 |
+| 14 | moca_visuosp | 0.276 |
+| 15 | dreams | 0.273 |
+| 16 | pdq39_mobility | 0.251 |
+| 17 | pdq39_communication | 0.230 |
+| 18 | updrs_3_14 | 0.230 |
+| 19 | updrs_2_7 | 0.225 |
+| 20 | comorbidities | 0.224 |
+
+Tier A subset = 14 of these 20 (Tier B features filtered out). Tier AB subset = all 20.
+
+**Full vs top-20 comparison:**
+
+| Variant | Full AUC | Top-20 AUC | ΔAUC | Full F1 | Top-20 F1 | ΔF1 |
+|---------|----------|------------|------|---------|-----------|-----|
+| TierAB_binary_balanced | 0.9226 | **0.9247** | +0.002 | 0.333 | 0.314 | -0.019 |
+| TierAB_binary_unbalanced | 0.9178 | **0.9220** | +0.004 | 0.254 | 0.247 | -0.007 |
+| TierAB_multi_balanced | 0.9046 | 0.8966 | -0.008 | **0.368** | 0.333 | -0.035 |
+| TierAB_multi_unbalanced | 0.9210 | 0.9157 | -0.005 | 0.288 | 0.249 | -0.039 |
+| TierA_binary_balanced | 0.9061 | **0.9078** | +0.002 | 0.273 | 0.286 | +0.013 |
+| TierA_binary_unbalanced | 0.9039 | 0.9016 | -0.002 | 0.206 | 0.260 | +0.054 |
+| TierA_multi_balanced | 0.8821 | 0.8629 | -0.019 | 0.337 | 0.348 | +0.011 |
+| TierA_multi_unbalanced | 0.8998 | 0.8837 | -0.016 | 0.244 | 0.249 | +0.006 |
+
+**Finding:** For binary PD vs AP classification, top-20 features match or slightly exceed the full model (ΔAUC ≤ +0.004). For multiclass subtype classification, the full feature set is preferred (ΔAUC up to -0.019), likely because rare subtypes benefit from additional discriminating variables.
+
 ### Outputs
 
 ```
-output/model/{variant}/
+output/model/{variant}/              — 8 full-feature variants
+output/model/{variant}_top20/        — 8 top-20 variants
   confusion_matrix.png    cross-validated confusion matrix
-  shap_summary.png        mean |SHAP| feature importance (top 30)
+  shap_summary.png        mean |SHAP| feature importance bar chart
+  shap_values.csv         ranked feature importances (for custom charts)
   metrics.json            AUC, F1-macro, F1-weighted, per-class precision/recall/F1
 
 output/model/
-  feature_matrix.csv      1704 × 53 joined feature table
-  results_summary.csv     one row per variant
+  feature_matrix.csv          1704 × 53 joined feature table
+  results_summary.csv         full-feature variant results
+  results_summary_top20.csv   top-20 variant results
 ```
 
 ---
