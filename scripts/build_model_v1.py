@@ -439,11 +439,6 @@ def run_variant(X: pd.DataFrame, y: pd.Series, task: str, balanced: bool,
         X_tr, X_te = X.iloc[tr_idx].copy(), X.iloc[te_idx].copy()
         y_tr, y_te = y_arr[tr_idx], y_arr[te_idx]
 
-        # Impute with training median
-        medians = X_tr.median()
-        X_tr = X_tr.fillna(medians)
-        X_te = X_te.fillna(medians)
-
         if task == "binary":
             model = XGBClassifier(
                 n_estimators=400, max_depth=4, learning_rate=0.05,
@@ -532,10 +527,8 @@ def run_variant(X: pd.DataFrame, y: pd.Series, task: str, balanced: bool,
     fig.savefig(out_dir / "confusion_matrix.png", dpi=120)
     plt.close(fig)
 
-    # --- SHAP (train final model on all data, impute with global median) ---
+    # --- SHAP (train final model on all data — already complete cases) ---
     X_full = X.copy()
-    global_med = X_full.median()
-    X_full = X_full.fillna(global_med)
     y_full = y.values
 
     if task == "binary":
@@ -638,9 +631,10 @@ for tier_name, tier_vars in TIER_MAP.items():
                 y_task  = y.reset_index(drop=True)
                 X_reset = X_task.reset_index(drop=True)
 
-                # Drop features with >80% missing
+                # Drop features with >80% missing (too sparse to be informative)
                 keep = [c for c in X_reset.columns if X_reset[c].isna().mean() <= 0.80]
                 X_reset = X_reset[keep]
+                # Remaining NaN values passed directly to XGBoost (native split handling)
 
                 m = run_variant(X_reset, y_task, task, balanced, lbl, out_dir)
                 results.append({
