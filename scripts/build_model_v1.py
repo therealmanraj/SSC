@@ -709,8 +709,9 @@ for tier_name, tier_vars in TIER_MAP.items():
     if not feat_cols:
         print(f"\n{tier_name}: no top-20 features — skipping")
         continue
+    n_eligible = len(feat_cols)  # tier-eligible subset of the top-20 pool
     X_base = df_full[feat_cols].copy()
-    print(f"\n{tier_name} (top-20 subset): {len(feat_cols)} features — {feat_cols}")
+    print(f"\n{tier_name} (top-20 subset): {n_eligible}/20 eligible — {feat_cols}")
 
     for task in ["binary", "multi"]:
         if task == "binary":
@@ -744,6 +745,8 @@ for tier_name, tier_vars in TIER_MAP.items():
                     "tier":               tier_name,
                     "task":               task,
                     "balanced":           balanced,
+                    "n_top_pool":         20,
+                    "n_eligible":         n_eligible,
                     "n_features":         len(keep),
                     "roc_auc":            m["roc_auc"],
                     "f1_macro":           m["f1_macro"],
@@ -806,8 +809,9 @@ for tier_name, tier_vars in TIER_MAP.items():
     feat_cols = [v for v in tier_vars if v in df_full.columns and v in top15_features]
     if not feat_cols:
         continue
+    n_eligible = len(feat_cols)  # tier-eligible subset of the top-15 pool
     X_base = df_full[feat_cols].copy()
-    print(f"\n{tier_name} (top-15 subset): {len(feat_cols)} features — {feat_cols}")
+    print(f"\n{tier_name} (top-15 subset): {n_eligible}/15 eligible — {feat_cols}")
 
     y    = (df_full["_diag_code"] != 0.0).astype(int)
     lbl  = ["PD", "PD-plus"]
@@ -830,6 +834,8 @@ for tier_name, tier_vars in TIER_MAP.items():
                 "tier":               tier_name,
                 "task":               "binary",
                 "balanced":           balanced,
+                "n_top_pool":         15,
+                "n_eligible":         n_eligible,
                 "n_features":         len(keep),
                 "roc_auc":            m["roc_auc"],
                 "f1_macro":           m["f1_macro"],
